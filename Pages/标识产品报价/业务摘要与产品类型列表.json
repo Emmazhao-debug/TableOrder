@@ -1,0 +1,1006 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 44.0,
+          "IsHidden": true
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "Count": 47
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "Count": 85
+  },
+  "Values": {
+    "1,11": "业务摘要与产品类型列表",
+    "3,8": "灯箱字",
+    "3,16": "背光字",
+    "3,24": "无边字",
+    "3,32": "3D字",
+    "5,8": "烤漆灯箱字",
+    "5,16": "烤漆背光字",
+    "5,24": "超级字",
+    "7,8": "金属立体字",
+    "7,16": "雕刻字",
+    "7,24": "仿霓虹",
+    "9,8": "烤漆金属立体字",
+    "9,16": "烤漆雕刻字",
+    "9,24": "迷你字",
+    "11,8": "业务单号：",
+    "11,13": "YW202311-0001",
+    "11,18": "业务摘要：",
+    "11,23": "测试用业务单摘要",
+    "13,23": "产品类型",
+    "14,43": "修改",
+    "14,47": "删除"
+  },
+  "AttachInfos": {
+    "3,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "产品类型与规格列表",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=业务摘要与产品类型列表!业务单号"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=产品类型与规格列表!业务单号"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=业务摘要与产品类型列表!业务摘要"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=产品类型与规格列表!业务摘要"
+                }
+              },
+              {
+                "Source": "1",
+                "TargetCell": {
+                  "SerializeProperty": "=产品类型与规格列表!产品类型id"
+                }
+              },
+              {
+                "Source": "创建",
+                "TargetCell": {
+                  "SerializeProperty": "=产品类型与规格列表!按钮"
+                }
+              },
+              {
+                "Source": "取消",
+                "TargetCell": {
+                  "SerializeProperty": "=产品类型与规格列表!取消"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "灯箱字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "背光字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "无边字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "3D字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "5,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "烤漆灯箱字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "5,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "烤漆背光字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "5,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "超级字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "5,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "金属立体字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "雕刻字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "仿霓虹",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "9,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "烤漆金属立体字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "9,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "烤漆雕刻字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "9,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "迷你字",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "11,13": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CellDefaultValue": "YW202311-0001"
+      }
+    },
+    "11,23": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CellDefaultValue": "测试用业务单摘要"
+      }
+    },
+    "13,8": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "产品类型数据表",
+        "RowIndex": 13,
+        "ColumnIndex": 8,
+        "RowCount": 21,
+        "ColumnCount": 57,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "产品类型数据表",
+            "ColumnName": "业务单号",
+            "GUID": "10fe8ca5-167b-42ec-b603-498b8f0e7a34"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=业务摘要与产品类型列表!业务单号"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品类型数据表",
+                "ColumnName": "FGC_CreateDate",
+                "GUID": "ffbf3af5-80dc-42f0-a227-00ce2b5d370b"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
+      }
+    },
+    "14,8": {
+      "BindingInfo": {
+        "TableName": "产品类型数据表",
+        "ColumnName": "工单摘要",
+        "GUID": "3a1d2db4-73f1-4352-97d9-64872ca42eb0"
+      }
+    },
+    "14,23": {
+      "BindingInfo": {
+        "TableName": "产品类型数据表",
+        "ColumnName": "产品类型id",
+        "GUID": "d60c8793-f653-4131-bf27-d83ce638ba5a",
+        "RelationBinding": {
+          "RelatedTable": "产品类型名称表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "类型名称"
+        }
+      }
+    },
+    "14,30": {
+      "BindingInfo": {
+        "TableName": "产品类型数据表",
+        "ColumnName": "金额",
+        "GUID": "824473b1-13be-40dd-b9a8-ab2d5aec1ea5"
+      }
+    },
+    "14,33": {
+      "BindingInfo": {
+        "TableName": "产品类型数据表",
+        "ColumnName": "业务单号",
+        "GUID": "5c23d552-203e-4453-9aa7-17fd177d078b"
+      }
+    },
+    "14,38": {
+      "BindingInfo": {
+        "TableName": "产品类型数据表",
+        "ColumnName": "报价单号",
+        "GUID": "7f007abb-319a-4ae2-8e70-afbdb7b56bba"
+      }
+    },
+    "14,43": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "产品类型与规格列表",
+            "PassValues": [
+              {
+                "Source": "暂存",
+                "TargetCell": {
+                  "SerializeProperty": "=产品类型与规格列表!按钮"
+                }
+              },
+              {
+                "Source": "确定",
+                "TargetCell": {
+                  "SerializeProperty": "=产品类型与规格列表!取消"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    },
+    "14,47": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？"
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "14,51": {
+      "BindingInfo": {
+        "TableName": "产品类型数据表",
+        "ColumnName": "ID",
+        "GUID": "5995bb13-0a21-43e0-bd94-21631721bb65"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "HorizontalAlignment": 6
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 0,
+        "HorizontalAlignment": 6,
+        "WordWrap": true,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 8,
+        "HorizontalAlignment": 5
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "Foreground": 9,
+        "HorizontalAlignment": 5,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "[AUTO]General",
+        "Right",
+        "@",
+        "Center",
+        "Left",
+        "Background 1 -25",
+        "0",
+        "Blue"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,11": 0,
+      "2,11": 0,
+      "3,16": 1,
+      "3,22": 2,
+      "3,24": 1,
+      "3,30": 2,
+      "3,32": 1,
+      "3,38": 2,
+      "4,11": 3,
+      "5,8": 2,
+      "5,16": 1,
+      "5,22": 2,
+      "5,24": 1,
+      "5,30": 2,
+      "5,32": 1,
+      "5,38": 2,
+      "6,11": 3,
+      "7,8": 2,
+      "7,14": 2,
+      "7,16": 1,
+      "7,22": 2,
+      "7,24": 1,
+      "7,30": 2,
+      "8,11": 3,
+      "9,8": 1,
+      "9,16": 1,
+      "9,22": 2,
+      "9,24": 1,
+      "9,30": 2,
+      "10,8": 4,
+      "10,9": 5,
+      "10,10": 5,
+      "10,11": 5,
+      "11,8": 6,
+      "11,9": 5,
+      "11,10": 5,
+      "11,11": 5,
+      "11,12": 5,
+      "11,13": 7,
+      "11,18": 6,
+      "11,19": 5,
+      "11,20": 5,
+      "11,21": 5,
+      "11,22": 5,
+      "11,23": 8,
+      "11,24": 5,
+      "11,25": 5,
+      "11,26": 5,
+      "11,27": 5,
+      "11,28": 5,
+      "11,29": 5,
+      "11,30": 5,
+      "11,31": 5,
+      "11,32": 5,
+      "11,33": 5,
+      "11,34": 5,
+      "11,35": 5,
+      "11,36": 5,
+      "13,8": 9,
+      "13,9": 10,
+      "13,10": 10,
+      "13,11": 10,
+      "13,12": 10,
+      "13,13": 10,
+      "13,14": 10,
+      "13,15": 10,
+      "13,16": 10,
+      "13,17": 10,
+      "13,18": 10,
+      "13,19": 10,
+      "13,20": 10,
+      "13,21": 10,
+      "13,22": 10,
+      "13,23": 11,
+      "13,24": 11,
+      "13,25": 11,
+      "13,26": 11,
+      "13,27": 11,
+      "13,28": 11,
+      "13,29": 11,
+      "13,30": 10,
+      "13,31": 10,
+      "13,32": 10,
+      "13,33": 10,
+      "13,34": 10,
+      "13,35": 10,
+      "13,36": 10,
+      "13,37": 10,
+      "13,38": 10,
+      "13,39": 10,
+      "13,40": 10,
+      "13,41": 10,
+      "13,42": 10,
+      "13,43": 10,
+      "13,44": 10,
+      "13,45": 10,
+      "13,46": 10,
+      "13,47": 10,
+      "13,48": 10,
+      "13,49": 10,
+      "13,50": 10,
+      "13,51": 12,
+      "13,52": 11,
+      "13,53": 10,
+      "13,54": 10,
+      "13,55": 10,
+      "13,56": 10,
+      "13,57": 10,
+      "13,58": 10,
+      "13,59": 10,
+      "13,60": 10,
+      "13,61": 10,
+      "13,62": 10,
+      "13,63": 10,
+      "13,64": 13,
+      "13,67": 14,
+      "13,68": 14,
+      "13,69": 14,
+      "13,70": 14,
+      "13,71": 14,
+      "13,72": 14,
+      "13,73": 14,
+      "13,74": 14,
+      "13,75": 14,
+      "13,76": 14,
+      "14,8": 15,
+      "14,23": 16,
+      "14,24": 2,
+      "14,25": 2,
+      "14,26": 2,
+      "14,27": 2,
+      "14,28": 2,
+      "14,29": 2,
+      "14,30": 17,
+      "14,33": 18,
+      "14,38": 18,
+      "14,43": 19,
+      "14,47": 19,
+      "14,51": 20,
+      "14,52": 2,
+      "14,64": 21,
+      "15,8": 22,
+      "15,50": 21,
+      "15,64": 21,
+      "16,8": 22,
+      "16,50": 21,
+      "16,64": 21,
+      "17,8": 22,
+      "17,50": 21,
+      "17,64": 21,
+      "18,8": 22,
+      "18,50": 21,
+      "18,64": 21,
+      "19,8": 22,
+      "19,50": 21,
+      "19,64": 21,
+      "20,8": 22,
+      "20,50": 21,
+      "20,64": 21,
+      "21,8": 22,
+      "21,50": 21,
+      "21,64": 21,
+      "22,8": 22,
+      "22,50": 21,
+      "22,64": 21,
+      "23,8": 22,
+      "23,50": 21,
+      "23,64": 21,
+      "24,8": 22,
+      "24,50": 21,
+      "24,64": 21,
+      "25,8": 22,
+      "25,50": 21,
+      "25,64": 21,
+      "26,8": 22,
+      "26,50": 21,
+      "26,64": 21,
+      "27,8": 22,
+      "27,50": 21,
+      "27,64": 21,
+      "28,8": 22,
+      "28,50": 21,
+      "28,64": 21,
+      "29,8": 22,
+      "29,50": 21,
+      "29,64": 21,
+      "30,8": 22,
+      "30,50": 21,
+      "30,64": 21,
+      "31,8": 22,
+      "31,50": 21,
+      "31,64": 21,
+      "32,8": 22,
+      "32,50": 21,
+      "32,64": 21,
+      "33,8": 23,
+      "33,9": 24,
+      "33,10": 24,
+      "33,11": 24,
+      "33,12": 24,
+      "33,13": 24,
+      "33,14": 24,
+      "33,15": 24,
+      "33,16": 24,
+      "33,17": 24,
+      "33,18": 24,
+      "33,19": 24,
+      "33,20": 24,
+      "33,21": 24,
+      "33,22": 24,
+      "33,23": 24,
+      "33,24": 24,
+      "33,25": 24,
+      "33,26": 24,
+      "33,27": 24,
+      "33,28": 24,
+      "33,29": 24,
+      "33,30": 24,
+      "33,31": 24,
+      "33,32": 24,
+      "33,33": 24,
+      "33,34": 24,
+      "33,35": 24,
+      "33,36": 24,
+      "33,37": 24,
+      "33,38": 24,
+      "33,39": 24,
+      "33,40": 24,
+      "33,41": 24,
+      "33,42": 24,
+      "33,43": 24,
+      "33,44": 24,
+      "33,45": 24,
+      "33,46": 24,
+      "33,47": 24,
+      "33,48": 24,
+      "33,49": 24,
+      "33,50": 25,
+      "33,51": 24,
+      "33,52": 24,
+      "33,53": 24,
+      "33,54": 24,
+      "33,55": 24,
+      "33,56": 24,
+      "33,57": 24,
+      "33,58": 24,
+      "33,59": 24,
+      "33,60": 24,
+      "33,61": 24,
+      "33,62": 24,
+      "33,63": 24,
+      "33,64": 25
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "14,33,1,5",
+    "14,38,1,5",
+    "14,43,1,4",
+    "14,47,1,4",
+    "11,44,1,6",
+    "11,8,1,5",
+    "11,18,1,5",
+    "11,23,1,14",
+    "3,8,1,6",
+    "9,8,1,6",
+    "5,8,1,6",
+    "7,8,1,6",
+    "9,16,1,6",
+    "7,16,1,6",
+    "5,16,1,6",
+    "3,16,1,6",
+    "3,24,1,6",
+    "5,24,1,6",
+    "7,24,1,6",
+    "9,24,1,6",
+    "3,32,1,6",
+    "5,32,1,6",
+    "11,13,1,5",
+    "14,23,1,7",
+    "14,30,1,3",
+    "15,8,19,57",
+    "14,51,1,2",
+    "14,8,1,15",
+    "13,8,1,15",
+    "13,23,1,7",
+    "13,30,1,3",
+    "13,33,1,5",
+    "13,38,1,5",
+    "13,43,1,4",
+    "13,47,1,4",
+    "13,51,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "产品类型数据表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "业务单号",
+      "Formula": "业务摘要与产品类型列表!$N$12"
+    },
+    {
+      "Name": "业务摘要",
+      "Formula": "业务摘要与产品类型列表!$X$12"
+    }
+  ]
+}//QT8dRoBR/7eiUMPKO1iTWZwyBWnEUQo4Bdy4ELe+VcZBvIYvvVtLId/kg9a3l83SDDDGrJwOk1ngAnbjZbHS/AaweJiaKydf7GPFKrtRZ8st0NQaoq+JkHK8NSOvKteCg0I2Uz/lBstaEPLsCsfqFrIuUzuCc85TAt2zU4RNTP5daPhu+QOPUN5XQfqLEcnMmCMZwlK9endDeUYaYCJN73YCT2VPUSJhG1KuSt7gmcjhPaCC654ym3+hVpPXpb4pkYx5Hz7fhqJU7YHhJU2uGKeMOKtwRT+vNXEb0P/mVb+ZZxhXDCA2PSLQO4S13J9MfEN4nnE42FtjJb7VQHH0OhN5n1Q2x/LMXve1wUBzn9idmWVl/BAGQOieHS2Nv+O68jx2AnZuMxOpDWL0YoeAjpBmZG7yC6r9MZA+t/bGvHpcRnx50yHVQuASkBmLtGh+6nrw/oPIL61So0xvBATHnZPHpRzf1nkU7KFVfU/eX2oFj7TEk8sgf2GEppRUHlNWYtLCU1M0pXZfB9aT6oDwynbnyuWGLbzJbQLrzB7OFKEsFxDMGlKuVHhA6v/k67N9WxX664P+cDInI3UQ6K3TCUZWk49Q1auhR/YYvCXkzjQgclQuA5WQSRTy1ST5NriyB/OtykSI0QTotmzgUvoIXdBztpwWHHK/kRs2FmPx5WupYKYSM6y6RzAI2eKqtnrmg+FI4I6VsPsZCwzybT7e9rZlxO5Z8mODw2I0cNXb4jL4Hi8nKWHjXptmkPjEseSnXk/c6ATUyxVj140Z+Y0n6ETZcePI87avE7nfd1Spbs51Op/ByzVid2ZxUCrXArtu/4PV4fFoHs7HIOcsv7Ax7n3VLkovZRsUzMJ5k6Dwvxm6u5/D/oXDrqTCX65SZOoqpWFAPG/fcPcHKbCIcWQXcQ==|920

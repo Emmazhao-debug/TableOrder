@@ -1,0 +1,2778 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0,
+          "IsHidden": true
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "Count": 36
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81
+    ],
+    "Count": 82
+  },
+  "Values": {
+    "1,7": "产品规格与组件列表",
+    "2,73": "id：",
+    "3,73": "产品类型表id：",
+    "4,6": "产品摘要：",
+    "4,23": "字体/形状",
+    "4,28": "高度",
+    "4,32": "宽度",
+    "4,36": "立体厚度",
+    "4,40": "数量",
+    "5,50": "确定",
+    "5,73": "组件名称id：",
+    "7,6": "截图：",
+    "7,17": "查看",
+    "7,19": "删除",
+    "7,22": "计价数：",
+    "7,28": "单价：",
+    "7,33": "金额：",
+    "7,38": "利润率：",
+    "7,73": "组件对应页面名称：",
+    "9,48": "添加组件",
+    "9,73": "组件默认材料类型id：",
+    "11,6": "产品组件",
+    "11,12": "字/形",
+    "11,25": "使用材料",
+    "11,32": "参数",
+    "11,43": "合计成本",
+    "11,73": "组件默认材料名称id：",
+    "12,22": "更新",
+    "12,48": "修改",
+    "12,51": "删除",
+    "12,73": "创建时间：",
+    "13,73": "字体形状：",
+    "14,73": "形状名称：",
+    "16,73": "页面上参数集：",
+    "22,73": "数据表参数集："
+  },
+  "Formulas": {
+    "12,43": "AJ13+AN13",
+    "7,35": "SUM(AR13)/(1-利润率)",
+    "7,30": "IFERROR(AJ8/Z8,\"\")",
+    "7,25": "IF((AC6+AG6)/2>=1,AC6*AG6*个数,(AC6+AG6)/2*个数*100)",
+    "16,74": "产品摘要&形状id&高度&宽度&立体&个数&附件",
+    "14,74": "IFERROR(ODATA(\"形状属性表?$select=形状名称&$filter=ID eq \"&IF(ISBLANK(形状id),\"null\",形状id)),\"\")"
+  },
+  "AttachInfos": {
+    "2,74": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "ID",
+        "GUID": "5cc34d4b-d48d-45ab-a115-7089ec738a29"
+      }
+    },
+    "3,74": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "类型表id",
+        "GUID": "41c661bd-ed3f-4596-a2c6-120f771058bf"
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "产品摘要",
+        "GUID": "956eb224-92ef-43d3-af49-d231482fce0c"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "RulesGuidList": [
+        "0b5c0219-0df7-4d45-8158-a057eb2fb1a5",
+        "ccff4ec5-785a-418d-a738-5dbc97cc5925"
+      ]
+    },
+    "5,23": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "形状id",
+        "GUID": "3c70b4ce-f73b-419e-b3e8-d82063e45500"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "形状属性表",
+        "ValueColumnBindingInfo": {
+          "TableName": "形状属性表",
+          "ColumnName": "ID",
+          "GUID": "a924344f-f6e5-4258-b43e-ac32047f507d"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "形状属性表",
+          "ColumnName": "形状名称",
+          "GUID": "c86be43d-a67c-420a-93b7-d407e612f809"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "形状属性表",
+                "ColumnName": "状态",
+                "GUID": "5946ff8e-6d9e-4d0b-97fc-fdb4ad85c1f2"
+              },
+              "Value": "正常"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "形状属性表",
+                "ColumnName": "启用日期",
+                "GUID": "4530b6e2-c3dc-4ef0-a86f-7f4f30a6573e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=产品规格与组件列表!创建时间"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "形状属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "c7a71af1-6c6f-467c-bd9a-7e1b2d51fe7a"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品规格与组件列表!创建时间-1"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "形状属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "ea9e13f6-74db-48c9-b096-aa11cee6bd4b"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        }
+      },
+      "DataValidationInfo": {},
+      "RulesGuidList": [
+        "3bfcd057-5a8a-4fee-a833-4284d0dc0750"
+      ]
+    },
+    "5,28": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "高",
+        "GUID": "7da23901-abcb-4390-8ba8-31844563d019"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      },
+      "RulesGuidList": [
+        "7efdc426-047d-48fa-a4eb-5e5b87046ee3"
+      ]
+    },
+    "5,32": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "宽",
+        "GUID": "6a227073-8ed2-4618-ae83-76034226e7d7"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      },
+      "RulesGuidList": [
+        "31ee816d-21dc-4fda-b9d1-eed0765d6f43"
+      ]
+    },
+    "5,36": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "立体",
+        "GUID": "621edbca-0803-4ca1-a1b0-ada482c51a41"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 1,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      },
+      "RulesGuidList": [
+        "a4eba7e3-3416-4b7e-9065-089b75f7fe1c"
+      ]
+    },
+    "5,40": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "个数",
+        "GUID": "dd434f05-6b35-4ad8-b12e-1dc66dcab17d"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      },
+      "RulesGuidList": [
+        "98b99038-eade-49a3-9b9a-2e48e055b58c"
+      ]
+    },
+    "5,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=产品规格与组件列表!产品摘要"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=产品规格与组件列表!形状id"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=产品规格与组件列表!高度"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=产品规格与组件列表!宽度"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=产品规格与组件列表!立体"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=产品规格与组件列表!个数"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请将产品内容、形状、尺寸、数量......等基本参数先填写完整！"
+                  }
+                ],
+                "ID": "0560ad00-04df-4da7-9669-ac198e4620d4"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=产品规格与组件列表!按钮"
+                              }
+                            ]
+                          },
+                          "value": "创建"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "产品规格数据表",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "产品规格数据表",
+                                  "ColumnName": "合计金额",
+                                  "GUID": "7917bb56-1b6f-492c-951f-f2d674c4e42a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!明细金额合计"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!按钮"
+                                },
+                                "Value": "暂存"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!取消"
+                                },
+                                "Value": "确定"
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "基本参数",
+                            "TableValue": {
+                              "TableName": "产品规格数据表",
+                              "TableValueType": 1,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "产品摘要",
+                                    "GUID": "e58277d6-6c05-4607-b777-48e611cc9e5b"
+                                  },
+                                  "ColumnName": "规格摘要"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "形状id",
+                                    "GUID": "511a3434-88fe-40af-b5d8-cb6eef0fdee4"
+                                  },
+                                  "ColumnName": "形状id"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "高",
+                                    "GUID": "32ba1d4f-2ae7-4a8a-9e7e-6966ad64a3a9"
+                                  },
+                                  "ColumnName": "高"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "宽",
+                                    "GUID": "0e81ed0c-cf53-4597-b199-e8568fe68d0a"
+                                  },
+                                  "ColumnName": "宽"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "立体",
+                                    "GUID": "a36d47d7-6f5e-4027-b00b-a1d60b7381be"
+                                  },
+                                  "ColumnName": "立体"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "个数",
+                                    "GUID": "e836a8f6-ce93-4551-af2b-d07803e23d19"
+                                  },
+                                  "ColumnName": "个数"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "附件",
+                                    "GUID": "4875d946-af9e-404f-92e0-2d02156ab244"
+                                  },
+                                  "ColumnName": "附件"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "产品规格数据表",
+                                  "ColumnName": "ID",
+                                  "GUID": "487d3e7d-ccc4-4084-8b69-740ef78d30cd"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!规格数据表id"
+                                }
+                              },
+                              "NullFormulaValueQueryPolicy": 0
+                            },
+                            "ID": "030eace78c5c4ca6b00cbd5c3bee6e0b"
+                          },
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "基本参数字符串",
+                            "ParameterValue": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=产品规格与组件列表!基本参数.规格摘要&产品规格与组件列表!基本参数.形状id&产品规格与组件列表!基本参数.高&产品规格与组件列表!基本参数.宽&产品规格与组件列表!基本参数.立体&产品规格与组件列表!基本参数.个数&产品规格与组件列表!基本参数.附件"
+                            },
+                            "ID": "2be4ac09b0b44fafa38933d6c0185979"
+                          },
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!数据表参数集"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!基本参数字符串"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                            "Message": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=\"【\"&产品规格与组件列表!产品摘要&\"】已创建成功！\""
+                            },
+                            "Type": "info",
+                            "Duration": 3000,
+                            "Offset": null
+                          }
+                        ],
+                        "ID": "81ea8bae-c3b9-4e0f-8567-482f4f384f79"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "产品规格数据表",
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "产品规格数据表",
+                                  "ColumnName": "合计金额",
+                                  "GUID": "5d86c520-4c45-4ad6-99ba-f26de8102229"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!明细金额合计"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "基本参数",
+                            "TableValue": {
+                              "TableName": "产品规格数据表",
+                              "TableValueType": 1,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "产品摘要",
+                                    "GUID": "e11244de-4f0f-41f2-88f8-2af7bc38de88"
+                                  },
+                                  "ColumnName": "规格摘要"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "形状id",
+                                    "GUID": "98f9e3dd-cd91-4004-96af-a869e4b6a45b"
+                                  },
+                                  "ColumnName": "形状id"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "高",
+                                    "GUID": "29c647f9-24e5-4966-bb72-f00211b7a46c"
+                                  },
+                                  "ColumnName": "高"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "宽",
+                                    "GUID": "dc6a4930-8555-4e6e-a39b-fed426d873ff"
+                                  },
+                                  "ColumnName": "宽"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "立体",
+                                    "GUID": "f48dc2c5-d773-4366-be51-d977818f2436"
+                                  },
+                                  "ColumnName": "立体"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "个数",
+                                    "GUID": "5d86378b-2ebb-4f1a-b521-fbf34e0c2659"
+                                  },
+                                  "ColumnName": "个数"
+                                },
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品规格数据表",
+                                    "ColumnName": "附件",
+                                    "GUID": "0fc59092-0767-4220-b349-56911afeaa09"
+                                  },
+                                  "ColumnName": "附件"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "产品规格数据表",
+                                  "ColumnName": "ID",
+                                  "GUID": "7d960d6b-4e08-40b0-b74c-9d14ab7cde34"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!规格数据表id"
+                                }
+                              },
+                              "NullFormulaValueQueryPolicy": 0
+                            },
+                            "ID": "4089c7e09288466689b9db5195fd8ab5"
+                          },
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "基本参数字符串",
+                            "ParameterValue": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=产品规格与组件列表!基本参数.规格摘要&产品规格与组件列表!基本参数.形状id&产品规格与组件列表!基本参数.高&产品规格与组件列表!基本参数.宽&产品规格与组件列表!基本参数.立体&产品规格与组件列表!基本参数.个数&产品规格与组件列表!基本参数.附件"
+                            },
+                            "ID": "964a7b2da87a463a9d3aa9be7a9d18a0"
+                          },
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!数据表参数集"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=产品规格与组件列表!基本参数字符串"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                            "Message": "产品基本参数已暂存！",
+                            "Type": "info",
+                            "Duration": 3000,
+                            "Offset": null
+                          }
+                        ],
+                        "ID": "ce8dbcca-d639-40b3-9c99-5d5bb1e634c0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8c614fe3-5abb-4fc5-b2f6-d1fce34f0a2c"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      },
+      "RulesGuidList": [
+        "3290edbb-253d-4279-b80f-864ac52e1fbd"
+      ]
+    },
+    "5,50": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品规格与组件列表!规格数据表id"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "产品规格数据表",
+                    "ShowConfirm": false
+                  },
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "数据已保存成功！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "6e7bf579-a4fc-4f9e-9061-d9cb1e1ee4d9"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "dc3e693e-c21b-4283-a551-fd2ad306dc22"
+              }
+            ]
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "7,8": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "附件",
+        "GUID": "d087ec9a-50ed-4f08-9dc8-874b8abad7d7",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_Shadow_Style1",
+        "UploadImageLimit": {
+          "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
+        }
+      },
+      "RulesGuidList": [
+        "1270c797-c6f3-4b65-b917-eaf67c780d98"
+      ]
+    },
+    "7,17": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=产品规格与组件列表!I8"
+            }
+          }
+        ],
+        "Text": "查看",
+        "ClickMode": 1
+      }
+    },
+    "7,19": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!I8"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "7,25": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "计价数",
+        "GUID": "d45cf1f3-e947-4009-94ca-1cd520522d0e"
+      },
+      "RulesGuidList": [
+        "e7ecde7b-08d8-4d57-88b6-324bf52c33bb"
+      ]
+    },
+    "7,30": {
+      "RulesGuidList": [
+        "fc40fa50-b456-4fd5-a304-1a5b5bda14c1",
+        "4a27bbec-50f8-4367-b912-737d7ab0d01f"
+      ]
+    },
+    "7,35": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "产品规格数据表",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "产品规格数据表",
+                  "ColumnName": "合计金额",
+                  "GUID": "f187bb66-8203-4e35-8bab-1944e6c55f61"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!AJ8"
+                }
+              }
+            ]
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "7,74": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ValueFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=产品规格与组件列表!页面名称"
+            },
+            "PassValues": [
+              {
+                "Source": "添加",
+                "CellName": "按钮"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!规格数据表id"
+                },
+                "CellName": "规格表id"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!高度"
+                },
+                "CellName": "高"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!宽度"
+                },
+                "CellName": "宽"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!个数"
+                },
+                "CellName": "个数"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!形状id"
+                },
+                "CellName": "形状id"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!组件名称id"
+                },
+                "CellName": "组件名称id"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!材料名称id"
+                },
+                "CellName": "材料名称id"
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!材料类型id"
+                },
+                "CellName": "材料类型id"
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ]
+      }
+    },
+    "9,48": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品规格与组件列表!页面参数集"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品规格与组件列表!数据表参数集"
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=产品规格与组件列表!按钮"
+                              }
+                            ]
+                          },
+                          "value": "创建"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "请创建基本参数后再添加组件！"
+                          }
+                        ],
+                        "ID": "b4da8768-5c8e-49f6-9901-fbff9945ab96"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "请先将基本参数暂存一下再添加组件！"
+                          }
+                        ],
+                        "ID": "500c907b-1451-4e1b-ba71-c3f943f112c8"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d352207d-02e2-4445-b3d6-d7c60c3dc81d"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!页面名称"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "弹出组件名称",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!组件名称id"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=弹出组件名称!组件名称id"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!材料类型id"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=弹出组件名称!材料类型id"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!材料名称id"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=弹出组件名称!材料名称id"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!页面名称"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=弹出组件名称!页面名称"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 2
+                  }
+                ],
+                "ID": "c00da491-eee8-485d-bce2-2ace961630ed"
+              }
+            ]
+          }
+        ],
+        "Text": "添加组件",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "11,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "产品组件数据表",
+        "RowIndex": 11,
+        "ColumnIndex": 6,
+        "RowCount": 16,
+        "ColumnCount": 58,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "产品组件数据表",
+            "ColumnName": "规格表id",
+            "GUID": "e7b41d9d-d133-4d8b-8cc2-00793c5319bc"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品规格与组件列表!规格数据表id"
+          }
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品组件数据表",
+                "ColumnName": "序号",
+                "GUID": "2640c57e-d22a-4a79-a1b1-631d2deab0a1"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品组件数据表",
+                "ColumnName": "FGC_CreateDate",
+                "GUID": "299ebeb6-cf0d-4e10-b95f-6ef4a3b3fa94"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "CommitType": 1
+      }
+    },
+    "12,6": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "组件名称id",
+        "GUID": "d15cf394-9540-45ef-8644-ddf0af8f12f7",
+        "RelationBinding": {
+          "RelatedTable": "组件名称属性表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "组件名称"
+        }
+      }
+    },
+    "12,12": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "形状id",
+        "GUID": "344b880c-8ca1-4a30-8720-5fa798a8190b",
+        "RelationBinding": {
+          "RelatedTable": "形状属性表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "形状名称"
+        }
+      },
+      "RulesGuidList": [
+        "fc59b33e-3f44-45dd-a6eb-959b2624a6da"
+      ]
+    },
+    "12,14": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "高",
+        "GUID": "477e6544-5dc2-48c3-a68e-a63c96dad3d7"
+      },
+      "RulesGuidList": [
+        "151b3f9a-47a3-42a4-86df-3a5247c1eee6"
+      ]
+    },
+    "12,16": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "宽",
+        "GUID": "61ad41f9-4a4c-40c8-89ec-43861691b8e2"
+      },
+      "RulesGuidList": [
+        "05def573-0571-421b-be2a-beae3c3387c2"
+      ]
+    },
+    "12,18": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "立体",
+        "GUID": "0711dc99-f776-426b-b49a-d7c3090b36fb"
+      },
+      "RulesGuidList": [
+        "07120987-213d-4bbe-92aa-d2b9657591f9"
+      ]
+    },
+    "12,20": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "个数",
+        "GUID": "e6eee14f-659b-4db8-8c74-0e1fa0b1534e"
+      },
+      "RulesGuidList": [
+        "044ae090-f0cc-4750-a35f-139e0b3e0ae7"
+      ]
+    },
+    "12,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品规格与组件列表!页面参数集"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品规格与组件列表!数据表参数集"
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请先将基本参数暂存一下再更新！"
+                  }
+                ],
+                "ID": "6da0fa9b-8e6a-41eb-a356-f3064ca0be59"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "ValueFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品规格与组件列表!BC13"
+                    },
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!宽度"
+                        },
+                        "CellName": "宽"
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!高度"
+                        },
+                        "CellName": "高"
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!立体"
+                        },
+                        "CellName": "立体"
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!个数"
+                        },
+                        "CellName": "个数"
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品规格与组件列表!形状id"
+                        },
+                        "CellName": "形状id"
+                      },
+                      {
+                        "Source": "自动更新",
+                        "CellName": "自动更新"
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "0c845c43-d234-404c-833a-a695a201e56d"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "表格内缩"
+      }
+    },
+    "12,25": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "材料名称",
+        "GUID": "8d06aa71-3b40-4b0e-940d-a1008fa29871"
+      }
+    },
+    "12,32": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "材料规格",
+        "GUID": "612c0014-7893-4f9e-b901-9a58a5ed47ef"
+      }
+    },
+    "12,35": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "材料成本",
+        "GUID": "f8e6e0f6-ba59-40bb-949c-26eb02b45be9"
+      }
+    },
+    "12,39": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "人工成本",
+        "GUID": "2896267e-2a7b-4b75-ab61-26769d0cba82"
+      }
+    },
+    "12,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品规格与组件列表!页面参数集"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品规格与组件列表!数据表参数集"
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请先将基本参数暂存一下再修改组件！"
+                  }
+                ],
+                "ID": "ffe65414-1a18-473f-88c8-650d55f9a202"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "ValueFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品规格与组件列表!BC13"
+                    },
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "CellName": "按钮"
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "50158875-6461-40ef-961f-ada5f0b82458"
+              }
+            ]
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    },
+    "12,51": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？"
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "12,54": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "页面名称",
+        "GUID": "a6f16115-a6c8-4be1-9a9b-23f80d04b085"
+      }
+    },
+    "12,60": {
+      "BindingInfo": {
+        "TableName": "产品组件数据表",
+        "ColumnName": "规格表id",
+        "GUID": "014f29e6-4a8c-4833-8dd9-f0c74e7cb2f5"
+      }
+    },
+    "12,74": {
+      "BindingInfo": {
+        "TableName": "产品规格数据表",
+        "ColumnName": "FGC_CreateDate",
+        "GUID": "2bfc36db-eb0e-41fa-a730-7c7ef1e4ae0f"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=NOW()"
+        },
+        "DropDownButtonvisibility": 1,
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": null
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontSize": -1.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontSize": -1.0,
+        "HorizontalAlignment": 4,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "Formatter": 9,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "Formatter": 10,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "Formatter": 11,
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 12,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 13,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "FontWeight": 1,
+        "Formatter": 14,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 15,
+        "HorizontalAlignment": 7
+      },
+      {
+        "Formatter": 9,
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 7
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 14,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Formatter": 14,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 6,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 16,
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 7,
+        "WordWrap": true
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 17
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -25",
+        "Bold",
+        "Body",
+        "Center",
+        "General",
+        "[AUTO]General",
+        "Right",
+        "Left",
+        "#FF0000FF",
+        "@",
+        "0.00\"m\"",
+        "0.0\"cm\"",
+        "Blue",
+        "0\"cm\"",
+        "0.00\"元\"",
+        "0%",
+        "yyyy/m/d h:mm",
+        "Accent 4 0"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,64": 0,
+      "0,73": 1,
+      "1,7": 2,
+      "1,28": 3,
+      "1,64": 0,
+      "1,73": 1,
+      "2,64": 0,
+      "2,73": 4,
+      "2,74": 5,
+      "3,4": 6,
+      "3,5": 6,
+      "3,6": 6,
+      "3,7": 6,
+      "3,8": 6,
+      "3,9": 6,
+      "3,10": 6,
+      "3,11": 6,
+      "3,12": 6,
+      "3,13": 6,
+      "3,14": 6,
+      "3,15": 7,
+      "3,16": 6,
+      "3,17": 6,
+      "3,18": 6,
+      "3,19": 6,
+      "3,20": 6,
+      "3,21": 6,
+      "3,22": 6,
+      "3,23": 6,
+      "3,24": 6,
+      "3,64": 0,
+      "3,73": 8,
+      "3,74": 5,
+      "4,6": 9,
+      "4,7": 3,
+      "4,8": 3,
+      "4,9": 3,
+      "4,23": 10,
+      "4,24": 3,
+      "4,25": 3,
+      "4,26": 3,
+      "4,27": 3,
+      "4,28": 5,
+      "4,29": 3,
+      "4,30": 3,
+      "4,31": 3,
+      "4,32": 5,
+      "4,33": 3,
+      "4,34": 11,
+      "4,35": 3,
+      "4,36": 10,
+      "4,37": 11,
+      "4,38": 3,
+      "4,39": 3,
+      "4,40": 5,
+      "4,41": 3,
+      "4,42": 3,
+      "4,70": 6,
+      "4,71": 6,
+      "4,72": 6,
+      "4,73": 12,
+      "4,74": 6,
+      "4,75": 6,
+      "4,76": 6,
+      "4,77": 6,
+      "4,78": 6,
+      "4,79": 6,
+      "4,80": 6,
+      "4,81": 6,
+      "5,6": 13,
+      "5,23": 14,
+      "5,27": 3,
+      "5,28": 15,
+      "5,29": 3,
+      "5,30": 11,
+      "5,31": 3,
+      "5,32": 15,
+      "5,33": 3,
+      "5,34": 11,
+      "5,35": 3,
+      "5,36": 16,
+      "5,37": 11,
+      "5,38": 3,
+      "5,39": 3,
+      "5,40": 14,
+      "5,41": 3,
+      "5,42": 3,
+      "5,45": 5,
+      "5,46": 3,
+      "5,47": 3,
+      "5,48": 3,
+      "5,49": 3,
+      "5,50": 5,
+      "5,51": 3,
+      "5,52": 3,
+      "5,73": 1,
+      "5,74": 17,
+      "6,23": 3,
+      "6,24": 3,
+      "6,25": 3,
+      "6,26": 3,
+      "6,27": 3,
+      "6,28": 3,
+      "6,29": 3,
+      "6,30": 3,
+      "6,31": 3,
+      "6,32": 3,
+      "6,33": 3,
+      "6,34": 3,
+      "6,35": 3,
+      "6,36": 3,
+      "6,37": 11,
+      "6,38": 3,
+      "6,39": 3,
+      "6,40": 3,
+      "6,41": 3,
+      "6,42": 3,
+      "6,73": 1,
+      "7,6": 18,
+      "7,8": 5,
+      "7,17": 19,
+      "7,18": 11,
+      "7,19": 19,
+      "7,20": 3,
+      "7,22": 11,
+      "7,25": 20,
+      "7,26": 3,
+      "7,27": 3,
+      "7,28": 21,
+      "7,29": 11,
+      "7,30": 9,
+      "7,31": 3,
+      "7,32": 3,
+      "7,33": 21,
+      "7,34": 3,
+      "7,35": 22,
+      "7,38": 11,
+      "7,39": 11,
+      "7,40": 3,
+      "7,41": 23,
+      "7,42": 3,
+      "7,73": 1,
+      "7,74": 24,
+      "8,64": 0,
+      "8,73": 1,
+      "9,6": 25,
+      "9,39": 6,
+      "9,40": 6,
+      "9,46": 3,
+      "9,48": 3,
+      "9,49": 3,
+      "9,50": 3,
+      "9,51": 3,
+      "9,52": 3,
+      "9,64": 0,
+      "9,73": 1,
+      "9,74": 17,
+      "10,64": 0,
+      "10,73": 1,
+      "11,6": 26,
+      "11,7": 27,
+      "11,8": 27,
+      "11,9": 27,
+      "11,10": 27,
+      "11,11": 27,
+      "11,12": 28,
+      "11,13": 3,
+      "11,14": 29,
+      "11,15": 3,
+      "11,16": 30,
+      "11,17": 11,
+      "11,18": 3,
+      "11,19": 11,
+      "11,20": 3,
+      "11,21": 3,
+      "11,22": 31,
+      "11,23": 31,
+      "11,24": 31,
+      "11,25": 3,
+      "11,32": 32,
+      "11,33": 31,
+      "11,34": 31,
+      "11,35": 31,
+      "11,36": 31,
+      "11,37": 31,
+      "11,38": 31,
+      "11,39": 31,
+      "11,40": 31,
+      "11,41": 31,
+      "11,42": 31,
+      "11,48": 31,
+      "11,49": 31,
+      "11,50": 31,
+      "11,51": 31,
+      "11,52": 27,
+      "11,53": 27,
+      "11,54": 31,
+      "11,55": 31,
+      "11,56": 31,
+      "11,57": 31,
+      "11,58": 31,
+      "11,59": 31,
+      "11,60": 31,
+      "11,61": 31,
+      "11,62": 31,
+      "11,63": 27,
+      "11,64": 33,
+      "11,73": 1,
+      "11,74": 17,
+      "12,6": 34,
+      "12,12": 5,
+      "12,13": 3,
+      "12,14": 30,
+      "12,15": 3,
+      "12,16": 30,
+      "12,17": 11,
+      "12,18": 5,
+      "12,19": 11,
+      "12,20": 5,
+      "12,21": 3,
+      "12,22": 28,
+      "12,23": 3,
+      "12,24": 3,
+      "12,25": 5,
+      "12,32": 5,
+      "12,33": 3,
+      "12,34": 3,
+      "12,35": 35,
+      "12,36": 3,
+      "12,37": 3,
+      "12,38": 3,
+      "12,39": 35,
+      "12,40": 3,
+      "12,41": 3,
+      "12,42": 3,
+      "12,43": 36,
+      "12,48": 19,
+      "12,49": 3,
+      "12,50": 3,
+      "12,51": 19,
+      "12,53": 1,
+      "12,54": 5,
+      "12,55": 3,
+      "12,56": 3,
+      "12,57": 3,
+      "12,58": 3,
+      "12,59": 3,
+      "12,60": 3,
+      "12,61": 3,
+      "12,62": 3,
+      "12,64": 33,
+      "12,73": 37,
+      "12,74": 38,
+      "12,75": 3,
+      "12,76": 3,
+      "12,77": 3,
+      "12,78": 3,
+      "12,79": 3,
+      "12,80": 3,
+      "13,6": 33,
+      "13,58": 1,
+      "13,64": 33,
+      "13,73": 37,
+      "13,74": 5,
+      "14,6": 33,
+      "14,58": 1,
+      "14,64": 33,
+      "14,73": 1,
+      "14,74": 17,
+      "15,6": 33,
+      "15,58": 1,
+      "15,64": 33,
+      "15,73": 1,
+      "16,6": 33,
+      "16,58": 1,
+      "16,64": 33,
+      "16,73": 1,
+      "16,74": 39,
+      "17,6": 33,
+      "17,58": 1,
+      "17,64": 33,
+      "17,73": 1,
+      "18,6": 33,
+      "18,58": 1,
+      "18,64": 33,
+      "18,73": 1,
+      "19,6": 33,
+      "19,58": 1,
+      "19,64": 33,
+      "19,73": 1,
+      "20,6": 33,
+      "20,58": 1,
+      "20,64": 33,
+      "20,73": 1,
+      "21,6": 33,
+      "21,58": 1,
+      "21,64": 33,
+      "21,73": 1,
+      "22,6": 33,
+      "22,58": 1,
+      "22,64": 33,
+      "22,73": 1,
+      "22,74": 39,
+      "23,6": 33,
+      "23,58": 1,
+      "23,64": 33,
+      "23,73": 1,
+      "24,6": 33,
+      "24,58": 1,
+      "24,64": 33,
+      "24,73": 1,
+      "25,6": 33,
+      "25,58": 1,
+      "25,64": 33,
+      "25,73": 1,
+      "26,6": 40,
+      "26,7": 41,
+      "26,8": 41,
+      "26,9": 41,
+      "26,10": 41,
+      "26,11": 41,
+      "26,12": 41,
+      "26,13": 41,
+      "26,14": 41,
+      "26,15": 41,
+      "26,16": 41,
+      "26,17": 41,
+      "26,18": 41,
+      "26,19": 41,
+      "26,20": 41,
+      "26,21": 41,
+      "26,22": 41,
+      "26,23": 41,
+      "26,24": 41,
+      "26,25": 41,
+      "26,26": 41,
+      "26,27": 41,
+      "26,28": 41,
+      "26,29": 41,
+      "26,30": 41,
+      "26,31": 41,
+      "26,32": 41,
+      "26,33": 41,
+      "26,34": 41,
+      "26,35": 41,
+      "26,36": 41,
+      "26,37": 41,
+      "26,38": 41,
+      "26,39": 41,
+      "26,40": 41,
+      "26,41": 41,
+      "26,42": 41,
+      "26,43": 41,
+      "26,44": 41,
+      "26,45": 41,
+      "26,46": 41,
+      "26,47": 41,
+      "26,48": 41,
+      "26,49": 41,
+      "26,50": 41,
+      "26,51": 41,
+      "26,52": 41,
+      "26,53": 41,
+      "26,54": 41,
+      "26,55": 41,
+      "26,56": 41,
+      "26,57": 41,
+      "26,58": 42,
+      "26,59": 41,
+      "26,60": 41,
+      "26,61": 41,
+      "26,62": 41,
+      "26,63": 41,
+      "26,64": 33,
+      "26,73": 1,
+      "27,6": 43,
+      "27,7": 43,
+      "27,8": 43,
+      "27,9": 43,
+      "27,10": 43,
+      "27,11": 43,
+      "27,12": 43,
+      "27,13": 43,
+      "27,14": 43,
+      "27,15": 43,
+      "27,16": 43,
+      "27,17": 43,
+      "27,18": 43,
+      "27,19": 43,
+      "27,20": 43,
+      "27,21": 43,
+      "27,22": 43,
+      "27,23": 43,
+      "27,24": 43,
+      "27,25": 43,
+      "27,26": 43,
+      "27,27": 43,
+      "27,28": 43,
+      "27,29": 43,
+      "27,30": 43,
+      "27,31": 43,
+      "27,32": 43,
+      "27,33": 43,
+      "27,34": 43,
+      "27,35": 43,
+      "27,36": 43,
+      "27,37": 43,
+      "27,38": 43,
+      "27,39": 43,
+      "27,40": 43,
+      "27,41": 43,
+      "27,42": 43,
+      "27,43": 43,
+      "27,44": 43,
+      "27,45": 43,
+      "27,46": 43,
+      "27,47": 43,
+      "27,48": 43,
+      "27,49": 43,
+      "27,50": 43,
+      "27,51": 43,
+      "27,52": 43,
+      "27,53": 43,
+      "27,54": 43,
+      "27,55": 43,
+      "27,56": 43,
+      "27,57": 43,
+      "27,58": 43,
+      "27,59": 43,
+      "27,60": 43,
+      "27,61": 43,
+      "27,62": 43,
+      "27,63": 43,
+      "27,64": 0,
+      "27,73": 1,
+      "28,64": 0,
+      "28,73": 1,
+      "29,64": 0,
+      "29,73": 1,
+      "30,14": 6,
+      "30,15": 7,
+      "30,64": 0,
+      "30,73": 1,
+      "31,64": 0,
+      "31,73": 1,
+      "32,64": 0,
+      "32,73": 1,
+      "33,64": 0,
+      "33,73": 1,
+      "34,64": 0,
+      "34,73": 1,
+      "35,64": 0,
+      "35,73": 1
+    },
+    "ColStyles": {
+      "15": 18,
+      "44": 18,
+      "73": 18
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "1,7,1,15",
+    "3,74,1,7",
+    "5,74,1,7",
+    "2,74,1,7",
+    "7,74,1,7",
+    "7,17,1,2",
+    "7,19,1,2",
+    "4,6,1,4",
+    "5,6,1,15",
+    "7,6,1,2",
+    "7,8,1,9",
+    "13,6,14,58",
+    "9,6,1,12",
+    "12,54,1,6",
+    "12,60,1,3",
+    "12,48,1,3",
+    "9,48,1,5",
+    "12,6,1,6",
+    "12,22,1,3",
+    "12,32,1,3",
+    "12,35,1,4",
+    "12,39,1,4",
+    "12,20,1,2",
+    "12,18,1,2",
+    "4,23,1,4",
+    "5,36,1,3",
+    "4,36,1,3",
+    "5,40,1,3",
+    "4,40,1,3",
+    "7,25,1,3",
+    "7,28,1,2",
+    "7,30,1,3",
+    "7,33,1,2",
+    "7,38,1,3",
+    "7,41,1,2",
+    "5,23,1,4",
+    "5,45,1,3",
+    "5,50,1,3",
+    "12,43,1,5",
+    "12,12,1,2",
+    "16,74,5,7",
+    "22,74,9,7",
+    "12,51,1,3",
+    "7,35,1,3",
+    "14,74,1,7",
+    "5,28,1,3",
+    "4,28,1,3",
+    "5,32,1,3",
+    "4,32,1,3",
+    "12,16,1,2",
+    "12,14,1,2",
+    "12,25,1,7",
+    "7,22,1,3",
+    "12,74,1,7",
+    "9,74,1,7",
+    "11,74,1,7",
+    "13,74,1,7",
+    "11,6,1,6",
+    "11,12,1,2",
+    "11,14,1,2",
+    "11,16,1,2",
+    "11,18,1,2",
+    "11,20,1,2",
+    "11,22,1,3",
+    "11,25,1,7",
+    "11,32,1,3",
+    "11,35,1,4",
+    "11,39,1,4",
+    "11,43,1,5",
+    "11,48,1,3",
+    "11,51,1,3",
+    "11,54,1,6",
+    "11,60,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=产品规格与组件列表!规格数据表id"
+                  }
+                ]
+              },
+              "value": "%Null%",
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "基本参数",
+                "TableValue": {
+                  "TableName": "产品规格数据表",
+                  "TableValueType": 1,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "产品规格数据表",
+                        "ColumnName": "产品摘要",
+                        "GUID": "21dba6c7-cdf6-4215-bdb5-9fcadb52dfa6"
+                      },
+                      "ColumnName": "规格摘要"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "产品规格数据表",
+                        "ColumnName": "形状id",
+                        "GUID": "68f56351-349a-4b20-aa7c-519158107e6a"
+                      },
+                      "ColumnName": "形状id"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "产品规格数据表",
+                        "ColumnName": "高",
+                        "GUID": "4dd721ae-1069-4f76-808d-2e8dcba500c9"
+                      },
+                      "ColumnName": "高"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "产品规格数据表",
+                        "ColumnName": "宽",
+                        "GUID": "5a4da745-316d-458f-94d8-885c7c7e1164"
+                      },
+                      "ColumnName": "宽"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "产品规格数据表",
+                        "ColumnName": "立体",
+                        "GUID": "dae51fd8-3d65-46e6-a788-8f1cb8c4d45c"
+                      },
+                      "ColumnName": "立体"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "产品规格数据表",
+                        "ColumnName": "个数",
+                        "GUID": "d9acb208-b174-49ae-a9b3-88f745fe96a8"
+                      },
+                      "ColumnName": "个数"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "产品规格数据表",
+                        "ColumnName": "附件",
+                        "GUID": "f9fc5ad9-f16b-42b9-92e8-2e4c6ee4f546"
+                      },
+                      "ColumnName": "附件"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "产品规格数据表",
+                      "ColumnName": "ID",
+                      "GUID": "5451397a-62c3-47a8-9971-52af115a9c45"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品规格与组件列表!规格数据表id"
+                    }
+                  },
+                  "NullFormulaValueQueryPolicy": 0
+                },
+                "ID": "2d1b767abdd849e8bc7c3f585f281dea"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "数据表参数字符串",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品规格与组件列表!基本参数.规格摘要&产品规格与组件列表!基本参数.形状id&产品规格与组件列表!基本参数.高&产品规格与组件列表!基本参数.宽&产品规格与组件列表!基本参数.立体&产品规格与组件列表!基本参数.个数&产品规格与组件列表!基本参数.附件"
+                },
+                "ID": "0ea8bb317e59452c826ed7c627d288a1"
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品规格与组件列表!数据表参数集"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品规格与组件列表!数据表参数字符串"
+                    }
+                  }
+                ]
+              }
+            ],
+            "ID": "b551ff72-0a71-4abc-b26c-42a710bee252"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "产品规格数据表",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "GUID": "0b5c0219-0df7-4d45-8158-a057eb2fb1a5",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "Priority": 1,
+          "GUID": "ccff4ec5-785a-418d-a738-5dbc97cc5925",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "Priority": 2,
+          "GUID": "3bfcd057-5a8a-4fee-a833-4284d0dc0750",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "Priority": 3,
+          "GUID": "7efdc426-047d-48fa-a4eb-5e5b87046ee3",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "Priority": 4,
+          "GUID": "31ee816d-21dc-4fda-b9d1-eed0765d6f43",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "Priority": 5,
+          "GUID": "a4eba7e3-3416-4b7e-9065-089b75f7fe1c",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "Priority": 6,
+          "GUID": "98b99038-eade-49a3-9b9a-2e48e055b58c",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品规格与组件列表!页面参数集=产品规格与组件列表!数据表参数集"
+          },
+          "Priority": 7,
+          "GUID": "3290edbb-253d-4279-b80f-864ac52e1fbd",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=\"\""
+          },
+          "Priority": 8,
+          "GUID": "1270c797-c6f3-4b65-b917-eaf67c780d98",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(产品规格与组件列表!高度+产品规格与组件列表!宽度)/2>=1"
+          },
+          "Priority": 9,
+          "GUID": "e7ecde7b-08d8-4d57-88b6-324bf52c33bb",
+          "StyleInfo": {
+            "Formatter": "0.00\"㎡\"",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(产品规格与组件列表!高度+产品规格与组件列表!宽度)/2>=1"
+          },
+          "Priority": 10,
+          "GUID": "fc40fa50-b456-4fd5-a304-1a5b5bda14c1",
+          "StyleInfo": {
+            "Formatter": "0\"元/㎡\"",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(产品规格与组件列表!高度+产品规格与组件列表!宽度)/2<1"
+          },
+          "Priority": 11,
+          "GUID": "4a27bbec-50f8-4367-b912-737d7ab0d01f",
+          "StyleInfo": {
+            "Formatter": "0.00\"元/cm\"",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品规格与组件列表!M13<>产品规格与组件列表!形状名称"
+          },
+          "Priority": 12,
+          "GUID": "fc59b33e-3f44-45dd-a6eb-959b2624a6da",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品规格与组件列表!O13<>产品规格与组件列表!高度"
+          },
+          "Priority": 13,
+          "GUID": "151b3f9a-47a3-42a4-86df-3a5247c1eee6",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品规格与组件列表!Q13<>产品规格与组件列表!宽度"
+          },
+          "Priority": 14,
+          "GUID": "05def573-0571-421b-be2a-beae3c3387c2",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品规格与组件列表!S13<>产品规格与组件列表!立体"
+          },
+          "Priority": 15,
+          "GUID": "07120987-213d-4bbe-92aa-d2b9657591f9",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品规格与组件列表!U13<>产品规格与组件列表!个数"
+          },
+          "Priority": 16,
+          "GUID": "044ae090-f0cc-4750-a35f-139e0b3e0ae7",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "按钮",
+      "Formula": "产品规格与组件列表!$AT$6"
+    },
+    {
+      "Name": "产品类型表id",
+      "Formula": "产品规格与组件列表!$BW$4"
+    },
+    {
+      "Name": "产品摘要",
+      "Formula": "产品规格与组件列表!$G$6"
+    },
+    {
+      "Name": "创建时间",
+      "Formula": "产品规格与组件列表!$BW$13"
+    },
+    {
+      "Name": "高度",
+      "Formula": "产品规格与组件列表!$AC$6"
+    },
+    {
+      "Name": "个数",
+      "Formula": "产品规格与组件列表!$AO$6"
+    },
+    {
+      "Name": "宽度",
+      "Formula": "产品规格与组件列表!$AG$6"
+    },
+    {
+      "Name": "立体",
+      "Formula": "产品规格与组件列表!$AK$6"
+    },
+    {
+      "Name": "利润率",
+      "Formula": "产品规格与组件列表!$AP$8"
+    },
+    {
+      "Name": "列表标题",
+      "Formula": "产品规格与组件列表!$G$10"
+    },
+    {
+      "Name": "形状id",
+      "Formula": "产品规格与组件列表!$X$6"
+    },
+    {
+      "Name": "页面名称",
+      "Formula": "产品规格与组件列表!$BW$8"
+    },
+    {
+      "Name": "组件名称id",
+      "Formula": "产品规格与组件列表!$BW$6"
+    },
+    {
+      "Name": "规格数据表id",
+      "Formula": "产品规格与组件列表!$BW$3"
+    },
+    {
+      "Name": "字形",
+      "Formula": "产品规格与组件列表!$BW$14"
+    },
+    {
+      "Name": "明细金额合计",
+      "Formula": "产品规格与组件列表!$AJ$8"
+    },
+    {
+      "Name": "取消",
+      "Formula": "产品规格与组件列表!$AY$6"
+    },
+    {
+      "Name": "形状名称",
+      "Formula": "产品规格与组件列表!$BW$15"
+    },
+    {
+      "Name": "页面参数集",
+      "Formula": "产品规格与组件列表!$BW$17"
+    },
+    {
+      "Name": "数据表参数集",
+      "Formula": "产品规格与组件列表!$BW$23"
+    },
+    {
+      "Name": "附件",
+      "Formula": "产品规格与组件列表!$I$8"
+    },
+    {
+      "Name": "材料类型id",
+      "Formula": "产品规格与组件列表!$BW$10"
+    },
+    {
+      "Name": "材料名称id",
+      "Formula": "产品规格与组件列表!$BW$12"
+    }
+  ]
+}//mf4K91sCmgmBgF8QGfdcwYUcCZBzfU2DAhdzo3Og2yFzoKpqQq61IFsxzm0RicK4VtI8l3Yukxfag0hUvnW7YpbMUnj6D8HMXL+HDJwQUF6K8amEukYhYRoKVCdSgajWajP27QMSZrHoNyY7exYLtomrDhytDSabsQOzF6jnmowV8KKwcOALTvTJfWX9vO3dhblwjxdRBbnhaL4rBdf9Fli9L5DVbyuPMI+M2LFqDcQ2IQDbrQoLP1UAn3ez6sADo/71dA/5lQyd4Hx22sW0AsKET1ZGHh66CSjxIO7LL5L6zoFrD/LBoO0wfgUrBzSC074u4QY0Igu3x2X65cdv5k64O29nhgjmFFmsG5vmGjLX+P23p9gdRzcjsSk5PNDxZP3N3ssLcnGM6iihAQngi5JT8SNbz4t1JE8jZALBnf/YGY8ZGRLxsglENR4ZgiyQUu6U+yKJeZ/jtlY3Avhi8L3PqdVJvi/ZZIG5vk5mBx9l7Dd45qVp3oYZ4YKt0FmjTDfhbmZrl+MnLOtJUfgsrMd+rKlT7dWrfT2/DxXqp05e1Heyjs+2qWii2VISk5laM7qRIfiTrX5CFp7XPLPdfw9fc7G/de/MIodoC9LN6d6kMQaIE5hnHYSXC31LaYvmpaqXn3nWRKdf7i9pvjJ8S1udwgznjhOra67y1MRbtD3uNNNK9yDz1iOqVRZO4bC74tIHFWpUOhysho46FA5Rd3Ya5ZEmnDYcOOv9dCB4YJ5nksscn4SDUFGzSC95tRzcLNlmHNDS65Q455wmgrv/xMweUVPU0+0lF9wQ9F6YcVVKks9eMmrP6ZJglAXlLFt+6WyPLHoK8FblPmP8NRgKkXiRSt1Hr69M35O+RPjJ+b6TnkdYu/Sg8D7GrWe6EDCZIsM3LEqkPAvGBXGQDIiA1w==|920

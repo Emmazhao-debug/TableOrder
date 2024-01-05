@@ -1,0 +1,2840 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 44
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      44,
+      45,
+      46,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "0,4": "产品利润率列表",
+    "2,4": "类型名称：",
+    "2,30": "添加新类型",
+    "2,37": "关闭",
+    "4,3": "正\r\n在\r\n使\r\n用\r\n",
+    "4,23": "日期状态",
+    "5,37": "查看",
+    "5,41": "删除",
+    "5,55": "当前行材料识别码：",
+    "6,55": "判断当前行有无：",
+    "21,3": "待启用",
+    "21,23": "待生效",
+    "21,37": "修改",
+    "21,41": "删除",
+    "27,3": "已失效",
+    "28,23": "已失效",
+    "43,3": "*此处“已失效”指的是新建报价单时不再使用，而之前在这个时间段内创建的过往报价单仍然在使用。例如：打开过往报价单更换边带名称时，则会读取其创建时间段内有效的板材属性参数进行产品价格计算。"
+  },
+  "Formulas": {
+    "6,56": "COUNTA(E6)",
+    "5,37": "IF(P6=TODAY(),\"修改\",IF(T6=\"\",\"创建新属性\",\"\"))",
+    "5,23": "IF(T6=\"\",\"生效中\",\"即将到期\")",
+    "5,41": "IF(P6>=TODAY(),\"删除\",\"\")"
+  },
+  "AttachInfos": {
+    "2,9": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "产品类型名称表",
+        "ValueColumnBindingInfo": {
+          "TableName": "产品类型名称表",
+          "ColumnName": "ID",
+          "GUID": "0f978d68-f0c7-431b-8a43-2dc3032671ad"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "产品类型名称表",
+          "ColumnName": "类型名称",
+          "GUID": "923e4648-7a23-4ca4-be19-d63076e3cf16"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "产品类型名称表",
+            "ColumnName": "状态",
+            "GUID": "ca7a65bb-aa78-40b7-9fab-7d3028a35639"
+          },
+          "Value": "正常"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "2,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "产品利润率详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=产品利润率详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加新类型",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,4": {
+      "ListViewInfo": {
+        "Name": "生效中",
+        "TableName": "产品类型利润率表",
+        "RowIndex": 4,
+        "ColumnIndex": 4,
+        "RowCount": 17,
+        "ColumnCount": 43,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "产品类型利润率表",
+                "ColumnName": "产品类型id",
+                "GUID": "4fd160a6-51df-408c-aba4-38b2475f6306"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=产品利润率列表!类型"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "产品类型利润率表",
+                "ColumnName": "启用日期",
+                "GUID": "91fa59b0-504f-4df2-9ba3-b6129a1f8a1d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "产品类型利润率表",
+                    "ColumnName": "截止日期",
+                    "GUID": "681e72a7-523c-4406-9f3a-028a9935c449"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "产品类型利润率表",
+                    "ColumnName": "截止日期",
+                    "GUID": "f066f6e4-f7f9-4664-9dd1-10168160c704"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品类型利润率表",
+                "ColumnName": "产品类型id",
+                "GUID": "e106cab0-a662-4ec8-917a-7353b101d9aa",
+                "RelationBinding": {
+                  "RelatedTable": "产品类型名称表",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "序号"
+                }
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品利润率列表!类型名称id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品利润率列表!E6"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1
+      }
+    },
+    "5,4": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "产品类型id",
+        "GUID": "574cdc53-5fa4-4a4d-8393-03ec7069ae9d",
+        "RelationBinding": {
+          "RelatedTable": "产品类型名称表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "类型名称"
+        }
+      }
+    },
+    "5,12": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "利润率",
+        "GUID": "4bec2273-4d0e-4bdd-b502-73cc1bd8b14f"
+      }
+    },
+    "5,15": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "启用日期",
+        "GUID": "9e3b902d-20c9-42c4-842b-64878b16ecff"
+      }
+    },
+    "5,19": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "截止日期",
+        "GUID": "54119b29-942f-4176-b069-7023b7fc6376"
+      }
+    },
+    "5,26": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "备注",
+        "GUID": "72e444c9-8e77-4861-9a58-683a558b75f6"
+      }
+    },
+    "5,37": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品利润率列表!AL6"
+                      }
+                    ]
+                  },
+                  "value": "修改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "产品利润率详情",
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "TargetCell": {
+                          "SerializeProperty": "=产品利润率详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "ac584e8a-3b86-4044-9885-f009d1f4c489"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "产品利润率详情",
+                    "PassValues": [
+                      {
+                        "Source": "创建",
+                        "TargetCell": {
+                          "SerializeProperty": "=产品利润率详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "48e8c318-1c9e-4937-b8ec-5decc9828c22"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,41": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "产品类型利润率表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "产品类型利润率表",
+                      "ColumnName": "产品类型id",
+                      "GUID": "c56f8be2-db6a-4ac6-9ae2-d1a9861d83cb"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品利润率列表!E6"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "产品类型利润率表",
+                      "ColumnName": "启用日期",
+                      "GUID": "794a8c77-d1fd-410b-b582-19e1f39036f0"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品利润率列表!P6"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "产品类型利润率表",
+                      "ColumnName": "ID",
+                      "GUID": "2a54a10a-b258-4d02-a850-adcbff89676b"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品利润率列表!AS6"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "b4fa05afc3b342b2a0ed8d478641c3bb"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品利润率列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "提示：",
+                    "Message": "删除本属性后，前面属性的截止日期同时会自动清空，即前面的属性将一直有效。您确定要删除吗？",
+                    "Type": "none",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=产品利润率列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "产品类型利润率表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品类型利润率表",
+                                    "ColumnName": "ID",
+                                    "GUID": "513a68f0-30d4-449b-ba47-f07a0495b267"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "产品类型id",
+                                      "GUID": "af84e05a-9e6a-4a0e-b35f-517dd6ed0c0e"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=产品利润率列表!E6"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "e76cac99-152a-4813-a8ae-cc9beb1b1f12"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=产品利润率列表!P6"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "ID",
+                                      "GUID": "094b1865-0321-4a86-b640-4e8bd98f02db"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=产品利润率列表!AS6"
+                                    }
+                                  }
+                                ]
+                              },
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "8d5edd2d-04da-4006-a691-3befb3c3d9d5"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "f951b746182541458f24ec47cc6bf4b5"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "产品类型利润率表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "产品类型利润率表",
+                                "ColumnName": "ID",
+                                "GUID": "cab0c0b7-383f-4e27-8a01-9a9a7eef1d02"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=产品利润率列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "产品类型利润率表",
+                                  "ColumnName": "截止日期",
+                                  "GUID": "34d0f448-a82d-4ae7-be76-c786b13e96ee"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "产品类型利润率表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "15f71028-c61d-4ce6-a12d-19f2634816a2"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "4f09095f-1249-4aec-8f3d-45d93bc9d475"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "4294d818-e1e7-4e0e-8a8b-3e09e3e6f8ea"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,44": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "ID",
+        "GUID": "b90bc85c-e942-45b5-9e15-2a11b9aa9be8"
+      }
+    },
+    "6,56": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品利润率列表!BE7"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品利润率列表!类型名称id"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "5ee86434-95c8-4764-8402-8f85623f2810"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "21,4": {
+      "ListViewInfo": {
+        "Name": "待生效",
+        "TableName": "产品类型利润率表",
+        "RowIndex": 21,
+        "ColumnIndex": 4,
+        "RowCount": 6,
+        "ColumnCount": 43,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "CompareType": 2,
+          "ColumnBindingInfo": {
+            "TableName": "产品类型利润率表",
+            "ColumnName": "启用日期",
+            "GUID": "5ba52623-558c-4bb7-9d65-5eb5eeb3a9a6"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=TODAY()"
+          }
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品类型利润率表",
+                "ColumnName": "启用日期",
+                "GUID": "d451bd76-423d-421e-ba0a-2fac9253758b"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsColumnHeaderVisible": false,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "产品类型id",
+        "GUID": "04f7bc8a-ce09-4396-b29e-54a354123976",
+        "RelationBinding": {
+          "RelatedTable": "产品类型名称表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "类型名称"
+        }
+      }
+    },
+    "21,12": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "利润率",
+        "GUID": "bb01ce64-20d6-4fc3-8efa-d00aa117cab8"
+      }
+    },
+    "21,15": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "启用日期",
+        "GUID": "eca36883-83f2-4d91-b111-07f9aab50e7e"
+      }
+    },
+    "21,19": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "截止日期",
+        "GUID": "202d3c13-2072-4441-b2f8-c7616101b68e"
+      }
+    },
+    "21,26": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "备注",
+        "GUID": "78971334-d41f-42b0-a465-45f6ec5c2de1"
+      }
+    },
+    "21,37": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "产品利润率详情",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=产品利润率详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    },
+    "21,41": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "产品类型利润率表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "产品类型利润率表",
+                      "ColumnName": "产品类型id",
+                      "GUID": "fa09c22a-0791-4357-8d15-95c2fd31693d"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品利润率列表!E22"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "产品类型利润率表",
+                      "ColumnName": "启用日期",
+                      "GUID": "58bbfa2f-2ce1-47b1-8578-6fc950e9d1cf"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品利润率列表!P22"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "产品类型利润率表",
+                      "ColumnName": "ID",
+                      "GUID": "ee528845-9605-4ebf-988c-003f8ecdfe30"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=产品利润率列表!AS22"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "79728c5cd6c041f8bbfd6823a121e6eb"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品利润率列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "提示：",
+                    "Message": "删除本属性后，前面属性的截止日期同时会自动清空，即前面的属性将一直有效。您确定要删除吗？",
+                    "Type": "none",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=产品利润率列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "产品类型利润率表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "产品类型利润率表",
+                                    "ColumnName": "ID",
+                                    "GUID": "93529188-ecea-43b9-a9f0-39ac1a52fd0a"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "产品类型id",
+                                      "GUID": "b9ae6826-d9bd-4823-adfb-23673d4a7aa7"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=产品利润率列表!E22"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "4225af34-5764-48a2-a54c-38f5d1372222"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=产品利润率列表!P22"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "ID",
+                                      "GUID": "55725802-7250-4a6e-b245-acb1acaadc66"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=产品利润率列表!AS22"
+                                    }
+                                  }
+                                ]
+                              },
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "产品类型利润率表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "c8d2f54b-6ad0-46ee-83e5-87445a1ade03"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "150f2311d4a8437284af8a45366baf99"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "产品类型利润率表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "产品类型利润率表",
+                                "ColumnName": "ID",
+                                "GUID": "725471da-7dae-497a-8098-4b74f5df7625"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=产品利润率列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "产品类型利润率表",
+                                  "ColumnName": "截止日期",
+                                  "GUID": "96221b7f-b7bf-436a-a47e-0458a0b1a59c"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "产品类型利润率表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "2da1ece5-c5f8-4ad9-8229-476c7e577df4"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "843111a2-9431-4818-939d-bb2d32a6a7ac"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "f84b0d9c-04ca-4eb8-9afb-a0cd756b37dd"
+              }
+            ]
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "21,44": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "ID",
+        "GUID": "0b7c75c6-a071-4ad4-b394-727021954ac2"
+      }
+    },
+    "27,4": {
+      "ListViewInfo": {
+        "Name": "已失效",
+        "TableName": "产品类型利润率表",
+        "RowIndex": 27,
+        "ColumnIndex": 4,
+        "RowCount": 16,
+        "ColumnCount": 43,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "产品类型利润率表",
+            "ColumnName": "ID",
+            "GUID": "6aa07a79-c060-41e9-9366-ff1d6d5b35fe"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品利润率列表!类型名称id"
+          }
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品类型利润率表",
+                "ColumnName": "截止日期",
+                "GUID": "0615a752-8fca-451e-b31e-47d90b7e8cfa"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1
+      }
+    },
+    "28,4": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "产品类型id",
+        "GUID": "d528ecf8-b0dc-454c-aad8-6a6a621d5c6e",
+        "RelationBinding": {
+          "RelatedTable": "产品类型名称表",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "类型名称"
+        }
+      }
+    },
+    "28,12": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "利润率",
+        "GUID": "50e94a3e-9947-41e9-89f5-b0f60a3636cb"
+      }
+    },
+    "28,15": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "启用日期",
+        "GUID": "4f8dbe26-1138-4565-bde0-0d063d8085fe"
+      }
+    },
+    "28,19": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "截止日期",
+        "GUID": "8d983fab-cf27-407a-b2ba-c07a700090a1"
+      }
+    },
+    "28,26": {
+      "BindingInfo": {
+        "TableName": "产品类型利润率表",
+        "ColumnName": "备注",
+        "GUID": "a1729b5b-df51-496e-b2c5-477af408ffa4"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderLeft": null
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "FontWeight": 0,
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 0,
+        "Formatter": 5,
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 6,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Foreground": 8,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 9,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "Formatter": 11,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "Formatter": 12,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 5
+      },
+      {
+        "FontSize": -1.0,
+        "HorizontalAlignment": 11
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 0,
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 13,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": 15,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 16,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 14.666666666666666
+      },
+      {
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Right",
+        "Center",
+        "Background 1 -25",
+        "@",
+        "0%",
+        "yyyy/MM/dd",
+        "#FF00B050",
+        "Left",
+        "Blue",
+        "General",
+        "yyyy/mm/dd hh:mm:ss",
+        "#FFFFC000",
+        "#FFCED4DA",
+        "Background 1 -5",
+        "Background 1 -50"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        },
+        {
+          "Color": 14
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,4": 0,
+      "1,47": 1,
+      "2,4": 2,
+      "2,9": 3,
+      "2,18": 4,
+      "2,19": 4,
+      "2,20": 4,
+      "2,21": 4,
+      "2,22": 4,
+      "2,23": 4,
+      "2,24": 4,
+      "2,25": 4,
+      "2,30": 5,
+      "2,31": 6,
+      "2,32": 6,
+      "2,33": 6,
+      "2,34": 6,
+      "2,36": 6,
+      "2,37": 5,
+      "2,38": 5,
+      "2,39": 5,
+      "2,40": 5,
+      "2,41": 5,
+      "2,42": 5,
+      "2,43": 5,
+      "2,44": 5,
+      "2,45": 5,
+      "2,47": 7,
+      "2,48": 6,
+      "2,49": 6,
+      "2,50": 6,
+      "2,51": 6,
+      "2,52": 6,
+      "2,56": 6,
+      "2,57": 6,
+      "2,58": 6,
+      "2,59": 6,
+      "2,60": 6,
+      "2,61": 6,
+      "2,62": 6,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 5,
+      "3,19": 5,
+      "3,20": 5,
+      "3,21": 5,
+      "3,22": 5,
+      "3,23": 5,
+      "3,24": 5,
+      "3,25": 5,
+      "3,26": 5,
+      "3,27": 5,
+      "3,28": 5,
+      "3,29": 5,
+      "3,30": 5,
+      "3,31": 5,
+      "3,32": 5,
+      "3,33": 5,
+      "3,34": 5,
+      "3,35": 5,
+      "3,36": 5,
+      "3,37": 5,
+      "3,38": 5,
+      "3,39": 5,
+      "3,40": 5,
+      "3,41": 5,
+      "3,42": 5,
+      "3,43": 5,
+      "3,44": 5,
+      "3,45": 5,
+      "3,46": 5,
+      "3,47": 8,
+      "3,48": 5,
+      "3,49": 5,
+      "3,50": 5,
+      "3,51": 5,
+      "3,52": 5,
+      "3,53": 5,
+      "3,54": 5,
+      "3,55": 5,
+      "3,56": 5,
+      "3,57": 5,
+      "3,58": 5,
+      "3,59": 5,
+      "3,60": 5,
+      "3,61": 5,
+      "3,62": 5,
+      "4,3": 9,
+      "4,4": 10,
+      "4,5": 11,
+      "4,6": 11,
+      "4,7": 11,
+      "4,8": 11,
+      "4,9": 11,
+      "4,10": 11,
+      "4,11": 11,
+      "4,12": 12,
+      "4,13": 11,
+      "4,14": 11,
+      "4,15": 12,
+      "4,16": 11,
+      "4,17": 11,
+      "4,18": 11,
+      "4,19": 12,
+      "4,20": 11,
+      "4,21": 11,
+      "4,22": 11,
+      "4,23": 11,
+      "4,24": 11,
+      "4,25": 11,
+      "4,26": 12,
+      "4,27": 11,
+      "4,28": 11,
+      "4,29": 11,
+      "4,30": 11,
+      "4,31": 11,
+      "4,32": 11,
+      "4,33": 11,
+      "4,34": 11,
+      "4,35": 11,
+      "4,36": 11,
+      "4,37": 12,
+      "4,38": 11,
+      "4,39": 11,
+      "4,40": 11,
+      "4,41": 12,
+      "4,42": 12,
+      "4,43": 12,
+      "4,44": 11,
+      "4,45": 11,
+      "4,46": 11,
+      "4,47": 13,
+      "5,3": 13,
+      "5,4": 14,
+      "5,12": 15,
+      "5,15": 16,
+      "5,19": 16,
+      "5,23": 17,
+      "5,26": 18,
+      "5,37": 19,
+      "5,41": 20,
+      "5,42": 20,
+      "5,43": 5,
+      "5,44": 21,
+      "5,47": 13,
+      "5,56": 22,
+      "6,3": 13,
+      "6,4": 23,
+      "6,5": 5,
+      "6,6": 5,
+      "6,7": 5,
+      "6,8": 5,
+      "6,9": 5,
+      "6,10": 5,
+      "6,11": 5,
+      "6,12": 5,
+      "6,13": 5,
+      "6,14": 5,
+      "6,15": 5,
+      "6,16": 5,
+      "6,17": 5,
+      "6,18": 5,
+      "6,19": 5,
+      "6,20": 5,
+      "6,21": 5,
+      "6,22": 5,
+      "6,23": 5,
+      "6,24": 5,
+      "6,25": 5,
+      "6,26": 5,
+      "6,27": 5,
+      "6,28": 5,
+      "6,29": 5,
+      "6,30": 5,
+      "6,31": 5,
+      "6,32": 5,
+      "6,33": 5,
+      "6,35": 5,
+      "6,36": 5,
+      "6,37": 5,
+      "6,38": 5,
+      "6,39": 5,
+      "6,40": 5,
+      "6,46": 5,
+      "6,47": 13,
+      "6,56": 24,
+      "7,3": 13,
+      "7,4": 23,
+      "7,5": 5,
+      "7,6": 5,
+      "7,7": 5,
+      "7,8": 5,
+      "7,9": 5,
+      "7,10": 5,
+      "7,11": 5,
+      "7,12": 5,
+      "7,13": 5,
+      "7,14": 5,
+      "7,15": 5,
+      "7,16": 5,
+      "7,17": 5,
+      "7,18": 5,
+      "7,19": 5,
+      "7,20": 5,
+      "7,21": 5,
+      "7,22": 5,
+      "7,23": 5,
+      "7,24": 5,
+      "7,25": 5,
+      "7,26": 5,
+      "7,27": 5,
+      "7,28": 5,
+      "7,29": 5,
+      "7,30": 5,
+      "7,31": 5,
+      "7,32": 5,
+      "7,33": 5,
+      "7,35": 5,
+      "7,36": 5,
+      "7,37": 5,
+      "7,38": 5,
+      "7,39": 5,
+      "7,40": 5,
+      "7,46": 5,
+      "7,47": 13,
+      "8,3": 13,
+      "8,4": 23,
+      "8,5": 5,
+      "8,6": 5,
+      "8,7": 5,
+      "8,8": 5,
+      "8,9": 5,
+      "8,10": 5,
+      "8,11": 5,
+      "8,12": 5,
+      "8,13": 5,
+      "8,14": 5,
+      "8,15": 5,
+      "8,16": 5,
+      "8,17": 5,
+      "8,18": 5,
+      "8,19": 5,
+      "8,20": 5,
+      "8,21": 5,
+      "8,22": 5,
+      "8,23": 5,
+      "8,24": 5,
+      "8,25": 5,
+      "8,26": 5,
+      "8,27": 5,
+      "8,28": 5,
+      "8,29": 5,
+      "8,30": 5,
+      "8,31": 5,
+      "8,32": 5,
+      "8,33": 5,
+      "8,35": 5,
+      "8,36": 5,
+      "8,37": 5,
+      "8,38": 5,
+      "8,39": 5,
+      "8,40": 5,
+      "8,46": 5,
+      "8,47": 13,
+      "9,3": 13,
+      "9,4": 23,
+      "9,5": 5,
+      "9,6": 5,
+      "9,7": 5,
+      "9,8": 5,
+      "9,9": 5,
+      "9,10": 5,
+      "9,11": 5,
+      "9,12": 5,
+      "9,13": 5,
+      "9,14": 5,
+      "9,15": 5,
+      "9,16": 5,
+      "9,17": 5,
+      "9,18": 5,
+      "9,19": 5,
+      "9,20": 5,
+      "9,21": 5,
+      "9,22": 5,
+      "9,23": 5,
+      "9,24": 5,
+      "9,25": 5,
+      "9,26": 5,
+      "9,27": 5,
+      "9,28": 5,
+      "9,29": 5,
+      "9,30": 5,
+      "9,31": 5,
+      "9,32": 5,
+      "9,33": 5,
+      "9,35": 5,
+      "9,36": 5,
+      "9,37": 5,
+      "9,38": 5,
+      "9,39": 5,
+      "9,40": 5,
+      "9,46": 5,
+      "9,47": 13,
+      "9,54": 4,
+      "9,55": 25,
+      "9,56": 4,
+      "9,57": 4,
+      "9,58": 4,
+      "9,59": 4,
+      "9,60": 4,
+      "9,61": 4,
+      "9,62": 4,
+      "9,63": 4,
+      "10,3": 13,
+      "10,4": 23,
+      "10,5": 5,
+      "10,6": 5,
+      "10,7": 5,
+      "10,8": 5,
+      "10,9": 5,
+      "10,10": 5,
+      "10,11": 5,
+      "10,12": 5,
+      "10,13": 5,
+      "10,14": 5,
+      "10,15": 5,
+      "10,16": 5,
+      "10,17": 5,
+      "10,18": 5,
+      "10,19": 5,
+      "10,20": 5,
+      "10,21": 5,
+      "10,22": 5,
+      "10,23": 5,
+      "10,24": 5,
+      "10,25": 5,
+      "10,26": 5,
+      "10,27": 5,
+      "10,28": 5,
+      "10,29": 5,
+      "10,30": 5,
+      "10,31": 5,
+      "10,32": 5,
+      "10,33": 5,
+      "10,35": 5,
+      "10,36": 5,
+      "10,37": 5,
+      "10,38": 5,
+      "10,39": 5,
+      "10,40": 5,
+      "10,46": 5,
+      "10,47": 13,
+      "10,54": 4,
+      "10,55": 25,
+      "10,56": 4,
+      "10,57": 4,
+      "10,58": 4,
+      "10,59": 4,
+      "10,60": 4,
+      "10,61": 4,
+      "10,62": 4,
+      "10,63": 4,
+      "11,3": 13,
+      "11,4": 23,
+      "11,5": 5,
+      "11,6": 5,
+      "11,7": 5,
+      "11,8": 5,
+      "11,9": 5,
+      "11,10": 5,
+      "11,11": 5,
+      "11,12": 5,
+      "11,13": 5,
+      "11,14": 5,
+      "11,15": 5,
+      "11,16": 5,
+      "11,17": 5,
+      "11,18": 5,
+      "11,19": 5,
+      "11,20": 5,
+      "11,21": 5,
+      "11,22": 5,
+      "11,23": 5,
+      "11,24": 5,
+      "11,25": 5,
+      "11,26": 5,
+      "11,27": 5,
+      "11,28": 5,
+      "11,29": 5,
+      "11,30": 5,
+      "11,31": 5,
+      "11,32": 5,
+      "11,33": 5,
+      "11,35": 5,
+      "11,36": 5,
+      "11,37": 5,
+      "11,38": 5,
+      "11,39": 5,
+      "11,40": 5,
+      "11,46": 5,
+      "11,47": 13,
+      "11,54": 4,
+      "11,55": 25,
+      "11,56": 4,
+      "11,57": 4,
+      "11,58": 4,
+      "11,59": 4,
+      "11,60": 4,
+      "11,61": 4,
+      "11,62": 4,
+      "11,63": 4,
+      "12,3": 13,
+      "12,4": 13,
+      "12,47": 13,
+      "12,54": 4,
+      "12,55": 25,
+      "12,56": 4,
+      "12,57": 4,
+      "12,58": 4,
+      "12,59": 4,
+      "12,60": 4,
+      "12,61": 4,
+      "12,62": 4,
+      "12,63": 4,
+      "13,3": 13,
+      "13,4": 13,
+      "13,47": 13,
+      "13,54": 4,
+      "13,55": 25,
+      "13,56": 4,
+      "13,57": 4,
+      "13,58": 4,
+      "13,59": 4,
+      "13,60": 4,
+      "13,61": 4,
+      "13,62": 4,
+      "13,63": 4,
+      "14,3": 13,
+      "14,4": 13,
+      "14,47": 13,
+      "14,54": 4,
+      "14,55": 25,
+      "14,56": 4,
+      "14,57": 4,
+      "14,58": 4,
+      "14,59": 4,
+      "14,60": 4,
+      "14,61": 4,
+      "14,62": 4,
+      "14,63": 4,
+      "15,3": 13,
+      "15,4": 13,
+      "15,47": 13,
+      "16,3": 13,
+      "16,4": 13,
+      "16,47": 13,
+      "17,3": 13,
+      "17,4": 13,
+      "17,47": 13,
+      "18,3": 13,
+      "18,4": 13,
+      "18,47": 13,
+      "19,3": 13,
+      "19,4": 13,
+      "19,47": 13,
+      "20,3": 13,
+      "20,4": 26,
+      "20,5": 27,
+      "20,6": 27,
+      "20,7": 27,
+      "20,8": 27,
+      "20,9": 27,
+      "20,10": 27,
+      "20,11": 27,
+      "20,12": 27,
+      "20,13": 27,
+      "20,14": 27,
+      "20,15": 27,
+      "20,16": 27,
+      "20,17": 27,
+      "20,18": 27,
+      "20,19": 27,
+      "20,20": 27,
+      "20,21": 27,
+      "20,22": 27,
+      "20,23": 27,
+      "20,24": 27,
+      "20,25": 27,
+      "20,26": 27,
+      "20,27": 27,
+      "20,28": 27,
+      "20,29": 27,
+      "20,30": 27,
+      "20,31": 27,
+      "20,32": 27,
+      "20,33": 27,
+      "20,34": 27,
+      "20,35": 27,
+      "20,36": 27,
+      "20,37": 27,
+      "20,38": 27,
+      "20,39": 27,
+      "20,40": 27,
+      "20,41": 27,
+      "20,42": 27,
+      "20,43": 27,
+      "20,44": 27,
+      "20,45": 27,
+      "20,46": 27,
+      "20,47": 13,
+      "21,3": 28,
+      "21,4": 14,
+      "21,12": 15,
+      "21,15": 16,
+      "21,19": 16,
+      "21,23": 29,
+      "21,24": 30,
+      "21,25": 30,
+      "21,26": 18,
+      "21,37": 19,
+      "21,41": 20,
+      "21,44": 21,
+      "21,47": 13,
+      "22,3": 31,
+      "22,4": 13,
+      "22,47": 13,
+      "23,3": 31,
+      "23,4": 13,
+      "23,47": 13,
+      "24,3": 31,
+      "24,4": 23,
+      "24,5": 5,
+      "24,6": 5,
+      "24,7": 5,
+      "24,8": 5,
+      "24,9": 5,
+      "24,10": 5,
+      "24,11": 5,
+      "24,12": 5,
+      "24,13": 5,
+      "24,14": 5,
+      "24,15": 5,
+      "24,16": 5,
+      "24,17": 5,
+      "24,18": 5,
+      "24,19": 5,
+      "24,20": 5,
+      "24,21": 5,
+      "24,22": 5,
+      "24,23": 5,
+      "24,24": 5,
+      "24,25": 5,
+      "24,26": 5,
+      "24,27": 5,
+      "24,28": 5,
+      "24,29": 5,
+      "24,30": 5,
+      "24,31": 5,
+      "24,32": 5,
+      "24,33": 5,
+      "24,34": 5,
+      "24,35": 5,
+      "24,36": 5,
+      "24,37": 5,
+      "24,38": 5,
+      "24,39": 5,
+      "24,40": 5,
+      "24,46": 5,
+      "24,47": 13,
+      "25,3": 31,
+      "25,4": 23,
+      "25,5": 5,
+      "25,6": 5,
+      "25,7": 5,
+      "25,8": 5,
+      "25,9": 5,
+      "25,10": 5,
+      "25,11": 5,
+      "25,12": 5,
+      "25,13": 5,
+      "25,14": 5,
+      "25,15": 5,
+      "25,16": 5,
+      "25,17": 5,
+      "25,18": 5,
+      "25,19": 5,
+      "25,20": 5,
+      "25,21": 5,
+      "25,22": 5,
+      "25,23": 5,
+      "25,24": 5,
+      "25,25": 5,
+      "25,26": 5,
+      "25,27": 5,
+      "25,28": 5,
+      "25,29": 5,
+      "25,30": 5,
+      "25,31": 5,
+      "25,32": 5,
+      "25,33": 5,
+      "25,34": 6,
+      "25,35": 5,
+      "25,36": 5,
+      "25,37": 5,
+      "25,38": 5,
+      "25,39": 5,
+      "25,40": 5,
+      "25,46": 5,
+      "25,47": 13,
+      "26,3": 31,
+      "26,4": 23,
+      "26,5": 5,
+      "26,6": 5,
+      "26,7": 5,
+      "26,8": 5,
+      "26,9": 5,
+      "26,10": 5,
+      "26,11": 5,
+      "26,12": 5,
+      "26,13": 5,
+      "26,14": 5,
+      "26,15": 5,
+      "26,16": 5,
+      "26,17": 5,
+      "26,18": 5,
+      "26,19": 5,
+      "26,20": 5,
+      "26,21": 5,
+      "26,22": 5,
+      "26,23": 5,
+      "26,24": 5,
+      "26,25": 5,
+      "26,26": 5,
+      "26,27": 5,
+      "26,28": 5,
+      "26,29": 5,
+      "26,30": 5,
+      "26,31": 5,
+      "26,32": 5,
+      "26,33": 5,
+      "26,34": 5,
+      "26,35": 5,
+      "26,36": 5,
+      "26,37": 5,
+      "26,38": 5,
+      "26,39": 5,
+      "26,40": 5,
+      "26,46": 5,
+      "26,47": 13,
+      "27,1": 4,
+      "27,2": 4,
+      "27,3": 28,
+      "27,4": 32,
+      "27,5": 11,
+      "27,6": 11,
+      "27,7": 11,
+      "27,8": 11,
+      "27,9": 11,
+      "27,10": 11,
+      "27,11": 11,
+      "27,12": 11,
+      "27,13": 11,
+      "27,14": 11,
+      "27,15": 11,
+      "27,16": 11,
+      "27,17": 11,
+      "27,18": 11,
+      "27,19": 11,
+      "27,20": 11,
+      "27,21": 11,
+      "27,22": 11,
+      "27,23": 11,
+      "27,24": 11,
+      "27,25": 11,
+      "27,26": 11,
+      "27,27": 11,
+      "27,28": 11,
+      "27,29": 11,
+      "27,30": 11,
+      "27,31": 11,
+      "27,32": 11,
+      "27,33": 11,
+      "27,34": 11,
+      "27,35": 11,
+      "27,36": 11,
+      "27,37": 11,
+      "27,38": 11,
+      "27,39": 11,
+      "27,40": 11,
+      "27,41": 11,
+      "27,42": 11,
+      "27,43": 11,
+      "27,44": 11,
+      "27,45": 11,
+      "27,46": 11,
+      "27,47": 13,
+      "28,1": 4,
+      "28,2": 4,
+      "28,3": 31,
+      "28,4": 14,
+      "28,12": 33,
+      "28,15": 16,
+      "28,19": 16,
+      "28,23": 34,
+      "28,24": 30,
+      "28,25": 30,
+      "28,26": 18,
+      "28,47": 13,
+      "29,1": 4,
+      "29,2": 4,
+      "29,3": 31,
+      "29,4": 23,
+      "29,5": 5,
+      "29,6": 5,
+      "29,7": 5,
+      "29,8": 5,
+      "29,9": 5,
+      "29,10": 5,
+      "29,11": 5,
+      "29,12": 5,
+      "29,13": 5,
+      "29,14": 5,
+      "29,15": 5,
+      "29,16": 5,
+      "29,17": 5,
+      "29,18": 5,
+      "29,19": 5,
+      "29,20": 5,
+      "29,21": 5,
+      "29,22": 5,
+      "29,23": 5,
+      "29,24": 5,
+      "29,25": 5,
+      "29,26": 5,
+      "29,27": 5,
+      "29,28": 5,
+      "29,29": 5,
+      "29,30": 5,
+      "29,31": 5,
+      "29,32": 5,
+      "29,33": 5,
+      "29,34": 5,
+      "29,35": 5,
+      "29,36": 5,
+      "29,37": 5,
+      "29,38": 5,
+      "29,39": 5,
+      "29,40": 5,
+      "29,46": 5,
+      "29,47": 13,
+      "30,1": 4,
+      "30,2": 4,
+      "30,3": 31,
+      "30,4": 23,
+      "30,5": 5,
+      "30,6": 5,
+      "30,7": 5,
+      "30,8": 5,
+      "30,9": 5,
+      "30,10": 5,
+      "30,11": 5,
+      "30,12": 5,
+      "30,13": 5,
+      "30,14": 5,
+      "30,15": 5,
+      "30,16": 5,
+      "30,17": 5,
+      "30,18": 5,
+      "30,19": 5,
+      "30,20": 5,
+      "30,21": 5,
+      "30,22": 5,
+      "30,23": 5,
+      "30,24": 5,
+      "30,25": 5,
+      "30,26": 5,
+      "30,27": 5,
+      "30,28": 5,
+      "30,29": 5,
+      "30,30": 5,
+      "30,31": 5,
+      "30,32": 5,
+      "30,33": 5,
+      "30,34": 6,
+      "30,35": 5,
+      "30,36": 5,
+      "30,37": 5,
+      "30,38": 5,
+      "30,39": 5,
+      "30,40": 5,
+      "30,46": 5,
+      "30,47": 13,
+      "31,1": 4,
+      "31,2": 4,
+      "31,3": 31,
+      "31,4": 23,
+      "31,5": 5,
+      "31,6": 5,
+      "31,7": 5,
+      "31,8": 5,
+      "31,9": 5,
+      "31,10": 5,
+      "31,11": 5,
+      "31,12": 5,
+      "31,13": 5,
+      "31,14": 5,
+      "31,15": 5,
+      "31,16": 5,
+      "31,17": 5,
+      "31,18": 5,
+      "31,19": 5,
+      "31,20": 5,
+      "31,21": 5,
+      "31,22": 5,
+      "31,23": 5,
+      "31,24": 5,
+      "31,25": 5,
+      "31,26": 5,
+      "31,27": 5,
+      "31,28": 5,
+      "31,29": 5,
+      "31,30": 5,
+      "31,31": 5,
+      "31,32": 5,
+      "31,33": 5,
+      "31,34": 5,
+      "31,35": 5,
+      "31,36": 5,
+      "31,37": 5,
+      "31,38": 5,
+      "31,39": 5,
+      "31,40": 5,
+      "31,46": 5,
+      "31,47": 13,
+      "32,1": 4,
+      "32,2": 4,
+      "32,3": 31,
+      "32,4": 23,
+      "32,5": 5,
+      "32,6": 5,
+      "32,7": 5,
+      "32,8": 5,
+      "32,9": 5,
+      "32,10": 5,
+      "32,11": 5,
+      "32,12": 5,
+      "32,13": 5,
+      "32,14": 5,
+      "32,15": 5,
+      "32,16": 5,
+      "32,17": 5,
+      "32,18": 5,
+      "32,19": 5,
+      "32,20": 5,
+      "32,21": 5,
+      "32,22": 5,
+      "32,23": 5,
+      "32,24": 5,
+      "32,25": 5,
+      "32,26": 5,
+      "32,27": 5,
+      "32,28": 5,
+      "32,29": 5,
+      "32,30": 5,
+      "32,31": 5,
+      "32,32": 5,
+      "32,33": 5,
+      "32,34": 5,
+      "32,35": 5,
+      "32,36": 5,
+      "32,37": 5,
+      "32,38": 5,
+      "32,39": 5,
+      "32,40": 5,
+      "32,46": 5,
+      "32,47": 13,
+      "33,1": 4,
+      "33,2": 4,
+      "33,3": 31,
+      "33,4": 23,
+      "33,5": 5,
+      "33,6": 5,
+      "33,7": 5,
+      "33,8": 5,
+      "33,9": 5,
+      "33,10": 5,
+      "33,11": 5,
+      "33,12": 5,
+      "33,13": 5,
+      "33,14": 5,
+      "33,15": 5,
+      "33,16": 5,
+      "33,17": 5,
+      "33,18": 5,
+      "33,19": 5,
+      "33,20": 5,
+      "33,21": 5,
+      "33,22": 5,
+      "33,23": 5,
+      "33,24": 5,
+      "33,25": 5,
+      "33,26": 5,
+      "33,27": 5,
+      "33,28": 5,
+      "33,29": 5,
+      "33,30": 5,
+      "33,31": 5,
+      "33,32": 5,
+      "33,33": 5,
+      "33,34": 5,
+      "33,35": 5,
+      "33,36": 5,
+      "33,37": 5,
+      "33,38": 5,
+      "33,39": 5,
+      "33,40": 5,
+      "33,46": 5,
+      "33,47": 13,
+      "34,1": 4,
+      "34,2": 4,
+      "34,3": 31,
+      "34,4": 23,
+      "34,5": 5,
+      "34,6": 5,
+      "34,7": 5,
+      "34,8": 5,
+      "34,9": 5,
+      "34,10": 5,
+      "34,11": 5,
+      "34,12": 5,
+      "34,13": 5,
+      "34,14": 5,
+      "34,15": 5,
+      "34,16": 5,
+      "34,17": 5,
+      "34,18": 5,
+      "34,19": 5,
+      "34,20": 5,
+      "34,21": 5,
+      "34,22": 5,
+      "34,23": 5,
+      "34,24": 5,
+      "34,25": 5,
+      "34,26": 5,
+      "34,27": 5,
+      "34,28": 5,
+      "34,29": 5,
+      "34,30": 5,
+      "34,31": 5,
+      "34,32": 5,
+      "34,33": 5,
+      "34,34": 5,
+      "34,35": 5,
+      "34,36": 5,
+      "34,37": 5,
+      "34,38": 5,
+      "34,39": 5,
+      "34,40": 5,
+      "34,46": 5,
+      "34,47": 13,
+      "35,1": 4,
+      "35,2": 4,
+      "35,3": 31,
+      "35,4": 23,
+      "35,5": 5,
+      "35,6": 5,
+      "35,7": 5,
+      "35,8": 5,
+      "35,9": 5,
+      "35,10": 5,
+      "35,11": 5,
+      "35,12": 5,
+      "35,13": 5,
+      "35,14": 5,
+      "35,15": 5,
+      "35,16": 5,
+      "35,17": 5,
+      "35,18": 5,
+      "35,19": 5,
+      "35,20": 5,
+      "35,21": 5,
+      "35,22": 5,
+      "35,23": 5,
+      "35,24": 5,
+      "35,25": 5,
+      "35,26": 5,
+      "35,27": 5,
+      "35,28": 5,
+      "35,29": 5,
+      "35,30": 5,
+      "35,31": 5,
+      "35,32": 5,
+      "35,33": 5,
+      "35,34": 5,
+      "35,35": 5,
+      "35,36": 5,
+      "35,37": 5,
+      "35,38": 5,
+      "35,39": 5,
+      "35,40": 5,
+      "35,46": 5,
+      "35,47": 13,
+      "36,1": 4,
+      "36,2": 4,
+      "36,3": 31,
+      "36,4": 23,
+      "36,5": 5,
+      "36,6": 5,
+      "36,7": 5,
+      "36,8": 5,
+      "36,9": 5,
+      "36,10": 5,
+      "36,11": 5,
+      "36,12": 5,
+      "36,13": 5,
+      "36,14": 5,
+      "36,15": 5,
+      "36,16": 5,
+      "36,17": 5,
+      "36,18": 5,
+      "36,19": 5,
+      "36,20": 5,
+      "36,21": 5,
+      "36,22": 5,
+      "36,23": 5,
+      "36,24": 5,
+      "36,25": 5,
+      "36,26": 5,
+      "36,27": 5,
+      "36,28": 5,
+      "36,29": 5,
+      "36,30": 5,
+      "36,31": 5,
+      "36,32": 5,
+      "36,33": 5,
+      "36,34": 5,
+      "36,35": 5,
+      "36,36": 5,
+      "36,37": 5,
+      "36,38": 5,
+      "36,39": 5,
+      "36,40": 5,
+      "36,46": 5,
+      "36,47": 13,
+      "37,1": 4,
+      "37,2": 4,
+      "37,3": 31,
+      "37,4": 23,
+      "37,5": 5,
+      "37,6": 5,
+      "37,7": 5,
+      "37,8": 5,
+      "37,9": 5,
+      "37,10": 5,
+      "37,11": 5,
+      "37,12": 5,
+      "37,13": 5,
+      "37,14": 5,
+      "37,15": 5,
+      "37,16": 5,
+      "37,17": 5,
+      "37,18": 5,
+      "37,19": 5,
+      "37,20": 5,
+      "37,21": 5,
+      "37,22": 5,
+      "37,23": 5,
+      "37,24": 5,
+      "37,25": 5,
+      "37,26": 5,
+      "37,27": 5,
+      "37,28": 5,
+      "37,29": 5,
+      "37,30": 5,
+      "37,31": 5,
+      "37,32": 5,
+      "37,33": 5,
+      "37,34": 5,
+      "37,35": 5,
+      "37,36": 5,
+      "37,37": 5,
+      "37,38": 5,
+      "37,39": 5,
+      "37,40": 5,
+      "37,46": 5,
+      "37,47": 13,
+      "38,3": 31,
+      "38,4": 23,
+      "38,5": 5,
+      "38,6": 5,
+      "38,7": 5,
+      "38,8": 5,
+      "38,9": 5,
+      "38,10": 5,
+      "38,11": 5,
+      "38,12": 5,
+      "38,13": 5,
+      "38,14": 5,
+      "38,15": 5,
+      "38,16": 5,
+      "38,17": 5,
+      "38,18": 5,
+      "38,19": 5,
+      "38,20": 5,
+      "38,21": 5,
+      "38,22": 5,
+      "38,23": 5,
+      "38,24": 5,
+      "38,25": 5,
+      "38,26": 5,
+      "38,27": 5,
+      "38,28": 5,
+      "38,29": 5,
+      "38,30": 5,
+      "38,31": 5,
+      "38,32": 5,
+      "38,33": 5,
+      "38,34": 5,
+      "38,35": 5,
+      "38,36": 5,
+      "38,37": 5,
+      "38,38": 5,
+      "38,39": 5,
+      "38,40": 5,
+      "38,46": 5,
+      "38,47": 13,
+      "39,3": 31,
+      "39,4": 23,
+      "39,5": 5,
+      "39,6": 5,
+      "39,7": 5,
+      "39,8": 5,
+      "39,9": 5,
+      "39,10": 5,
+      "39,11": 5,
+      "39,12": 5,
+      "39,13": 5,
+      "39,14": 5,
+      "39,15": 5,
+      "39,16": 5,
+      "39,17": 5,
+      "39,18": 5,
+      "39,19": 5,
+      "39,20": 5,
+      "39,21": 5,
+      "39,22": 5,
+      "39,23": 5,
+      "39,24": 5,
+      "39,25": 5,
+      "39,26": 5,
+      "39,27": 5,
+      "39,28": 5,
+      "39,29": 5,
+      "39,30": 5,
+      "39,31": 5,
+      "39,32": 5,
+      "39,33": 5,
+      "39,34": 5,
+      "39,35": 5,
+      "39,36": 5,
+      "39,37": 5,
+      "39,38": 5,
+      "39,39": 5,
+      "39,40": 5,
+      "39,46": 5,
+      "39,47": 13,
+      "40,3": 31,
+      "40,4": 23,
+      "40,5": 5,
+      "40,6": 5,
+      "40,7": 5,
+      "40,8": 5,
+      "40,9": 5,
+      "40,10": 5,
+      "40,11": 5,
+      "40,12": 5,
+      "40,13": 5,
+      "40,14": 5,
+      "40,15": 5,
+      "40,16": 5,
+      "40,17": 5,
+      "40,18": 5,
+      "40,19": 5,
+      "40,20": 5,
+      "40,21": 5,
+      "40,22": 5,
+      "40,23": 5,
+      "40,24": 5,
+      "40,25": 5,
+      "40,26": 5,
+      "40,27": 5,
+      "40,28": 5,
+      "40,29": 5,
+      "40,30": 5,
+      "40,31": 5,
+      "40,32": 5,
+      "40,33": 5,
+      "40,34": 5,
+      "40,35": 5,
+      "40,36": 5,
+      "40,37": 5,
+      "40,38": 5,
+      "40,39": 5,
+      "40,40": 5,
+      "40,46": 5,
+      "40,47": 13,
+      "41,3": 31,
+      "41,4": 23,
+      "41,5": 5,
+      "41,6": 5,
+      "41,7": 5,
+      "41,8": 5,
+      "41,9": 5,
+      "41,10": 5,
+      "41,11": 5,
+      "41,12": 5,
+      "41,13": 5,
+      "41,14": 5,
+      "41,15": 5,
+      "41,16": 5,
+      "41,17": 5,
+      "41,18": 5,
+      "41,19": 5,
+      "41,20": 5,
+      "41,21": 5,
+      "41,22": 5,
+      "41,23": 5,
+      "41,24": 5,
+      "41,25": 5,
+      "41,26": 5,
+      "41,27": 5,
+      "41,28": 5,
+      "41,29": 5,
+      "41,30": 5,
+      "41,31": 5,
+      "41,32": 5,
+      "41,33": 5,
+      "41,34": 5,
+      "41,35": 5,
+      "41,36": 5,
+      "41,37": 5,
+      "41,38": 5,
+      "41,39": 5,
+      "41,40": 5,
+      "41,46": 5,
+      "41,47": 13,
+      "42,3": 31,
+      "42,4": 35,
+      "42,5": 36,
+      "42,6": 36,
+      "42,7": 36,
+      "42,8": 36,
+      "42,9": 36,
+      "42,10": 36,
+      "42,11": 36,
+      "42,12": 36,
+      "42,13": 36,
+      "42,14": 36,
+      "42,15": 36,
+      "42,16": 36,
+      "42,17": 36,
+      "42,18": 36,
+      "42,19": 36,
+      "42,20": 36,
+      "42,21": 36,
+      "42,22": 36,
+      "42,23": 36,
+      "42,24": 36,
+      "42,25": 36,
+      "42,26": 36,
+      "42,27": 36,
+      "42,28": 36,
+      "42,29": 36,
+      "42,30": 36,
+      "42,31": 36,
+      "42,32": 36,
+      "42,33": 36,
+      "42,34": 36,
+      "42,35": 36,
+      "42,36": 36,
+      "42,37": 36,
+      "42,38": 36,
+      "42,39": 36,
+      "42,40": 36,
+      "42,41": 27,
+      "42,42": 27,
+      "42,43": 27,
+      "42,44": 27,
+      "42,45": 27,
+      "42,46": 36,
+      "42,47": 13,
+      "43,3": 37
+    },
+    "RowStyles": {
+      "7": 38
+    },
+    "ColStyles": {
+      "55": 39
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "2,30,1,5",
+    "2,37,1,4",
+    "4,3,17,1",
+    "5,23,1,3",
+    "5,56,1,8",
+    "6,56,1,8",
+    "21,3,6,1",
+    "21,23,1,3",
+    "27,3,16,1",
+    "28,23,1,3",
+    "43,3,1,44",
+    "6,4,15,43",
+    "22,4,5,43",
+    "29,4,14,43",
+    "0,4,1,11",
+    "2,4,1,5",
+    "5,4,1,8",
+    "5,12,1,3",
+    "5,15,1,4",
+    "5,19,1,4",
+    "5,26,1,11",
+    "5,37,1,4",
+    "21,4,1,8",
+    "21,12,1,3",
+    "21,15,1,4",
+    "21,19,1,4",
+    "21,26,1,11",
+    "28,4,1,8",
+    "28,12,1,3",
+    "28,15,1,4",
+    "28,19,1,4",
+    "28,26,1,21",
+    "5,41,1,3",
+    "5,44,1,3",
+    "21,44,1,3",
+    "2,9,1,8",
+    "21,37,1,4",
+    "21,41,1,3",
+    "4,4,1,8",
+    "4,12,1,3",
+    "4,15,1,4",
+    "4,19,1,4",
+    "4,23,1,3",
+    "4,26,1,11",
+    "4,37,1,4",
+    "4,41,1,3",
+    "4,44,1,3",
+    "27,4,1,8",
+    "27,12,1,3",
+    "27,15,1,4",
+    "27,19,1,4",
+    "27,23,1,3",
+    "27,26,1,21"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "类型",
+      "Formula": "产品利润率列表!$J$3"
+    },
+    {
+      "Name": "类型名称id",
+      "Formula": "产品利润率列表!$BE$6"
+    },
+    {
+      "Name": "总行数",
+      "Formula": "产品利润率列表!$BE$7"
+    }
+  ]
+}//wV8w2rYK0nbt00wy4KJ62FUDaRmS3QwqKhx6yx3gyoAFqDsS7wrriLVp5n1WdmvAKAWUloE+mnY+nH09TNVOQyKvEB5TZ16GhYKcD0vZX8qzaMomOdqiTBwhhMUUYu6/6BmnAqLgKoqY6Q6zDTmC6EenyBf6c3HsIDHEC85EHM0lDfDuKTziaC/cD6T8ne/KQtwnIud0AK5tjb74kCkN6GTjmyvVkV7YDrBKRwhhPpaCWtpvrfsjCGuMb4cGQb52dfYxpF0CKPTe0y7OrR/PwenKiMjux9xwimTSRhIoi/JJIa4HrKEx5Sz9EMe8xC6SZ5f8V/LB5abkkoEiL17LhTZ9ShJO6Qu6WcDr2TiZtqfDfvYbwAGoAvIeoBEQHxZH08gjyg2L4VqOHjanBbAgCWBH1EwwMSUplktcKBORopQQhCoeFS5x01f2b7ALyOeLjGInUzN1iB2TUli48CR5TjEpGM28bCspaeJ5kCWFV4B7f1J9+JAZKCZ0txs36x2imUQAM6sC8Sm3CRSqH0GswFnc38kPAQVLdn82pu92KzWD57kGAjvs/kSQT3HiI9f/x1CJxsq59fR0mblOsnxhbUB1439Oeosp5A1+m7ZhF6e+Y4LMgCzyj0yEchQpVOqFyFVSXfE5/LFXVAM7jC9H/iJP1MTba3fWCRQ/aq3GlK62ukVzQhlrFK4Dn1Xio26n1Tc7AjSquoXx/T6JG4KnzJyT8NXcrsGqxxChCJEvdXmW3pukhSQU5LEownVxSpONamxMSkDk0Xl22oiKd2geELWY+nbLSD+HRR+S5BpRyL1LMXh1Epwm/zDKEcanxxpm+OvAZYGy3zXedS1IUWjE/0cBhtB3cryg4WXqd2dvYV0lTeiCqvBNOgnr7isiNoKLvpYNFgLucfhU6h7hR1T2ug==|920

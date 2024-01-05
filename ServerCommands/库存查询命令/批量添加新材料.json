@@ -1,0 +1,180 @@
+{
+  "Name": "批量添加新材料",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Type": 1,
+          "ArrayItems": [],
+          "ArrayParamItems": [
+            {
+              "Name": "材料名称",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "目录id",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "单位",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "库存数量",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "库存金额",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "备料类型",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "使用状态",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            }
+          ],
+          "Name": "材料列表",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=材料列表"
+        },
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "库存材料主表",
+          "UpdateType": "add",
+          "ShowConfirm": false,
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "库存材料主表",
+                "ColumnName": "材料名称",
+                "GUID": "9baaf722-4c36-45a7-94a5-f27690321f65"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.材料名称"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "库存材料主表",
+                "ColumnName": "目录ID",
+                "GUID": "ba2742ec-1186-4805-8ff7-b2b40dd1b92d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.目录id"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "库存材料主表",
+                "ColumnName": "库存数量",
+                "GUID": "af05526f-f02d-41a2-8faf-b2b716baf20b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.库存数量"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "库存材料主表",
+                "ColumnName": "库存金额",
+                "GUID": "4e2349a0-a925-4d4b-b7b3-0184b345822f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.库存金额"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "库存材料主表",
+                "ColumnName": "单位",
+                "GUID": "b60d2c3a-5099-4917-b827-623821274a61"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.单位"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "库存材料主表",
+                "ColumnName": "备料类型",
+                "GUID": "798ae0f9-02cb-4237-b348-b9c6a6dc9860"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.备料类型"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "库存材料主表",
+                "ColumnName": "使用状态",
+                "GUID": "fb687af9-a6d6-4245-85af-91921d0b07a2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.使用状态"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

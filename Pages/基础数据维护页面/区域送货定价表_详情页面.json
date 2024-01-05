@@ -1,0 +1,324 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "Count": 15
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "1,6": "ID:",
+    "2,6": "所属公司：",
+    "5,2": "送货区域:",
+    "7,2": "送货定价:",
+    "9,2": "起始日期:",
+    "11,2": "截止日期:",
+    "13,12": "取消"
+  },
+  "AttachInfos": {
+    "1,10": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "ID",
+        "GUID": "74fa202f-6b90-428a-877e-3abad04a6bb1"
+      }
+    },
+    "2,10": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "不可编辑圆角框"
+      }
+    },
+    "5,10": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "客户区域ID",
+        "GUID": "8de0c7b4-4cad-4571-9c0f-079d97a2e7d9"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "不可编辑圆角框",
+        "IsBounding": true,
+        "DataSource": "地区目录表",
+        "ValueColumnBindingInfo": {
+          "TableName": "地区目录表",
+          "ColumnName": "地区ID",
+          "GUID": "60f296d9-2004-4ffb-834d-d609b8dd3764"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "地区目录表",
+          "ColumnName": "地区名称",
+          "GUID": "191d04fd-bf13-4caf-b71c-a8d6191ac0a4"
+        }
+      },
+      "DataValidationInfo": {
+        "NumberType": 7,
+        "FirstParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=区域送货定价表_详情页面!K6<>\"\""
+        },
+        "IgnoreBlank": false,
+        "ErrorMessage": "送货区域不能为空！"
+      }
+    },
+    "7,10": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "送货定价",
+        "GUID": "a1f22cbd-0f18-4f9b-8dc6-a8079134df9b"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "不可编辑圆角框"
+      },
+      "DataValidationInfo": {
+        "NumberType": 1,
+        "CompareParamType": 6,
+        "FirstParamValue": "0",
+        "IgnoreBlank": false
+      }
+    },
+    "9,10": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "起始日期",
+        "GUID": "e14e5064-20db-41e2-a5ba-4b9c17ff8222"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "ShowCalendarScrollBar": true,
+        "TemplateKey": "不可编辑圆角框"
+      },
+      "DataValidationInfo": {
+        "NumberType": 4,
+        "CompareParamType": 4,
+        "FirstParamValue": "2020/12/31",
+        "IgnoreBlank": false
+      }
+    },
+    "11,10": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "截止日期",
+        "GUID": "83925ec0-459a-408b-8bb5-d493f5a4a890"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "ShowCalendarScrollBar": true,
+        "TemplateKey": "不可编辑圆角框"
+      },
+      "DataValidationInfo": {
+        "NumberType": 4,
+        "CompareParamType": 4,
+        "FirstParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=区域送货定价表_详情页面!K10"
+        },
+        "IgnoreBlank": false,
+        "ErrorMessage": "截止日期不能小于起始日期！"
+      }
+    },
+    "13,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=区域送货定价表_详情页面!C14"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "区域送货定价表",
+                    "UpdateType": "add"
+                  }
+                ],
+                "ID": "f9e94490-00b5-4167-9edd-72fd78370824"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=区域送货定价表_详情页面!C14"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "区域送货定价表"
+                  }
+                ],
+                "ID": "6abe5ab6-313c-4de2-9b47-b4e849b1e241"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "TemplateKey": "样式3"
+      }
+    },
+    "13,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "样式3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontWeight": 1
+      },
+      {
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 2
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "Formatter": 4,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "Center",
+        "0元"
+      ]
+    },
+    "CellStyles": {
+      "1,6": 0,
+      "2,2": 1,
+      "2,6": 2,
+      "3,2": 1,
+      "5,2": 1,
+      "5,10": 3,
+      "7,2": 1,
+      "7,10": 4,
+      "9,2": 1,
+      "11,2": 1,
+      "13,2": 5,
+      "13,3": 5,
+      "13,4": 5,
+      "13,5": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,10,1,6",
+    "13,12,1,4",
+    "9,10,1,6",
+    "11,10,1,6",
+    "7,10,1,6",
+    "13,2,1,4",
+    "5,10,1,6",
+    "1,6,1,4",
+    "2,6,1,4",
+    "2,10,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "区域送货定价表",
+    "PageResponsiveMode": 1
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//bItwQEQd2hzzOK8opPSsnjOrEWd+CsKHCR4Y9nRPb/hZBkXiX6bi3aeZHgfZrXd4D5KGwM0sXxVkQLuW4v+9/C4XBUXLXL7AHls5dNgraKPXBOqmimj6vAXzpL9/QepxG681hhIuwVPqPc55kra8IvLNvdXEO1af2wRAFcYvVon4qm0kSceyZVyOrtaWw+aroSmcMFYD3W8qZTw+t6npYJkXosW8yCOLDG8CqGBS2ewioVGJ4iKS4YxjQgnfk72B6Y0HMQcgDW+9fnHw3uPVq6/5Z3C6ZKPAFoeeUc9/Te2Ua8EUQqiy+JdZlfiWQVHpeSBv+nWOE9TWSuYZUcYiHZI9szpdzC8o5tGWi/pKAu+bpwcUqORIbTmgG0+dAq1ePmdqsj44+CP6BkhHXE1VYOIrWvB6izgFBUWr/Pl9ZbEK89EloWKM0ALonvvDkKDurt6RyTAM27hGgAUY1BseXE4olXfa+T6s+HObVS1722vl/TkLSj4a41LGeqotJPzC6pAvRLLgDqdK2OWnNSJez/PGe0dkmEGQdYdTc5UZKOxePA+UOOW9QwVm/y1hGMuQSoS/i4ruayaLIx8vSF9YGPEkJ9m2Wzzn7seot9/+G6dWBz0IJGI11KfjpkWhPJBHLleDFNhOBe1vmzhBBq71bMtlcDf0mKVLhsLYJY3w3xQo+EjsSjqA/GZ3GdEXIN21nPGJYx+O1TZ9RoM6E/uQw4ZflAi6Zb/tW/Pz/bdfsvoH+7xML/8EikJYJstzGAa9oi1Tivx/kTdE/5vkgRmxJmwYvJrOPJSjbptkgCHbj6+TPli74kBgtI2TJCW3a/lA7AkSwofmNECqG2QwIDIvy+mbT+cy3Z6M99jyVvmPSL8N8xVQCY1Rw0ssCfOxJlinSUGam51gAFaxsCxCaedB8A==|920

@@ -1,0 +1,1086 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0,
+          "IsHidden": true
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "Count": 34,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      48,
+      49,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "0,6": "装点光源工费列表",
+    "2,36": "首次添加",
+    "2,43": "关闭",
+    "4,18": "日期状态",
+    "4,55": "行数：",
+    "27,6": "*此处“已失效”指的是新建报价单时不会再使用此属性中的参数，并非真的失效。早前在这个已失效属性的启止时间段内创建的过往报价单，仍然使用的是这个已失效的属性参数。例如：打开这个时间段内创建过的报价单更换属性时，则会读取“已失效”的属性参数进行产品价格计算。"
+  },
+  "Formulas": {
+    "4,56": "COUNTA(K6)",
+    "5,18": "IF(K6>TODAY(),\"待生效\",IF(O6=\"\",\"生效中\",IF(O6>=TODAY(),\"即将到期\",\"已失效\")))",
+    "5,40": "IF((S6=\"生效中\")*(K6=TODAY())+(S6=\"待生效\"),\"修改\",IF(S6=\"生效中\",\"创建新属性\",\"\"))",
+    "5,45": "IF(K6>=TODAY(),\"删除\",\"\")"
+  },
+  "AttachInfos": {
+    "2,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "装点光源工费详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=装点光源工费详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "首次添加",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "RulesGuidList": [
+        "d59a4005-f53f-4480-b803-6bbc3b9fa727",
+        "0c000c7e-26c0-436e-a2ef-78f57f57e846"
+      ]
+    },
+    "2,43": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "装点光源工费表",
+        "RowIndex": 4,
+        "ColumnIndex": 6,
+        "RowCount": 23,
+        "ColumnCount": 44,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "CommitType": 1
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "装点光源工费表",
+        "ColumnName": "单价",
+        "GUID": "6d630aaa-4837-4a34-b1f1-df1a86f52bfd"
+      }
+    },
+    "5,10": {
+      "BindingInfo": {
+        "TableName": "装点光源工费表",
+        "ColumnName": "启用日期",
+        "GUID": "220e231f-0b94-4bbd-b660-f1847804fb11"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "装点光源工费表",
+        "ColumnName": "截止日期",
+        "GUID": "425a034e-f106-4465-a573-a5a486054765"
+      }
+    },
+    "5,22": {
+      "BindingInfo": {
+        "TableName": "装点光源工费表",
+        "ColumnName": "备注",
+        "GUID": "3448f38f-e4f1-4bb8-9cd4-a4b721b6af6c"
+      }
+    },
+    "5,40": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=装点光源工费列表!AO6"
+                      }
+                    ]
+                  },
+                  "value": "修改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "装点光源工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "TargetCell": {
+                          "SerializeProperty": "=装点光源工费详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "d80cf993-f967-40a1-88a1-3c6c67904591"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "装点光源工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "创建",
+                        "TargetCell": {
+                          "SerializeProperty": "=装点光源工费详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "9a687674-7cc0-481c-9729-835a7b364ae9"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,45": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "装点光源工费表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "装点光源工费表",
+                      "ColumnName": "启用日期",
+                      "GUID": "e70c0d57-56e4-4952-aa30-065a191c15f0"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=装点光源工费列表!K6"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "装点光源工费表",
+                      "ColumnName": "ID",
+                      "GUID": "5664140c-f569-48b8-8ae8-392c542a4093"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=装点光源工费列表!AW6"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "d65e9b780c094fd5a334e4bcd99d337f"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=装点光源工费列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "说明：",
+                    "Message": "删除本属性后，前面属性的截止日期将自动置空，变为长期有效。您确定要删除吗？",
+                    "Type": "warning",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=装点光源工费列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "装点光源工费表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "装点光源工费表",
+                                    "ColumnName": "ID",
+                                    "GUID": "e996296d-8e71-4a8b-ba6e-fa1b5c517f71"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "装点光源工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "59e61691-6cb9-4d35-8ca1-d11c5423ab5a"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=装点光源工费列表!K6"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "装点光源工费表",
+                                      "ColumnName": "ID",
+                                      "GUID": "430792d5-4a98-4472-a06e-e82680b9d0ec"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=装点光源工费列表!AW6"
+                                    }
+                                  }
+                                ]
+                              },
+                              "NullFormulaValueQueryPolicy": 0,
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "装点光源工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "0d9510bd-3c58-4ed0-ab8e-97822f29c61c"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "911055780e39413cad027cdbf6cd1895"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "装点光源工费表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "装点光源工费表",
+                                "ColumnName": "ID",
+                                "GUID": "e8be147c-c527-4732-9305-07cf588555a1"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=装点光源工费列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "装点光源工费表",
+                                  "ColumnName": "截止日期",
+                                  "GUID": "cfc93303-14ff-4df0-b780-acd6c535b72f"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "装点光源工费表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "5eb06f85-2b79-42fe-9404-705ced82a16a"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "1c11c219-c55c-417d-a5d9-adf3b8a1b250"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "装点光源工费表",
+                    "UpdateType": "delete",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "d889248c-c67c-4ff1-8b9c-f17cea3f8e2c"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,48": {
+      "BindingInfo": {
+        "TableName": "装点光源工费表",
+        "ColumnName": "ID",
+        "GUID": "f65437cc-1b40-41d5-ac18-b9751e2151a6"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 10,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 11,
+        "HorizontalAlignment": 8,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 8
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 12,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Right",
+        "@",
+        "[AUTO]General",
+        "Left",
+        "Background 1 -25",
+        "0.00\"元/m\"",
+        "Center",
+        "yyyy/MM/dd",
+        "#FF00B050",
+        "Blue",
+        "Background 1 -50"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,6": 0,
+      "0,50": 1,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 2,
+      "1,11": 4,
+      "1,12": 4,
+      "1,13": 4,
+      "1,14": 4,
+      "1,15": 4,
+      "1,16": 4,
+      "1,17": 4,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 4,
+      "1,21": 4,
+      "1,22": 4,
+      "1,23": 4,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 4,
+      "1,28": 4,
+      "1,29": 4,
+      "1,30": 4,
+      "1,31": 4,
+      "1,32": 4,
+      "1,33": 4,
+      "1,34": 4,
+      "1,35": 4,
+      "1,48": 1,
+      "1,50": 1,
+      "2,6": 5,
+      "2,7": 5,
+      "2,8": 5,
+      "2,9": 5,
+      "2,36": 6,
+      "2,43": 7,
+      "2,44": 3,
+      "2,45": 3,
+      "2,46": 7,
+      "2,48": 1,
+      "2,50": 1,
+      "3,6": 8,
+      "3,7": 8,
+      "3,8": 8,
+      "3,9": 8,
+      "3,48": 1,
+      "3,50": 1,
+      "4,6": 9,
+      "4,7": 10,
+      "4,8": 10,
+      "4,9": 10,
+      "4,10": 11,
+      "4,11": 10,
+      "4,12": 10,
+      "4,13": 10,
+      "4,14": 11,
+      "4,15": 10,
+      "4,16": 10,
+      "4,17": 10,
+      "4,18": 11,
+      "4,19": 10,
+      "4,20": 10,
+      "4,21": 10,
+      "4,22": 12,
+      "4,23": 10,
+      "4,24": 10,
+      "4,25": 10,
+      "4,26": 10,
+      "4,27": 10,
+      "4,28": 10,
+      "4,29": 10,
+      "4,30": 10,
+      "4,31": 10,
+      "4,32": 10,
+      "4,33": 10,
+      "4,34": 10,
+      "4,35": 10,
+      "4,36": 10,
+      "4,37": 10,
+      "4,38": 10,
+      "4,39": 10,
+      "4,40": 10,
+      "4,41": 10,
+      "4,42": 10,
+      "4,43": 10,
+      "4,44": 10,
+      "4,45": 10,
+      "4,46": 10,
+      "4,47": 10,
+      "4,48": 10,
+      "4,49": 10,
+      "4,50": 13,
+      "5,6": 14,
+      "5,10": 15,
+      "5,14": 15,
+      "5,18": 16,
+      "5,22": 17,
+      "5,40": 18,
+      "5,45": 18,
+      "5,48": 19,
+      "5,50": 13,
+      "5,60": 19,
+      "5,61": 19,
+      "5,62": 19,
+      "5,63": 19,
+      "6,6": 13,
+      "6,39": 20,
+      "6,50": 13,
+      "7,6": 13,
+      "7,39": 20,
+      "7,50": 13,
+      "8,6": 13,
+      "8,39": 20,
+      "8,50": 13,
+      "9,6": 13,
+      "9,39": 20,
+      "9,50": 13,
+      "10,6": 13,
+      "10,39": 20,
+      "10,50": 13,
+      "11,6": 13,
+      "11,39": 20,
+      "11,50": 13,
+      "12,6": 13,
+      "12,39": 20,
+      "12,50": 13,
+      "13,6": 13,
+      "13,39": 20,
+      "13,50": 13,
+      "14,6": 13,
+      "14,39": 20,
+      "14,50": 13,
+      "15,3": 5,
+      "15,4": 5,
+      "15,5": 5,
+      "15,6": 13,
+      "15,50": 13,
+      "16,3": 5,
+      "16,4": 5,
+      "16,5": 5,
+      "16,6": 13,
+      "16,50": 13,
+      "17,3": 5,
+      "17,4": 5,
+      "17,5": 5,
+      "17,6": 13,
+      "17,50": 13,
+      "18,3": 5,
+      "18,4": 5,
+      "18,5": 5,
+      "18,6": 13,
+      "18,50": 13,
+      "19,3": 5,
+      "19,4": 5,
+      "19,5": 5,
+      "19,6": 13,
+      "19,50": 13,
+      "20,3": 5,
+      "20,4": 5,
+      "20,5": 5,
+      "20,6": 13,
+      "20,50": 13,
+      "21,3": 5,
+      "21,4": 5,
+      "21,5": 5,
+      "21,6": 13,
+      "21,50": 13,
+      "22,3": 5,
+      "22,4": 5,
+      "22,5": 5,
+      "22,6": 13,
+      "22,50": 13,
+      "23,3": 5,
+      "23,4": 5,
+      "23,5": 5,
+      "23,6": 13,
+      "23,50": 13,
+      "24,3": 5,
+      "24,4": 5,
+      "24,5": 5,
+      "24,6": 13,
+      "24,50": 13,
+      "25,3": 5,
+      "25,4": 5,
+      "25,5": 5,
+      "25,6": 13,
+      "25,50": 13,
+      "26,3": 5,
+      "26,4": 5,
+      "26,5": 5,
+      "26,6": 21,
+      "26,7": 22,
+      "26,8": 22,
+      "26,9": 22,
+      "26,10": 22,
+      "26,11": 22,
+      "26,12": 22,
+      "26,13": 22,
+      "26,14": 22,
+      "26,15": 22,
+      "26,16": 22,
+      "26,17": 22,
+      "26,18": 22,
+      "26,19": 22,
+      "26,20": 22,
+      "26,21": 22,
+      "26,22": 22,
+      "26,23": 22,
+      "26,24": 22,
+      "26,25": 22,
+      "26,26": 22,
+      "26,27": 22,
+      "26,28": 22,
+      "26,29": 22,
+      "26,30": 22,
+      "26,31": 22,
+      "26,32": 22,
+      "26,33": 22,
+      "26,34": 22,
+      "26,35": 22,
+      "26,36": 22,
+      "26,37": 22,
+      "26,38": 22,
+      "26,39": 22,
+      "26,40": 22,
+      "26,41": 22,
+      "26,42": 22,
+      "26,43": 22,
+      "26,44": 22,
+      "26,45": 22,
+      "26,46": 22,
+      "26,47": 22,
+      "26,48": 22,
+      "26,49": 22,
+      "26,50": 13,
+      "27,3": 5,
+      "27,4": 5,
+      "27,5": 5,
+      "27,6": 23,
+      "27,50": 1,
+      "28,3": 5,
+      "28,4": 5,
+      "28,5": 5,
+      "28,6": 5,
+      "28,7": 5,
+      "28,8": 5,
+      "28,9": 5,
+      "28,48": 13,
+      "28,50": 1,
+      "29,3": 5,
+      "29,4": 5,
+      "29,5": 5,
+      "29,6": 5,
+      "29,7": 5,
+      "29,8": 5,
+      "29,9": 5,
+      "29,48": 13,
+      "29,50": 1,
+      "30,3": 5,
+      "30,4": 5,
+      "30,5": 5,
+      "30,6": 5,
+      "30,7": 5,
+      "30,8": 5,
+      "30,9": 5,
+      "30,48": 13,
+      "30,50": 1,
+      "31,3": 5,
+      "31,4": 5,
+      "31,5": 5,
+      "31,6": 5,
+      "31,7": 5,
+      "31,8": 5,
+      "31,9": 5,
+      "31,48": 13,
+      "31,50": 1,
+      "32,48": 1,
+      "32,50": 1,
+      "33,48": 1,
+      "33,50": 1
+    },
+    "ColStyles": {
+      "8": 24,
+      "49": 25,
+      "50": 25,
+      "51": 26,
+      "52": 26,
+      "53": 26,
+      "54": 26,
+      "55": 27,
+      "56": 26,
+      "57": 26,
+      "58": 26,
+      "59": 26,
+      "60": 26,
+      "61": 26,
+      "62": 26,
+      "63": 26,
+      "64": 26
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "2,43,1,3",
+    "5,18,1,4",
+    "4,56,1,4",
+    "6,6,21,44",
+    "2,36,1,5",
+    "27,6,1,44",
+    "0,6,1,11",
+    "5,48,1,2",
+    "5,6,1,4",
+    "5,10,1,4",
+    "5,14,1,4",
+    "5,22,1,18",
+    "5,40,1,5",
+    "5,45,1,3",
+    "4,6,1,4",
+    "4,10,1,4",
+    "4,14,1,4",
+    "4,18,1,4",
+    "4,22,1,18",
+    "4,40,1,5",
+    "4,45,1,3",
+    "4,48,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=装点光源工费列表!行数<>0"
+          },
+          "GUID": "d59a4005-f53f-4480-b803-6bbc3b9fa727",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=装点光源工费列表!行数<>0"
+          },
+          "Priority": 1,
+          "GUID": "0c000c7e-26c0-436e-a2ef-78f57f57e846",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "行数",
+      "Formula": "装点光源工费列表!$BE$5"
+    }
+  ]
+}//v5pF4BaYNUYxnb/mqSx8OMZ/zd0xniDKYdp6ur7+PYTWUApLFUnNi7W69rFZvg5qcU6W4d+I/E9MsxWdxBkOjnf7B9vnDqyL56BAoURk/nv2TUeHFcxfhfAU6bzlJntm+mEW6C3E93s0e9WT2gbRu05xm+aKqlWyj8VHtPGfUl6AehDfFxQFnRVYQeLReScBhG0+CUMt5Dm8lm4QmIZGdFGZMg+aHCtKFAks5gJbMGC/2m/tlwwtKNfedaz7CBVwfDndXbeuikkZpqWRNoQ8Ez0QD+bQlmyUuHi8TQK/fq5Y0MBndgfIzmqNYOvC8MCq3JS+aVMx0Bu0KHdenpqYKQ8XPY8WA8R4HBbQlGDNdsyktHVQTh8Hz8is8lUr6e9VNi3PUUmfeX1mahWOa8f5oI57Y8QuxxkkPgsSo1TCFsBZX6eBjAoZ71F5eErcSQaTrW77WiZKFrkSS8ww+BmDp+c5AePHV4pzy9Mi3ru9eBixnN8Jii5oQuJfRnxpogMPNEe2KkhX39mBWshJBuPQIuMurzJtNrpbbd8OPkSNna/sovEUSnQAL2R2zR16tTpqCo7IAtDlNexMiMVMf8O6Q6+DcvJXYJebhEww+ukN29jvUPOUjkCd+5/1Af0yZ50CoXTzxgwig8zfghCd9KrH6lxvfI0YDCCsgve1PP15jn/0gSksrhw6s92PEuwO+BH1YmJXT3mnPGi6SyFIwa5oXvKvM18g1t543qf902Spilborrh7T0CY8ebkCwoa55DzEP2xMd5Jb6WLi2FXDhM4JPEeJa87O6Zzmbid0QYUVOI21P+BZQVitvlzHU/du9PFIUyU9cQlYfR5PW/Mgcx/UPR4fhAKXDp+tUDWiijKkHGzPoA53L71OX1VvYXlIx+IYftMuaOzktChv72ONm9LhA==|920

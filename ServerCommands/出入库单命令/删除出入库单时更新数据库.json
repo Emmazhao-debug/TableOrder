@@ -1,0 +1,343 @@
+{
+  "Name": "删除出入库单时更新数据库",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "出入库单号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "出入库主表",
+          "TableValue": {
+            "TableName": "出入库主表",
+            "TableValueType": 1,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "出入库主表",
+                  "ColumnName": "出入库单ID",
+                  "GUID": "3ad8184d-02e4-431d-b2b3-2d30b20e1cfc"
+                },
+                "ColumnName": "出入库单ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "出入库主表",
+                  "ColumnName": "出入类型",
+                  "GUID": "a808da4a-572e-4609-9e65-1a8669ece9f6"
+                },
+                "ColumnName": "出入类型"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "出入库主表",
+                "ColumnName": "出入库单号",
+                "GUID": "d0a0661f-b953-4204-9e67-8d6f8781f081"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=出入库单号"
+              }
+            },
+            "NullFormulaValueQueryPolicy": 0
+          },
+          "ID": "35de2dfd13404e8abf24099f1333cffb"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "出入库明细表",
+          "TableValue": {
+            "TableName": "出入库子表",
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "出入库子表",
+                  "ColumnName": "材料编号",
+                  "GUID": "89e0ef1c-92cc-402a-bf64-b0ba01c31403"
+                },
+                "ColumnName": "材料编号"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "出入库子表",
+                  "ColumnName": "料号批次",
+                  "GUID": "5acf5de1-4ea8-4eb5-ab9e-cf7aad020c2c"
+                },
+                "ColumnName": "料号批次"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "出入库子表",
+                  "ColumnName": "数量",
+                  "GUID": "94e2d67b-e9a3-4433-9069-b22f96cd2862"
+                },
+                "ColumnName": "数量"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "出入库子表",
+                  "ColumnName": "金额",
+                  "GUID": "b8cb9994-7c7f-46e4-b4a9-ca2861412af7"
+                },
+                "ColumnName": "金额"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "出入库子表",
+                "ColumnName": "出库单ID",
+                "GUID": "42bc1cca-757b-4e0c-b307-9a0d0ea46ace"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=出入库主表.出入库单ID"
+              }
+            },
+            "NullFormulaValueQueryPolicy": 0
+          },
+          "ID": "05bb83caabcf4ff6a20a73c79bca7c1b"
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "采购单主表",
+          "ShowConfirm": false,
+          "RowsToUpdate": 1,
+          "RowsToUpdateCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "采购单主表",
+              "ColumnName": "出入库单号",
+              "GUID": "de829268-3072-40db-af63-1d3623e86b6d"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=出入库单号"
+            }
+          },
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "出入库单号",
+                "GUID": "8311b886-b32a-4210-81c7-da918097ae41"
+              }
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "出入库主表",
+          "UpdateType": "delete",
+          "ShowConfirm": true,
+          "ConfirmText": "您确定要删除吗？",
+          "RowsToUpdate": 1,
+          "RowsToUpdateCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "出入库主表",
+              "ColumnName": "出入库单ID",
+              "GUID": "13230cee-a418-495e-b33e-432753cf18f7"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=出入库主表.出入库单ID"
+            }
+          }
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=出入库明细表"
+            },
+            "LoopItemParamName": "出入库明细"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "原采购明细库存数量",
+              "TableValue": {
+                "TableName": "采购单明细表",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "采购单明细表",
+                      "ColumnName": "库存数量",
+                      "GUID": "5f1bdc12-7d2f-4871-a3cb-4f72275a5a95"
+                    },
+                    "ColumnName": "库存数量"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "料号批次",
+                    "GUID": "b6ec82ad-ae33-451d-a57d-b4bcf323b274"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=出入库明细.料号批次"
+                  }
+                },
+                "NullFormulaValueQueryPolicy": 0
+              },
+              "ID": "0e12fa0d751b42edbf78e701bab51a39"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "原材料主表库存和金额",
+              "TableValue": {
+                "TableName": "库存材料主表",
+                "TableValueType": 1,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "库存材料主表",
+                      "ColumnName": "库存数量",
+                      "GUID": "3039abab-9b31-485a-8550-9af166853063"
+                    },
+                    "ColumnName": "库存数量"
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "库存材料主表",
+                      "ColumnName": "库存金额",
+                      "GUID": "7993345a-4f13-45c2-ad77-2d2aa6df35d2"
+                    },
+                    "ColumnName": "库存金额"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "库存材料主表",
+                    "ColumnName": "材料编号",
+                    "GUID": "408f0337-1931-47a1-8d88-7f22bd43472a"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=出入库明细.材料编号"
+                  }
+                },
+                "NullFormulaValueQueryPolicy": 0
+              },
+              "ID": "8872d2623b8641108c575f4fa0ddb260"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "采购单明细表",
+              "ShowConfirm": false,
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "采购单明细表",
+                  "ColumnName": "料号批次",
+                  "GUID": "a8152c64-95aa-4ff3-81f2-511fb4bccd7b"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=出入库明细.料号批次"
+                }
+              },
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "库存数量",
+                    "GUID": "2b1027ea-23f3-4700-9c16-3a4bc6054b20"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原采购明细库存数量+出入库明细.数量*IF(出入库主表.出入类型=\"出库\",1,-1)"
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "库存材料主表",
+              "ShowConfirm": false,
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "库存材料主表",
+                  "ColumnName": "材料编号",
+                  "GUID": "bde2dbf8-ebae-49cf-80e6-335e2c5cb2a7"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=出入库明细.材料编号"
+                }
+              },
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "库存材料主表",
+                    "ColumnName": "库存数量",
+                    "GUID": "649e314a-386a-49ab-8156-3995ec376014"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原材料主表库存和金额.库存数量+出入库明细.数量*IF(出入库主表.出入类型=\"出库\",1,-1)"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "库存材料主表",
+                    "ColumnName": "库存金额",
+                    "GUID": "18d064ef-700a-4a25-bbeb-ff8300da0a4f"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原材料主表库存和金额.库存金额+出入库明细.金额*IF(出入库主表.出入类型=\"出库\",1,-1)"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

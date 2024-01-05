@@ -1,0 +1,91 @@
+{
+  "Name": "更新材料库存数量、金额",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.InvokeTriggerSaveData, ServerDesignerCommon",
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "材料编号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "原有数量",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "本次变更数量",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "原有金额",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "本次变更金额",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "库存材料主表",
+      "ShowConfirm": false,
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "ColumnBindingInfo": {
+          "TableName": "库存材料主表",
+          "ColumnName": "材料编号",
+          "GUID": "9458d078-0018-4afc-b7b7-acfbd2a0ad52"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=材料编号"
+        }
+      },
+      "UpdateBindingValues": [
+        {
+          "BindingInfo": {
+            "TableName": "库存材料主表",
+            "ColumnName": "库存数量",
+            "GUID": "a3a4636f-7b46-4251-8756-735b56d7ab32"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=原有数量+本次变更数量"
+          }
+        },
+        {
+          "BindingInfo": {
+            "TableName": "库存材料主表",
+            "ColumnName": "库存金额",
+            "GUID": "6fd11bbd-d6bf-4c9f-b03e-a982fba2a9ef"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=原有金额+本次变更金额"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

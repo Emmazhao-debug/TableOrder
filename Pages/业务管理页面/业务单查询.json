@@ -1,0 +1,226 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "5,50": "当前公司简称：",
+    "7,41": "添加业务",
+    "10,43": "修改"
+  },
+  "AttachInfos": {
+    "7,41": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "业务单详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=业务单详情!AJ29"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=业务单查询!当前公司简称"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=业务单详情!当前公司简称"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加业务",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "9,11": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "业务表",
+        "RowIndex": 9,
+        "ColumnIndex": 11,
+        "RowCount": 15,
+        "ColumnCount": 35,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "10,13": {
+      "BindingInfo": {
+        "TableName": "业务表",
+        "ColumnName": "业务单号",
+        "GUID": "ddfb1319-ff3f-44d4-a8b6-118ef8c5d49e"
+      }
+    },
+    "10,18": {
+      "BindingInfo": {
+        "TableName": "业务表",
+        "ColumnName": "客户ID",
+        "GUID": "fc2ae252-713d-4531-a1e3-ce3e98915c85",
+        "RelationBinding": {
+          "RelatedTable": "客户资料",
+          "RelatedColumn": "客户ID",
+          "DisplayColumn": "客户名称"
+        }
+      }
+    },
+    "10,30": {
+      "BindingInfo": {
+        "TableName": "业务表",
+        "ColumnName": "业务摘要",
+        "GUID": "bc6ca3fe-739f-495f-b773-424f6ef58cd1"
+      }
+    },
+    "10,43": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "业务单详情",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=业务单详情!AJ29"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=业务单查询!当前公司简称"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=业务单详情!当前公司简称"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "Foreground": 3,
+        "HorizontalAlignment": 2,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Right",
+        "black",
+        "Center",
+        "Blue",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "5,50": 0,
+      "5,55": 1,
+      "5,56": 2,
+      "5,57": 2,
+      "5,58": 3,
+      "10,13": 4,
+      "10,43": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 4,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "11,11,13,35",
+    "10,43,1,3",
+    "7,41,1,4",
+    "5,55,1,4",
+    "5,50,1,5",
+    "10,13,1,5",
+    "10,18,1,12",
+    "10,30,1,12",
+    "9,13,1,5",
+    "9,18,1,12",
+    "9,30,1,12",
+    "9,43,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "当前公司简称",
+      "Formula": "业务单查询!$BD$6"
+    }
+  ]
+}//ntq79Q4cO6dXSZ7xYSBcSg11p9ntpVn6Qa9TK1nv1/+7cH14d4RkJwsdrNzb2ggE0D6lQNpKNgp05E13jtamhOCyKk8WTBfappTGYn6rkoRqNNod1F/fPMytho2tpH/BiolF1R3WGWJVszwAsEQCRFzS9KTA+f7twDrZjaN/q/WXdfPie0/1kP+D6FvlfTWwPmQfKcbP8likt0DxP+uGV30WwymC6NnjYhPo+uoEv1cKGVmUI3witEuGLvFu2vBp/WnSB+jGpzXo25vM2Jj6HaZUnldrZOxOyns1ky38SgKikOumfXg9mSBLDg66yoiYkY3KdVaqGLKoXLus5XP7btHOu5YVyYA1FKNq0EMoDE9RQivyQpqD/J1twXNQm/p1APMtXQZWdsaDWCyjj7Nf/9wAol+9NsIOvU9sXkbRy4rFXn2v75vNQKvu29unUb0ESwqBOrVzPgrcHdbOKRxIc/yQXtDGlMvRBQ++68YAXbT88DNfaoAVCTkg7TVdJpRcutVZV1ig0+re2i3u3U2PiSda32rlv8mQjwo/sf8F+Tu93lg8RAP5zrxr4cgMtkz3iAzfDPMZQWoaPqhuDvTyQ7Qd7tozkHyV8V8B4urVShmhNggqO+QIerN14epDEM3v7GUA4R3pfXL+IYf3WxeeG7k8Emwj2MoFQIOSR38gslxGiibun5LKAilHkbnjn1il0Gu+MXIk/6Y0jJlcQ/+3yhAgVkoXXjJnuUZAkG6s/oWOM5QPbwwhx+ghD2MKrxpBAey3x9dmoQ07KiOsyl3EY81v1h2BoS/j7wyWtTFc0oT7XB2EAshmzKjqruuM6WAT11G6j4f6tbQ8Uj0pjbFvT3rsu6bjq7QTSIhuzoM6Po097PWw6cEcdzcuzbcC1ODaoHp3xk0+t6ZbJ8bMbMlB5Q==|920

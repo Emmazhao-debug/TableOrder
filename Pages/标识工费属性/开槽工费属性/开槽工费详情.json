@@ -1,0 +1,1438 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "Count": 26,
+    "DefaultSize": 35.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "Count": 52
+  },
+  "Values": {
+    "1,17": "开槽工费设定",
+    "3,17": "长度单价",
+    "3,21": "节点单价",
+    "3,25": "启用日期",
+    "3,31": "截止日期",
+    "4,17": "元/m",
+    "4,21": "元/节",
+    "5,39": "id:",
+    "6,17": "备注：",
+    "8,31": "取消"
+  },
+  "AttachInfos": {
+    "5,17": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "长度单价",
+        "GUID": "77e5833a-9435-491d-8fd8-43e2b0249260"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "四周无框"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "5,21": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "节点单价",
+        "GUID": "d1ea5fdd-66e4-4aad-9054-5fa7b803da0b"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "四周无框"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "5,25": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "启用日期",
+        "GUID": "689ff816-88b5-4176-b28d-7268fa28c6d4"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "四周无框",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=开槽工费详情!启用日期"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "compareType": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "提示：",
+                    "Message": "启用日期不能早于今天！",
+                    "Type": "none",
+                    "ConfirmButtonText": "确定",
+                    "CancelButtonText": "取消",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=开槽工费详情!启用日期"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "baf437ac-804b-41e1-bf27-c261f3de9b47"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=开槽工费详情!启用日期"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=TODAY()"
+                          }
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=开槽工费详情!按钮"
+                                      }
+                                    ]
+                                  },
+                                  "value": "创建"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                                    "Title": "重要提示：",
+                                    "Message": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=\"重要提示：您选择了今天启用该属性，这会强制前面正在使用的属性于今天失效，今天已经创建的报价单中如果引用了前面属性的参数，则报价单在再次打开修改与前面属性有关的参数时，将无法计算出正确报价。您只有确保前面的属性在今天未被其它报价单使用过，才能选择新的属性于今天启用，您确定要选择今天启用新属性吗？\""
+                                    },
+                                    "Type": "none",
+                                    "ConfirmButtonText": "确定",
+                                    "ShowCancelButton": true,
+                                    "CancelButtonText": "取消",
+                                    "DialogResult": "结果",
+                                    "AdvancedSettings": {}
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                    "ConditionAndCommandPairList": [
+                                      {
+                                        "Condition": {
+                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                          "param": {
+                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                            "cellLocations": [
+                                              {
+                                                "SerializeProperty": "=开槽工费详情!结果"
+                                              }
+                                            ]
+                                          },
+                                          "value": "cancel"
+                                        },
+                                        "CommandList": [
+                                          {
+                                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                            "PropertyItemsList": [
+                                              {
+                                                "TargetCells": {
+                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                  "SerializeProperty": "=开槽工费详情!启用日期"
+                                                },
+                                                "Value": "%Null%"
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        "ID": "1ba2be21-3b6a-46a6-b9cb-e9e9eacd7de5"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "9dd6025b-1924-44c6-9442-6e7fd9718e67"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=开槽工费详情!按钮"
+                                      }
+                                    ]
+                                  },
+                                  "value": "修改"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                    "ParameterName": "之前属性行数",
+                                    "TableValue": {
+                                      "TableName": "开槽工费表",
+                                      "TableValueType": 3,
+                                      "SqlCondition": {
+                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                        "SubConditions": [
+                                          {
+                                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                            "CompareType": 4,
+                                            "ColumnBindingInfo": {
+                                              "TableName": "开槽工费表",
+                                              "ColumnName": "启用日期",
+                                              "GUID": "51d64b45-367d-43f8-bb08-30ae5784bb51"
+                                            },
+                                            "Value": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=开槽工费详情!启用日期"
+                                            }
+                                          },
+                                          {
+                                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                            "CompareType": 1,
+                                            "ColumnBindingInfo": {
+                                              "TableName": "开槽工费表",
+                                              "ColumnName": "ID",
+                                              "GUID": "f0b6bf12-bc5c-4e8b-9dc6-c03a5e9abd1e"
+                                            },
+                                            "Value": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=开槽工费详情!id"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "ID": "810b15a96fe64519bd981622716c7ed2"
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                    "ConditionAndCommandPairList": [
+                                      {
+                                        "Condition": {
+                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                          "param": {
+                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                            "cellLocations": [
+                                              {
+                                                "SerializeProperty": "=开槽工费详情!之前属性行数"
+                                              }
+                                            ]
+                                          },
+                                          "value": "0",
+                                          "compareType": 1
+                                        },
+                                        "CommandList": [
+                                          {
+                                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                            "ParameterName": "修改前启用日期",
+                                            "TableValue": {
+                                              "TableName": "开槽工费表",
+                                              "OnlyGetValue": true,
+                                              "TableValueType": 0,
+                                              "BindingInfos": [
+                                                {
+                                                  "BindingInfo": {
+                                                    "TableName": "开槽工费表",
+                                                    "ColumnName": "启用日期",
+                                                    "GUID": "3f625827-aeb8-40fb-bc20-d1f3c1599230"
+                                                  },
+                                                  "ColumnName": "启用日期"
+                                                }
+                                              ],
+                                              "SqlCondition": {
+                                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                "ColumnBindingInfo": {
+                                                  "TableName": "开槽工费表",
+                                                  "ColumnName": "ID",
+                                                  "GUID": "4bc2e3cf-ef2a-43d3-a941-4b5997ee83e0"
+                                                },
+                                                "Value": {
+                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                  "SerializeProperty": "=开槽工费详情!id"
+                                                }
+                                              },
+                                              "NullFormulaValueQueryPolicy": 0
+                                            },
+                                            "ID": "32b34df9faf242d88ae3767727eb1876"
+                                          },
+                                          {
+                                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                            "ConditionAndCommandPairList": [
+                                              {
+                                                "Condition": {
+                                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                  "param": {
+                                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                    "cellLocations": [
+                                                      {
+                                                        "SerializeProperty": "=开槽工费详情!修改前启用日期"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=开槽工费详情!启用日期"
+                                                  },
+                                                  "compareType": 1
+                                                },
+                                                "CommandList": [
+                                                  {
+                                                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                                                    "Title": "重要提示：",
+                                                    "Message": {
+                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                      "SerializeProperty": "=\"重要提示：您选择了今天启用该属性，这会强制前面正在使用的属性于今天失效，今天已经创建的报价单中如果引用了前面属性的参数，则报价单在再次打开修改与前面属性有关的参数时，将无法计算出正确报价。您只有确保前面的属性在今天未被其它报价单使用过，才能选择新的属性于今天启用，您确定要选择今天启用新属性吗？\""
+                                                    },
+                                                    "Type": "none",
+                                                    "ConfirmButtonText": "确定",
+                                                    "ShowCancelButton": true,
+                                                    "CancelButtonText": "取消",
+                                                    "DialogResult": "结果",
+                                                    "AdvancedSettings": {}
+                                                  },
+                                                  {
+                                                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                    "ConditionAndCommandPairList": [
+                                                      {
+                                                        "Condition": {
+                                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                          "param": {
+                                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                            "cellLocations": [
+                                                              {
+                                                                "SerializeProperty": "=开槽工费详情!结果"
+                                                              }
+                                                            ]
+                                                          },
+                                                          "value": "cancel"
+                                                        },
+                                                        "CommandList": [
+                                                          {
+                                                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                                            "PropertyItemsList": [
+                                                              {
+                                                                "TargetCells": {
+                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                  "SerializeProperty": "=开槽工费详情!启用日期"
+                                                                },
+                                                                "Value": {
+                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                  "SerializeProperty": "=开槽工费详情!修改前启用日期"
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        ],
+                                                        "ID": "84ce62aa-5bdf-4950-8e3b-25eb412508eb"
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+                                                "ID": "d188ea0f-e6d7-4528-95e1-d62edb7b73b6"
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        "ID": "c95e9559-3e29-44de-aab0-65bc52a5f500"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "fae348b9-2d00-43c2-828f-1ec8d8965fdc"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "390710bd-b1ac-47ae-8e23-16cd2f2cfecc"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e7306844-dd24-4ea3-afdc-72b9d6d34cd3"
+              }
+            ]
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      },
+      "RulesGuidList": [
+        "4cd21c52-e5e6-46b7-aaca-fa648449f8bb"
+      ]
+    },
+    "5,31": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "截止日期",
+        "GUID": "14b05d0c-be63-45e6-a171-981347164088"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "DropDownButtonvisibility": 1,
+        "TemplateKey": "四周无框",
+        "ReadOnly": true
+      },
+      "DataValidationInfo": {
+        "InputMessageTitle": "说明：",
+        "InputMessage": "停用日期不需要每次输入，它会在新的属性启用后，自动将新属性的启用日期的前一天作为停用日期"
+      }
+    },
+    "5,40": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "ID",
+        "GUID": "bc24d618-ba75-4bff-b8c1-42a026f0a4a0"
+      }
+    },
+    "6,19": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "备注",
+        "GUID": "747954fa-5ecf-45ad-be09-bbef3899821e"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "四周无框",
+        "WaterMark": "对本次修改属性的原因做简短说明"
+      },
+      "DataValidationInfo": {}
+    },
+    "8,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=开槽工费详情!按钮"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "开槽工费表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false
+                  }
+                ],
+                "ID": "ea314d1c-2adc-47f4-a2be-dedf371d621d"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=开槽工费详情!按钮"
+                      }
+                    ]
+                  },
+                  "value": "创建"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "开槽工费表",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "开槽工费表",
+                        "ColumnName": "ID",
+                        "GUID": "20c761dc-1dae-4d91-99d5-35272b9f59de"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=开槽工费详情!id"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "开槽工费表",
+                          "ColumnName": "截止日期",
+                          "GUID": "ec8cbca0-153c-49c5-ab29-3ef2b71a8689"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=开槽工费详情!启用日期-1"
+                        }
+                      }
+                    ],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "开槽工费表",
+                      "UpdateType": "add",
+                      "ShowConfirm": false
+                    }
+                  }
+                ],
+                "ID": "ab045f79-ff23-4d4b-a38e-5e273e56410a"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "取上期属性行数",
+                    "TableValue": {
+                      "TableName": "开槽工费表",
+                      "TableValueType": 3,
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "SubConditions": [
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 4,
+                            "ColumnBindingInfo": {
+                              "TableName": "开槽工费表",
+                              "ColumnName": "启用日期",
+                              "GUID": "1b5a973d-b5ff-422b-a569-e1f32d255073"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=开槽工费详情!启用日期"
+                            }
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 1,
+                            "ColumnBindingInfo": {
+                              "TableName": "开槽工费表",
+                              "ColumnName": "ID",
+                              "GUID": "c70da43b-e37a-432c-8368-012e2b27852d"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=开槽工费详情!id"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "ID": "6a5b006e5f114f66b928f1751c6ff415"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=开槽工费详情!取上期属性行数"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "取上期属性id",
+                            "TableValue": {
+                              "TableName": "开槽工费表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "开槽工费表",
+                                    "ColumnName": "ID",
+                                    "GUID": "b3148e52-5984-4484-8586-9f63a8378dd9"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "开槽工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "074f2506-3ab6-4b32-9068-e3be50c632be"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=开槽工费详情!启用日期"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "开槽工费表",
+                                      "ColumnName": "ID",
+                                      "GUID": "f8955431-0447-4765-b0ed-c29905824548"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=开槽工费详情!id"
+                                    }
+                                  }
+                                ]
+                              },
+                              "NullFormulaValueQueryPolicy": 0,
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "开槽工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "afabc619-7f5e-42c8-a18c-eee1c4969389"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "eeeb0ab30e4f49a2b89b757e12b1c559"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "开槽工费表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "开槽工费表",
+                                "ColumnName": "ID",
+                                "GUID": "7d745449-00ae-4c58-8a03-9cabf36b8e6c"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=开槽工费详情!取上期属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "开槽工费表",
+                                  "ColumnName": "截止日期",
+                                  "GUID": "dfccbfeb-f3d5-4aec-9cb8-d8f58f6cdd5a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=开槽工费详情!启用日期-1"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "开槽工费表",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "ff0d2a27-be88-470e-9f22-4f5dbcd7836a"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "开槽工费表",
+                            "ShowConfirm": false
+                          }
+                        ],
+                        "ID": "39ccb324-9ba9-4ed4-b7e6-99d7143dde4b"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "f9b3c524-a475-447a-837b-0f9ce76bafc2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      },
+      "RulesGuidList": [
+        "ec6e5654-1faf-4e95-9b9d-4b7fb1943276"
+      ]
+    },
+    "8,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "Formatter": 7,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 8
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "Formatter": 11,
+        "HorizontalAlignment": 5,
+        "WordWrap": true,
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 1
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "Formatter": 11,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 2,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 2,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 2,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "Formatter": 11,
+        "HorizontalAlignment": 5,
+        "WordWrap": true,
+        "BorderBottom": 1,
+        "BorderTop": 0,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 0,
+        "BorderRight": 1
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "Formatter": 11,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 1
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "Formatter": 11,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 5,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 15,
+        "HorizontalAlignment": 5,
+        "BorderLeft": 2
+      },
+      {
+        "BorderRight": 2
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 16,
+        "HorizontalAlignment": 5,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 17
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 2,
+        "BorderTop": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 4,
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": 2
+      },
+      {
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderRight": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "HorizontalAlignment": 17
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "Left",
+        "@",
+        "Center",
+        "Background 1 -5",
+        "yyyy/MM/DD hh:mm:ss",
+        "Bottom",
+        "Text 2 40",
+        "Background 1 0",
+        "General",
+        "#FF1096C8",
+        "Background 1 -50",
+        "Background 1 -25",
+        "[AUTO]yyyy/M/d",
+        "yyyy/MM/dd",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 12
+        },
+        {
+          "Color": 13
+        },
+        {
+          "Color": 14
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,17": 0,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 2,
+      "2,28": 2,
+      "2,29": 3,
+      "3,17": 4,
+      "3,18": 5,
+      "3,19": 5,
+      "3,20": 5,
+      "3,21": 4,
+      "3,22": 5,
+      "3,23": 5,
+      "3,24": 6,
+      "3,25": 7,
+      "3,26": 8,
+      "3,27": 8,
+      "3,28": 8,
+      "3,29": 8,
+      "3,30": 8,
+      "3,31": 7,
+      "3,32": 8,
+      "3,33": 8,
+      "3,34": 8,
+      "3,35": 9,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 2,
+      "3,45": 2,
+      "3,46": 2,
+      "3,47": 2,
+      "3,48": 2,
+      "3,49": 2,
+      "3,50": 2,
+      "3,51": 2,
+      "4,17": 10,
+      "4,18": 11,
+      "4,19": 11,
+      "4,20": 11,
+      "4,21": 10,
+      "4,22": 11,
+      "4,23": 11,
+      "4,24": 12,
+      "4,25": 13,
+      "4,26": 13,
+      "4,27": 13,
+      "4,28": 13,
+      "4,29": 13,
+      "4,30": 13,
+      "4,31": 13,
+      "4,32": 13,
+      "4,33": 13,
+      "4,34": 13,
+      "4,35": 14,
+      "4,36": 2,
+      "4,37": 2,
+      "4,38": 2,
+      "4,39": 2,
+      "4,40": 2,
+      "4,41": 2,
+      "4,42": 2,
+      "4,43": 2,
+      "4,44": 2,
+      "4,45": 2,
+      "4,46": 2,
+      "4,47": 2,
+      "4,48": 2,
+      "4,49": 2,
+      "4,50": 2,
+      "4,51": 2,
+      "5,17": 15,
+      "5,21": 16,
+      "5,25": 17,
+      "5,30": 18,
+      "5,31": 19,
+      "5,35": 18,
+      "5,36": 2,
+      "5,37": 2,
+      "5,38": 2,
+      "5,39": 20,
+      "5,40": 2,
+      "5,44": 2,
+      "5,45": 2,
+      "5,46": 2,
+      "5,47": 2,
+      "5,48": 2,
+      "5,49": 2,
+      "5,50": 2,
+      "5,51": 2,
+      "6,17": 21,
+      "6,18": 22,
+      "6,19": 23,
+      "6,20": 24,
+      "6,21": 24,
+      "6,22": 24,
+      "6,23": 24,
+      "6,24": 24,
+      "6,25": 24,
+      "6,26": 24,
+      "6,27": 24,
+      "6,28": 24,
+      "6,29": 24,
+      "6,30": 24,
+      "6,31": 24,
+      "6,32": 24,
+      "6,33": 24,
+      "6,34": 24,
+      "6,35": 25,
+      "8,25": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "8,31": 26,
+      "8,32": 2,
+      "8,33": 20,
+      "8,34": 2
+    },
+    "RowStyles": {
+      "6": 27
+    },
+    "ColStyles": {
+      "45": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,25,2,6",
+    "3,31,2,5",
+    "6,17,1,2",
+    "1,17,1,10",
+    "4,17,1,4",
+    "3,17,1,4",
+    "2,29,1,7",
+    "4,21,1,4",
+    "3,21,1,4",
+    "8,31,1,4",
+    "8,25,1,4",
+    "5,40,1,4",
+    "5,17,1,4",
+    "5,21,1,4",
+    "5,25,1,6",
+    "5,31,1,5",
+    "6,19,1,17"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=开槽工费详情!按钮"
+                  }
+                ]
+              },
+              "value": "创建"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=开槽工费详情!R6"
+                    },
+                    "Value": "%Null%"
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=开槽工费详情!V6"
+                    },
+                    "Value": "%Null%"
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=开槽工费详情!启用日期"
+                    },
+                    "Value": "%Null%"
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=开槽工费详情!备注"
+                    },
+                    "Value": "%Null%"
+                  }
+                ]
+              }
+            ],
+            "ID": "623867f0-456a-4f9c-9bbc-6584a7aec372"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "UV工费表",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=开槽工费详情!按钮=\"查看\""
+          },
+          "GUID": "4cd21c52-e5e6-46b7-aaca-fa648449f8bb",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsReadOnly": true
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=开槽工费详情!按钮=\"查看\""
+          },
+          "Priority": 1,
+          "GUID": "ec6e5654-1faf-4e95-9b9d-4b7fb1943276",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsInvisible": true
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "按钮",
+      "Formula": "开槽工费详情!$Z$9"
+    },
+    {
+      "Name": "备注",
+      "Formula": "开槽工费详情!$T$7"
+    },
+    {
+      "Name": "截止日期",
+      "Formula": "开槽工费详情!$AF$6"
+    },
+    {
+      "Name": "启用日期",
+      "Formula": "开槽工费详情!$Z$6"
+    },
+    {
+      "Name": "id",
+      "Formula": "开槽工费详情!$AO$6"
+    }
+  ]
+}//blSiYvRC8BR+6GVpBc8+LZJ/JxG9oaNqiLYV5Wd6s+FsjPzye41BAV3cpqklF+6nt23GUqwQTqlQGd7RExQWgd1pIA0JTt9UlDBbI0ZhCgkxsUJS+vedDsiwcbdPWkGwPc0dKcM9DpKKZiptkHQQUb/QQqUlwUNPqQjJUGcx0xYnfwzjN/92pimm8wPnfLZz7S+33L1Ep2AzUg0dm20kI2PRlNg3x/q7D4AmjAPx69jHmq4hb13Lof1OrWVCSAq+aYxWmsxBZMHuCA2SWMUQKNkz0Ke6iPpCxF0zd69HaXgOa94SAxPXSgD8HNAoS7PCMhHUP6B3wKxmhysAmmfTOkXA98875QkaNRFtbDB58VrEf5fq5Mbk9lpwDivIP/ndOozQujsUqntg2p7vycBb0R8B8kwqfDiR+bNQLRk9uy6zOwX1xfv362Q57JYJoW+huroczEzln1cy0TI+xVbrc/Ov+dGxdWEuFybOSMJRW8etbOHC1DX7yq+FJZAAXAiqT3c59teQEXJHlhz2so/D4zwYK2MtQoVCdqYbGCx1C/oqtp+gi3ppIJzFC8ZOZnbYMJJ1W8NvztSvPNGLA6LqmLuc3+pP2lo4zXeSayEsBSfPj3Vhq4AEv85WA0SyKf08DHO9EhKqtnS+0Gr1obam6dYxhcfbayIDg41wB0gQRnkV5qFgvRJ68N7rH2M6dIj3TB1pajc4WSzpC74ySo04j7o0mm9MuS+kzybOZnuvs08zUZ3YbTIfAHynSgCbgJ5LPDHaj1nwD1Ychrx8qzXDufrlzzWQ8R0JYLDKiZmxxUyMwLcJGrJca0Cf45SIJ4nDoWMlFrYpXxq+DUVUoXpv+u2SNKsao2s99CVksPib6bc/PzzFuU4iU6D1BBfOX0nZnn5Xj2tnZPbzzWcm8sAvDw==|920

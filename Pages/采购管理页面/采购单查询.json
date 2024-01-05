@@ -1,0 +1,3185 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 46
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "Count": 100
+  },
+  "Values": {
+    "2,5": "采购单查询",
+    "2,15": "采购/退货：",
+    "2,23": "供应商：",
+    "2,30": "采购日期：",
+    "2,39": "↔",
+    "2,45": "结款状态：",
+    "4,8": "导出采购单",
+    "4,15": "审核状态：",
+    "4,23": "审核人：",
+    "4,30": "审核日期：",
+    "4,39": "↔",
+    "4,45": "采购人：",
+    "4,55": "添加采购单",
+    "4,66": "添加退货单",
+    "6,11": "入库单号",
+    "6,26": "采/退",
+    "6,37": "金额",
+    "6,40": "已付款",
+    "6,43": "剩余应付",
+    "6,46": "采购单摘要",
+    "7,73": "修改",
+    "7,76": "删除",
+    "7,79": "付款",
+    "8,91": "当前公司简称：",
+    "16,91": "返回码：",
+    "17,91": "返回值：",
+    "30,35": "合计：",
+    "30,42": "已付：",
+    "30,48": "应付：",
+    "32,79": "追踪"
+  },
+  "Formulas": {
+    "7,76": "IF((AO8<>0)+(AA8=\"采购\")*(L8<>0)+(BJ8=\"已审核\"),\"\",\"删除\")",
+    "30,43": "SUM(AO8)",
+    "30,49": "SUM(AR8)",
+    "7,37": "ODATA(\"采购单主表?$select=折扣后金额&$filter=采购单号 eq \"&IF(ISBLANK(H8),\"null\",\"'\"&H8&\"'\"))*IF(AA8=\"采购\",1,-1)",
+    "30,36": "SUM(AL8)",
+    "7,40": "ODATA(\"采购单主表?$select=已付款&$filter=采购单号 eq \"&IF(ISBLANK(H8),\"null\",\"'\"&H8&\"'\"))*IF(AA8=\"采购\",1,-1)",
+    "7,79": "IF((AL8<>0)*(AR8<>0),\"付款\",\"\")",
+    "7,43": "AL8-AO8"
+  },
+  "AttachInfos": {
+    "2,19": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "Items": [
+          {},
+          {
+            "Value": "采购",
+            "DisplayValue": "采购"
+          },
+          {
+            "Value": "退货",
+            "DisplayValue": "退货"
+          }
+        ]
+      }
+    },
+    "2,26": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "2,34": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=EOMONTH(TODAY(),-1)+1"
+        },
+        "TemplateKey": "左圆右开"
+      }
+    },
+    "2,39": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "上下横杠",
+        "ReadOnly": true,
+        "CellDefaultValue": "↔"
+      }
+    },
+    "2,40": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=EOMONTH(TODAY(),0)"
+        },
+        "TemplateKey": "左开右圆"
+      }
+    },
+    "2,49": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "Items": [
+          {
+            "Value": "",
+            "DisplayValue": ""
+          },
+          {
+            "Value": "0",
+            "DisplayValue": "已结清"
+          },
+          {
+            "Value": "10000000000000000000000",
+            "DisplayValue": "未结清"
+          }
+        ]
+      }
+    },
+    "4,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "导出采购单",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Navigation/193_download_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,19": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "采购单主表",
+        "ValueColumnBindingInfo": {
+          "TableName": "采购单主表",
+          "ColumnName": "审核状态",
+          "GUID": "6eff02f6-e4ed-4a27-9cb7-4c5743b9b813"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "采购单主表",
+          "ColumnName": "审核状态",
+          "GUID": "1f60b30f-affd-4dfc-98d6-4c93b4e76c88"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "4,26": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "用户信息视图",
+        "ValueColumnBindingInfo": {
+          "TableName": "用户信息视图",
+          "ColumnName": "用户名",
+          "GUID": "de0a6f5c-b8b1-4644-920f-a8c5371edca2"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "用户信息视图",
+          "ColumnName": "全名",
+          "GUID": "e3517b35-02d4-4768-b873-94d32b87f6ab"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 6,
+          "ColumnBindingInfo": {
+            "TableName": "用户信息视图",
+            "ColumnName": "公司级别-组织名称",
+            "GUID": "843ac0ac-ae0c-4fd9-8eff-b2a0e5efe3b4"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=采购单查询!当前公司简称"
+          }
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "4,34": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "左圆右开"
+      }
+    },
+    "4,39": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "上下横杠",
+        "ReadOnly": true,
+        "CellDefaultValue": "↔"
+      }
+    },
+    "4,40": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "左开右圆"
+      }
+    },
+    "4,49": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "用户信息视图",
+        "ValueColumnBindingInfo": {
+          "TableName": "用户信息视图",
+          "ColumnName": "用户名",
+          "GUID": "9bd654d7-64de-4cac-bbdd-2ee2d40ed53d"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "用户信息视图",
+          "ColumnName": "全名",
+          "GUID": "e51e2cc5-919f-4366-ae8b-0ce808c47199"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 6,
+          "ColumnBindingInfo": {
+            "TableName": "用户信息视图",
+            "ColumnName": "公司级别-组织名称",
+            "GUID": "a33e6375-19e0-4020-929f-4e4bef6a9f28"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=采购单查询!当前公司简称"
+          }
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "4,55": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "采购单填报",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=采购单填报!AM36"
+                }
+              },
+              {
+                "Source": "采购",
+                "TargetCell": {
+                  "SerializeProperty": "=采购单填报!采购_退货"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购单查询!当前公司简称"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=采购单填报!公司简称"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加采购单",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,66": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "采购单填报",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=采购单填报!AM36"
+                }
+              },
+              {
+                "Source": "退货",
+                "TargetCell": {
+                  "SerializeProperty": "=采购单填报!采购_退货"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购单查询!当前公司简称"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=采购单填报!公司简称"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加退货单",
+        "TemplateKey": "_RS_Warning1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "6,5": {
+      "ListViewInfo": {
+        "Name": "采购主表",
+        "TableName": "采购单主表",
+        "RowIndex": 6,
+        "ColumnIndex": 5,
+        "RowCount": 24,
+        "ColumnCount": 78,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "采购_退货",
+                        "GUID": "079af49c-d7a7-444b-837d-575849ad46d0"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购单查询!T3"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 6,
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "供应商",
+                        "GUID": "d81e8427-62ed-4924-88ef-5707c27521f5"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购单查询!AA3"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 3,
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "采购日期",
+                        "GUID": "c8ec6c39-c6df-4eb4-b73a-79c83487c367"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购单查询!AI3"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 5,
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "采购日期",
+                        "GUID": "1a7028b6-6e7f-4881-bac9-960591378a2d"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购单查询!AO3"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "审核状态",
+                        "GUID": "83636bbc-3f68-4673-96ba-27edeee08306"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购单查询!T5"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 6,
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "审核人",
+                        "GUID": "b46fbcec-acc4-4de9-8a2d-ba4e319ad338"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购单查询!AA5"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "采购单主表",
+                    "ColumnName": "审核时间",
+                    "GUID": "afda2f4e-a061-4133-b76a-e8e31fe0a957"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单查询!AI5"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 4,
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "审核时间",
+                "GUID": "65d13769-8b9e-411c-abd3-dfa8b58063e9"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=采购单查询!AO5+1"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购人",
+                "GUID": "7c72c987-dcd8-440a-a25c-c3ae508f8b31"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=采购单查询!AX5"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "剩余应付",
+                        "GUID": "1a3c5bf9-bdca-4019-8198-11701c32c699"
+                      },
+                      "Value": "0",
+                      "LeftBracket": 1
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "采购单主表",
+                        "ColumnName": "剩余应付",
+                        "GUID": "eb7a43ae-1b0e-430e-8b9e-af196d9fe987"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=采购单查询!AX3"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 1,
+                  "ColumnBindingInfo": {
+                    "TableName": "采购单主表",
+                    "ColumnName": "剩余应付",
+                    "GUID": "eeab3599-b1dd-461b-beb6-66828c08f9e8"
+                  },
+                  "Value": "0"
+                }
+              ],
+              "RelationType": 1
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 4,
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "剩余应付",
+                "GUID": "c16d8912-0b55-43b5-9744-701cc74be4c7"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=采购单查询!AX3"
+              },
+              "RightBracket": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购日期",
+                "GUID": "7e058408-7bad-4431-8add-4e95310dd81f"
+              },
+              "Order": 1
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购单号",
+                "GUID": "1d5fffa4-2ce9-4c92-8b60-0ef65781c100"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsTotalRowAtFirstRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 1
+      }
+    },
+    "7,7": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "采购单号",
+        "GUID": "d7fc6e6b-77d1-439f-8c2b-538053b64cb0"
+      }
+    },
+    "7,11": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "出入库单号",
+        "GUID": "8d37364e-0c42-429b-b000-94591dfff859"
+      }
+    },
+    "7,16": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "供应商",
+        "GUID": "21cec7f8-4820-4ff3-833d-dd0e883cdd95"
+      }
+    },
+    "7,26": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "采购_退货",
+        "GUID": "42ebe9d1-9c56-4874-b93b-840ff0a20825"
+      },
+      "RulesGuidList": [
+        "e5bcbe03-7c90-4879-a44d-6885a2ee58f4"
+      ]
+    },
+    "7,29": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "采购人",
+        "GUID": "cf0e42ef-c0c8-4838-bfb2-7d79f732305d"
+      }
+    },
+    "7,33": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "采购日期",
+        "GUID": "76179dde-ab84-4eb7-bc09-104f6002c63a"
+      }
+    },
+    "7,37": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "FontWeight": "Bold"
+        }
+      }
+    },
+    "7,40": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "FontWeight": "Bold"
+        }
+      }
+    },
+    "7,43": {
+      "TotalRowSetting": {
+        "FormulaType": 5,
+        "StyleInfo": {
+          "FontWeight": "Bold"
+        }
+      }
+    },
+    "7,46": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "备注",
+        "GUID": "4422adc1-38a3-48e2-b60a-c8488d4b0824"
+      }
+    },
+    "7,61": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "审核状态",
+        "GUID": "7b1c9df9-ea0c-4a42-91ef-c02721aa91be"
+      }
+    },
+    "7,64": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "审核人",
+        "GUID": "daee9d41-99f5-4697-a3cb-8ba17992e1ed"
+      }
+    },
+    "7,67": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "审核时间",
+        "GUID": "132f1b6e-0855-49ee-a215-3161743762ea"
+      }
+    },
+    "7,73": {
+      "TotalRowSetting": {},
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "采购单填报",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=采购单填报!AM36"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    },
+    "7,76": {
+      "TotalRowSetting": {},
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+            "Title": "提示：",
+            "Message": "此操作不可恢复，你确定要删除该采购单吗？",
+            "Type": "none",
+            "ConfirmButtonText": "确定",
+            "ShowCancelButton": true,
+            "CancelButtonText": "取消",
+            "DialogResult": "是否删除",
+            "AdvancedSettings": {}
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=采购单查询!是否删除"
+                      }
+                    ]
+                  },
+                  "value": "confirm"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "采购单删除时",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "采购单号",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购单查询!H8"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "出库单号",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购单查询!L8"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "采购_退货",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购单查询!AA8"
+                        }
+                      }
+                    ],
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "=采购单查询!返回码"
+                    },
+                    "ResultMessageTo": {
+                      "SerializeProperty": "=采购单查询!返回值"
+                    },
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=采购单查询!返回码"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                            "Message": "采购单删除成功",
+                            "Type": "info",
+                            "Duration": "3000",
+                            "Offset": null,
+                            "ShowClose": true,
+                            "Center": true
+                          }
+                        ],
+                        "ID": "44e66d8f-bc98-4f8a-8217-e4d07466eecb"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=采购单查询!返回值"
+                            }
+                          }
+                        ],
+                        "ID": "b045df57-c1db-4a3e-af2a-3644e8215ccd"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "100a6c65-5ef4-45d2-9713-a00cbce7b8c5"
+              }
+            ]
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "7,79": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "供商编号",
+            "TableValue": {
+              "TableName": "供应商主表",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "供应商主表",
+                    "ColumnName": "编号",
+                    "GUID": "c38b1df8-968c-4729-8ae5-885ad89bae4c"
+                  },
+                  "ColumnName": "编号"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "供应商主表",
+                  "ColumnName": "名称",
+                  "GUID": "f6a57e54-ee2f-4553-b2bf-29fedd4bade1"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购单查询!Q8"
+                }
+              },
+              "NullFormulaValueQueryPolicy": 0
+            },
+            "ID": "ec9977fc84664825a1a688d514d3154a"
+          },
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "PassRowMode": 2,
+            "ImportMode": 2,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购单查询!H8"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购付款单!D11"
+                },
+                "IsPrimaryKey": true
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=采购单查询!H8"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=采购付款单!D11"
+            }
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "采购付款单",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购单查询!供商编号"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=采购付款单!供应商编号"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购单查询!Q8"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=采购付款单!供应商名称"
+                }
+              },
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=采购付款单!确定"
+                }
+              },
+              {
+                "Source": "来自采购单",
+                "TargetCell": {
+                  "SerializeProperty": "=采购付款单!链接创建标记"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "付款",
+        "ClickMode": 1
+      }
+    },
+    "31,5": {
+      "ListViewInfo": {
+        "Name": "采购明细",
+        "TableName": "采购单明细表",
+        "RowIndex": 31,
+        "ColumnIndex": 5,
+        "RowCount": 15,
+        "ColumnCount": 78,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "采购单号",
+          "MasterTable": "采购单主表",
+          "ColumnOfMasterTable": "采购单号",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 1,
+        "CommitType": 1
+      }
+    },
+    "32,7": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "料号批次",
+        "GUID": "804a42e3-3257-4204-a305-556061de46ef"
+      }
+    },
+    "32,14": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "材料名称",
+        "GUID": "8b2dfb01-45ea-482a-84b8-5d9283dfb883"
+      }
+    },
+    "32,33": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "单位",
+        "GUID": "1e4ffe7a-4ece-41ff-aaa2-552fc63bfe74"
+      }
+    },
+    "32,35": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "采购数量",
+        "GUID": "ba79b307-2172-46a5-9d1d-c30b25b5f1da"
+      }
+    },
+    "32,38": {
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "库存数量",
+        "GUID": "ca6ee17e-2197-48c4-ac24-372803dfdd1e"
+      }
+    },
+    "32,41": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "单价",
+        "GUID": "f9ad4c79-9831-4818-bb05-c4c04cce5f46"
+      }
+    },
+    "32,44": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "金额",
+        "GUID": "d92efd48-183c-4f4d-b1d4-a6e3ab0cfdc9"
+      }
+    },
+    "32,45": {
+      "TotalRowSetting": {}
+    },
+    "32,47": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "采购单明细表",
+        "ColumnName": "备注",
+        "GUID": "396e09f3-1ab7-44c9-92b0-b4bfe9d58824"
+      }
+    },
+    "32,79": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "材料追踪",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=采购单查询!H33"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=材料追踪!料号批次"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "追踪",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": null
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 6,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 3
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontSize": -1.0,
+        "HorizontalAlignment": 8
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "Foreground": 9,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 10,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 11,
+        "WordWrap": true
+      },
+      {
+        "Foreground": 12,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontWeight": 2,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 2,
+        "Formatter": 14
+      },
+      {
+        "Foreground": 15,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 15,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 16,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 17,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 17,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 17,
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 18
+      },
+      {
+        "Background": 17,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": null,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 11
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 9
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 19,
+        "HorizontalAlignment": 3,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 12,
+        "HorizontalAlignment": 3,
+        "Underline": true,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": null
+      },
+      {
+        "HorizontalAlignment": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -25",
+        "Body",
+        "Bold",
+        "Center",
+        "Bottom",
+        "Right",
+        "@",
+        "[AUTO]General",
+        "General",
+        "Background 1 -50",
+        "yyyy/MM/dd",
+        "Left",
+        "Blue",
+        "black",
+        "0.00元",
+        "#FF00B050",
+        "#FFFF0000",
+        "Accent 1",
+        "Accent 1 0 255",
+        "#,##0.00;[Red]-#,##0.00"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        },
+        {
+          "Color": 13
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,79": 0,
+      "0,83": 1,
+      "1,79": 0,
+      "1,83": 1,
+      "2,5": 2,
+      "2,15": 3,
+      "2,16": 4,
+      "2,17": 4,
+      "2,18": 4,
+      "2,19": 5,
+      "2,20": 4,
+      "2,21": 4,
+      "2,22": 4,
+      "2,23": 3,
+      "2,24": 4,
+      "2,25": 4,
+      "2,26": 6,
+      "2,27": 4,
+      "2,28": 4,
+      "2,29": 4,
+      "2,30": 3,
+      "2,31": 4,
+      "2,32": 4,
+      "2,33": 4,
+      "2,34": 5,
+      "2,35": 4,
+      "2,36": 4,
+      "2,37": 4,
+      "2,38": 4,
+      "2,39": 6,
+      "2,40": 5,
+      "2,41": 4,
+      "2,42": 4,
+      "2,43": 4,
+      "2,44": 4,
+      "2,45": 3,
+      "2,46": 4,
+      "2,47": 4,
+      "2,48": 4,
+      "2,49": 5,
+      "2,50": 4,
+      "2,51": 4,
+      "2,52": 4,
+      "2,79": 0,
+      "2,83": 1,
+      "3,15": 4,
+      "3,16": 4,
+      "3,17": 4,
+      "3,18": 4,
+      "3,19": 4,
+      "3,20": 4,
+      "3,21": 4,
+      "3,22": 4,
+      "3,23": 4,
+      "3,24": 4,
+      "3,25": 4,
+      "3,26": 4,
+      "3,27": 4,
+      "3,28": 4,
+      "3,29": 4,
+      "3,30": 4,
+      "3,31": 4,
+      "3,32": 4,
+      "3,33": 4,
+      "3,34": 4,
+      "3,35": 4,
+      "3,36": 4,
+      "3,37": 4,
+      "3,38": 4,
+      "3,39": 4,
+      "3,40": 4,
+      "3,41": 4,
+      "3,42": 4,
+      "3,43": 4,
+      "3,44": 4,
+      "3,45": 4,
+      "3,46": 4,
+      "3,47": 4,
+      "3,48": 4,
+      "3,49": 4,
+      "3,50": 4,
+      "3,51": 4,
+      "3,52": 4,
+      "3,79": 0,
+      "3,83": 1,
+      "4,8": 4,
+      "4,9": 4,
+      "4,10": 4,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 4,
+      "4,15": 7,
+      "4,16": 4,
+      "4,17": 4,
+      "4,18": 4,
+      "4,19": 5,
+      "4,20": 4,
+      "4,21": 4,
+      "4,22": 4,
+      "4,23": 7,
+      "4,24": 4,
+      "4,25": 4,
+      "4,26": 5,
+      "4,27": 4,
+      "4,28": 4,
+      "4,29": 4,
+      "4,30": 7,
+      "4,31": 4,
+      "4,32": 4,
+      "4,33": 4,
+      "4,34": 5,
+      "4,35": 4,
+      "4,36": 4,
+      "4,37": 4,
+      "4,38": 4,
+      "4,39": 6,
+      "4,40": 8,
+      "4,41": 4,
+      "4,42": 4,
+      "4,43": 4,
+      "4,44": 4,
+      "4,45": 3,
+      "4,46": 4,
+      "4,47": 4,
+      "4,48": 4,
+      "4,49": 5,
+      "4,50": 4,
+      "4,51": 4,
+      "4,52": 4,
+      "4,55": 4,
+      "4,56": 4,
+      "4,57": 4,
+      "4,58": 4,
+      "4,59": 4,
+      "4,60": 4,
+      "4,61": 4,
+      "4,62": 4,
+      "4,63": 4,
+      "4,64": 4,
+      "4,65": 4,
+      "4,66": 4,
+      "4,67": 4,
+      "4,68": 4,
+      "4,69": 4,
+      "4,70": 4,
+      "4,79": 0,
+      "4,83": 1,
+      "5,79": 0,
+      "5,83": 1,
+      "6,5": 9,
+      "6,6": 10,
+      "6,7": 10,
+      "6,8": 10,
+      "6,9": 10,
+      "6,10": 10,
+      "6,11": 10,
+      "6,12": 10,
+      "6,13": 10,
+      "6,14": 10,
+      "6,15": 10,
+      "6,16": 11,
+      "6,17": 10,
+      "6,18": 10,
+      "6,19": 10,
+      "6,20": 10,
+      "6,21": 10,
+      "6,22": 10,
+      "6,23": 10,
+      "6,24": 10,
+      "6,25": 10,
+      "6,26": 11,
+      "6,27": 11,
+      "6,28": 11,
+      "6,29": 11,
+      "6,30": 11,
+      "6,31": 11,
+      "6,32": 11,
+      "6,33": 11,
+      "6,34": 11,
+      "6,35": 11,
+      "6,36": 11,
+      "6,37": 11,
+      "6,38": 10,
+      "6,39": 10,
+      "6,40": 11,
+      "6,41": 11,
+      "6,42": 11,
+      "6,43": 11,
+      "6,44": 11,
+      "6,45": 11,
+      "6,46": 11,
+      "6,47": 10,
+      "6,48": 10,
+      "6,49": 10,
+      "6,50": 10,
+      "6,51": 10,
+      "6,52": 10,
+      "6,53": 10,
+      "6,54": 10,
+      "6,55": 10,
+      "6,56": 10,
+      "6,57": 10,
+      "6,58": 10,
+      "6,59": 10,
+      "6,60": 10,
+      "6,61": 11,
+      "6,62": 10,
+      "6,63": 10,
+      "6,64": 10,
+      "6,65": 10,
+      "6,66": 10,
+      "6,67": 10,
+      "6,68": 10,
+      "6,69": 10,
+      "6,70": 10,
+      "6,71": 10,
+      "6,72": 10,
+      "6,73": 10,
+      "6,74": 10,
+      "6,75": 10,
+      "6,76": 10,
+      "6,77": 10,
+      "6,78": 10,
+      "6,79": 10,
+      "6,80": 10,
+      "6,81": 10,
+      "6,82": 12,
+      "6,83": 13,
+      "6,84": 13,
+      "6,85": 13,
+      "6,86": 13,
+      "6,87": 13,
+      "6,88": 13,
+      "6,89": 13,
+      "6,90": 13,
+      "6,91": 14,
+      "6,92": 13,
+      "6,93": 13,
+      "6,94": 13,
+      "6,95": 13,
+      "6,96": 13,
+      "6,97": 13,
+      "6,98": 13,
+      "6,99": 13,
+      "7,5": 15,
+      "7,7": 16,
+      "7,11": 17,
+      "7,16": 5,
+      "7,26": 5,
+      "7,27": 4,
+      "7,28": 4,
+      "7,29": 5,
+      "7,30": 4,
+      "7,31": 4,
+      "7,32": 4,
+      "7,33": 18,
+      "7,34": 4,
+      "7,35": 4,
+      "7,36": 4,
+      "7,37": 5,
+      "7,40": 5,
+      "7,41": 4,
+      "7,42": 4,
+      "7,43": 5,
+      "7,44": 4,
+      "7,45": 4,
+      "7,46": 19,
+      "7,61": 5,
+      "7,64": 16,
+      "7,67": 16,
+      "7,73": 20,
+      "7,76": 20,
+      "7,79": 20,
+      "7,82": 21,
+      "7,83": 13,
+      "7,84": 13,
+      "7,85": 13,
+      "7,86": 13,
+      "7,87": 13,
+      "7,88": 13,
+      "7,89": 13,
+      "7,90": 13,
+      "7,91": 14,
+      "7,92": 13,
+      "7,93": 13,
+      "7,94": 13,
+      "7,95": 13,
+      "7,96": 13,
+      "7,97": 13,
+      "7,98": 13,
+      "7,99": 13,
+      "8,5": 1,
+      "8,82": 21,
+      "8,92": 22,
+      "8,93": 23,
+      "8,94": 23,
+      "8,95": 23,
+      "8,96": 23,
+      "8,97": 24,
+      "9,5": 1,
+      "9,82": 21,
+      "10,5": 1,
+      "10,82": 21,
+      "11,5": 1,
+      "11,82": 21,
+      "12,5": 1,
+      "12,82": 21,
+      "13,5": 1,
+      "13,82": 21,
+      "14,5": 1,
+      "14,82": 21,
+      "15,5": 1,
+      "15,82": 21,
+      "16,5": 1,
+      "16,82": 21,
+      "17,5": 1,
+      "17,82": 21,
+      "18,5": 1,
+      "18,82": 21,
+      "19,5": 1,
+      "19,82": 21,
+      "20,5": 1,
+      "20,82": 21,
+      "21,5": 1,
+      "21,82": 21,
+      "22,5": 1,
+      "22,82": 21,
+      "23,5": 1,
+      "23,82": 21,
+      "24,5": 1,
+      "24,82": 21,
+      "25,5": 1,
+      "25,82": 21,
+      "26,5": 1,
+      "26,82": 21,
+      "27,5": 1,
+      "27,82": 21,
+      "28,5": 1,
+      "28,82": 21,
+      "29,5": 25,
+      "29,6": 26,
+      "29,7": 26,
+      "29,8": 26,
+      "29,9": 26,
+      "29,10": 26,
+      "29,11": 26,
+      "29,12": 26,
+      "29,13": 26,
+      "29,14": 26,
+      "29,15": 26,
+      "29,16": 26,
+      "29,17": 26,
+      "29,18": 26,
+      "29,19": 26,
+      "29,20": 26,
+      "29,21": 26,
+      "29,22": 26,
+      "29,23": 26,
+      "29,24": 26,
+      "29,25": 26,
+      "29,26": 26,
+      "29,27": 26,
+      "29,28": 26,
+      "29,29": 26,
+      "29,30": 26,
+      "29,31": 26,
+      "29,32": 26,
+      "29,33": 26,
+      "29,34": 26,
+      "29,35": 26,
+      "29,36": 26,
+      "29,37": 26,
+      "29,38": 26,
+      "29,39": 26,
+      "29,40": 26,
+      "29,41": 26,
+      "29,42": 26,
+      "29,43": 26,
+      "29,44": 26,
+      "29,45": 26,
+      "29,46": 26,
+      "29,47": 26,
+      "29,48": 26,
+      "29,49": 26,
+      "29,50": 26,
+      "29,51": 26,
+      "29,52": 26,
+      "29,53": 26,
+      "29,54": 26,
+      "29,55": 26,
+      "29,56": 26,
+      "29,57": 26,
+      "29,58": 26,
+      "29,59": 26,
+      "29,60": 26,
+      "29,61": 26,
+      "29,62": 26,
+      "29,63": 26,
+      "29,64": 26,
+      "29,65": 26,
+      "29,66": 26,
+      "29,67": 26,
+      "29,68": 26,
+      "29,69": 26,
+      "29,70": 26,
+      "29,71": 26,
+      "29,72": 26,
+      "29,73": 26,
+      "29,74": 26,
+      "29,75": 26,
+      "29,76": 26,
+      "29,77": 26,
+      "29,78": 26,
+      "29,79": 26,
+      "29,80": 26,
+      "29,81": 26,
+      "29,82": 27,
+      "30,5": 25,
+      "30,6": 26,
+      "30,7": 26,
+      "30,8": 26,
+      "30,9": 26,
+      "30,10": 26,
+      "30,11": 26,
+      "30,12": 26,
+      "30,13": 26,
+      "30,14": 26,
+      "30,15": 26,
+      "30,16": 26,
+      "30,17": 26,
+      "30,18": 26,
+      "30,19": 26,
+      "30,20": 26,
+      "30,21": 26,
+      "30,22": 26,
+      "30,23": 26,
+      "30,24": 26,
+      "30,25": 26,
+      "30,26": 26,
+      "30,27": 26,
+      "30,28": 26,
+      "30,29": 26,
+      "30,30": 26,
+      "30,31": 26,
+      "30,32": 26,
+      "30,33": 26,
+      "30,34": 26,
+      "30,35": 28,
+      "30,36": 29,
+      "30,41": 26,
+      "30,42": 30,
+      "30,43": 31,
+      "30,44": 32,
+      "30,45": 32,
+      "30,46": 26,
+      "30,47": 26,
+      "30,48": 30,
+      "30,49": 33,
+      "30,50": 32,
+      "30,51": 32,
+      "30,52": 26,
+      "30,53": 26,
+      "30,54": 26,
+      "30,55": 26,
+      "30,56": 26,
+      "30,57": 26,
+      "30,58": 26,
+      "30,59": 26,
+      "30,60": 26,
+      "30,61": 26,
+      "30,62": 26,
+      "30,63": 26,
+      "30,64": 26,
+      "30,65": 26,
+      "30,66": 26,
+      "30,67": 26,
+      "30,68": 26,
+      "30,69": 26,
+      "30,70": 26,
+      "30,71": 26,
+      "30,72": 26,
+      "30,73": 26,
+      "30,74": 26,
+      "30,75": 26,
+      "30,76": 26,
+      "30,77": 26,
+      "30,78": 26,
+      "30,79": 26,
+      "30,80": 26,
+      "30,81": 26,
+      "30,82": 27,
+      "30,86": 13,
+      "30,87": 13,
+      "30,88": 13,
+      "30,89": 13,
+      "30,90": 13,
+      "30,91": 14,
+      "30,92": 13,
+      "30,93": 13,
+      "30,94": 13,
+      "30,95": 13,
+      "30,96": 13,
+      "30,97": 13,
+      "30,98": 13,
+      "30,99": 13,
+      "31,0": 10,
+      "31,1": 10,
+      "31,2": 10,
+      "31,3": 10,
+      "31,4": 10,
+      "31,5": 34,
+      "31,6": 35,
+      "31,7": 36,
+      "31,8": 35,
+      "31,9": 35,
+      "31,10": 35,
+      "31,11": 35,
+      "31,12": 35,
+      "31,13": 35,
+      "31,14": 37,
+      "31,33": 38,
+      "31,36": 39,
+      "31,37": 40,
+      "31,38": 40,
+      "31,39": 39,
+      "31,40": 40,
+      "31,41": 40,
+      "31,42": 37,
+      "31,79": 41,
+      "31,83": 42,
+      "31,84": 43,
+      "31,85": 43,
+      "31,86": 13,
+      "31,87": 13,
+      "31,88": 13,
+      "31,89": 13,
+      "31,90": 13,
+      "31,91": 14,
+      "31,92": 13,
+      "31,93": 13,
+      "31,94": 13,
+      "31,95": 13,
+      "31,96": 13,
+      "31,97": 13,
+      "31,98": 13,
+      "31,99": 13,
+      "32,5": 44,
+      "32,6": 35,
+      "32,7": 45,
+      "32,8": 35,
+      "32,9": 35,
+      "32,10": 35,
+      "32,11": 35,
+      "32,12": 35,
+      "32,13": 35,
+      "32,14": 46,
+      "32,33": 47,
+      "32,34": 40,
+      "32,35": 47,
+      "32,36": 40,
+      "32,37": 40,
+      "32,38": 48,
+      "32,39": 4,
+      "32,40": 4,
+      "32,41": 47,
+      "32,42": 40,
+      "32,43": 40,
+      "32,44": 49,
+      "32,45": 40,
+      "32,46": 40,
+      "32,47": 19,
+      "32,79": 50,
+      "32,83": 1,
+      "32,86": 13,
+      "32,87": 13,
+      "32,88": 13,
+      "32,89": 13,
+      "32,90": 13,
+      "32,91": 14,
+      "32,92": 13,
+      "32,93": 13,
+      "32,94": 13,
+      "32,95": 13,
+      "32,96": 13,
+      "32,97": 13,
+      "32,98": 13,
+      "32,99": 13,
+      "33,5": 1,
+      "33,83": 1,
+      "33,86": 13,
+      "33,87": 13,
+      "33,88": 13,
+      "33,89": 13,
+      "33,90": 13,
+      "33,91": 14,
+      "33,92": 13,
+      "33,93": 13,
+      "33,94": 13,
+      "33,95": 13,
+      "33,96": 13,
+      "33,97": 13,
+      "33,98": 13,
+      "33,99": 13,
+      "34,5": 44,
+      "34,6": 35,
+      "34,7": 35,
+      "34,8": 35,
+      "34,9": 35,
+      "34,10": 35,
+      "34,11": 35,
+      "34,12": 35,
+      "34,13": 35,
+      "34,15": 35,
+      "34,16": 35,
+      "34,17": 35,
+      "34,18": 35,
+      "34,19": 35,
+      "34,20": 35,
+      "34,21": 35,
+      "34,22": 35,
+      "34,23": 35,
+      "34,24": 35,
+      "34,25": 35,
+      "34,26": 35,
+      "34,27": 35,
+      "34,28": 35,
+      "34,29": 35,
+      "34,30": 35,
+      "34,31": 35,
+      "34,32": 35,
+      "34,33": 35,
+      "34,34": 35,
+      "34,35": 35,
+      "34,36": 35,
+      "34,37": 35,
+      "34,38": 35,
+      "34,39": 35,
+      "34,40": 35,
+      "34,41": 35,
+      "34,42": 35,
+      "34,43": 35,
+      "34,44": 35,
+      "34,45": 35,
+      "34,46": 35,
+      "34,47": 35,
+      "34,48": 35,
+      "34,49": 35,
+      "34,50": 35,
+      "34,51": 35,
+      "34,52": 35,
+      "34,53": 35,
+      "34,54": 35,
+      "34,55": 35,
+      "34,56": 35,
+      "34,57": 35,
+      "34,58": 35,
+      "34,59": 35,
+      "34,60": 35,
+      "34,61": 35,
+      "34,62": 35,
+      "34,63": 35,
+      "34,64": 35,
+      "34,65": 35,
+      "34,66": 35,
+      "34,67": 35,
+      "34,68": 35,
+      "34,69": 35,
+      "34,70": 35,
+      "34,71": 35,
+      "34,72": 35,
+      "34,73": 35,
+      "34,74": 35,
+      "34,75": 35,
+      "34,76": 35,
+      "34,77": 35,
+      "34,78": 0,
+      "34,79": 44,
+      "34,80": 35,
+      "34,81": 35,
+      "34,82": 0,
+      "34,83": 1,
+      "34,86": 13,
+      "34,87": 13,
+      "34,88": 13,
+      "34,89": 13,
+      "34,90": 13,
+      "34,91": 14,
+      "34,92": 13,
+      "34,93": 13,
+      "34,94": 13,
+      "34,95": 13,
+      "34,96": 13,
+      "34,97": 13,
+      "34,98": 13,
+      "34,99": 13,
+      "35,5": 44,
+      "35,6": 35,
+      "35,7": 35,
+      "35,8": 35,
+      "35,9": 35,
+      "35,10": 35,
+      "35,11": 35,
+      "35,12": 35,
+      "35,13": 35,
+      "35,15": 35,
+      "35,16": 35,
+      "35,17": 35,
+      "35,18": 35,
+      "35,19": 35,
+      "35,20": 35,
+      "35,21": 35,
+      "35,22": 35,
+      "35,23": 35,
+      "35,24": 35,
+      "35,25": 35,
+      "35,26": 35,
+      "35,27": 35,
+      "35,28": 35,
+      "35,29": 35,
+      "35,30": 35,
+      "35,31": 35,
+      "35,32": 35,
+      "35,33": 35,
+      "35,34": 35,
+      "35,35": 35,
+      "35,36": 35,
+      "35,37": 35,
+      "35,38": 35,
+      "35,39": 35,
+      "35,40": 35,
+      "35,41": 35,
+      "35,42": 35,
+      "35,43": 35,
+      "35,44": 35,
+      "35,45": 35,
+      "35,46": 35,
+      "35,47": 35,
+      "35,48": 35,
+      "35,49": 35,
+      "35,50": 35,
+      "35,51": 35,
+      "35,52": 35,
+      "35,53": 35,
+      "35,54": 35,
+      "35,55": 35,
+      "35,56": 35,
+      "35,57": 35,
+      "35,58": 35,
+      "35,59": 35,
+      "35,60": 35,
+      "35,61": 35,
+      "35,62": 35,
+      "35,63": 35,
+      "35,64": 35,
+      "35,65": 35,
+      "35,66": 35,
+      "35,67": 35,
+      "35,68": 35,
+      "35,69": 35,
+      "35,70": 35,
+      "35,71": 35,
+      "35,72": 35,
+      "35,73": 35,
+      "35,74": 35,
+      "35,75": 35,
+      "35,76": 35,
+      "35,77": 35,
+      "35,78": 0,
+      "35,79": 44,
+      "35,80": 35,
+      "35,81": 35,
+      "35,82": 0,
+      "35,83": 1,
+      "35,86": 13,
+      "35,87": 13,
+      "35,88": 13,
+      "35,89": 13,
+      "35,90": 13,
+      "35,91": 14,
+      "35,92": 13,
+      "35,93": 13,
+      "35,94": 13,
+      "35,95": 13,
+      "35,96": 13,
+      "35,97": 13,
+      "35,98": 13,
+      "35,99": 13,
+      "36,5": 44,
+      "36,6": 35,
+      "36,7": 35,
+      "36,8": 35,
+      "36,9": 35,
+      "36,10": 35,
+      "36,11": 35,
+      "36,12": 35,
+      "36,13": 35,
+      "36,15": 35,
+      "36,16": 35,
+      "36,17": 35,
+      "36,18": 35,
+      "36,19": 35,
+      "36,20": 35,
+      "36,21": 35,
+      "36,22": 35,
+      "36,23": 35,
+      "36,24": 35,
+      "36,25": 35,
+      "36,26": 35,
+      "36,27": 35,
+      "36,28": 35,
+      "36,29": 35,
+      "36,30": 35,
+      "36,31": 35,
+      "36,32": 35,
+      "36,33": 35,
+      "36,34": 35,
+      "36,35": 35,
+      "36,36": 35,
+      "36,37": 35,
+      "36,38": 35,
+      "36,39": 35,
+      "36,40": 35,
+      "36,41": 35,
+      "36,42": 35,
+      "36,43": 35,
+      "36,44": 35,
+      "36,45": 35,
+      "36,46": 35,
+      "36,47": 35,
+      "36,48": 35,
+      "36,49": 35,
+      "36,50": 35,
+      "36,51": 35,
+      "36,52": 35,
+      "36,53": 35,
+      "36,54": 35,
+      "36,55": 35,
+      "36,56": 35,
+      "36,57": 35,
+      "36,58": 35,
+      "36,59": 35,
+      "36,60": 35,
+      "36,61": 35,
+      "36,62": 35,
+      "36,63": 35,
+      "36,64": 35,
+      "36,65": 35,
+      "36,66": 35,
+      "36,67": 35,
+      "36,68": 35,
+      "36,69": 35,
+      "36,70": 35,
+      "36,71": 35,
+      "36,72": 35,
+      "36,73": 35,
+      "36,74": 35,
+      "36,75": 35,
+      "36,76": 35,
+      "36,77": 35,
+      "36,78": 0,
+      "36,79": 44,
+      "36,80": 35,
+      "36,81": 35,
+      "36,82": 0,
+      "36,83": 1,
+      "36,86": 13,
+      "36,87": 13,
+      "36,88": 13,
+      "36,89": 13,
+      "36,90": 13,
+      "36,91": 14,
+      "36,92": 13,
+      "36,93": 13,
+      "36,94": 13,
+      "36,95": 13,
+      "36,96": 13,
+      "36,97": 13,
+      "36,98": 13,
+      "36,99": 13,
+      "37,5": 44,
+      "37,6": 35,
+      "37,7": 35,
+      "37,8": 35,
+      "37,9": 35,
+      "37,10": 35,
+      "37,11": 35,
+      "37,12": 35,
+      "37,13": 35,
+      "37,15": 35,
+      "37,16": 35,
+      "37,17": 35,
+      "37,18": 35,
+      "37,19": 35,
+      "37,20": 35,
+      "37,21": 35,
+      "37,22": 35,
+      "37,23": 35,
+      "37,24": 35,
+      "37,25": 35,
+      "37,26": 35,
+      "37,27": 35,
+      "37,28": 35,
+      "37,29": 35,
+      "37,30": 35,
+      "37,31": 35,
+      "37,32": 35,
+      "37,33": 35,
+      "37,34": 35,
+      "37,35": 35,
+      "37,36": 35,
+      "37,37": 35,
+      "37,38": 35,
+      "37,39": 35,
+      "37,40": 35,
+      "37,41": 35,
+      "37,42": 35,
+      "37,43": 35,
+      "37,44": 35,
+      "37,45": 35,
+      "37,46": 35,
+      "37,47": 35,
+      "37,48": 35,
+      "37,49": 35,
+      "37,50": 35,
+      "37,51": 35,
+      "37,52": 35,
+      "37,53": 35,
+      "37,54": 35,
+      "37,55": 35,
+      "37,56": 35,
+      "37,57": 35,
+      "37,58": 35,
+      "37,59": 35,
+      "37,60": 35,
+      "37,61": 35,
+      "37,62": 35,
+      "37,63": 35,
+      "37,64": 35,
+      "37,65": 35,
+      "37,66": 35,
+      "37,67": 35,
+      "37,68": 35,
+      "37,69": 35,
+      "37,70": 35,
+      "37,71": 35,
+      "37,72": 35,
+      "37,73": 35,
+      "37,74": 35,
+      "37,75": 35,
+      "37,76": 35,
+      "37,77": 35,
+      "37,78": 0,
+      "37,79": 44,
+      "37,80": 35,
+      "37,81": 35,
+      "37,82": 0,
+      "37,83": 1,
+      "37,86": 13,
+      "37,87": 13,
+      "37,88": 13,
+      "37,89": 13,
+      "37,90": 13,
+      "37,91": 14,
+      "37,92": 13,
+      "37,93": 13,
+      "37,94": 13,
+      "37,95": 13,
+      "37,96": 13,
+      "37,97": 13,
+      "37,98": 13,
+      "37,99": 13,
+      "38,5": 44,
+      "38,6": 35,
+      "38,7": 35,
+      "38,8": 35,
+      "38,9": 35,
+      "38,10": 35,
+      "38,11": 35,
+      "38,12": 35,
+      "38,13": 35,
+      "38,15": 35,
+      "38,16": 35,
+      "38,17": 35,
+      "38,18": 35,
+      "38,19": 35,
+      "38,20": 35,
+      "38,21": 35,
+      "38,22": 35,
+      "38,23": 35,
+      "38,24": 35,
+      "38,25": 35,
+      "38,26": 35,
+      "38,27": 35,
+      "38,28": 35,
+      "38,29": 35,
+      "38,30": 35,
+      "38,31": 35,
+      "38,32": 35,
+      "38,33": 35,
+      "38,34": 35,
+      "38,35": 35,
+      "38,36": 35,
+      "38,37": 35,
+      "38,38": 35,
+      "38,39": 35,
+      "38,40": 35,
+      "38,41": 35,
+      "38,42": 35,
+      "38,43": 35,
+      "38,44": 35,
+      "38,45": 35,
+      "38,46": 35,
+      "38,47": 35,
+      "38,48": 35,
+      "38,49": 35,
+      "38,50": 35,
+      "38,51": 35,
+      "38,52": 35,
+      "38,53": 35,
+      "38,54": 35,
+      "38,55": 35,
+      "38,56": 35,
+      "38,57": 35,
+      "38,58": 35,
+      "38,59": 35,
+      "38,60": 35,
+      "38,61": 35,
+      "38,62": 35,
+      "38,63": 35,
+      "38,64": 35,
+      "38,65": 35,
+      "38,66": 35,
+      "38,67": 35,
+      "38,68": 35,
+      "38,69": 35,
+      "38,70": 35,
+      "38,71": 35,
+      "38,72": 35,
+      "38,73": 35,
+      "38,74": 35,
+      "38,75": 35,
+      "38,76": 35,
+      "38,77": 35,
+      "38,78": 0,
+      "38,79": 44,
+      "38,80": 35,
+      "38,81": 35,
+      "38,82": 0,
+      "38,83": 1,
+      "38,86": 13,
+      "38,87": 13,
+      "38,88": 13,
+      "38,89": 13,
+      "38,90": 13,
+      "38,91": 14,
+      "38,92": 13,
+      "38,93": 13,
+      "38,94": 13,
+      "38,95": 13,
+      "38,96": 13,
+      "38,97": 13,
+      "38,98": 13,
+      "38,99": 13,
+      "39,5": 44,
+      "39,6": 35,
+      "39,7": 35,
+      "39,8": 35,
+      "39,9": 35,
+      "39,10": 35,
+      "39,11": 35,
+      "39,12": 35,
+      "39,13": 35,
+      "39,15": 35,
+      "39,16": 35,
+      "39,17": 35,
+      "39,18": 35,
+      "39,19": 35,
+      "39,20": 35,
+      "39,21": 35,
+      "39,22": 35,
+      "39,23": 35,
+      "39,24": 35,
+      "39,25": 35,
+      "39,26": 35,
+      "39,27": 35,
+      "39,28": 35,
+      "39,29": 35,
+      "39,30": 35,
+      "39,31": 35,
+      "39,32": 35,
+      "39,33": 35,
+      "39,34": 35,
+      "39,35": 35,
+      "39,36": 35,
+      "39,37": 35,
+      "39,38": 35,
+      "39,39": 35,
+      "39,40": 35,
+      "39,41": 35,
+      "39,42": 35,
+      "39,43": 35,
+      "39,44": 35,
+      "39,45": 35,
+      "39,46": 35,
+      "39,47": 35,
+      "39,48": 35,
+      "39,49": 35,
+      "39,50": 35,
+      "39,51": 35,
+      "39,52": 35,
+      "39,53": 35,
+      "39,54": 35,
+      "39,55": 35,
+      "39,56": 35,
+      "39,57": 35,
+      "39,58": 35,
+      "39,59": 35,
+      "39,60": 35,
+      "39,61": 35,
+      "39,62": 35,
+      "39,63": 35,
+      "39,64": 35,
+      "39,65": 35,
+      "39,66": 35,
+      "39,67": 35,
+      "39,68": 35,
+      "39,69": 35,
+      "39,70": 35,
+      "39,71": 35,
+      "39,72": 35,
+      "39,73": 35,
+      "39,74": 35,
+      "39,75": 35,
+      "39,76": 35,
+      "39,77": 35,
+      "39,78": 0,
+      "39,79": 44,
+      "39,80": 35,
+      "39,81": 35,
+      "39,82": 0,
+      "39,83": 1,
+      "40,5": 44,
+      "40,6": 35,
+      "40,7": 35,
+      "40,8": 35,
+      "40,9": 35,
+      "40,10": 35,
+      "40,11": 35,
+      "40,12": 35,
+      "40,13": 35,
+      "40,15": 35,
+      "40,16": 35,
+      "40,17": 35,
+      "40,18": 35,
+      "40,19": 35,
+      "40,20": 35,
+      "40,21": 35,
+      "40,22": 35,
+      "40,23": 35,
+      "40,24": 35,
+      "40,25": 35,
+      "40,26": 35,
+      "40,27": 35,
+      "40,28": 35,
+      "40,29": 35,
+      "40,30": 35,
+      "40,31": 35,
+      "40,32": 35,
+      "40,33": 35,
+      "40,34": 35,
+      "40,35": 35,
+      "40,36": 35,
+      "40,37": 35,
+      "40,38": 35,
+      "40,39": 35,
+      "40,40": 35,
+      "40,41": 35,
+      "40,42": 35,
+      "40,43": 35,
+      "40,44": 35,
+      "40,45": 35,
+      "40,46": 35,
+      "40,47": 35,
+      "40,48": 35,
+      "40,49": 35,
+      "40,50": 35,
+      "40,51": 35,
+      "40,52": 35,
+      "40,53": 35,
+      "40,54": 35,
+      "40,55": 35,
+      "40,56": 35,
+      "40,57": 35,
+      "40,58": 35,
+      "40,59": 35,
+      "40,60": 35,
+      "40,61": 35,
+      "40,62": 35,
+      "40,63": 35,
+      "40,64": 35,
+      "40,65": 35,
+      "40,66": 35,
+      "40,67": 35,
+      "40,68": 35,
+      "40,69": 35,
+      "40,70": 35,
+      "40,71": 35,
+      "40,72": 35,
+      "40,73": 35,
+      "40,74": 35,
+      "40,75": 35,
+      "40,76": 35,
+      "40,77": 35,
+      "40,78": 0,
+      "40,79": 44,
+      "40,80": 35,
+      "40,81": 35,
+      "40,82": 0,
+      "40,83": 1,
+      "41,5": 44,
+      "41,6": 35,
+      "41,7": 35,
+      "41,8": 35,
+      "41,9": 35,
+      "41,10": 35,
+      "41,11": 35,
+      "41,12": 35,
+      "41,13": 35,
+      "41,15": 35,
+      "41,16": 35,
+      "41,17": 35,
+      "41,18": 35,
+      "41,19": 35,
+      "41,20": 35,
+      "41,21": 35,
+      "41,22": 35,
+      "41,23": 35,
+      "41,24": 35,
+      "41,25": 35,
+      "41,26": 35,
+      "41,27": 35,
+      "41,28": 35,
+      "41,29": 35,
+      "41,30": 35,
+      "41,31": 35,
+      "41,32": 35,
+      "41,33": 35,
+      "41,34": 35,
+      "41,35": 35,
+      "41,36": 35,
+      "41,37": 35,
+      "41,38": 35,
+      "41,39": 35,
+      "41,40": 35,
+      "41,41": 35,
+      "41,42": 35,
+      "41,43": 35,
+      "41,44": 35,
+      "41,45": 35,
+      "41,46": 35,
+      "41,47": 35,
+      "41,48": 35,
+      "41,49": 35,
+      "41,50": 35,
+      "41,51": 35,
+      "41,52": 35,
+      "41,53": 35,
+      "41,54": 35,
+      "41,55": 35,
+      "41,56": 35,
+      "41,57": 35,
+      "41,58": 35,
+      "41,59": 35,
+      "41,60": 35,
+      "41,61": 35,
+      "41,62": 35,
+      "41,63": 35,
+      "41,64": 35,
+      "41,65": 35,
+      "41,66": 35,
+      "41,67": 35,
+      "41,68": 35,
+      "41,69": 35,
+      "41,70": 35,
+      "41,71": 35,
+      "41,72": 35,
+      "41,73": 35,
+      "41,74": 35,
+      "41,75": 35,
+      "41,76": 35,
+      "41,77": 35,
+      "41,78": 0,
+      "41,79": 44,
+      "41,80": 35,
+      "41,81": 35,
+      "41,82": 0,
+      "41,83": 1,
+      "42,5": 44,
+      "42,6": 35,
+      "42,7": 35,
+      "42,8": 35,
+      "42,9": 35,
+      "42,10": 35,
+      "42,11": 35,
+      "42,12": 35,
+      "42,13": 35,
+      "42,15": 35,
+      "42,16": 35,
+      "42,17": 35,
+      "42,18": 35,
+      "42,19": 35,
+      "42,20": 35,
+      "42,21": 35,
+      "42,22": 35,
+      "42,23": 35,
+      "42,24": 35,
+      "42,25": 35,
+      "42,26": 35,
+      "42,27": 35,
+      "42,28": 35,
+      "42,29": 35,
+      "42,30": 35,
+      "42,31": 35,
+      "42,32": 35,
+      "42,33": 35,
+      "42,34": 35,
+      "42,35": 35,
+      "42,36": 35,
+      "42,37": 35,
+      "42,38": 35,
+      "42,39": 35,
+      "42,40": 35,
+      "42,41": 35,
+      "42,42": 35,
+      "42,43": 35,
+      "42,44": 35,
+      "42,45": 35,
+      "42,46": 35,
+      "42,47": 35,
+      "42,48": 35,
+      "42,49": 35,
+      "42,50": 35,
+      "42,51": 35,
+      "42,52": 35,
+      "42,53": 35,
+      "42,54": 35,
+      "42,55": 35,
+      "42,56": 35,
+      "42,57": 35,
+      "42,58": 35,
+      "42,59": 35,
+      "42,60": 35,
+      "42,61": 35,
+      "42,62": 35,
+      "42,63": 35,
+      "42,64": 35,
+      "42,65": 35,
+      "42,66": 35,
+      "42,67": 35,
+      "42,68": 35,
+      "42,69": 35,
+      "42,70": 35,
+      "42,71": 35,
+      "42,72": 35,
+      "42,73": 35,
+      "42,74": 35,
+      "42,75": 35,
+      "42,76": 35,
+      "42,77": 35,
+      "42,78": 0,
+      "42,79": 44,
+      "42,80": 35,
+      "42,81": 35,
+      "42,82": 0,
+      "42,83": 1,
+      "43,5": 44,
+      "43,6": 35,
+      "43,7": 35,
+      "43,8": 35,
+      "43,9": 35,
+      "43,10": 35,
+      "43,11": 35,
+      "43,12": 35,
+      "43,13": 35,
+      "43,15": 35,
+      "43,16": 35,
+      "43,17": 35,
+      "43,18": 35,
+      "43,19": 35,
+      "43,20": 35,
+      "43,21": 35,
+      "43,22": 35,
+      "43,23": 35,
+      "43,24": 35,
+      "43,25": 35,
+      "43,26": 35,
+      "43,27": 35,
+      "43,28": 35,
+      "43,29": 35,
+      "43,30": 35,
+      "43,31": 35,
+      "43,32": 35,
+      "43,33": 35,
+      "43,34": 35,
+      "43,35": 35,
+      "43,36": 35,
+      "43,37": 35,
+      "43,38": 35,
+      "43,39": 35,
+      "43,40": 35,
+      "43,41": 35,
+      "43,42": 35,
+      "43,43": 35,
+      "43,44": 35,
+      "43,45": 35,
+      "43,46": 35,
+      "43,47": 35,
+      "43,48": 35,
+      "43,49": 35,
+      "43,50": 35,
+      "43,51": 35,
+      "43,52": 35,
+      "43,53": 35,
+      "43,54": 35,
+      "43,55": 35,
+      "43,56": 35,
+      "43,57": 35,
+      "43,58": 35,
+      "43,59": 35,
+      "43,60": 35,
+      "43,61": 35,
+      "43,62": 35,
+      "43,63": 35,
+      "43,64": 35,
+      "43,65": 35,
+      "43,66": 35,
+      "43,67": 35,
+      "43,68": 35,
+      "43,69": 35,
+      "43,70": 35,
+      "43,71": 35,
+      "43,72": 35,
+      "43,73": 35,
+      "43,74": 35,
+      "43,75": 35,
+      "43,76": 35,
+      "43,77": 35,
+      "43,78": 0,
+      "43,79": 44,
+      "43,80": 35,
+      "43,81": 35,
+      "43,82": 0,
+      "43,83": 1,
+      "44,5": 44,
+      "44,6": 35,
+      "44,7": 35,
+      "44,8": 35,
+      "44,9": 35,
+      "44,10": 35,
+      "44,11": 35,
+      "44,12": 35,
+      "44,13": 35,
+      "44,15": 35,
+      "44,16": 35,
+      "44,17": 35,
+      "44,18": 35,
+      "44,19": 35,
+      "44,20": 35,
+      "44,21": 35,
+      "44,22": 35,
+      "44,23": 35,
+      "44,24": 35,
+      "44,25": 35,
+      "44,26": 35,
+      "44,27": 35,
+      "44,28": 35,
+      "44,29": 35,
+      "44,30": 35,
+      "44,31": 35,
+      "44,32": 35,
+      "44,33": 35,
+      "44,34": 35,
+      "44,35": 35,
+      "44,36": 35,
+      "44,37": 35,
+      "44,38": 35,
+      "44,39": 35,
+      "44,40": 35,
+      "44,41": 35,
+      "44,42": 35,
+      "44,43": 35,
+      "44,44": 35,
+      "44,45": 35,
+      "44,46": 35,
+      "44,47": 35,
+      "44,48": 35,
+      "44,49": 35,
+      "44,50": 35,
+      "44,51": 35,
+      "44,52": 35,
+      "44,53": 35,
+      "44,54": 35,
+      "44,55": 35,
+      "44,56": 35,
+      "44,57": 35,
+      "44,58": 35,
+      "44,59": 35,
+      "44,60": 35,
+      "44,61": 35,
+      "44,62": 35,
+      "44,63": 35,
+      "44,64": 35,
+      "44,65": 35,
+      "44,66": 35,
+      "44,67": 35,
+      "44,68": 35,
+      "44,69": 35,
+      "44,70": 35,
+      "44,71": 35,
+      "44,72": 35,
+      "44,73": 35,
+      "44,74": 35,
+      "44,75": 35,
+      "44,76": 35,
+      "44,77": 35,
+      "44,78": 0,
+      "44,79": 44,
+      "44,80": 35,
+      "44,81": 35,
+      "44,82": 0,
+      "44,83": 1,
+      "45,5": 51,
+      "45,6": 52,
+      "45,7": 52,
+      "45,8": 52,
+      "45,9": 52,
+      "45,10": 52,
+      "45,11": 52,
+      "45,12": 52,
+      "45,13": 52,
+      "45,14": 26,
+      "45,15": 52,
+      "45,16": 52,
+      "45,17": 52,
+      "45,18": 52,
+      "45,19": 52,
+      "45,20": 52,
+      "45,21": 52,
+      "45,22": 52,
+      "45,23": 52,
+      "45,24": 52,
+      "45,25": 52,
+      "45,26": 52,
+      "45,27": 52,
+      "45,28": 52,
+      "45,29": 52,
+      "45,30": 52,
+      "45,31": 52,
+      "45,32": 52,
+      "45,33": 52,
+      "45,34": 52,
+      "45,35": 52,
+      "45,36": 52,
+      "45,37": 52,
+      "45,38": 52,
+      "45,39": 52,
+      "45,40": 52,
+      "45,41": 52,
+      "45,42": 52,
+      "45,43": 52,
+      "45,44": 52,
+      "45,45": 52,
+      "45,46": 52,
+      "45,47": 52,
+      "45,48": 52,
+      "45,49": 52,
+      "45,50": 52,
+      "45,51": 52,
+      "45,52": 52,
+      "45,53": 52,
+      "45,54": 52,
+      "45,55": 52,
+      "45,56": 52,
+      "45,57": 52,
+      "45,58": 52,
+      "45,59": 52,
+      "45,60": 52,
+      "45,61": 52,
+      "45,62": 52,
+      "45,63": 52,
+      "45,64": 52,
+      "45,65": 52,
+      "45,66": 52,
+      "45,67": 52,
+      "45,68": 52,
+      "45,69": 52,
+      "45,70": 52,
+      "45,71": 52,
+      "45,72": 52,
+      "45,73": 52,
+      "45,74": 52,
+      "45,75": 52,
+      "45,76": 52,
+      "45,77": 52,
+      "45,78": 53,
+      "45,79": 51,
+      "45,80": 52,
+      "45,81": 52,
+      "45,82": 53,
+      "45,83": 1
+    },
+    "ColStyles": {
+      "91": 54
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "7,5,1,2",
+    "7,7,1,4",
+    "7,64,1,3",
+    "7,67,1,6",
+    "7,73,1,3",
+    "7,76,1,3",
+    "4,8,1,6",
+    "8,92,1,6",
+    "7,61,1,3",
+    "7,46,1,15",
+    "7,26,1,3",
+    "7,29,1,4",
+    "7,33,1,4",
+    "7,40,1,3",
+    "7,43,1,3",
+    "7,16,1,10",
+    "7,11,1,5",
+    "16,92,1,6",
+    "17,92,1,6",
+    "8,5,22,78",
+    "7,37,1,3",
+    "30,43,1,3",
+    "30,49,1,3",
+    "30,36,1,5",
+    "2,5,1,7",
+    "2,23,1,3",
+    "4,15,1,4",
+    "4,19,1,4",
+    "2,15,1,4",
+    "2,19,1,4",
+    "4,26,1,4",
+    "4,23,1,3",
+    "2,26,1,4",
+    "2,30,1,4",
+    "2,34,1,5",
+    "2,40,1,5",
+    "4,45,1,4",
+    "2,45,1,4",
+    "2,49,1,4",
+    "4,30,1,4",
+    "4,34,1,5",
+    "4,40,1,5",
+    "4,49,1,4",
+    "4,55,1,6",
+    "4,66,1,5",
+    "7,79,1,4",
+    "32,5,1,2",
+    "32,7,1,7",
+    "33,5,13,78",
+    "32,33,1,2",
+    "32,35,1,3",
+    "32,38,1,3",
+    "32,41,1,3",
+    "32,44,1,3",
+    "32,14,1,19",
+    "32,47,1,32",
+    "32,79,1,4",
+    "6,5,1,2",
+    "6,7,1,4",
+    "6,11,1,5",
+    "6,16,1,10",
+    "6,26,1,3",
+    "6,29,1,4",
+    "6,33,1,4",
+    "6,37,1,3",
+    "6,40,1,3",
+    "6,43,1,3",
+    "6,46,1,15",
+    "6,61,1,3",
+    "6,64,1,3",
+    "6,67,1,6",
+    "6,73,1,3",
+    "6,76,1,3",
+    "6,79,1,4",
+    "31,5,1,2",
+    "31,7,1,7",
+    "31,14,1,19",
+    "31,33,1,2",
+    "31,35,1,3",
+    "31,38,1,3",
+    "31,41,1,3",
+    "31,44,1,3",
+    "31,47,1,32",
+    "31,79,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "采购单主表",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=采购单查询!$AA8=\"退货\""
+          },
+          "GUID": "e5bcbe03-7c90-4879-a44d-6885a2ee58f4",
+          "StyleInfo": {
+            "FontWeight": "Bold",
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "当前公司简称",
+      "Formula": "采购单查询!$CO$9"
+    },
+    {
+      "Name": "返回码",
+      "Formula": "采购单查询!$CO$17"
+    },
+    {
+      "Name": "返回值",
+      "Formula": "采购单查询!$CO$18"
+    }
+  ]
+}//8nC1SKqTtBx1+zl0tZdg3YE1pgfvTVfHlYQonfOiUyJDJqSH94ZqrCgVauPCfBf1VCmPTCd2MDD8FrbDnL0EW/tcRS16l+5fC0uzgx9WCXgbrQhpII+WCGdzx6Mf8tGb8Whl446knyM9A7Y0sLctd1FLXr+0IpZp+ssea3erqAQ7OhQS5wPc3q6IQjTvOhEVugcqYxxvEwMDlA/xiUn9imFzO48gzBuDoIcmuvtjTu4yAyl1pRVIpROvgnwfDGmmlznfKxwma9yu6oFAzmz40Sh2vDJgjdLwEEEJ9ccOwhoWtLhF2NLt50bX9vJkOM9lT1J/yFnddLH/hs8umI6HItUSot7OGf+47g7eWSTESyU3FXqh5+7B8TXRG54aLIU4ka/G9RBNlFlh4rL7aXz11obDt2MzaTmzGGcly8Vlxyw5AJXzn3RtzZDFWRjYGh1OJzcH06CN01xMQ8fVp0MLkry/FIs6TNlJk4Jd/tLHCHMu5hI39IH5R7vS/ixmJpRvx8o6P1fNx1tG/cL48qGvoFqxb8Qw0WCGlCqRiJOGsRG1CK3vXOEGXWD1jYBs4FFbRND2bxruQjRL6EG7iayC2QmIiOZI8jE5UC6550NITqXzMbP/AFx4ikkzVPHaEyuTIimaFmxJHlBrPDs9/VJG0m9YMqJsSo5NJZwLXEMiAqcxOyKBcZ+Hmc3GaJV4A0eFRfYVS4OG/Wtec2JfotDXIIwGyzT6RNHf88/xvIgSEA24j30mJ/XlnDGb73SRg1TgXpEPBeB2s2vEyDtrE0njwu+0BrelgIvZi3cx8emKql3EI0Tb7menxmHdVE7/zyJODawwtqMFuuavBojERLWYEE2aoLQVAUt8diFgXon+Gz6qozRPHZzOZeeZf5AXKIPtLfGTZUsfInCdDedBBmb7Kw==|920

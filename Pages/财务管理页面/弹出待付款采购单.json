@@ -1,0 +1,1289 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0,
+          "IsHidden": true
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "Count": 28
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "58": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "59": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "61": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "62": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "63": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "64": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "67": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "68": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "Count": 69
+  },
+  "Values": {
+    "1,3": "供应商：",
+    "1,16": "采购日期：",
+    "1,26": "↔",
+    "1,34": "确定",
+    "1,40": "取消",
+    "3,7": "采/退",
+    "3,9": "采购单摘要",
+    "3,34": "采购金额",
+    "3,38": "已付款",
+    "3,42": "应付款",
+    "16,55": "本次选择的采购单号：",
+    "22,55": "付款单上选过的采购单号："
+  },
+  "Formulas": {
+    "4,42": "AI5-AM5"
+  },
+  "AttachInfos": {
+    "1,20": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "1,27": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=EOMONTH(TODAY(),0)"
+        },
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "1,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=弹出待付款采购单!BE17"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "您未选择任何采购单！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  }
+                ],
+                "ID": "7e30d4ca-f6a4-436c-ac61-c1908979fcfa"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+                    "PassRowMode": 1,
+                    "ImportMode": 1,
+                    "PassValueItems": [
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=弹出待付款采购单!D5"
+                        },
+                        "TargetCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=采购付款单!D11"
+                        },
+                        "IsPrimaryKey": true
+                      }
+                    ],
+                    "Source": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=弹出待付款采购单!D5"
+                    },
+                    "Target": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=采购付款单!D11"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "PassValueBack": true
+                  }
+                ],
+                "ID": "0007c255-0910-4763-883b-68f706cdddf7"
+              }
+            ]
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "1,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "采购单主表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 18,
+        "ColumnCount": 45,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "供应商",
+                "GUID": "178696cd-8e77-4fbf-98ed-58cdf99292db"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=弹出待付款采购单!供应商"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "剩余应付",
+                "GUID": "ebecdf3b-a173-402f-a92d-cab0ae0483e6"
+              },
+              "Value": "0"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购日期",
+                "GUID": "c7ab40ea-5da1-4c68-bdca-673d65238fe9"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=弹出待付款采购单!起始日期"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购日期",
+                "GUID": "87367cb6-f3f6-4aed-882b-f9594be034c7"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=弹出待付款采购单!截止日期"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 9,
+              "ColumnBindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购单号",
+                "GUID": "8c030a12-f228-4f3f-a536-e43f58d4c0b2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=弹出待付款采购单!选过的采购单"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1,
+        "DisableAutoSelectRow": true,
+        "ColumnOperation": 1
+      }
+    },
+    "4,3": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "采购单号",
+        "GUID": "c30cbdd5-4e4d-4b35-8fd1-7eca47a7ed4e"
+      }
+    },
+    "4,7": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "采购_退货",
+        "GUID": "f3ac6966-b40b-4379-8923-2ca3a7577afd"
+      }
+    },
+    "4,9": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "备注",
+        "GUID": "a25ee548-e717-4a7c-8ebe-df18b135135d"
+      }
+    },
+    "4,30": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "采购日期",
+        "GUID": "e9810b32-2e62-4ecd-803b-36c182ef41e8"
+      }
+    },
+    "4,34": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "折扣后金额",
+        "GUID": "8ec0551b-83f9-4878-bc81-8ec857554b63"
+      }
+    },
+    "4,38": {
+      "BindingInfo": {
+        "TableName": "采购单主表",
+        "ColumnName": "已付款",
+        "GUID": "1b16a2e4-1511-4a47-a1b7-b84bf4bcfe62"
+      }
+    },
+    "16,56": {
+      "CellType": {
+        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
+        "ListViewName": "表格1"
+      }
+    },
+    "22,56": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontSize": -1.0,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "BorderRight": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 2
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 8,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "General",
+        "Body",
+        "Right",
+        "Center",
+        "Background 1 -25",
+        "[AUTO]General",
+        "Left",
+        "yyyy/MM/dd",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,55": 1,
+      "0,56": 0,
+      "0,57": 0,
+      "0,58": 0,
+      "0,59": 0,
+      "0,60": 0,
+      "0,61": 0,
+      "0,62": 0,
+      "0,63": 0,
+      "1,1": 2,
+      "1,2": 2,
+      "1,3": 3,
+      "1,4": 4,
+      "1,5": 5,
+      "1,6": 5,
+      "1,7": 5,
+      "1,8": 5,
+      "1,9": 5,
+      "1,10": 5,
+      "1,11": 5,
+      "1,12": 5,
+      "1,13": 5,
+      "1,14": 5,
+      "1,15": 5,
+      "1,16": 2,
+      "1,17": 2,
+      "1,18": 2,
+      "1,19": 2,
+      "1,20": 2,
+      "1,21": 6,
+      "1,22": 6,
+      "1,23": 6,
+      "1,24": 6,
+      "1,25": 6,
+      "1,26": 7,
+      "1,27": 2,
+      "1,28": 6,
+      "1,29": 6,
+      "1,30": 6,
+      "1,31": 6,
+      "1,32": 6,
+      "1,34": 6,
+      "1,40": 6,
+      "1,51": 0,
+      "1,52": 0,
+      "1,53": 0,
+      "1,54": 0,
+      "1,55": 1,
+      "1,56": 0,
+      "1,57": 0,
+      "1,58": 0,
+      "1,59": 0,
+      "1,60": 0,
+      "1,61": 0,
+      "1,62": 0,
+      "1,63": 0,
+      "2,34": 6,
+      "2,35": 6,
+      "2,36": 6,
+      "2,37": 6,
+      "2,40": 6,
+      "2,41": 6,
+      "2,42": 6,
+      "2,43": 6,
+      "2,51": 0,
+      "2,52": 0,
+      "2,53": 0,
+      "2,54": 0,
+      "2,55": 1,
+      "2,56": 0,
+      "2,57": 0,
+      "2,58": 0,
+      "2,59": 0,
+      "2,60": 0,
+      "2,61": 0,
+      "2,62": 0,
+      "2,63": 0,
+      "3,1": 8,
+      "3,2": 9,
+      "3,3": 10,
+      "3,4": 11,
+      "3,5": 11,
+      "3,6": 11,
+      "3,7": 12,
+      "3,9": 13,
+      "3,30": 10,
+      "3,31": 11,
+      "3,32": 11,
+      "3,33": 11,
+      "3,34": 10,
+      "3,35": 9,
+      "3,36": 9,
+      "3,37": 9,
+      "3,38": 10,
+      "3,39": 9,
+      "3,40": 9,
+      "3,41": 9,
+      "3,42": 10,
+      "3,43": 11,
+      "3,44": 11,
+      "3,45": 14,
+      "3,51": 0,
+      "3,52": 0,
+      "3,53": 0,
+      "3,54": 0,
+      "3,55": 1,
+      "3,56": 0,
+      "3,57": 0,
+      "3,58": 0,
+      "3,59": 0,
+      "3,60": 0,
+      "3,61": 0,
+      "3,62": 0,
+      "3,63": 0,
+      "4,1": 15,
+      "4,3": 7,
+      "4,4": 6,
+      "4,5": 6,
+      "4,6": 6,
+      "4,7": 16,
+      "4,9": 17,
+      "4,30": 18,
+      "4,31": 6,
+      "4,32": 6,
+      "4,33": 6,
+      "4,34": 7,
+      "4,38": 7,
+      "4,42": 7,
+      "4,43": 6,
+      "4,44": 6,
+      "4,45": 19,
+      "4,46": 6,
+      "4,47": 6,
+      "4,48": 6,
+      "4,49": 6,
+      "4,50": 6,
+      "4,51": 0,
+      "4,52": 0,
+      "4,53": 0,
+      "4,54": 0,
+      "4,55": 1,
+      "4,56": 0,
+      "4,57": 0,
+      "4,58": 0,
+      "4,59": 0,
+      "4,60": 0,
+      "4,61": 0,
+      "4,62": 0,
+      "4,63": 0,
+      "4,64": 6,
+      "4,65": 6,
+      "4,66": 6,
+      "4,67": 6,
+      "5,1": 15,
+      "5,45": 20,
+      "5,46": 6,
+      "5,47": 6,
+      "5,48": 6,
+      "5,49": 6,
+      "5,50": 6,
+      "5,51": 0,
+      "5,52": 0,
+      "5,53": 0,
+      "5,54": 0,
+      "5,55": 1,
+      "5,56": 0,
+      "5,57": 0,
+      "5,58": 0,
+      "5,59": 0,
+      "5,60": 0,
+      "5,61": 0,
+      "5,62": 0,
+      "5,63": 0,
+      "5,64": 0,
+      "5,65": 0,
+      "5,66": 0,
+      "5,67": 0,
+      "5,68": 0,
+      "6,1": 15,
+      "6,45": 20,
+      "6,46": 6,
+      "6,47": 6,
+      "6,48": 6,
+      "6,49": 6,
+      "6,50": 6,
+      "6,51": 0,
+      "6,52": 0,
+      "6,53": 0,
+      "6,54": 0,
+      "6,55": 1,
+      "6,56": 0,
+      "6,57": 0,
+      "6,58": 0,
+      "6,59": 0,
+      "6,60": 0,
+      "6,61": 0,
+      "6,62": 0,
+      "6,63": 0,
+      "6,64": 0,
+      "6,65": 0,
+      "6,66": 0,
+      "6,67": 0,
+      "6,68": 0,
+      "7,1": 15,
+      "7,45": 20,
+      "7,46": 6,
+      "7,47": 6,
+      "7,48": 6,
+      "7,49": 6,
+      "7,50": 6,
+      "7,51": 0,
+      "7,52": 0,
+      "7,53": 0,
+      "7,54": 0,
+      "7,55": 1,
+      "7,56": 0,
+      "7,57": 0,
+      "7,58": 0,
+      "7,59": 0,
+      "7,60": 0,
+      "7,61": 0,
+      "7,62": 0,
+      "7,63": 0,
+      "7,64": 0,
+      "7,65": 0,
+      "7,66": 0,
+      "7,67": 0,
+      "7,68": 0,
+      "8,1": 15,
+      "8,45": 20,
+      "8,46": 6,
+      "8,47": 6,
+      "8,48": 6,
+      "8,49": 6,
+      "8,50": 6,
+      "8,51": 0,
+      "8,52": 0,
+      "8,53": 0,
+      "8,54": 0,
+      "8,55": 1,
+      "8,56": 0,
+      "8,57": 0,
+      "8,58": 0,
+      "8,59": 0,
+      "8,60": 0,
+      "8,61": 0,
+      "8,62": 0,
+      "8,63": 0,
+      "8,64": 0,
+      "8,65": 0,
+      "8,66": 0,
+      "8,67": 0,
+      "8,68": 0,
+      "9,1": 15,
+      "9,45": 20,
+      "9,46": 6,
+      "9,47": 0,
+      "9,48": 0,
+      "9,49": 0,
+      "9,50": 0,
+      "9,51": 0,
+      "9,52": 0,
+      "9,53": 0,
+      "9,54": 0,
+      "9,55": 1,
+      "9,56": 0,
+      "9,57": 0,
+      "9,58": 0,
+      "9,59": 0,
+      "9,60": 0,
+      "9,61": 0,
+      "9,62": 0,
+      "9,63": 0,
+      "9,64": 0,
+      "9,65": 0,
+      "9,66": 0,
+      "9,67": 0,
+      "9,68": 0,
+      "10,1": 15,
+      "10,45": 20,
+      "10,46": 6,
+      "10,47": 0,
+      "10,48": 0,
+      "10,49": 0,
+      "10,50": 0,
+      "10,51": 0,
+      "10,52": 0,
+      "10,53": 0,
+      "10,54": 0,
+      "10,55": 1,
+      "10,56": 0,
+      "10,57": 0,
+      "10,58": 0,
+      "10,59": 0,
+      "10,60": 0,
+      "10,61": 0,
+      "10,62": 0,
+      "10,63": 0,
+      "10,64": 0,
+      "10,65": 0,
+      "10,66": 0,
+      "10,67": 0,
+      "10,68": 0,
+      "11,1": 15,
+      "11,45": 20,
+      "11,46": 6,
+      "11,47": 0,
+      "11,48": 0,
+      "11,49": 0,
+      "11,50": 0,
+      "11,51": 0,
+      "11,52": 0,
+      "11,53": 0,
+      "11,54": 0,
+      "11,55": 1,
+      "11,56": 0,
+      "11,57": 0,
+      "11,58": 0,
+      "11,59": 0,
+      "11,60": 0,
+      "11,61": 0,
+      "11,62": 0,
+      "11,63": 0,
+      "11,64": 0,
+      "11,65": 0,
+      "11,66": 0,
+      "11,67": 0,
+      "11,68": 0,
+      "12,1": 15,
+      "12,45": 20,
+      "12,46": 6,
+      "12,47": 0,
+      "12,48": 0,
+      "12,49": 0,
+      "12,50": 0,
+      "12,51": 0,
+      "12,52": 0,
+      "12,53": 0,
+      "12,54": 0,
+      "12,55": 1,
+      "12,56": 0,
+      "12,57": 0,
+      "12,58": 0,
+      "12,59": 0,
+      "12,60": 0,
+      "12,61": 0,
+      "12,62": 0,
+      "12,63": 0,
+      "12,64": 0,
+      "12,65": 0,
+      "12,66": 0,
+      "12,67": 0,
+      "12,68": 0,
+      "13,1": 15,
+      "13,45": 20,
+      "13,46": 6,
+      "13,47": 0,
+      "13,48": 0,
+      "13,49": 0,
+      "13,50": 0,
+      "13,51": 0,
+      "13,52": 0,
+      "13,53": 0,
+      "13,54": 0,
+      "13,55": 1,
+      "13,56": 0,
+      "13,57": 0,
+      "13,58": 0,
+      "13,59": 0,
+      "13,60": 0,
+      "13,61": 0,
+      "13,62": 0,
+      "13,63": 0,
+      "13,64": 0,
+      "13,65": 0,
+      "13,66": 0,
+      "13,67": 0,
+      "13,68": 0,
+      "14,1": 15,
+      "14,45": 20,
+      "14,47": 0,
+      "14,48": 0,
+      "14,49": 0,
+      "14,50": 0,
+      "14,51": 0,
+      "14,52": 0,
+      "14,53": 0,
+      "14,54": 0,
+      "14,55": 1,
+      "14,56": 0,
+      "14,57": 0,
+      "14,58": 0,
+      "14,59": 0,
+      "14,60": 0,
+      "14,61": 0,
+      "14,62": 0,
+      "14,63": 0,
+      "14,64": 0,
+      "14,65": 0,
+      "14,66": 0,
+      "14,67": 0,
+      "14,68": 0,
+      "15,1": 15,
+      "15,45": 20,
+      "15,47": 0,
+      "15,48": 0,
+      "15,49": 0,
+      "15,50": 0,
+      "15,51": 0,
+      "15,52": 0,
+      "15,53": 0,
+      "15,54": 0,
+      "15,55": 1,
+      "15,56": 0,
+      "15,57": 0,
+      "15,58": 0,
+      "15,59": 0,
+      "15,60": 0,
+      "15,61": 0,
+      "15,62": 0,
+      "15,63": 0,
+      "15,64": 0,
+      "15,65": 0,
+      "15,66": 0,
+      "15,67": 0,
+      "15,68": 0,
+      "16,1": 15,
+      "16,45": 20,
+      "16,47": 2,
+      "16,48": 2,
+      "16,49": 2,
+      "16,50": 2,
+      "16,51": 2,
+      "16,52": 2,
+      "16,53": 2,
+      "16,54": 2,
+      "16,55": 21,
+      "16,56": 17,
+      "16,68": 0,
+      "17,1": 15,
+      "17,45": 20,
+      "17,47": 2,
+      "17,48": 2,
+      "17,49": 2,
+      "17,50": 2,
+      "17,51": 2,
+      "17,52": 2,
+      "17,53": 2,
+      "17,54": 2,
+      "17,55": 3,
+      "17,68": 0,
+      "18,1": 15,
+      "18,45": 20,
+      "18,47": 2,
+      "18,48": 2,
+      "18,49": 2,
+      "18,50": 2,
+      "18,51": 2,
+      "18,52": 2,
+      "18,53": 2,
+      "18,54": 2,
+      "18,55": 3,
+      "18,68": 0,
+      "19,1": 15,
+      "19,45": 20,
+      "19,47": 2,
+      "19,48": 2,
+      "19,49": 2,
+      "19,50": 2,
+      "19,51": 2,
+      "19,52": 2,
+      "19,53": 2,
+      "19,54": 2,
+      "19,55": 3,
+      "19,68": 0,
+      "20,1": 22,
+      "20,2": 23,
+      "20,3": 23,
+      "20,4": 23,
+      "20,5": 23,
+      "20,6": 23,
+      "20,7": 23,
+      "20,8": 23,
+      "20,9": 23,
+      "20,10": 23,
+      "20,11": 23,
+      "20,12": 23,
+      "20,13": 23,
+      "20,14": 23,
+      "20,15": 23,
+      "20,16": 23,
+      "20,17": 23,
+      "20,18": 23,
+      "20,19": 23,
+      "20,20": 23,
+      "20,21": 23,
+      "20,22": 23,
+      "20,23": 23,
+      "20,24": 23,
+      "20,25": 23,
+      "20,26": 23,
+      "20,27": 23,
+      "20,28": 23,
+      "20,29": 23,
+      "20,30": 23,
+      "20,31": 23,
+      "20,32": 23,
+      "20,33": 23,
+      "20,34": 23,
+      "20,35": 23,
+      "20,36": 23,
+      "20,37": 23,
+      "20,38": 23,
+      "20,39": 23,
+      "20,40": 23,
+      "20,41": 23,
+      "20,42": 23,
+      "20,43": 23,
+      "20,44": 23,
+      "20,45": 24,
+      "20,47": 0,
+      "20,48": 0,
+      "20,49": 0,
+      "20,50": 0,
+      "20,51": 0,
+      "20,52": 0,
+      "20,53": 0,
+      "20,54": 0,
+      "20,55": 1,
+      "20,56": 0,
+      "20,57": 0,
+      "20,58": 0,
+      "20,59": 0,
+      "20,60": 0,
+      "20,61": 0,
+      "20,62": 0,
+      "20,63": 0,
+      "20,64": 0,
+      "20,65": 0,
+      "20,66": 0,
+      "20,67": 0,
+      "20,68": 0,
+      "21,51": 6,
+      "21,52": 6,
+      "21,53": 6,
+      "21,54": 6,
+      "22,51": 6,
+      "22,52": 6,
+      "22,53": 6,
+      "22,54": 6,
+      "22,55": 21,
+      "22,56": 25,
+      "23,51": 6,
+      "23,52": 6,
+      "23,53": 6,
+      "23,54": 6,
+      "23,55": 3,
+      "24,51": 6,
+      "24,52": 6,
+      "24,53": 6,
+      "24,54": 6,
+      "24,55": 3,
+      "25,35": 6,
+      "25,36": 6,
+      "25,37": 6,
+      "25,38": 6,
+      "25,51": 6,
+      "25,52": 6,
+      "25,53": 6,
+      "25,54": 6,
+      "25,55": 3,
+      "26,35": 6,
+      "26,36": 6,
+      "26,37": 6,
+      "26,38": 6,
+      "26,51": 6,
+      "26,52": 6,
+      "26,53": 6,
+      "26,54": 6
+    },
+    "ColStyles": {
+      "47": 12,
+      "48": 12,
+      "49": 12,
+      "50": 12,
+      "51": 12,
+      "52": 12,
+      "53": 12,
+      "54": 12,
+      "55": 26,
+      "56": 12,
+      "57": 12,
+      "58": 12,
+      "59": 12,
+      "60": 12,
+      "61": 12,
+      "62": 12,
+      "63": 12,
+      "64": 12,
+      "65": 12,
+      "66": 12,
+      "67": 12,
+      "68": 12
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,34,1,4",
+    "1,40,1,4",
+    "4,3,1,4",
+    "4,30,1,4",
+    "4,42,1,4",
+    "4,1,1,2",
+    "4,9,1,21",
+    "4,7,1,2",
+    "5,1,16,45",
+    "22,56,4,12",
+    "4,34,1,4",
+    "4,38,1,4",
+    "1,20,1,6",
+    "1,27,1,6",
+    "1,4,1,12",
+    "16,56,4,12",
+    "3,1,1,2",
+    "3,3,1,4",
+    "3,7,1,2",
+    "3,9,1,21",
+    "3,30,1,4",
+    "3,34,1,4",
+    "3,38,1,4",
+    "3,42,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "选择需要付款的采购单",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "采购单主表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "供应商",
+      "Formula": "弹出待付款采购单!$E$2"
+    },
+    {
+      "Name": "选过的采购单",
+      "Formula": "弹出待付款采购单!$BE$23"
+    },
+    {
+      "Name": "起始日期",
+      "Formula": "弹出待付款采购单!$U$2"
+    },
+    {
+      "Name": "截止日期",
+      "Formula": "弹出待付款采购单!$AB$2"
+    }
+  ]
+}//hdvl9SR9BHgVCjn+sSsEcPmyl8HBtSdPIMRgeBzZ6HN4nAGTYbaNf4r2dwdq6NN4OGDnVDqWOQRaVOrf/8Y4KElmMWELvwxQ1r1u6hrycve30tgwIL8QZC4DFg6Q+tYbqVACQIXDwso5BTrvNJBcmK+f/pIIMN3obPW7a+cJht1AEiLzXIaZCC3RxhPc7TLr99cDmA611fwQFGZMT3Fo06MFv1N4f6CfjmeQdvCzYZUO8CiISvw+esgGdqIDB2hBE0BcURfefIlGpRjF9zw1lSzEfgUAll8LiVZ3r0HEwMCMcAKXRbLSOTOE7XMAggBiImpfjMFteMxWombMGGWznqz91a4QFlewnJlThLwpCy24/BmsI9YSHQjngKDcuDrjVjz/0VMmjgXKERc3NlG2ytCsY2/OFrtvoH2C/HSPaDphnQzuxoaFgmtH7Bo5ZwYYtenpDn7aYLMUO30Z+sY3z+nCd86mAaEoo2DEV7Is6Cas//i/bmoeRHMXBZEyCvZCyztkhXYD23tJprY50wqq/pxRR/KNsA7ETlPNtjLhKFygOigePAad+VE8oKAo68e7bwQcFOgN9rJ0Jx9LVJ+g07d67dtjfgg6KvRdsg4LTumrkbvEilpmL44li2cec7xh33t5odAQRxX01e8bnpeWiy9kuVLR7bG6aYBXEZIJf8HPoZdUtgY3FSuTwz1+0w1asu8wtOXhk89uAj+H9K038m6462CMamRJPbSBAAswZk7ndtjvBbN4oC5GSiPpZKMLwVWRkjyF7qjGDf4RDv7RjAsCXYPXI5/K3mdtl+LzigDZNhzlaXe/C9UG70UmuNog/b+cWwe93T+gbiGFvtlWqBT1MzxcOBFuC0W4LY7x6wPAJVZ0S1aB3rabFz/PGtmScCpPtXqm/QYrm/S5f4Biiw==|920

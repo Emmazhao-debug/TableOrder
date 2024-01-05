@@ -1,0 +1,103 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 7
+  },
+  "Cols": {
+    "Count": 15
+  },
+  "Values": {
+    "1,1": "这不是一个正确的百度地图链接，是否打开百度地图重新选择正确的链接？",
+    "5,2": "确定",
+    "5,10": "取消"
+  },
+  "AttachInfos": {
+    "5,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": "https://map.baidu.com/search/深圳市/@12697746,2560970.25,12z?querytype=s&da_src=shareurl&wd=深圳市&c=340&src=0&pn=0&sug=0&l=13&b=(12895703,2632816;12977623,2673584)&from=webmap&biz_forward=%7B\"scaler\":1,\"styles\":\"pl\"%7D&device_ratio=1",
+            "IsOpenInNewTab": true
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "5,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "5,10": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,1,3,13",
+    "5,2,1,3",
+    "5,10,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//JCetbIVkcFoKqMbipBvxy1zyCnzDHENvHl3EavpN2IanOghn+50bUYdNlHRP4VRp7zvoKDB6rkt8yPl4wIf4M1bME1rkWS5S6UgLarUhuLSxIAxmTxmiMf+YEN1ig8bGvyj8BabKfmlQBAO0/13v0T2nXZB6Jl7ZOu0MZkqy/c5Voxar16m6hQLYEar/d0MCwOgpg9LPuTl2Jrz/eVuC3wPKB2ntOXd1KRFPcN+geuNbwPgAA0SkWEXgyC55nHbfonteqVGo5Adz8AIkNydwjQDmGT6blDS0zHf8W6ulY75gKVru3hZw6oqQmTeVAPZBZdP8HMOsLnU7VCHocOCrGoFncJ+z/2TmRohj7JZbvOQT0l199YmcCXUa3YCAc2FOKl9D9tf6DAZSNvaWQoLADZb78hMpwW8sXV2Czflq2UMBA+K750jgNEtuieUajs1k2/8VoiLT+gBPqUY5WcJpOdKnWgXenoOaZNJoY8UmUNFao5NySzhKUqwEgHzYx0c510NrarM49oxJfVJSx8At/fNIkKx7zRmnV7v+GKNwZcB2jVseaTilJBPxFDCmbh3IsRGl4dMN8frZzJGLeKDs3r0zmZZZkqNav29PtamGuWiKcgY3FYp0vgKC9sGzLZjuOUgvWitACHsLYOJpISofWcWzermtMGRxPmiBrVzONZsLpJ6h6qcAm0dmO5s9LKydM1fng0bkTG2qETElBwTNroVSY+0hKYT1TwbtzEam9e62/PDXdTMCXcjJXfGi9bUIqLN9AqFWSKUFDRBmKaWA0Ip2qtOul7OQUwpHYtGpAZS534BWH/6V0fPN3J/+iWaKeYtddSF2wQMQ/vI7pxo2ccLylzYJ3pdbv1LcMonMt/kfNsanF6DUpJIyMAjOvlV6fPI/gpbrR3Jhf8ompH4X7Q==|920

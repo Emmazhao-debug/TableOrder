@@ -1,0 +1,1144 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      43,
+      44
+    ],
+    "Count": 45
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71
+    ],
+    "Count": 72
+  },
+  "Values": {
+    "1,10": "批量添加新材料",
+    "3,11": "导入Excel表",
+    "3,37": "统一设定目录名称：",
+    "3,47": "设定",
+    "5,14": "目录名称（可单独设定）",
+    "5,40": "单位",
+    "5,42": "库存数量",
+    "5,45": "备料类型",
+    "5,48": "使用状态",
+    "5,51": "库存金额",
+    "5,54": "目录id",
+    "6,14": "空",
+    "6,42": 0,
+    "6,45": "常备",
+    "6,48": "正常",
+    "6,51": 0,
+    "6,58": "添加",
+    "11,58": "取消",
+    "12,63": "目录id：",
+    "13,65": "目录id数：",
+    "14,65": "材料名称数：",
+    "15,65": "单位数量：",
+    "16,65": "返回码：",
+    "17,65": "返回信息：",
+    "42,10": "*Excel文件的工作表中，“材料名称”和“单位”这两列的列头名称应与本表保持一致才能正确导入数据"
+  },
+  "Formulas": {
+    "13,66": "COUNTA(BC7)",
+    "14,66": "COUNTA(X7)",
+    "15,66": "COUNTA(AO7)"
+  },
+  "AttachInfos": {
+    "3,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "表格1",
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!X7"
+                },
+                "ColumnName": "材料名称"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!AO7"
+                },
+                "ColumnName": "单位"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excel文件导入成功！"
+          }
+        ],
+        "Text": "导入Excel表",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,38": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "材料目录-弹出选择",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!目录名称"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='材料目录-弹出选择'!目录名称"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!目录id"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='材料目录-弹出选择'!目录ID"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "ClickMode": 1,
+        "TemplateKey": "样式1"
+      }
+    },
+    "3,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateValues": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!O7"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!目录名称"
+                }
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!BC7"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!目录id"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "设定",
+        "TemplateKey": "_RS_Main1"
+      },
+      "RulesGuidList": [
+        "c035ceb0-b37f-4727-b8a3-85b707fa2ed5"
+      ]
+    },
+    "5,10": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "库存材料主表",
+        "RowIndex": 5,
+        "ColumnIndex": 10,
+        "RowCount": 37,
+        "ColumnCount": 47,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "库存材料主表",
+            "ColumnName": "材料ID",
+            "GUID": "f0fcb966-8177-4b7e-a1da-3cc651d2637e"
+          },
+          "Value": "%Null%"
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "CommitType": 1
+      }
+    },
+    "6,14": {
+      "NameUsedInJavaScript": "目录名称",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "材料目录-弹出选择",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!O7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='材料目录-弹出选择'!目录名称"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=批量导入新材料!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='材料目录-弹出选择'!目录ID"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "空",
+        "ClickMode": 1
+      },
+      "RulesGuidList": [
+        "555473d4-a7a5-4937-8226-a242fcd66a0b"
+      ]
+    },
+    "6,23": {
+      "NameUsedInJavaScript": "材料名称",
+      "BindingInfo": {
+        "TableName": "库存材料主表",
+        "ColumnName": "材料名称",
+        "GUID": "f2e87a0f-c2e9-4518-8dca-4e33a4b3238d"
+      }
+    },
+    "6,40": {
+      "NameUsedInJavaScript": "单位",
+      "BindingInfo": {
+        "TableName": "库存材料主表",
+        "ColumnName": "单位",
+        "GUID": "23755280-c2e4-41d4-ba19-7d415d136f8d"
+      },
+      "RulesGuidList": [
+        "543ad3bd-6b4d-41b3-9dde-59d1d1036731"
+      ]
+    },
+    "6,42": {
+      "NameUsedInJavaScript": "库存数量"
+    },
+    "6,45": {
+      "NameUsedInJavaScript": "备料类型"
+    },
+    "6,48": {
+      "NameUsedInJavaScript": "使用状态"
+    },
+    "6,51": {
+      "NameUsedInJavaScript": "库存金额"
+    },
+    "6,54": {
+      "NameUsedInJavaScript": "目录id"
+    },
+    "6,58": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+            "LoopInfo": {
+              "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+              "ListviewName": "表格1"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "同名材料数量",
+                "TableValue": {
+                  "TableName": "库存材料主表",
+                  "TableValueType": 3,
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "库存材料主表",
+                      "ColumnName": "材料名称",
+                      "GUID": "dfc53550-54d2-44a4-844c-8fa9d649f139"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=批量导入新材料!X7"
+                    }
+                  }
+                },
+                "ID": "ac0db7c1d0ff4716af16884513b6696c"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=批量导入新材料!同名材料数量"
+                          }
+                        ]
+                      },
+                      "value": "0",
+                      "compareType": 1
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "同名材料名称",
+                        "TableValue": {
+                          "TableName": "库存材料主表",
+                          "OnlyGetValue": true,
+                          "TableValueType": 0,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "库存材料主表",
+                                "ColumnName": "材料名称",
+                                "GUID": "6e81f46f-78af-4d88-afa1-52a1c384d116"
+                              },
+                              "ColumnName": "材料名称"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "库存材料主表",
+                              "ColumnName": "材料名称",
+                              "GUID": "beb6f044-fdba-4b34-8b74-12ffc2e03adb"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=批量导入新材料!X7"
+                            }
+                          },
+                          "TopCount": "1"
+                        },
+                        "ID": "9a8f5b755104448488f340e89a98f5fa"
+                      },
+                      {
+                        "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                        "Title": "提示：",
+                        "Message": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=\"材料名【\"&批量导入新材料!同名材料名称&\"】已存在，您不能添加重复的材料！\""
+                        },
+                        "Type": "warning",
+                        "ConfirmButtonText": "确定",
+                        "CancelButtonText": "取消",
+                        "AdvancedSettings": {}
+                      },
+                      {
+                        "$type": "Forguncy.Model.EndLoopCommand, ServerDesignerCommon",
+                        "WithinLoop": true
+                      }
+                    ],
+                    "ID": "2c8b80b5-a977-4ff9-a0c9-cafb35683276"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                        "ConditionAndCommandPairList": [
+                          {
+                            "Condition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=批量导入新材料!id数量"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=批量导入新材料!材料数量"
+                                  },
+                                  "compareType": 1
+                                },
+                                {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=批量导入新材料!单位数"
+                                      }
+                                    ]
+                                  },
+                                  "value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=批量导入新材料!材料数量"
+                                  },
+                                  "compareType": 1
+                                }
+                              ],
+                              "RelationType": 1
+                            },
+                            "CommandList": [
+                              {
+                                "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                                "Title": "标题",
+                                "Message": "表格数据不完整！",
+                                "Type": "warning",
+                                "ConfirmButtonText": "确定",
+                                "CancelButtonText": "取消",
+                                "AdvancedSettings": {}
+                              }
+                            ],
+                            "ID": "fae9ddf8-9a3c-42d2-b190-230dbaa72d4a"
+                          },
+                          {
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                "ServerCommandName": "批量添加新材料",
+                                "Parameters": [
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+                                    "ParamName": "材料列表",
+                                    "ListviewName": "表格1",
+                                    "Columns": [
+                                      {
+                                        "ArrayItemName": "材料名称",
+                                        "Column": "材料名称"
+                                      },
+                                      {
+                                        "ArrayItemName": "目录id",
+                                        "Column": "目录id"
+                                      },
+                                      {
+                                        "ArrayItemName": "单位",
+                                        "Column": "单位"
+                                      },
+                                      {
+                                        "ArrayItemName": "库存数量",
+                                        "Column": "库存数量"
+                                      },
+                                      {
+                                        "ArrayItemName": "库存金额",
+                                        "Column": "库存金额"
+                                      },
+                                      {
+                                        "ArrayItemName": "备料类型",
+                                        "Column": "备料类型"
+                                      },
+                                      {
+                                        "ArrayItemName": "使用状态",
+                                        "Column": "使用状态"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ResultErrorCodeTo": {
+                                  "SerializeProperty": "=批量导入新材料!返回码"
+                                },
+                                "ResultMessageTo": {
+                                  "SerializeProperty": "=批量导入新材料!返回信息"
+                                },
+                                "RefreshAfterFinish": true,
+                                "CheckDataValidation": true
+                              },
+                              {
+                                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                "ConditionAndCommandPairList": [
+                                  {
+                                    "Condition": {
+                                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                      "param": {
+                                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                        "cellLocations": [
+                                          {
+                                            "SerializeProperty": "=批量导入新材料!返回码"
+                                          }
+                                        ]
+                                      },
+                                      "value": "0"
+                                    },
+                                    "CommandList": [
+                                      {
+                                        "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                                        "Message": "批量添加新材料成功！",
+                                        "Type": "info",
+                                        "Duration": 3000,
+                                        "Offset": null
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                                        "ReloadData": true
+                                      }
+                                    ],
+                                    "ID": "ba1760ea-a9b7-4c67-ad2e-9a33484676b0"
+                                  },
+                                  {
+                                    "CommandList": [
+                                      {
+                                        "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                        "MessageFormula": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=批量导入新材料!返回信息"
+                                        }
+                                      }
+                                    ],
+                                    "ID": "5749f72b-fcf9-4a05-9c59-641833bd6bd4"
+                                  }
+                                ]
+                              }
+                            ],
+                            "ID": "8723eac4-2d3c-4d0c-9364-c0f133ab5bd9"
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "de00d354-f56d-4eb0-a06d-09688e334802"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Text": "添加",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "6,63": {
+      "CellType": {
+        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
+        "ListViewName": "表格1"
+      }
+    },
+    "11,58": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 4,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 2
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "WordWrap": true,
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "Underline": false
+      },
+      {
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "Foreground": 8,
+        "HorizontalAlignment": 9
+      },
+      {
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "[AUTO]General",
+        "Right",
+        "Blue",
+        "Background 1 -25",
+        "black",
+        "Center",
+        "Background 1 -50",
+        "Left"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,57": 0,
+      "0,61": 0,
+      "1,10": 1,
+      "1,40": 1,
+      "1,41": 1,
+      "1,42": 1,
+      "1,43": 1,
+      "1,44": 1,
+      "1,45": 1,
+      "1,46": 1,
+      "1,47": 1,
+      "1,48": 1,
+      "1,49": 1,
+      "1,50": 1,
+      "1,51": 1,
+      "1,52": 1,
+      "1,53": 1,
+      "1,57": 0,
+      "1,61": 0,
+      "2,57": 0,
+      "2,61": 0,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,37": 3,
+      "3,38": 4,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 2,
+      "3,45": 2,
+      "3,46": 2,
+      "3,47": 5,
+      "3,48": 2,
+      "3,49": 2,
+      "3,57": 0,
+      "3,61": 0,
+      "4,57": 0,
+      "4,61": 0,
+      "5,10": 6,
+      "5,11": 7,
+      "5,12": 7,
+      "5,13": 7,
+      "5,14": 8,
+      "5,15": 7,
+      "5,16": 7,
+      "5,17": 7,
+      "5,18": 7,
+      "5,19": 7,
+      "5,20": 7,
+      "5,21": 7,
+      "5,22": 7,
+      "5,23": 7,
+      "5,24": 7,
+      "5,25": 7,
+      "5,26": 7,
+      "5,27": 7,
+      "5,28": 7,
+      "5,29": 7,
+      "5,30": 7,
+      "5,31": 7,
+      "5,32": 7,
+      "5,33": 7,
+      "5,34": 7,
+      "5,35": 7,
+      "5,36": 7,
+      "5,37": 7,
+      "5,38": 7,
+      "5,39": 7,
+      "5,40": 7,
+      "5,41": 7,
+      "5,42": 9,
+      "5,43": 7,
+      "5,44": 7,
+      "5,45": 9,
+      "5,46": 7,
+      "5,47": 7,
+      "5,48": 9,
+      "5,49": 7,
+      "5,50": 7,
+      "5,51": 9,
+      "5,52": 7,
+      "5,53": 7,
+      "5,54": 7,
+      "5,55": 7,
+      "5,56": 7,
+      "5,57": 10,
+      "5,61": 0,
+      "6,10": 10,
+      "6,14": 11,
+      "6,23": 2,
+      "6,40": 12,
+      "6,42": 12,
+      "6,45": 12,
+      "6,48": 12,
+      "6,51": 12,
+      "6,54": 13,
+      "6,57": 10,
+      "6,61": 0,
+      "7,10": 10,
+      "7,57": 10,
+      "7,61": 0,
+      "8,10": 10,
+      "8,57": 10,
+      "8,61": 0,
+      "9,10": 10,
+      "9,57": 10,
+      "9,61": 0,
+      "10,10": 10,
+      "10,57": 10,
+      "10,61": 0,
+      "11,10": 10,
+      "11,57": 10,
+      "11,61": 0,
+      "12,10": 10,
+      "12,57": 10,
+      "12,61": 0,
+      "12,63": 5,
+      "12,64": 2,
+      "12,65": 2,
+      "12,66": 13,
+      "12,67": 2,
+      "12,68": 2,
+      "12,69": 2,
+      "13,10": 10,
+      "13,57": 10,
+      "13,61": 0,
+      "14,10": 10,
+      "14,57": 10,
+      "14,61": 0,
+      "15,10": 10,
+      "15,57": 10,
+      "15,61": 0,
+      "16,10": 10,
+      "16,57": 10,
+      "16,61": 0,
+      "17,10": 10,
+      "17,57": 10,
+      "17,61": 0,
+      "18,10": 10,
+      "18,57": 10,
+      "18,61": 0,
+      "19,10": 10,
+      "19,57": 10,
+      "19,61": 0,
+      "20,10": 10,
+      "20,57": 10,
+      "20,61": 0,
+      "21,10": 10,
+      "21,57": 10,
+      "21,61": 0,
+      "22,10": 10,
+      "22,57": 10,
+      "22,61": 0,
+      "23,10": 10,
+      "23,57": 10,
+      "23,61": 0,
+      "24,10": 10,
+      "24,57": 10,
+      "24,61": 0,
+      "25,10": 10,
+      "25,57": 10,
+      "25,61": 0,
+      "26,10": 10,
+      "26,57": 10,
+      "26,61": 0,
+      "27,10": 10,
+      "27,57": 10,
+      "27,61": 0,
+      "28,10": 10,
+      "28,57": 10,
+      "28,61": 0,
+      "29,10": 10,
+      "29,57": 10,
+      "29,61": 0,
+      "30,10": 10,
+      "30,57": 10,
+      "30,61": 0,
+      "31,10": 10,
+      "31,57": 10,
+      "31,61": 0,
+      "32,10": 10,
+      "32,57": 10,
+      "32,61": 0,
+      "33,10": 10,
+      "33,57": 10,
+      "33,61": 0,
+      "34,10": 10,
+      "34,57": 10,
+      "34,61": 0,
+      "35,10": 10,
+      "35,57": 10,
+      "35,61": 0,
+      "36,10": 10,
+      "36,57": 10,
+      "36,61": 0,
+      "37,10": 10,
+      "37,57": 10,
+      "37,61": 0,
+      "38,10": 10,
+      "38,57": 10,
+      "38,61": 0,
+      "39,10": 10,
+      "39,57": 10,
+      "39,61": 0,
+      "40,10": 10,
+      "40,57": 10,
+      "40,61": 0,
+      "41,10": 14,
+      "41,11": 15,
+      "41,12": 15,
+      "41,13": 15,
+      "41,14": 15,
+      "41,15": 15,
+      "41,16": 15,
+      "41,17": 15,
+      "41,18": 15,
+      "41,19": 15,
+      "41,20": 15,
+      "41,21": 15,
+      "41,22": 15,
+      "41,23": 15,
+      "41,24": 15,
+      "41,25": 15,
+      "41,26": 15,
+      "41,27": 15,
+      "41,28": 15,
+      "41,29": 15,
+      "41,30": 15,
+      "41,31": 15,
+      "41,32": 15,
+      "41,33": 15,
+      "41,34": 15,
+      "41,35": 15,
+      "41,36": 15,
+      "41,37": 15,
+      "41,38": 15,
+      "41,39": 15,
+      "41,40": 15,
+      "41,41": 15,
+      "41,42": 15,
+      "41,43": 15,
+      "41,44": 15,
+      "41,45": 15,
+      "41,46": 15,
+      "41,47": 15,
+      "41,48": 15,
+      "41,49": 15,
+      "41,50": 15,
+      "41,51": 15,
+      "41,52": 15,
+      "41,53": 15,
+      "41,54": 15,
+      "41,55": 15,
+      "41,56": 15,
+      "41,57": 10,
+      "41,61": 0,
+      "42,10": 16,
+      "42,57": 0,
+      "42,61": 0,
+      "43,57": 0,
+      "43,61": 0,
+      "44,57": 0,
+      "44,61": 0
+    },
+    "ColStyles": {
+      "65": 17
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "6,10,1,2",
+    "6,12,1,2",
+    "6,23,1,17",
+    "6,54,1,3",
+    "6,14,1,9",
+    "3,11,1,6",
+    "6,63,4,8",
+    "12,66,1,4",
+    "6,58,3,2",
+    "11,58,3,2",
+    "13,66,1,4",
+    "14,66,1,4",
+    "16,66,1,4",
+    "17,66,1,4",
+    "15,66,1,4",
+    "6,40,1,2",
+    "1,10,1,8",
+    "7,10,35,47",
+    "42,10,1,47",
+    "6,42,1,3",
+    "6,45,1,3",
+    "6,48,1,3",
+    "3,38,1,8",
+    "3,47,1,3",
+    "6,51,1,3",
+    "5,10,1,2",
+    "5,12,1,2",
+    "5,14,1,9",
+    "5,23,1,17",
+    "5,40,1,2",
+    "5,42,1,3",
+    "5,45,1,3",
+    "5,48,1,3",
+    "5,51,1,3",
+    "5,54,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "库存材料主表",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(批量导入新材料!目录名称=\"\")+(批量导入新材料!$BL$7=\"\")"
+          },
+          "GUID": "c035ceb0-b37f-4727-b8a3-85b707fa2ed5",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=批量导入新材料!O7=\"空\""
+          },
+          "Priority": 1,
+          "GUID": "555473d4-a7a5-4937-8226-a242fcd66a0b",
+          "StyleInfo": {
+            "Foreground": "Background 1 -50",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(批量导入新材料!X7<>\"\")*(批量导入新材料!AO7=\"\")"
+          },
+          "Priority": 2,
+          "GUID": "543ad3bd-6b4d-41b3-9dde-59d1d1036731",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "目录id",
+      "Formula": "批量导入新材料!$BO$13"
+    },
+    {
+      "Name": "目录名称",
+      "Formula": "批量导入新材料!$AM$4"
+    },
+    {
+      "Name": "id数量",
+      "Formula": "批量导入新材料!$BO$14"
+    },
+    {
+      "Name": "材料数量",
+      "Formula": "批量导入新材料!$BO$15"
+    },
+    {
+      "Name": "返回码",
+      "Formula": "批量导入新材料!$BO$17"
+    },
+    {
+      "Name": "返回信息",
+      "Formula": "批量导入新材料!$BO$18"
+    },
+    {
+      "Name": "单位数",
+      "Formula": "批量导入新材料!$BO$16"
+    }
+  ]
+}//cSa8LurS0NxDULCUnS3s8zG2lP9Dp2Vkc3HBmxxRo6uJ4b2LjV17LHg/NE1IzZ+aEtVf8dlmL0YIQWR+FQeB0vp2MuAUWvTqDbyliy33aFtGE8+p1+6fqHrn0wFccWszzoN0nrN9S+7ZB6A1VXdwZg29kTlUSWu2Fo8iABa9A9Bm19x9KwWueSHY4HdbrCLDyL9wVkCmohmPKCqg77XmgiIMpUEv1rquW/2/CcjRFv51v1nIgaTscrX/H5w0ieAXnipjO7XAVfVssvm2AAvQu/lyxTYCH/ZXjEZXJSleWZf+yZg3EeDwMHka7/VBkG4gYEH+ZwOxGoKVj9kwpdpDOuMNC+YLqY9VMrDOCl4v78q1GvIWJnFw8fU/dBpChV/JEoNELYRI6jd184OEEjPIvYjFhESwXzVTJBgIsUCbYZn/mqI9oYBK+7nI0j0Bw0a07jHStJpiOiaIyYhh4NdNV6QFZ3qP/feWWv01wpzZl+FzH7+j7RgTTs4Kmik/ZZAn/08JkrvD+N9fEtJjgYq4l9VAvrl9gtHX8OmBtSOWiOJEnQVaWWIwXz6+WwLGh9ZsVN2B7UyY8qBZoCFrc+FQC6zlJdvlTG8uc3ZLam0hEXRo8Snd/RuTMUFH45ll6NF2DgPOc3vZpbEhpL6RVe8OGJ9+gHSWjoSKlf3x/XQBekj1HB/vHwhfvhkpMrMI0CLUiIB5qtrILKOb1/ohYEb4EiF0mBTzAQzcZUVRki0BORwVliSm/o0g+GpAaBCbe6g2a3YP/T3AHSrexWE3QzJiKrI23pxRP5ck79Y3Zb5vHoNzwkDLGFFSRkqQYd6NSvBuvUNITIDs7LyqjuBUrS3fAdJ04OBjKrHBWZAuYsY9RAHUO1psfNLhLXsJd0i3OIDrnAS/Z+ykkJRCgf6yDwQT/w==|920

@@ -1,0 +1,905 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 49.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "Count": 46
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      29,
+      30,
+      31,
+      32,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "Count": 50
+  },
+  "Values": {
+    "8,12": "板材类型设定",
+    "11,43": "ID总行数：",
+    "21,43": "返回码：",
+    "22,43": "返回信息：",
+    "28,34": "完成设定",
+    "31,12": "1、此表格数据设置的为“紧绑定”，直接编辑单元格即实时更新数据库\r\n2、【板材名称】的排序受本表【类型】的排序制约，系统默认对板材名排序是先按类型权重再按板材名称权重"
+  },
+  "Formulas": {
+    "11,44": "COUNTA(AD12)",
+    "11,31": "ROW()"
+  },
+  "AttachInfos": {
+    "10,12": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "板材类型字典",
+        "RowIndex": 10,
+        "ColumnIndex": 12,
+        "RowCount": 21,
+        "ColumnCount": 21,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "板材类型字典",
+                "ColumnName": "权重",
+                "GUID": "72fea818-c791-4800-9f82-839d3290b78f"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "OperationType": 4
+            }
+          ]
+        }
+      }
+    },
+    "11,14": {
+      "NameUsedInJavaScript": "类型",
+      "BindingInfo": {
+        "TableName": "板材类型字典",
+        "ColumnName": "类型名称",
+        "GUID": "d80d7eef-b58f-4ea2-baf3-722305dd99af"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false,
+        "InputMessageTitle": "重要提示：",
+        "InputMessage": "产品组件页面的板材组合框查询条件中，引用了板材类型名称。因此，板材类型名称在初次设定好以后就不能再改名了，否则可能会导致大量引用了该类型名称的组合框无法选择到板材名称"
+      },
+      "RulesGuidList": [
+        "7191e3aa-62fc-421e-bcea-a64b74add6ab"
+      ]
+    },
+    "11,22": {
+      "BindingInfo": {
+        "TableName": "板材类型字典",
+        "ColumnName": "密度",
+        "GUID": "181b5633-25ec-4947-893d-b0008c27210e"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      },
+      "RulesGuidList": [
+        "2f1d998d-ea35-4a7d-9711-42a1101a7b7e"
+      ]
+    },
+    "11,25": {
+      "NameUsedInJavaScript": "状态",
+      "BindingInfo": {
+        "TableName": "板材类型字典",
+        "ColumnName": "状态",
+        "GUID": "bba4819e-6f2d-4f12-899f-96d045a08281"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
+        "Items": [
+          {
+            "Value": "正常",
+            "DisplayValue": "正常"
+          },
+          {
+            "Value": "停用",
+            "DisplayValue": "停用"
+          }
+        ]
+      },
+      "DataValidationInfo": {},
+      "RulesGuidList": [
+        "081f5186-5fd4-4c01-a2c3-98996a473f27"
+      ]
+    },
+    "11,29": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "板材类型字典",
+        "ColumnName": "ID",
+        "GUID": "8c126ead-c9f6-4d9f-ad03-4609297b7091"
+      }
+    },
+    "11,31": {
+      "NameUsedInJavaScript": "权重",
+      "BindingInfo": {
+        "TableName": "板材类型字典",
+        "ColumnName": "权重",
+        "GUID": "790bd4bd-e66c-4e04-be90-42795f4a753d"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon"
+      }
+    },
+    "25,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=板材类型设定!AF12"
+                      }
+                    ]
+                  },
+                  "value": "1",
+                  "compareType": 2
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "板材类型字典",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "板材类型字典",
+                        "ColumnName": "权重",
+                        "GUID": "659dfbe2-87fd-427f-bddb-61d81cd5853f"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=板材类型设定!AF12-1"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "板材类型字典",
+                          "ColumnName": "权重",
+                          "GUID": "1ca83232-e19d-43f4-8401-ef7ab90f56e6"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=板材类型设定!AF12"
+                        }
+                      }
+                    ],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "板材类型字典",
+                      "ShowConfirm": false,
+                      "UpdateBindingValues": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "板材类型字典",
+                            "ColumnName": "权重",
+                            "GUID": "3372bb9d-55a6-41ce-9cac-517734c31771"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=板材类型设定!AF12-1"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "ID": "cbb8d600-b599-4643-bfad-a93f5f11431b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "已到顶！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  }
+                ],
+                "ID": "2cd0dfff-3896-43fa-8b1f-e7782e75cca1"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "上半",
+        "Icon": {
+          "Name": "Arrow/302_up_arrow_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "26,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=板材类型设定!AF13"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=板材类型设定!ID总行数"
+                  },
+                  "compareType": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "板材类型字典",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "板材类型字典",
+                        "ColumnName": "权重",
+                        "GUID": "5b1add8a-f13a-46fd-99ab-4a35c58ffafc"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=板材类型设定!AF12+1"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "板材类型字典",
+                          "ColumnName": "权重",
+                          "GUID": "8b730769-7275-4388-b6db-1b6dae29926e"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=板材类型设定!AF12"
+                        }
+                      }
+                    ],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "板材类型字典",
+                      "ShowConfirm": false,
+                      "UpdateBindingValues": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "板材类型字典",
+                            "ColumnName": "权重",
+                            "GUID": "8f278a2c-a158-40ae-ae8b-17ecaf78fe10"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=板材类型设定!AF12+1"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "ID": "632875e2-3012-475e-aa1a-99ab8efe0064"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "已到底！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  }
+                ],
+                "ID": "8687aec0-82fd-4726-90d1-b5b97c763b78"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "下半",
+        "Icon": {
+          "Name": "Arrow/301_down_arrow_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "28,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "完成设定",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 4,
+        "HorizontalAlignment": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 6
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 10,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "Body",
+        "Background 1 -25",
+        "@",
+        "0.00",
+        "[AUTO]General",
+        "Right",
+        "Background 1 -50",
+        "Left",
+        "Top"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,33": 0,
+      "1,33": 0,
+      "2,33": 0,
+      "3,33": 0,
+      "4,33": 0,
+      "5,33": 0,
+      "6,33": 0,
+      "7,33": 0,
+      "8,12": 1,
+      "8,33": 0,
+      "9,33": 0,
+      "10,14": 2,
+      "10,22": 3,
+      "10,31": 3,
+      "10,33": 4,
+      "11,14": 5,
+      "11,22": 6,
+      "11,25": 7,
+      "11,29": 8,
+      "11,31": 9,
+      "11,33": 4,
+      "11,37": 3,
+      "11,38": 3,
+      "11,39": 3,
+      "11,40": 3,
+      "11,41": 3,
+      "11,42": 3,
+      "11,43": 10,
+      "11,44": 11,
+      "11,45": 3,
+      "11,46": 3,
+      "11,47": 3,
+      "11,48": 3,
+      "12,12": 4,
+      "12,33": 4,
+      "12,44": 8,
+      "13,12": 4,
+      "13,33": 4,
+      "14,12": 4,
+      "14,33": 4,
+      "14,34": 3,
+      "14,35": 3,
+      "14,36": 3,
+      "14,40": 12,
+      "14,41": 12,
+      "14,42": 12,
+      "14,43": 13,
+      "14,44": 9,
+      "14,45": 12,
+      "14,46": 12,
+      "14,47": 12,
+      "14,48": 12,
+      "15,12": 4,
+      "15,33": 4,
+      "15,40": 12,
+      "15,41": 12,
+      "15,42": 12,
+      "15,43": 13,
+      "15,44": 12,
+      "15,45": 12,
+      "15,46": 12,
+      "15,47": 12,
+      "15,48": 12,
+      "16,12": 4,
+      "16,33": 4,
+      "16,40": 12,
+      "17,12": 4,
+      "17,33": 4,
+      "17,40": 12,
+      "18,12": 4,
+      "18,33": 4,
+      "19,12": 4,
+      "19,33": 4,
+      "20,12": 4,
+      "20,33": 4,
+      "21,12": 4,
+      "21,33": 4,
+      "21,41": 12,
+      "21,42": 12,
+      "21,43": 13,
+      "21,44": 9,
+      "21,45": 12,
+      "21,46": 12,
+      "21,47": 12,
+      "21,48": 12,
+      "22,12": 4,
+      "22,33": 4,
+      "22,41": 12,
+      "22,42": 12,
+      "22,43": 13,
+      "22,44": 9,
+      "22,45": 12,
+      "22,46": 12,
+      "22,47": 12,
+      "22,48": 12,
+      "23,12": 4,
+      "23,33": 4,
+      "24,12": 4,
+      "24,33": 4,
+      "25,12": 4,
+      "25,33": 4,
+      "25,34": 3,
+      "25,35": 3,
+      "25,36": 3,
+      "26,12": 4,
+      "26,33": 4,
+      "26,34": 14,
+      "26,35": 3,
+      "26,36": 3,
+      "27,12": 4,
+      "27,33": 4,
+      "28,12": 4,
+      "28,33": 4,
+      "28,34": 15,
+      "28,35": 3,
+      "28,36": 3,
+      "29,12": 4,
+      "29,33": 4,
+      "29,34": 3,
+      "29,35": 3,
+      "29,36": 3,
+      "30,12": 16,
+      "30,13": 17,
+      "30,14": 17,
+      "30,15": 17,
+      "30,16": 17,
+      "30,17": 17,
+      "30,18": 17,
+      "30,19": 17,
+      "30,20": 17,
+      "30,21": 17,
+      "30,22": 17,
+      "30,23": 17,
+      "30,24": 17,
+      "30,25": 17,
+      "30,26": 17,
+      "30,27": 17,
+      "30,28": 17,
+      "30,29": 17,
+      "30,30": 17,
+      "30,31": 17,
+      "30,32": 17,
+      "30,33": 4,
+      "31,12": 18,
+      "32,33": 0,
+      "33,33": 0,
+      "34,33": 0,
+      "35,33": 0,
+      "36,33": 0,
+      "37,33": 0,
+      "38,33": 0,
+      "39,33": 0,
+      "40,33": 0,
+      "41,33": 0,
+      "42,33": 0,
+      "43,33": 0,
+      "44,33": 0,
+      "45,33": 0
+    },
+    "ColStyles": {
+      "38": 19,
+      "39": 19,
+      "40": 19,
+      "41": 19,
+      "42": 19,
+      "43": 20,
+      "44": 19,
+      "45": 19,
+      "46": 19,
+      "47": 19,
+      "48": 19,
+      "49": 19
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "11,25,1,4",
+    "11,31,1,2",
+    "8,12,2,21",
+    "11,29,1,2",
+    "11,44,1,5",
+    "12,44,1,5",
+    "11,14,1,8",
+    "11,12,1,2",
+    "14,44,1,5",
+    "13,44,1,5",
+    "11,22,1,3",
+    "21,44,1,5",
+    "22,44,1,5",
+    "28,34,2,3",
+    "25,34,1,3",
+    "26,34,1,3",
+    "12,12,19,21",
+    "31,12,1,21",
+    "10,12,1,2",
+    "10,14,1,8",
+    "10,22,1,3",
+    "10,25,1,4",
+    "10,29,1,2",
+    "10,31,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 1,
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(COUNTA(板材类型设定!$O12:$AC12)<>3)*(板材类型设定!O12=\"\")"
+          },
+          "GUID": "7191e3aa-62fc-421e-bcea-a64b74add6ab",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(COUNTA(板材类型设定!$O12:$AC12)<>3)*(板材类型设定!W12=\"\")"
+          },
+          "Priority": 1,
+          "GUID": "2f1d998d-ea35-4a7d-9711-42a1101a7b7e",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=(COUNTA(板材类型设定!$O12:$AC12)<>3)*(板材类型设定!Z12=\"\")"
+          },
+          "Priority": 2,
+          "GUID": "081f5186-5fd4-4c01-a2c3-98996a473f27",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "ID总行数",
+      "Formula": "板材类型设定!$AS$12"
+    },
+    {
+      "Name": "返回码",
+      "Formula": "板材类型设定!$AS$22"
+    },
+    {
+      "Name": "返回信息",
+      "Formula": "板材类型设定!$AS$23"
+    }
+  ]
+}//+bshmDYmlv/e0HRojlda8d6ALWEcm62xJxna7+pQjxQhYHQhSoj/IXoflY3yXJpbdtMuY+TikkY+Jrmatj5sbQlVUI8UIrdeDtMwT2/cGVlz+Se3p8Vbgbrhwkf6Nh8pEG1Hj3oF2woxZ8zC1AolqDGnOX65T/PcleBB827btiXdoGn8pPwYAL1OVyJhPk4MPuL4ZlLVdKf2uLji78oqESPoiUlrGT+UK2W6C8EHLyOF46LA36bUBO0HRvrlTHThEr0hILhWLTPiq0JCBaU9udm0iNbv8jiENJDMcCByAW5kFfXZZVqKR4DG29jpG6pqeCd27n/i7HZrKhU2RZ/3bYDWVHWgnDOcOixVE9gl64MjIeYuAXfXfqAx16z8+TFE42GgzRJ07Hbv63GB6TqTEc4IAN5n4Bx4jYHpFz4DhOHZQtckDCMucX0Ul2I5TOoD3pcxejML4O68lc6rGf4Fy/Cnnkzqmi9afz7Q2plAf4Cq5TnFnNO5qZFmVlhLqXgB3Q1Ll6INmnChLlkd6kMY0PqO5G1xLPoteDhxt7gUbSMi90cUNqXESb2JAEJc3tcJxrJOErd3rr5jPFWgLFC1hKV7LO8gkRGgF7GtM5C3HdruXcWX9lvBPJSzpQqbxZLaDLLaQSceCJXtldYNKHPDO8pDNuOZvWb4aIHUy5CySG+4p02F1QR09bTkdeHQBzrJxBcOziC/yDkLzmBZ9K6hKoYUETVRB1Fde+sZAlT01Y7bOLZAcj8udJhJecYtu9N4YQXm0iu0bBMPhah+L07PWsEl5BTEMOtjoRSjaYrbFbqKxp5CZwMn2HsZXejt87m1AIzKT44hlaOawDtI9GSMFAKs5brL4AACzwH+0zGeUc5WINSoRlPfqGrIVoMePSufI4fnYUJpxtYN5pNPvTF3OQ==|920

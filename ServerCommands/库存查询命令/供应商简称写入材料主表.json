@@ -1,0 +1,136 @@
+{
+  "Name": "供应商简称写入材料主表",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": []
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "材料明细",
+          "TableValue": {
+            "TableName": "库存材料主表",
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "库存材料主表",
+                  "ColumnName": "材料编号",
+                  "GUID": "cface397-0e69-4b11-8dbf-01a044e23234"
+                },
+                "ColumnName": "材料编号"
+              }
+            ]
+          },
+          "ID": "7c0ae6cf0f1d4cf1be1b124626f17067"
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=材料明细"
+            },
+            "LoopItemParamName": "Item"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "供应商名称汇总",
+              "TableValue": {
+                "TableName": "采购单明细表",
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "采购单明细表",
+                      "ColumnName": "采购单号",
+                      "GUID": "2a0471f8-6360-46e6-a2b4-1919604c674e",
+                      "RelationBinding": {
+                        "RelatedTable": "采购单主表",
+                        "RelatedColumn": "采购单号",
+                        "DisplayColumn": "供商编号",
+                        "NextRelationBinding": {
+                          "RelatedTable": "供应商主表",
+                          "RelatedColumn": "编号",
+                          "DisplayColumn": "简称"
+                        }
+                      }
+                    },
+                    "ColumnName": "供商简称"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "材料编号",
+                    "GUID": "610a6ad7-c438-4f16-a136-335f331150d3"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.材料编号"
+                  }
+                }
+              },
+              "ID": "292c7e73f6b049e5a16a55fdc31c9344"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "库存材料主表",
+              "ShowConfirm": false,
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "库存材料主表",
+                  "ColumnName": "材料编号",
+                  "GUID": "28d72ea2-4f71-4bd1-9378-65f6c2f3c59d"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Item.材料编号"
+                }
+              },
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "库存材料主表",
+                    "ColumnName": "供商简称",
+                    "GUID": "0f32e245-c1f2-41a9-81f3-b47a990df852"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=供应商名称汇总"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

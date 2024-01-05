@@ -1,0 +1,581 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 46
+  },
+  "Cols": {
+    "Count": 70
+  },
+  "Values": {
+    "3,21": "区域送货定价表 列表",
+    "7,6": "添加记录",
+    "7,10": "查询：",
+    "7,29": "所属公司：",
+    "10,30": "更改",
+    "10,33": "删除"
+  },
+  "Formulas": {
+    "7,33": "所属公司"
+  },
+  "AttachInfos": {
+    "7,6": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "区域送货定价表_详情页面",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=区域送货定价表_详情页面!C14"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=区域送货定价表_列表页面!N8"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=区域送货定价表_详情页面!K6"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=区域送货定价表_列表页面!AH8"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=区域送货定价表_详情页面!K3"
+                }
+              }
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加记录",
+        "ClickMode": 1
+      }
+    },
+    "7,13": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "WaterMark": "城市/城区/镇或街道"
+      }
+    },
+    "7,22": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "不可编辑圆角框",
+        "WaterMark": "级别",
+        "IsBounding": true,
+        "DataSource": "地区目录表",
+        "ValueColumnBindingInfo": {
+          "TableName": "地区目录表",
+          "ColumnName": "地区级别",
+          "GUID": "01db9c25-7073-4388-8432-e1435e53fcec"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "地区目录表",
+          "ColumnName": "地区级别",
+          "GUID": "a95489d3-7887-4a8d-aea6-754dc63daf08"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "CompareType": 1,
+          "ColumnBindingInfo": {
+            "TableName": "地区目录表",
+            "ColumnName": "地区级别",
+            "GUID": "91730c07-4d11-4a76-afa5-6e8582414a5d"
+          },
+          "Value": "0"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "9,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "区域送货定价表",
+        "RowIndex": 9,
+        "ColumnIndex": 6,
+        "RowCount": 12,
+        "ColumnCount": 32,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "区域送货定价表",
+                "ColumnName": "客户区域ID",
+                "GUID": "6da173b8-d3f9-4c61-a6f3-e84a96a4ad2a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=区域送货定价表_列表页面!N8"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "区域送货定价表",
+                "ColumnName": "客户区域ID",
+                "GUID": "9f7dbe16-0dc6-4ae4-85c4-e7474d176a17",
+                "RelationBinding": {
+                  "RelatedTable": "地区目录表",
+                  "RelatedColumn": "地区ID",
+                  "DisplayColumn": "地区级别"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=区域送货定价表_列表页面!W8"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ColumnOperation": 2,
+        "ShowGridLine": true
+      }
+    },
+    "10,8": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "客户区域ID",
+        "GUID": "8f990529-d281-4446-8713-ff601c365df0",
+        "RelationBinding": {
+          "RelatedTable": "地区目录表",
+          "RelatedColumn": "地区ID",
+          "DisplayColumn": "地区名称"
+        }
+      }
+    },
+    "10,14": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "送货定价",
+        "GUID": "e400ff26-c644-42ca-a9db-53dd2800b084"
+      }
+    },
+    "10,18": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "起始日期",
+        "GUID": "423bd60a-c577-4654-b652-a63e0da611f8"
+      }
+    },
+    "10,24": {
+      "BindingInfo": {
+        "TableName": "区域送货定价表",
+        "ColumnName": "截止日期",
+        "GUID": "0e526472-afca-438a-b74c-511c25381c27"
+      }
+    },
+    "10,30": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "区域送货定价表_详情页面",
+            "PassValues": [
+              {
+                "Source": "更改",
+                "TargetCell": {
+                  "SerializeProperty": "=区域送货定价表_详情页面!C14"
+                }
+              }
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "更改",
+        "ClickMode": 1
+      }
+    },
+    "10,33": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？"
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 30.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontSize": 30.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontSize": 15.0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "Foreground": 5,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderRight": 1
+      },
+      {
+        "Formatter": 9,
+        "HorizontalAlignment": 1,
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Formatter": 10,
+        "HorizontalAlignment": 1,
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "Foreground": 5,
+        "Underline": true,
+        "BorderBottom": 1,
+        "BorderLeft": 1,
+        "BorderRight": 1
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Center",
+        "Right",
+        "[AUTO]General",
+        "Left",
+        "Blue",
+        "@",
+        "DarkGray",
+        "#D8D8D8",
+        "0元",
+        "yyyy/m/d;@"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        },
+        {
+          "Color": 8
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,21": 0,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "5,31": 2,
+      "6,14": 3,
+      "6,19": 4,
+      "7,6": 5,
+      "7,10": 6,
+      "7,11": 7,
+      "7,12": 7,
+      "7,13": 8,
+      "7,22": 9,
+      "7,23": 7,
+      "7,24": 7,
+      "7,25": 7,
+      "7,29": 6,
+      "8,6": 5,
+      "9,6": 10,
+      "9,7": 11,
+      "9,8": 11,
+      "9,9": 11,
+      "9,10": 11,
+      "9,11": 11,
+      "9,12": 11,
+      "9,13": 11,
+      "9,14": 11,
+      "9,15": 11,
+      "9,16": 11,
+      "9,17": 11,
+      "9,18": 11,
+      "9,19": 11,
+      "9,20": 11,
+      "9,21": 11,
+      "9,22": 11,
+      "9,23": 11,
+      "9,24": 11,
+      "9,25": 11,
+      "9,26": 11,
+      "9,27": 11,
+      "9,28": 11,
+      "9,29": 11,
+      "9,30": 11,
+      "9,31": 11,
+      "9,32": 11,
+      "9,33": 11,
+      "9,34": 11,
+      "9,35": 11,
+      "9,36": 11,
+      "9,37": 12,
+      "10,6": 13,
+      "10,7": 14,
+      "10,8": 15,
+      "10,9": 16,
+      "10,10": 16,
+      "10,11": 16,
+      "10,12": 16,
+      "10,13": 17,
+      "10,14": 18,
+      "10,15": 14,
+      "10,16": 14,
+      "10,17": 14,
+      "10,18": 19,
+      "10,19": 14,
+      "10,20": 14,
+      "10,21": 14,
+      "10,22": 14,
+      "10,23": 14,
+      "10,24": 19,
+      "10,25": 14,
+      "10,26": 14,
+      "10,27": 14,
+      "10,28": 14,
+      "10,29": 14,
+      "10,30": 20,
+      "10,31": 14,
+      "10,32": 14,
+      "10,33": 20,
+      "10,34": 14,
+      "10,35": 14,
+      "10,37": 21,
+      "11,6": 22,
+      "11,37": 21,
+      "12,6": 22,
+      "12,37": 21,
+      "13,6": 22,
+      "13,37": 21,
+      "14,6": 22,
+      "14,37": 21,
+      "15,6": 22,
+      "15,37": 21,
+      "16,6": 22,
+      "16,37": 21,
+      "17,6": 22,
+      "17,37": 21,
+      "18,6": 22,
+      "18,37": 21,
+      "19,6": 22,
+      "19,37": 21,
+      "20,6": 23,
+      "20,7": 24,
+      "20,8": 24,
+      "20,9": 24,
+      "20,10": 24,
+      "20,11": 24,
+      "20,12": 24,
+      "20,13": 24,
+      "20,14": 24,
+      "20,15": 24,
+      "20,16": 24,
+      "20,17": 24,
+      "20,18": 24,
+      "20,19": 24,
+      "20,20": 24,
+      "20,21": 24,
+      "20,22": 24,
+      "20,23": 24,
+      "20,24": 24,
+      "20,25": 24,
+      "20,26": 24,
+      "20,27": 24,
+      "20,28": 24,
+      "20,29": 24,
+      "20,30": 24,
+      "20,31": 24,
+      "20,32": 24,
+      "20,33": 24,
+      "20,34": 24,
+      "20,35": 24,
+      "20,36": 24,
+      "20,37": 25
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "10,6,1,2",
+    "10,14,1,4",
+    "10,18,1,6",
+    "10,24,1,6",
+    "10,30,1,3",
+    "10,33,1,3",
+    "10,8,1,6",
+    "11,6,10,32",
+    "7,10,1,3",
+    "7,22,1,4",
+    "7,33,1,5",
+    "7,29,1,4",
+    "7,13,1,8",
+    "9,6,1,2",
+    "9,8,1,6",
+    "9,14,1,4",
+    "9,18,1,6",
+    "9,24,1,6",
+    "9,30,1,3",
+    "9,33,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//3z/NfYiPwCMva0joFUPiC1GOai4mWjc3MdWNzvyy1HpnPKaxpM6xgclc/HZdX5WbEB05nLwVF98reuOYIBxBVOV2vuLHLgKCFtWQqSl8NVR+Jumrnm0eGdl6myHpFinD1gib47wwGlcpmQvyl2T1dYjz6vjoxrc7WQIKRGjfdsfYpXreBOBYGSoV92MNfNcBAemUtiNRUUiWIWT/PWCN8FhIJP5zdf7oXSUgqOKVsJ0U99TG4iRi5KLy2ALKhGKlY9B4EcKhh87kZSTpxrXtEyXJCMa/pO2LGN+fiPx5si9dATTVASpnHZU0/8xphdh0OpcNs24yYnYkGSbf2OHHANuiyHVTlsg+4IY7XQ5miqlp7kIOKzhfJp/M1mMdlEO+deTBVgQwyg1U025SV461aEA28cbzU6cJWVTFV8ukyj2BSSUAMltKEOzXaCU2jx9NPvJJ3uVOuBfTAuMEyJhsfjzt8scOHoZdgsDFIs7xhoyjRl2XbKUi0Ms3aMjegmD+KX0vBy2D7nPpB5xwdkcVkdqZWfoIiL+VrcxTYTZ5UYDgc44F6AdRIFddNhbWY9y8LZjUyRFDsMMvwjxBRr9eUHSHaDD1r+6cbj521uccH8c7tNg1fGqrDlsaVzDHc7Hlc9R0P0j85/r7l9NxYsM8aGm0vwPtmmR5V8p0ws401zMXydR6TT7dKP0iHnUwPDjf5HrY/n7tmrdDRsbfkFXpLIWE/KE3jq9LgCOmlHnmoYoqeu90PbHj3i/nok7/JyLYI58Ce15BG7qnuzHvNNVCkO1PpuQ7z0aq8+BxCwOvuXfy7LMRvvdKH5rOu7ShU7YpTaNnCdefnUAIbvChJ38VSAeBgPy91VUJUxjgcMPLgZappmUOcyYy86oqTy5ufwnO+gVICxuJY85axO5T0x+ncg==|920

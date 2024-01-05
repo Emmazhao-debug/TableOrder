@@ -1,0 +1,629 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 46
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72
+    ],
+    "Count": 73
+  },
+  "Values": {
+    "0,0": "账户资料查询表",
+    "1,10": "状态：",
+    "1,17": "户型：",
+    "1,24": "户名：",
+    "1,31": "开户行：",
+    "1,39": "备注：",
+    "1,47": "添加账户",
+    "3,27": "户型",
+    "3,65": "当前用户：",
+    "3,66": "%CurrentUser.UserName%",
+    "4,56": "修改"
+  },
+  "AttachInfos": {
+    "1,13": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "银行账户资料表",
+        "ValueColumnBindingInfo": {
+          "TableName": "银行账户资料表",
+          "ColumnName": "状态",
+          "GUID": "1bf5ae80-f733-4ec2-8b38-4176702d7a72"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "银行账户资料表",
+          "ColumnName": "状态",
+          "GUID": "2e97d959-3402-41ca-8d6a-a6254edc5459"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,20": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "银行账户资料表",
+        "ValueColumnBindingInfo": {
+          "TableName": "银行账户资料表",
+          "ColumnName": "户型",
+          "GUID": "8a47779a-7dab-440e-a25e-094985ab8f0b"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "银行账户资料表",
+          "ColumnName": "户型",
+          "GUID": "b2196a6e-b2c4-4fb7-b281-a3e54c67043e"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,27": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "1,35": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "1,42": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "1,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "银行账户资料编辑",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=银行账户资料编辑!I19"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加账户",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,0": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "银行账户资料表",
+        "RowIndex": 3,
+        "RowCount": 43,
+        "ColumnCount": 59,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "状态",
+                "GUID": "875d6b01-c9ff-4240-915d-518467e3eb39"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=银行账户资料查询!N2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "户型",
+                "GUID": "e057117a-14a6-4599-8bd3-2dbf78514f9e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=银行账户资料查询!U2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "户名",
+                "GUID": "e1ce2fff-d811-40ed-be5b-0367c7489f33"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=银行账户资料查询!AB2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "开户行",
+                "GUID": "cfb63789-8d38-4756-88a8-8d9df632cc78"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=银行账户资料查询!AJ2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "备注",
+                "GUID": "61bcd961-27b4-4ca2-8d0b-1b406bb092c6"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=银行账户资料查询!AQ2"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsTotalRowVisible": true,
+        "IsTotalRowAtFirstRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 1
+      }
+    },
+    "4,2": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "户名",
+        "GUID": "a59c26c8-be21-4c5d-9078-d4d127c0c01d"
+      }
+    },
+    "4,10": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "简称",
+        "GUID": "b08b93d4-4505-44fc-90b5-1a8195bcc287"
+      }
+    },
+    "4,16": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "状态",
+        "GUID": "5d03207e-b334-4d01-894a-0dfa4fec4ca5"
+      },
+      "RulesGuidList": [
+        "14c472ca-740d-4dcd-8a1f-19dfa7a88a43"
+      ]
+    },
+    "4,19": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "帐号",
+        "GUID": "78d64d88-9cd7-4328-b638-9342b7ebc2bc"
+      }
+    },
+    "4,27": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "户型",
+        "GUID": "96a8dda2-d36f-4c97-a858-6aa46a29d8d7"
+      }
+    },
+    "4,30": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "开户行",
+        "GUID": "4e738b53-0e53-4915-92ca-4d9265de6f91"
+      }
+    },
+    "4,37": {
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "当前余额",
+        "GUID": "4befb268-b9f0-4237-8eb2-bb26e191c864"
+      }
+    },
+    "4,41": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "备注",
+        "GUID": "4af3b6fe-6fe7-41e3-a4b7-57f0c684e701"
+      }
+    },
+    "4,56": {
+      "TotalRowSetting": {},
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "银行账户资料编辑",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=银行账户资料编辑!I19"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 5
+      },
+      {
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 7,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "Foreground": 8,
+        "HorizontalAlignment": 1,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 9
+      },
+      {
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "Body",
+        "Right",
+        "@",
+        "[AUTO]General",
+        "black",
+        "Left",
+        "Blue",
+        "General"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,10": 1,
+      "1,11": 2,
+      "1,12": 2,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 2,
+      "1,16": 2,
+      "1,17": 1,
+      "1,18": 2,
+      "1,19": 2,
+      "1,20": 2,
+      "1,21": 2,
+      "1,22": 2,
+      "1,23": 2,
+      "1,24": 1,
+      "1,25": 2,
+      "1,26": 2,
+      "1,27": 3,
+      "1,31": 1,
+      "1,32": 2,
+      "1,33": 2,
+      "1,34": 2,
+      "1,35": 3,
+      "1,36": 2,
+      "1,37": 2,
+      "1,38": 2,
+      "1,39": 1,
+      "1,40": 2,
+      "1,41": 2,
+      "1,42": 3,
+      "1,43": 2,
+      "1,44": 2,
+      "1,45": 2,
+      "1,46": 2,
+      "1,47": 4,
+      "1,48": 2,
+      "1,49": 2,
+      "1,50": 2,
+      "1,51": 2,
+      "3,0": 5,
+      "3,2": 5,
+      "3,10": 5,
+      "3,12": 6,
+      "3,16": 5,
+      "3,18": 6,
+      "3,19": 5,
+      "3,21": 6,
+      "3,27": 5,
+      "3,29": 6,
+      "3,30": 5,
+      "3,37": 5,
+      "3,41": 5,
+      "3,56": 5,
+      "3,66": 7,
+      "3,67": 8,
+      "3,68": 8,
+      "3,69": 8,
+      "3,70": 9,
+      "4,0": 5,
+      "4,2": 10,
+      "4,10": 10,
+      "4,11": 2,
+      "4,12": 2,
+      "4,13": 2,
+      "4,14": 2,
+      "4,15": 2,
+      "4,16": 10,
+      "4,17": 2,
+      "4,18": 2,
+      "4,19": 10,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "4,25": 2,
+      "4,26": 2,
+      "4,27": 10,
+      "4,28": 2,
+      "4,29": 2,
+      "4,30": 11,
+      "4,37": 12,
+      "4,41": 13,
+      "4,42": 2,
+      "4,43": 2,
+      "4,44": 2,
+      "4,45": 2,
+      "4,46": 2,
+      "4,47": 2,
+      "4,48": 2,
+      "4,49": 2,
+      "4,50": 2,
+      "4,51": 2,
+      "4,52": 2,
+      "4,53": 2,
+      "4,54": 2,
+      "4,55": 2,
+      "4,56": 14,
+      "4,65": 15,
+      "5,65": 15,
+      "6,65": 15,
+      "7,65": 15,
+      "8,65": 15,
+      "9,65": 15,
+      "10,65": 15,
+      "11,65": 15,
+      "12,65": 15
+    },
+    "ColStyles": {
+      "65": 16
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,0,2,10",
+    "1,10,1,3",
+    "1,13,1,4",
+    "1,17,1,3",
+    "1,20,1,4",
+    "3,66,1,5",
+    "4,0,1,2",
+    "4,2,1,8",
+    "4,10,1,6",
+    "4,16,1,3",
+    "4,19,1,8",
+    "4,27,1,3",
+    "4,30,1,7",
+    "4,37,1,4",
+    "4,41,1,15",
+    "4,56,1,3",
+    "1,24,1,3",
+    "1,27,1,4",
+    "1,31,1,4",
+    "1,35,1,4",
+    "1,39,1,3",
+    "1,42,1,4",
+    "1,47,1,5",
+    "5,0,41,59",
+    "3,0,1,2",
+    "3,2,1,8",
+    "3,10,1,6",
+    "3,16,1,3",
+    "3,19,1,8",
+    "3,27,1,3",
+    "3,30,1,7",
+    "3,37,1,4",
+    "3,41,1,15",
+    "3,56,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"停用\"",
+          "GUID": "14c472ca-740d-4dcd-8a1f-19dfa7a88a43",
+          "StyleInfo": {
+            "FontWeight": "Bold",
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "当前用户",
+      "Formula": "银行账户资料查询!$BO$4"
+    }
+  ]
+}//qDHZETlJvuekt0ehU3mOu7rmMQA3SmTq/sJVeI72QB1vq28TkpZWRn0UrrTXNh4/qlH5+qefkiYBnADb6FPVAQJCdc2nmOeG4nAXgO61GT5Z2CQohTty3jT9laQ59if97gk+0ghAi+wPmqOeUk2qFD0UQBCyhcKrSyiGcImKVvMGT38fhyY3brO7Uqi4z2w4xWykPZRWPWZ46/28qSucqXplZbThSwQSxqHXvAfkGYDHFBQnZWRQUoo4aOYATQ0Q2793omBtrMSkCPL9QIceUrLnQWyoASflHvuHIicQN19vc0h9a3vrOwAXm1oB8Do1xNaULbI5Hvj3J6OwE1pkwfiuZdJV1H1IJQpJ0Xny1Fluphke7mDl10ys26CDape8Ssagdii3U3kFVkeIgklPI7kXKNdrdkQ0EqzCKvqU2+ZTuXln6VjbqbyZCNPXru2GU+ZH4SQzyQAG+5casr0RP5jOZOsq3a8rBO0az5MF9KAQYvXidF/QfP7aarcnNZZ2/noFSJXNk4349Poyx8dSnHeAgfVSRxugpvFfkCbN+1ph8Gb+EwbrGg/5OeANDIuWLpd7w7n6jjLOnDOv+dc30a5UuiXixjeFLgboIHK3wxxqcfmGqv+0BZVG+mwWL1lIpzEm13SI4Ss6JWjTcMzZAFa4dJO7cGjbQDlzwJR713ufOfBG4AlE5KYmC5dy6AFTFfdeXarmt9t35gPaLuj+3wvr+9UbwlpkUtIng8QOeIj+r83r755PANV/6x4nhajQIGpAeJPDLNZjspBJb38NYvxBisMismHpUywpiNQBZxC1QokPTeNEbKigi4CBF55o5xCtcua/ZVlIZIRFcGuNdIlnoobyOgLB8J9O86jXg7ixOJcCVlGW/yFVCb78RToTTvLpWIdmWQmx5U7lLGFFkA==|920

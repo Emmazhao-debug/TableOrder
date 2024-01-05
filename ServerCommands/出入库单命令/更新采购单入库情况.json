@@ -1,0 +1,59 @@
+{
+  "Name": "更新采购单入库情况",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.InvokeTriggerSaveData, ServerDesignerCommon",
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "出入库单号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "采购单号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "采购单主表",
+      "ShowConfirm": false,
+      "RowsToUpdate": 1,
+      "RowsToUpdateCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "ColumnBindingInfo": {
+          "TableName": "采购单主表",
+          "ColumnName": "采购单号",
+          "GUID": "fa7e1574-7892-4411-92e4-45c4ce33ddab"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=采购单号"
+        }
+      },
+      "UpdateBindingValues": [
+        {
+          "BindingInfo": {
+            "TableName": "采购单主表",
+            "ColumnName": "出入库单号",
+            "GUID": "25e63342-3060-4220-bbfa-e13ab9807bd1"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=出入库单号"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

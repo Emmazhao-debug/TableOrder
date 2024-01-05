@@ -1,0 +1,148 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 32
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 54
+  },
+  "Values": {
+    "15,16": "Page Disconnected",
+    "18,16": "The connection to application has been terminated due to a long idle time on the page. If you need to continue using it, please reload the page.",
+    "22,21": "Reload Page"
+  },
+  "AttachInfos": {
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImageSizeMode": 0,
+        "ImagePath": "fgc_built_in_page_disconnected.png"
+      }
+    },
+    "22,21": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "Reload Page",
+        "TemplateKey": "_RS_Main1",
+        "ForguncyAttribute": "ReloadPage_Button"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 34.666666666666664,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 4,
+        "Formatter": 5,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
+        "WordWrap": true,
+        "Underline": false,
+        "Strikethrough": false
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 25",
+        "Center",
+        "Top",
+        "Text 1 50",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "4,16": 0,
+      "15,16": 1,
+      "18,16": 2,
+      "22,21": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,16,10,22",
+    "15,16,3,22",
+    "18,16,3,22",
+    "22,21,2,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MobilePageName": "Disconnected (Mobile)",
+    "Title": "Disconnected",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//f4nDmYG6Cyjj9SHmWpT0HebpfqnnuSB9dnHAC3vYWS9UYKEo/lh6DRp9tvrPk/3Kc+3r39vThnIT196ScTcfDSRln0omQFOVJQydlXyq/uBOQ8d1MCzDivUcx6qQVlcUnVa94jcJyTKAoAoRqNzzJBhV0DUMNWwK6go18slnYn6Wip9yNvYcD3zg3yrXGlx3HGX8yxJt/hV6dbi7RkFw2reH9JsjIg0PDpPLXRuaOIoDUytkhazYU15bmarYDzt8WbjIcyY9SUzR7h62Yd8sEZyDR19mPpLlA/UntSmzvMVB0KIPnZdYlIUt9LyWBO75/v8dqviGKK5yraZSF8Kp7Y9zjMR6BMxjiaNjUjoj5t8XrLy2Zo8KDoLe7LbsEJd7Pv5qzNI2RUIL5vxZpNYR6MsbXh8s0qeC/G1ILwAfIIXFUjVRCpb0WTYD/yU52VNFD920CEbpom5J2JM+FUYAIpPs9Vt+34ByyUdZwj9qM8zXAI5E/wDPbaKJ0gdAVbtgy1eKrOipKF+e4aLN1Pe0z05un45ffLmA4aIavZyr7m9+qfRNlCVefOXjHNhkOxmhRgFqr+ZK9YdXnIYtJ6E7cNmMB4SvFGhi2BGQ6EF9QLata5gKHy/Fhv8Af5uz7O7asIkUs0SgkJlxgIzKnrphZ1Yfx63Ly6JH2nTisi56M5gwJq76AtHQk8AoDO9ZGTjbV4P8L2RaIBVdsJkwIIahuqR+4rxD/DsQr+IFJ4XeE59jWkX9zqxFRJL6+ducRiWYjJcttHgdDo08HaIfrLXI13wbVLBW/9CyK60UKIYpF1wn9+ZtUW+tBgG/UsK+fo3/MtOkLZ1LxdyFRMi1dWpFrxVjv/QdFy2isFWln7PC0x0uK3I37+59XHOiwcAE78+S7G4VZwYT5WBrqIglYmbQzA==|920

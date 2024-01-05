@@ -1,0 +1,3901 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 44
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "72": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89
+    ],
+    "Count": 90
+  },
+  "Values": {
+    "0,4": "板材属性列表",
+    "2,4": "类型：",
+    "2,12": "状态：",
+    "2,15": "正常",
+    "2,40": "排序",
+    "2,48": "添加新板材",
+    "2,55": "关闭",
+    "4,3": "正\r\n在\r\n使\r\n用\r\n",
+    "4,41": "日期状态",
+    "5,55": "查看",
+    "5,59": "删除",
+    "5,80": "当前行材料识别码：",
+    "6,80": "判断当前行有无：",
+    "21,3": "待启用",
+    "21,41": "待生效",
+    "21,55": "修改",
+    "21,58": "删除",
+    "27,3": "已失效",
+    "28,41": "已失效",
+    "43,3": "*此处“已失效”指的是新建报价单时不再使用，而之前在这个时间段内创建的过往报价单仍可能会使用。例如：打开过往报价单更换板材名称时，则会读取其创建时间段内有效的板材属性参数进行产品价格计算。"
+  },
+  "Formulas": {
+    "5,59": "IF(AH6>=TODAY(),\"删除\",\"\")",
+    "5,55": "IF(AH6=TODAY(),\"修改\",IF(AL6=\"\",\"创建新属性\",\"\"))",
+    "5,41": "IF(AL6=\"\",\"生效中\",\"即将到期\")",
+    "6,81": "COUNTA(E6)"
+  },
+  "AttachInfos": {
+    "2,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "板材类型字典",
+        "ValueColumnBindingInfo": {
+          "TableName": "板材类型字典",
+          "ColumnName": "ID",
+          "GUID": "5998406f-3ea3-49fb-87f0-3e07ea341658"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "板材类型字典",
+          "ColumnName": "类型名称",
+          "GUID": "a1415162-a295-4a12-8a2e-4d0a6bb35f1b"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "板材类型字典",
+            "ColumnName": "状态",
+            "GUID": "3072b6ac-42c6-4f9b-9d1b-5c1f75a04bcf"
+          },
+          "Value": "正常"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "板材类型字典",
+                "ColumnName": "权重",
+                "GUID": "0d46f79d-3b8a-4d13-80f9-32b7a784bb88"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "2,15": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "Items": [
+          {
+            "Value": "",
+            "DisplayValue": ""
+          },
+          {
+            "Value": "正常",
+            "DisplayValue": "正常"
+          },
+          {
+            "Value": "停用",
+            "DisplayValue": "停用"
+          }
+        ],
+        "CellDefaultValue": "正常"
+      }
+    },
+    "2,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "板材排序页面",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=板材属性列表!类型id"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=板材排序页面!AT5"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "排序",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Arrow/330_sort_toggle_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,48": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "板材属性详情",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NOW()"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=板材属性详情!识别码"
+                }
+              },
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=板材属性详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加新板材",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,4": {
+      "ListViewInfo": {
+        "Name": "生效中",
+        "TableName": "板材属性表",
+        "RowIndex": 4,
+        "ColumnIndex": 4,
+        "RowCount": 17,
+        "ColumnCount": 68,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "类型id",
+                "GUID": "70f7547c-994e-4a95-8fb5-5bd2d2970d97"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=板材属性列表!类型id"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "状态",
+                "GUID": "74f7305a-3c17-4cc3-b751-a53bbe68cb55"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=板材属性列表!状态"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "启用日期",
+                "GUID": "a89a6efb-d36f-4a69-88f4-00bf5323a4f2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "板材属性表",
+                    "ColumnName": "停用日期",
+                    "GUID": "ff92dc55-4025-478e-a486-134c60f4b9d9"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "板材属性表",
+                    "ColumnName": "停用日期",
+                    "GUID": "cfd6eeb5-e5e4-4fd9-b989-43b2335d545b"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "类型id",
+                "GUID": "14af2bbf-6c7a-41cd-87e6-94a197abda38",
+                "RelationBinding": {
+                  "RelatedTable": "板材类型字典",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "权重"
+                }
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "序号",
+                "GUID": "156a085b-49b1-4d67-81bd-31ef2d900181"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=板材属性列表!识别码"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=板材属性列表!BN6"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1
+      }
+    },
+    "5,4": {
+      "NameUsedInJavaScript": "板材名称",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "板材名称",
+        "GUID": "0c8c9a9b-83f9-4c20-b5d1-0e4263ab0f7d"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "5,12": {
+      "NameUsedInJavaScript": "长",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "长",
+        "GUID": "22b464ac-1c1f-438b-bbf4-c860b2f35571"
+      }
+    },
+    "5,14": {
+      "NameUsedInJavaScript": "宽",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "宽",
+        "GUID": "ffd75196-e4a4-4864-b101-de48a7dc17fc"
+      }
+    },
+    "5,16": {
+      "NameUsedInJavaScript": "厚",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "厚",
+        "GUID": "612cdbcd-e681-4711-967f-0ba91bcb5c6e"
+      }
+    },
+    "5,18": {
+      "NameUsedInJavaScript": "基础单价",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "基础单价",
+        "GUID": "f985652f-7580-4ffb-8d1b-bc39f458dd87"
+      }
+    },
+    "5,21": {
+      "NameUsedInJavaScript": "附加单价",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "附加单价",
+        "GUID": "78459b11-c4cb-4a72-bfc4-4fc425de71de"
+      }
+    },
+    "5,24": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "废料单价",
+        "GUID": "87ff2f05-af29-4b7b-99e4-23d647e07b26"
+      }
+    },
+    "5,27": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "耗材占比",
+        "GUID": "afcd65c4-c3f5-44cc-87a7-21094ba5bff2"
+      }
+    },
+    "5,30": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "难度系数",
+        "GUID": "6f7f2f2c-b1a7-4b64-a37a-1b99e1bf1b34"
+      }
+    },
+    "5,33": {
+      "NameUsedInJavaScript": "启用日期",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "启用日期",
+        "GUID": "b98a2b9f-17a6-4149-95aa-f76daa92169b"
+      }
+    },
+    "5,37": {
+      "NameUsedInJavaScript": "停用日期",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "停用日期",
+        "GUID": "d4279ebb-1042-418c-9aac-b1f47afe7f2a"
+      }
+    },
+    "5,41": {
+      "NameUsedInJavaScript": "日期状态"
+    },
+    "5,44": {
+      "NameUsedInJavaScript": "备注",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "备注",
+        "GUID": "33f99ff7-9949-447d-919e-4baac12469df"
+      }
+    },
+    "5,55": {
+      "NameUsedInJavaScript": "查看",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=板材属性列表!BD6"
+                      }
+                    ]
+                  },
+                  "value": "创建新属性"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "板材属性详情",
+                    "PassValues": [
+                      {
+                        "Source": "创建",
+                        "TargetCell": {
+                          "SerializeProperty": "=板材属性详情!按钮"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=板材属性列表!识别码"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=板材属性详情!识别码"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=板材属性列表!BJ6"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=板材属性详情!序号"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "43d88a2d-fddb-45d9-9979-a415b2ec003c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "板材属性详情",
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "TargetCell": {
+                          "SerializeProperty": "=板材属性详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "fe4a3d91-c4b8-4bb3-8ecd-e307fb300e68"
+              }
+            ]
+          }
+        ],
+        "Text": "查看",
+        "ClickMode": 1
+      }
+    },
+    "5,59": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "板材属性表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "板材属性表",
+                      "ColumnName": "识别码",
+                      "GUID": "e3f7245a-ec01-47a3-9949-b89040b8c1a7"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=板材属性列表!BN6"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "板材属性表",
+                      "ColumnName": "启用日期",
+                      "GUID": "e365fb42-917f-42c9-aec7-ad24ddb19bfb"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=板材属性列表!AH6"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "0c08c39784964d57a0bf6057e7b76416"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=板材属性列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "提示：",
+                    "Message": "删除本属性后，前面属性的截止日期同时会自动清空，即前面的属性将一直有效。您确定要删除吗？",
+                    "Type": "none",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=板材属性列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "板材属性表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "板材属性表",
+                                    "ColumnName": "ID",
+                                    "GUID": "b1e4d9ae-bd00-4ba3-bb57-6de5696cbfb9"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "板材属性表",
+                                      "ColumnName": "识别码",
+                                      "GUID": "f4316489-6c76-49eb-9c4e-1759edb1fd57"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=板材属性列表!BN6"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "板材属性表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "0824f0a6-b1d8-475c-9424-96a1799d3d93"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=板材属性列表!AH6"
+                                    }
+                                  }
+                                ]
+                              },
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "板材属性表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "b6848271-6123-4a7c-b8f3-84662668ba63"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "0ba20f3d5f4d4f27bc56668db84c4135"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "板材属性表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "板材属性表",
+                                "ColumnName": "ID",
+                                "GUID": "bd644b45-52c0-4314-bf2a-f2fb15fe2e2b"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=板材属性列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "板材属性表",
+                                  "ColumnName": "停用日期",
+                                  "GUID": "1c0259f6-a161-4a7a-87ee-b24707a75e82"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "板材属性表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "201a3d7a-95ab-4e86-80c7-f756c8c36624"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d098ade0-cb80-4d8c-909c-f741bafb4898"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "77db6a8d-cd7a-408b-b59e-47174bebbf95"
+              }
+            ]
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "5,61": {
+      "NameUsedInJavaScript": "序号",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "序号",
+        "GUID": "3980796c-1ffe-4f6d-8687-0e9e7b9d2c0b"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon"
+      }
+    },
+    "5,63": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "ID",
+        "GUID": "bcd712f6-b9b5-44b6-87e7-91a99c48879a"
+      }
+    },
+    "5,65": {
+      "NameUsedInJavaScript": "识别码",
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "识别码",
+        "GUID": "792ed701-1fe8-4ac3-b983-de676e002044"
+      }
+    },
+    "5,81": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "6,81": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=板材属性列表!CD7"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=板材属性列表!识别码"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "c1675f34-7b7c-4ec6-84f1-af3985c1e6b6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "21,4": {
+      "ListViewInfo": {
+        "Name": "待生效",
+        "TableName": "板材属性表",
+        "RowIndex": 21,
+        "ColumnIndex": 4,
+        "RowCount": 6,
+        "ColumnCount": 68,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "类型id",
+                "GUID": "66357e6c-0da2-49a9-bdf8-324efb75284e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=板材属性列表!类型id"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "启用日期",
+                "GUID": "d304860e-708e-4f9d-949e-e95df48b3ffc"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "启用日期",
+                "GUID": "9fb1e2f5-fe37-43dc-9ede-fc4d7eba452a"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=板材属性列表!识别码"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=板材属性列表!BN22"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "IsColumnHeaderVisible": false,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "板材名称",
+        "GUID": "e3be127e-8293-482f-8e25-1095e182b1c7"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "21,12": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "长",
+        "GUID": "3140331c-e9a8-4482-8e1a-8668f05d011f"
+      }
+    },
+    "21,14": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "宽",
+        "GUID": "bc79c46c-a2c4-46b0-9463-5b61bd73465f"
+      }
+    },
+    "21,16": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "厚",
+        "GUID": "aa818e08-b5c7-492a-b91b-545e40500a00"
+      }
+    },
+    "21,18": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "基础单价",
+        "GUID": "0bc163eb-490d-4bff-a913-88f1ab130191"
+      }
+    },
+    "21,21": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "附加单价",
+        "GUID": "58a91c36-389d-42de-92cf-e4774d66128f"
+      }
+    },
+    "21,24": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "废料单价",
+        "GUID": "a5e967c9-e0f4-43fa-af20-791550663e20"
+      }
+    },
+    "21,27": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "耗材占比",
+        "GUID": "36e02a1c-825b-488d-bd08-ffcf38afaf1f"
+      }
+    },
+    "21,30": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "难度系数",
+        "GUID": "eedf5bfc-711e-4911-981f-99822fc1ef79"
+      }
+    },
+    "21,33": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "启用日期",
+        "GUID": "1a485d63-ecb7-4ce7-82a9-37ee115ab38d"
+      }
+    },
+    "21,37": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "停用日期",
+        "GUID": "24fc5b3c-be0c-4d4b-9b37-7a4cd56e4274"
+      }
+    },
+    "21,44": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "备注",
+        "GUID": "a6c8dad9-7b22-4f32-a740-55a267ecf3a9"
+      }
+    },
+    "21,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "板材属性详情",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=板材属性详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    },
+    "21,58": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "板材属性表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "板材属性表",
+                      "ColumnName": "识别码",
+                      "GUID": "5b155c1b-ebd1-4c20-836e-0c2b910e9d85"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=板材属性列表!BN22"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "板材属性表",
+                      "ColumnName": "启用日期",
+                      "GUID": "4985ffc4-d011-4093-a3cb-f7be15bfbfde"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=板材属性列表!AH22"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "fb95c08a7ac04c30866b8770f137b828"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=板材属性列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "提示：",
+                    "Message": "删除本属性后，前面属性的截止日期同时会自动清空，即前面的属性将一直有效。您确定要删除吗？",
+                    "Type": "none",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=板材属性列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "板材属性表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "板材属性表",
+                                    "ColumnName": "ID",
+                                    "GUID": "f210c1b9-0161-44b8-9b65-2930e3a7ed56"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "板材属性表",
+                                      "ColumnName": "识别码",
+                                      "GUID": "77c7c18c-f8ce-49ef-abcb-9d45e95b6f8e"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=板材属性列表!BN22"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "板材属性表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "25a3069b-14d5-4a45-b037-e88abab6febc"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=板材属性列表!AH22"
+                                    }
+                                  }
+                                ]
+                              },
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "板材属性表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "4897ab47-cf8b-40a3-9c13-628ab7d759d7"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "3c0864cdbb904052be857775215ae477"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "板材属性表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "板材属性表",
+                                "ColumnName": "ID",
+                                "GUID": "0a158811-d856-44c8-a5e2-21e724cfae1a"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=板材属性列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "板材属性表",
+                                  "ColumnName": "停用日期",
+                                  "GUID": "cb66f031-6eb9-473e-a448-7b80dbbf7c63"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "板材属性表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "af3c99de-44af-4a78-b000-d955b1ec7c07"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ad78fdbc-d067-4659-8c8b-9e3ef34fc815"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "89c77fd1-33fe-429c-8ad0-4144c9805f59"
+              }
+            ]
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "21,61": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "序号",
+        "GUID": "65d77576-bfb5-479b-b54a-c70bbb062600"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon"
+      }
+    },
+    "21,63": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "ID",
+        "GUID": "50993f71-8d86-4c68-bf4c-59f7a4f229f3"
+      }
+    },
+    "21,65": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "识别码",
+        "GUID": "c0d3d7f7-c303-41c7-8699-90a08a64bbda"
+      }
+    },
+    "27,4": {
+      "ListViewInfo": {
+        "Name": "已失效",
+        "TableName": "板材属性表",
+        "RowIndex": 27,
+        "ColumnIndex": 4,
+        "RowCount": 16,
+        "ColumnCount": 68,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "识别码",
+                "GUID": "d6c030e2-681a-47d9-91ed-5a881b585b42"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=板材属性列表!识别码"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 4,
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "停用日期",
+                "GUID": "33ac4c4c-cf3e-4b56-86f8-717c0974f163"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "停用日期",
+                "GUID": "9726a574-6eb6-4bfb-8a53-a99d8ccf47b6"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=板材属性列表!识别码"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=板材属性列表!BN29"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1
+      }
+    },
+    "28,4": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "板材名称",
+        "GUID": "d956503a-3840-479a-901f-1a2aca1a09d0"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "28,12": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "长",
+        "GUID": "f8a4f02b-688b-4c9c-a080-429370054441"
+      }
+    },
+    "28,14": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "宽",
+        "GUID": "8417d893-1760-4682-ae45-c26e963ab04d"
+      }
+    },
+    "28,16": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "厚",
+        "GUID": "01f6bd49-14cb-4443-af69-017c08879c51"
+      }
+    },
+    "28,18": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "基础单价",
+        "GUID": "be9dc525-32d5-4f59-a419-6864e1a0dbe1"
+      }
+    },
+    "28,21": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "附加单价",
+        "GUID": "77fe0e8d-7f11-4c56-91c0-8ded504f31eb"
+      }
+    },
+    "28,24": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "废料单价",
+        "GUID": "be2262cf-599a-4ff1-ad40-d1174e9c7e2f"
+      }
+    },
+    "28,27": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "耗材占比",
+        "GUID": "7d817626-81ba-4a32-b737-6a07fe209226"
+      }
+    },
+    "28,30": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "难度系数",
+        "GUID": "30a8e22e-e5f4-43c1-8cac-4c6a6d8a6d33"
+      }
+    },
+    "28,33": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "启用日期",
+        "GUID": "af48706a-5542-4f91-859a-7d35c91904ca"
+      }
+    },
+    "28,37": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "停用日期",
+        "GUID": "d5b079b9-e7a8-4afc-984b-8de042654076"
+      }
+    },
+    "28,44": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "备注",
+        "GUID": "d1e9e6ce-2d9e-46f9-aa86-c4a4fd5c38ff"
+      }
+    },
+    "28,61": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "序号",
+        "GUID": "e11bd4f9-eb30-4653-992c-be23915c81ed"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon"
+      }
+    },
+    "28,63": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "ID",
+        "GUID": "5604b33a-9e0e-4cd5-871e-3b326e8e47d7"
+      }
+    },
+    "28,65": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "识别码",
+        "GUID": "fd80c839-73c5-4ccd-9810-76a2cce3dae7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 4,
+        "HorizontalAlignment": 2
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderLeft": null
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "FontWeight": 0,
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 0,
+        "Formatter": 6,
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 8,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 9,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 10,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 12,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Foreground": 13,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 14,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 15,
+        "Formatter": 16,
+        "HorizontalAlignment": 3,
+        "Underline": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 15,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 17,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 6
+      },
+      {
+        "FontSize": -1.0,
+        "HorizontalAlignment": 16
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 0,
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 0,
+        "Formatter": 6,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 8,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 18,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 12,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "Background": 19,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 14,
+        "WordWrap": true,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 15,
+        "Formatter": 16,
+        "HorizontalAlignment": 3,
+        "Underline": false,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 15,
+        "HorizontalAlignment": 3,
+        "Underline": true,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 18,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": 21,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 22,
+        "WordWrap": true
+      },
+      {
+        "BorderRight": null
+      },
+      {
+        "FontSize": 14.666666666666666
+      },
+      {
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Right",
+        "Center",
+        "[AUTO]General",
+        "Background 1 -25",
+        "@",
+        "0.00",
+        "0元/张",
+        "0.0\"元/kg\"",
+        "0.00元/kg",
+        "0%",
+        "yyyy/MM/dd",
+        "#FF00B050",
+        "Left",
+        "Blue",
+        "General",
+        "yyyy/mm/dd hh:mm:ss",
+        "0.00\"元/kg\"",
+        "#FFFFC000",
+        "#FFCED4DA",
+        "Background 1 -5",
+        "Background 1 -50"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        },
+        {
+          "Color": 20
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,4": 0,
+      "1,72": 1,
+      "2,4": 2,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 4,
+      "2,8": 5,
+      "2,9": 5,
+      "2,10": 5,
+      "2,11": 5,
+      "2,12": 6,
+      "2,13": 3,
+      "2,14": 3,
+      "2,15": 4,
+      "2,24": 7,
+      "2,36": 8,
+      "2,37": 8,
+      "2,38": 8,
+      "2,39": 8,
+      "2,40": 5,
+      "2,48": 5,
+      "2,49": 3,
+      "2,50": 3,
+      "2,51": 3,
+      "2,52": 3,
+      "2,54": 3,
+      "2,55": 5,
+      "2,56": 5,
+      "2,57": 5,
+      "2,58": 5,
+      "2,59": 5,
+      "2,69": 3,
+      "2,70": 3,
+      "2,71": 3,
+      "2,72": 9,
+      "2,73": 3,
+      "2,74": 3,
+      "2,75": 3,
+      "2,76": 3,
+      "2,77": 3,
+      "2,81": 3,
+      "2,82": 3,
+      "2,83": 3,
+      "2,84": 3,
+      "2,85": 3,
+      "2,86": 3,
+      "2,87": 3,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 5,
+      "3,19": 5,
+      "3,20": 5,
+      "3,21": 5,
+      "3,22": 5,
+      "3,23": 5,
+      "3,24": 5,
+      "3,25": 5,
+      "3,26": 5,
+      "3,27": 5,
+      "3,28": 5,
+      "3,29": 5,
+      "3,30": 5,
+      "3,31": 5,
+      "3,32": 5,
+      "3,33": 5,
+      "3,34": 5,
+      "3,35": 5,
+      "3,36": 5,
+      "3,37": 5,
+      "3,38": 5,
+      "3,39": 5,
+      "3,40": 5,
+      "3,41": 5,
+      "3,42": 5,
+      "3,43": 5,
+      "3,44": 5,
+      "3,45": 5,
+      "3,46": 5,
+      "3,47": 5,
+      "3,48": 5,
+      "3,49": 5,
+      "3,50": 5,
+      "3,51": 5,
+      "3,52": 5,
+      "3,53": 5,
+      "3,54": 5,
+      "3,55": 5,
+      "3,56": 5,
+      "3,57": 5,
+      "3,58": 5,
+      "3,59": 5,
+      "3,60": 5,
+      "3,61": 5,
+      "3,62": 5,
+      "3,63": 5,
+      "3,64": 5,
+      "3,65": 5,
+      "3,66": 5,
+      "3,67": 5,
+      "3,68": 5,
+      "3,69": 5,
+      "3,70": 5,
+      "3,71": 5,
+      "3,72": 10,
+      "3,73": 5,
+      "3,74": 5,
+      "3,75": 5,
+      "3,76": 5,
+      "3,77": 5,
+      "3,78": 5,
+      "3,79": 5,
+      "3,80": 5,
+      "3,81": 5,
+      "3,82": 5,
+      "3,83": 5,
+      "3,84": 5,
+      "3,85": 5,
+      "3,86": 5,
+      "3,87": 5,
+      "4,3": 11,
+      "4,4": 12,
+      "4,5": 13,
+      "4,6": 13,
+      "4,7": 13,
+      "4,8": 13,
+      "4,9": 13,
+      "4,10": 13,
+      "4,11": 13,
+      "4,12": 13,
+      "4,13": 13,
+      "4,14": 13,
+      "4,15": 13,
+      "4,16": 13,
+      "4,17": 13,
+      "4,18": 13,
+      "4,19": 14,
+      "4,20": 13,
+      "4,21": 13,
+      "4,22": 13,
+      "4,23": 13,
+      "4,24": 13,
+      "4,25": 14,
+      "4,26": 14,
+      "4,27": 13,
+      "4,28": 14,
+      "4,29": 14,
+      "4,30": 13,
+      "4,31": 14,
+      "4,32": 14,
+      "4,33": 13,
+      "4,34": 14,
+      "4,35": 14,
+      "4,36": 14,
+      "4,37": 13,
+      "4,38": 14,
+      "4,39": 14,
+      "4,40": 14,
+      "4,41": 14,
+      "4,42": 14,
+      "4,43": 14,
+      "4,44": 13,
+      "4,45": 14,
+      "4,46": 14,
+      "4,47": 14,
+      "4,48": 14,
+      "4,49": 14,
+      "4,50": 14,
+      "4,51": 14,
+      "4,52": 14,
+      "4,53": 14,
+      "4,54": 14,
+      "4,55": 5,
+      "4,59": 14,
+      "4,60": 14,
+      "4,61": 12,
+      "4,62": 13,
+      "4,63": 13,
+      "4,64": 14,
+      "4,65": 14,
+      "4,66": 14,
+      "4,67": 14,
+      "4,68": 14,
+      "4,69": 14,
+      "4,70": 14,
+      "4,71": 14,
+      "4,72": 15,
+      "5,3": 15,
+      "5,4": 16,
+      "5,5": 5,
+      "5,6": 5,
+      "5,7": 5,
+      "5,8": 5,
+      "5,9": 5,
+      "5,10": 5,
+      "5,11": 5,
+      "5,12": 17,
+      "5,13": 5,
+      "5,14": 17,
+      "5,15": 5,
+      "5,16": 18,
+      "5,17": 5,
+      "5,18": 19,
+      "5,19": 19,
+      "5,20": 5,
+      "5,21": 19,
+      "5,22": 5,
+      "5,23": 5,
+      "5,24": 20,
+      "5,25": 21,
+      "5,27": 22,
+      "5,30": 7,
+      "5,33": 23,
+      "5,37": 23,
+      "5,41": 24,
+      "5,44": 25,
+      "5,55": 26,
+      "5,59": 27,
+      "5,61": 28,
+      "5,62": 5,
+      "5,63": 17,
+      "5,65": 7,
+      "5,72": 15,
+      "5,81": 29,
+      "6,3": 15,
+      "6,4": 30,
+      "6,5": 5,
+      "6,6": 5,
+      "6,7": 5,
+      "6,8": 5,
+      "6,9": 5,
+      "6,10": 5,
+      "6,11": 5,
+      "6,12": 5,
+      "6,13": 5,
+      "6,14": 5,
+      "6,15": 5,
+      "6,16": 5,
+      "6,17": 5,
+      "6,18": 5,
+      "6,20": 5,
+      "6,21": 5,
+      "6,22": 5,
+      "6,23": 5,
+      "6,33": 5,
+      "6,34": 5,
+      "6,35": 5,
+      "6,36": 5,
+      "6,37": 5,
+      "6,38": 5,
+      "6,39": 5,
+      "6,40": 5,
+      "6,41": 5,
+      "6,42": 5,
+      "6,43": 5,
+      "6,44": 5,
+      "6,45": 5,
+      "6,46": 5,
+      "6,47": 5,
+      "6,48": 5,
+      "6,49": 5,
+      "6,50": 5,
+      "6,51": 5,
+      "6,53": 5,
+      "6,54": 5,
+      "6,55": 5,
+      "6,56": 5,
+      "6,57": 5,
+      "6,58": 5,
+      "6,60": 5,
+      "6,72": 15,
+      "6,81": 31,
+      "7,3": 15,
+      "7,4": 30,
+      "7,5": 5,
+      "7,6": 5,
+      "7,7": 5,
+      "7,8": 5,
+      "7,9": 5,
+      "7,10": 5,
+      "7,11": 5,
+      "7,12": 5,
+      "7,13": 5,
+      "7,14": 5,
+      "7,15": 5,
+      "7,16": 5,
+      "7,17": 5,
+      "7,18": 5,
+      "7,20": 5,
+      "7,21": 5,
+      "7,22": 5,
+      "7,23": 5,
+      "7,33": 5,
+      "7,34": 5,
+      "7,35": 5,
+      "7,36": 5,
+      "7,37": 5,
+      "7,38": 5,
+      "7,39": 5,
+      "7,40": 5,
+      "7,41": 5,
+      "7,42": 5,
+      "7,43": 5,
+      "7,44": 5,
+      "7,45": 5,
+      "7,46": 5,
+      "7,47": 5,
+      "7,48": 5,
+      "7,49": 5,
+      "7,50": 5,
+      "7,51": 5,
+      "7,53": 5,
+      "7,54": 5,
+      "7,55": 5,
+      "7,56": 5,
+      "7,57": 5,
+      "7,58": 5,
+      "7,60": 5,
+      "7,72": 15,
+      "8,3": 15,
+      "8,4": 30,
+      "8,5": 5,
+      "8,6": 5,
+      "8,7": 5,
+      "8,8": 5,
+      "8,9": 5,
+      "8,10": 5,
+      "8,11": 5,
+      "8,12": 5,
+      "8,13": 5,
+      "8,14": 5,
+      "8,15": 5,
+      "8,16": 5,
+      "8,17": 5,
+      "8,18": 5,
+      "8,20": 5,
+      "8,21": 5,
+      "8,22": 5,
+      "8,23": 5,
+      "8,33": 5,
+      "8,34": 5,
+      "8,35": 5,
+      "8,36": 5,
+      "8,37": 5,
+      "8,38": 5,
+      "8,39": 5,
+      "8,40": 5,
+      "8,41": 5,
+      "8,42": 5,
+      "8,43": 5,
+      "8,44": 5,
+      "8,45": 5,
+      "8,46": 5,
+      "8,47": 5,
+      "8,48": 5,
+      "8,49": 5,
+      "8,50": 5,
+      "8,51": 5,
+      "8,53": 5,
+      "8,54": 5,
+      "8,55": 5,
+      "8,56": 5,
+      "8,57": 5,
+      "8,58": 5,
+      "8,60": 5,
+      "8,72": 15,
+      "9,3": 15,
+      "9,4": 30,
+      "9,5": 5,
+      "9,6": 5,
+      "9,7": 5,
+      "9,8": 5,
+      "9,9": 5,
+      "9,10": 5,
+      "9,11": 5,
+      "9,12": 5,
+      "9,13": 5,
+      "9,14": 5,
+      "9,15": 5,
+      "9,16": 5,
+      "9,17": 5,
+      "9,18": 5,
+      "9,20": 5,
+      "9,21": 5,
+      "9,22": 5,
+      "9,23": 5,
+      "9,33": 5,
+      "9,34": 5,
+      "9,35": 5,
+      "9,36": 5,
+      "9,37": 5,
+      "9,38": 5,
+      "9,39": 5,
+      "9,40": 5,
+      "9,41": 5,
+      "9,42": 5,
+      "9,43": 5,
+      "9,44": 5,
+      "9,45": 5,
+      "9,46": 5,
+      "9,47": 5,
+      "9,48": 5,
+      "9,49": 5,
+      "9,50": 5,
+      "9,51": 5,
+      "9,53": 5,
+      "9,54": 5,
+      "9,55": 5,
+      "9,56": 5,
+      "9,57": 5,
+      "9,58": 5,
+      "9,60": 5,
+      "9,72": 15,
+      "9,79": 8,
+      "9,80": 32,
+      "9,81": 8,
+      "9,82": 8,
+      "9,83": 8,
+      "9,84": 8,
+      "9,85": 8,
+      "9,86": 8,
+      "9,87": 8,
+      "9,88": 8,
+      "10,3": 15,
+      "10,4": 30,
+      "10,5": 5,
+      "10,6": 5,
+      "10,7": 5,
+      "10,8": 5,
+      "10,9": 5,
+      "10,10": 5,
+      "10,11": 5,
+      "10,12": 5,
+      "10,13": 5,
+      "10,14": 5,
+      "10,15": 5,
+      "10,16": 5,
+      "10,17": 5,
+      "10,18": 5,
+      "10,20": 5,
+      "10,21": 5,
+      "10,22": 5,
+      "10,23": 5,
+      "10,33": 5,
+      "10,34": 5,
+      "10,35": 5,
+      "10,36": 5,
+      "10,37": 5,
+      "10,38": 5,
+      "10,39": 5,
+      "10,40": 5,
+      "10,41": 5,
+      "10,42": 5,
+      "10,43": 5,
+      "10,44": 5,
+      "10,45": 5,
+      "10,46": 5,
+      "10,47": 5,
+      "10,48": 5,
+      "10,49": 5,
+      "10,50": 5,
+      "10,51": 5,
+      "10,53": 5,
+      "10,54": 5,
+      "10,55": 5,
+      "10,56": 5,
+      "10,57": 5,
+      "10,58": 5,
+      "10,60": 5,
+      "10,72": 15,
+      "10,79": 8,
+      "10,80": 32,
+      "10,81": 8,
+      "10,82": 8,
+      "10,83": 8,
+      "10,84": 8,
+      "10,85": 8,
+      "10,86": 8,
+      "10,87": 8,
+      "10,88": 8,
+      "11,3": 15,
+      "11,4": 30,
+      "11,5": 5,
+      "11,6": 5,
+      "11,7": 5,
+      "11,8": 5,
+      "11,9": 5,
+      "11,10": 5,
+      "11,11": 5,
+      "11,12": 5,
+      "11,13": 5,
+      "11,14": 5,
+      "11,15": 5,
+      "11,16": 5,
+      "11,17": 5,
+      "11,18": 5,
+      "11,20": 5,
+      "11,21": 5,
+      "11,22": 5,
+      "11,23": 5,
+      "11,33": 5,
+      "11,34": 5,
+      "11,35": 5,
+      "11,36": 5,
+      "11,37": 5,
+      "11,38": 5,
+      "11,39": 5,
+      "11,40": 5,
+      "11,41": 5,
+      "11,42": 5,
+      "11,43": 5,
+      "11,44": 5,
+      "11,45": 5,
+      "11,46": 5,
+      "11,47": 5,
+      "11,48": 5,
+      "11,49": 5,
+      "11,50": 5,
+      "11,51": 5,
+      "11,53": 5,
+      "11,54": 5,
+      "11,55": 5,
+      "11,56": 5,
+      "11,57": 5,
+      "11,58": 5,
+      "11,60": 5,
+      "11,72": 15,
+      "11,79": 8,
+      "11,80": 32,
+      "11,81": 8,
+      "11,82": 8,
+      "11,83": 8,
+      "11,84": 8,
+      "11,85": 8,
+      "11,86": 8,
+      "11,87": 8,
+      "11,88": 8,
+      "12,3": 15,
+      "12,4": 15,
+      "12,72": 15,
+      "12,79": 8,
+      "12,80": 32,
+      "12,81": 8,
+      "12,82": 8,
+      "12,83": 8,
+      "12,84": 8,
+      "12,85": 8,
+      "12,86": 8,
+      "12,87": 8,
+      "12,88": 8,
+      "13,3": 15,
+      "13,4": 15,
+      "13,72": 15,
+      "13,79": 8,
+      "13,80": 32,
+      "13,81": 8,
+      "13,82": 8,
+      "13,83": 8,
+      "13,84": 8,
+      "13,85": 8,
+      "13,86": 8,
+      "13,87": 8,
+      "13,88": 8,
+      "14,3": 15,
+      "14,4": 15,
+      "14,72": 15,
+      "14,79": 8,
+      "14,80": 32,
+      "14,81": 8,
+      "14,82": 8,
+      "14,83": 8,
+      "14,84": 8,
+      "14,85": 8,
+      "14,86": 8,
+      "14,87": 8,
+      "14,88": 8,
+      "15,3": 15,
+      "15,4": 15,
+      "15,72": 15,
+      "16,3": 15,
+      "16,4": 15,
+      "16,72": 15,
+      "17,3": 15,
+      "17,4": 15,
+      "17,72": 15,
+      "18,3": 15,
+      "18,4": 15,
+      "18,72": 15,
+      "19,3": 15,
+      "19,4": 15,
+      "19,72": 15,
+      "20,3": 15,
+      "20,4": 15,
+      "20,72": 15,
+      "21,3": 33,
+      "21,4": 34,
+      "21,5": 13,
+      "21,6": 13,
+      "21,7": 13,
+      "21,8": 13,
+      "21,9": 13,
+      "21,10": 13,
+      "21,11": 13,
+      "21,12": 35,
+      "21,13": 13,
+      "21,14": 35,
+      "21,15": 13,
+      "21,16": 36,
+      "21,17": 13,
+      "21,18": 37,
+      "21,19": 14,
+      "21,20": 13,
+      "21,21": 37,
+      "21,22": 13,
+      "21,23": 13,
+      "21,24": 38,
+      "21,25": 14,
+      "21,26": 14,
+      "21,27": 39,
+      "21,28": 14,
+      "21,29": 14,
+      "21,30": 39,
+      "21,31": 14,
+      "21,32": 14,
+      "21,33": 40,
+      "21,34": 13,
+      "21,35": 13,
+      "21,36": 13,
+      "21,37": 40,
+      "21,38": 13,
+      "21,39": 13,
+      "21,40": 13,
+      "21,41": 41,
+      "21,42": 42,
+      "21,43": 42,
+      "21,44": 43,
+      "21,45": 14,
+      "21,46": 14,
+      "21,47": 14,
+      "21,48": 14,
+      "21,49": 14,
+      "21,50": 14,
+      "21,51": 14,
+      "21,52": 14,
+      "21,53": 14,
+      "21,54": 14,
+      "21,55": 44,
+      "21,56": 14,
+      "21,57": 14,
+      "21,58": 45,
+      "21,59": 14,
+      "21,60": 14,
+      "21,61": 35,
+      "21,62": 13,
+      "21,63": 35,
+      "21,64": 13,
+      "21,65": 35,
+      "21,66": 13,
+      "21,67": 13,
+      "21,68": 13,
+      "21,69": 13,
+      "21,70": 13,
+      "21,71": 13,
+      "21,72": 15,
+      "22,3": 46,
+      "22,4": 15,
+      "22,72": 15,
+      "23,3": 46,
+      "23,4": 15,
+      "23,72": 15,
+      "24,3": 46,
+      "24,4": 30,
+      "24,5": 5,
+      "24,6": 5,
+      "24,7": 5,
+      "24,8": 5,
+      "24,9": 5,
+      "24,10": 5,
+      "24,11": 5,
+      "24,12": 5,
+      "24,13": 5,
+      "24,14": 5,
+      "24,15": 5,
+      "24,16": 5,
+      "24,17": 5,
+      "24,18": 5,
+      "24,20": 5,
+      "24,21": 5,
+      "24,22": 5,
+      "24,23": 5,
+      "24,33": 5,
+      "24,34": 5,
+      "24,35": 5,
+      "24,36": 5,
+      "24,37": 5,
+      "24,38": 5,
+      "24,39": 5,
+      "24,40": 5,
+      "24,41": 5,
+      "24,42": 5,
+      "24,43": 5,
+      "24,44": 5,
+      "24,45": 5,
+      "24,46": 5,
+      "24,47": 5,
+      "24,48": 5,
+      "24,49": 5,
+      "24,50": 5,
+      "24,51": 5,
+      "24,52": 5,
+      "24,53": 5,
+      "24,54": 5,
+      "24,55": 5,
+      "24,56": 5,
+      "24,57": 5,
+      "24,58": 5,
+      "24,60": 5,
+      "24,63": 5,
+      "24,64": 5,
+      "24,65": 5,
+      "24,66": 5,
+      "24,67": 5,
+      "24,68": 5,
+      "24,69": 5,
+      "24,70": 5,
+      "24,71": 5,
+      "24,72": 15,
+      "25,3": 46,
+      "25,4": 30,
+      "25,5": 5,
+      "25,6": 5,
+      "25,7": 5,
+      "25,8": 5,
+      "25,9": 5,
+      "25,10": 5,
+      "25,11": 5,
+      "25,12": 5,
+      "25,13": 5,
+      "25,14": 5,
+      "25,15": 5,
+      "25,16": 5,
+      "25,17": 5,
+      "25,18": 5,
+      "25,20": 5,
+      "25,21": 5,
+      "25,22": 5,
+      "25,23": 5,
+      "25,33": 5,
+      "25,34": 5,
+      "25,35": 5,
+      "25,36": 5,
+      "25,37": 5,
+      "25,38": 5,
+      "25,39": 5,
+      "25,40": 5,
+      "25,41": 5,
+      "25,42": 5,
+      "25,43": 5,
+      "25,44": 5,
+      "25,45": 5,
+      "25,46": 5,
+      "25,47": 5,
+      "25,48": 5,
+      "25,49": 5,
+      "25,50": 5,
+      "25,51": 5,
+      "25,52": 3,
+      "25,53": 5,
+      "25,54": 5,
+      "25,55": 5,
+      "25,56": 5,
+      "25,57": 5,
+      "25,58": 5,
+      "25,60": 5,
+      "25,63": 3,
+      "25,64": 3,
+      "25,65": 3,
+      "25,66": 3,
+      "25,67": 3,
+      "25,68": 3,
+      "25,69": 3,
+      "25,70": 3,
+      "25,71": 3,
+      "25,72": 15,
+      "26,3": 46,
+      "26,4": 30,
+      "26,5": 5,
+      "26,6": 5,
+      "26,7": 5,
+      "26,8": 5,
+      "26,9": 5,
+      "26,10": 5,
+      "26,11": 5,
+      "26,12": 5,
+      "26,13": 5,
+      "26,14": 5,
+      "26,15": 5,
+      "26,16": 5,
+      "26,17": 5,
+      "26,18": 5,
+      "26,20": 5,
+      "26,21": 5,
+      "26,22": 5,
+      "26,23": 5,
+      "26,33": 5,
+      "26,34": 5,
+      "26,35": 5,
+      "26,36": 5,
+      "26,37": 5,
+      "26,38": 5,
+      "26,39": 5,
+      "26,40": 5,
+      "26,41": 5,
+      "26,42": 5,
+      "26,43": 5,
+      "26,44": 5,
+      "26,45": 5,
+      "26,46": 5,
+      "26,47": 5,
+      "26,48": 5,
+      "26,49": 5,
+      "26,50": 5,
+      "26,51": 5,
+      "26,52": 5,
+      "26,53": 5,
+      "26,54": 5,
+      "26,55": 5,
+      "26,56": 5,
+      "26,57": 5,
+      "26,58": 5,
+      "26,60": 5,
+      "26,63": 5,
+      "26,64": 5,
+      "26,65": 5,
+      "26,66": 5,
+      "26,67": 5,
+      "26,68": 5,
+      "26,69": 5,
+      "26,70": 5,
+      "26,71": 5,
+      "26,72": 15,
+      "27,1": 8,
+      "27,2": 8,
+      "27,3": 33,
+      "27,4": 47,
+      "27,5": 14,
+      "27,6": 14,
+      "27,7": 14,
+      "27,8": 14,
+      "27,9": 14,
+      "27,10": 14,
+      "27,11": 14,
+      "27,12": 14,
+      "27,13": 14,
+      "27,14": 14,
+      "27,15": 14,
+      "27,16": 14,
+      "27,17": 14,
+      "27,18": 14,
+      "27,19": 14,
+      "27,20": 14,
+      "27,21": 14,
+      "27,22": 14,
+      "27,23": 14,
+      "27,24": 14,
+      "27,25": 14,
+      "27,26": 14,
+      "27,27": 14,
+      "27,28": 14,
+      "27,29": 14,
+      "27,30": 14,
+      "27,31": 14,
+      "27,32": 14,
+      "27,33": 14,
+      "27,34": 14,
+      "27,35": 14,
+      "27,36": 14,
+      "27,37": 14,
+      "27,38": 14,
+      "27,39": 14,
+      "27,40": 14,
+      "27,41": 14,
+      "27,42": 14,
+      "27,43": 14,
+      "27,44": 14,
+      "27,45": 14,
+      "27,46": 14,
+      "27,47": 14,
+      "27,48": 14,
+      "27,49": 14,
+      "27,50": 14,
+      "27,51": 14,
+      "27,52": 14,
+      "27,53": 14,
+      "27,54": 14,
+      "27,55": 14,
+      "27,56": 14,
+      "27,57": 14,
+      "27,58": 14,
+      "27,59": 14,
+      "27,60": 14,
+      "27,61": 14,
+      "27,62": 14,
+      "27,63": 14,
+      "27,64": 14,
+      "27,65": 14,
+      "27,66": 14,
+      "27,67": 14,
+      "27,68": 14,
+      "27,69": 14,
+      "27,70": 14,
+      "27,71": 14,
+      "27,72": 15,
+      "28,1": 8,
+      "28,2": 8,
+      "28,3": 46,
+      "28,4": 16,
+      "28,5": 5,
+      "28,6": 5,
+      "28,7": 5,
+      "28,8": 5,
+      "28,9": 5,
+      "28,10": 5,
+      "28,11": 5,
+      "28,12": 17,
+      "28,13": 5,
+      "28,14": 17,
+      "28,15": 5,
+      "28,16": 18,
+      "28,17": 5,
+      "28,18": 19,
+      "28,19": 19,
+      "28,20": 5,
+      "28,21": 19,
+      "28,22": 5,
+      "28,23": 5,
+      "28,24": 48,
+      "28,25": 17,
+      "28,27": 22,
+      "28,33": 23,
+      "28,34": 5,
+      "28,35": 5,
+      "28,36": 5,
+      "28,37": 23,
+      "28,38": 5,
+      "28,39": 5,
+      "28,40": 5,
+      "28,41": 49,
+      "28,42": 50,
+      "28,43": 50,
+      "28,44": 25,
+      "28,61": 28,
+      "28,62": 5,
+      "28,63": 17,
+      "28,64": 5,
+      "28,65": 17,
+      "28,66": 5,
+      "28,67": 5,
+      "28,68": 5,
+      "28,69": 5,
+      "28,70": 5,
+      "28,71": 5,
+      "28,72": 15,
+      "29,1": 8,
+      "29,2": 8,
+      "29,3": 46,
+      "29,4": 30,
+      "29,5": 5,
+      "29,6": 5,
+      "29,7": 5,
+      "29,8": 5,
+      "29,9": 5,
+      "29,10": 5,
+      "29,11": 5,
+      "29,12": 5,
+      "29,13": 5,
+      "29,14": 5,
+      "29,15": 5,
+      "29,16": 5,
+      "29,17": 5,
+      "29,18": 5,
+      "29,20": 5,
+      "29,21": 5,
+      "29,22": 5,
+      "29,23": 5,
+      "29,33": 5,
+      "29,34": 5,
+      "29,35": 5,
+      "29,36": 5,
+      "29,37": 5,
+      "29,38": 5,
+      "29,39": 5,
+      "29,40": 5,
+      "29,41": 5,
+      "29,42": 5,
+      "29,43": 5,
+      "29,44": 5,
+      "29,45": 5,
+      "29,46": 5,
+      "29,47": 5,
+      "29,48": 5,
+      "29,49": 5,
+      "29,50": 5,
+      "29,51": 5,
+      "29,52": 5,
+      "29,53": 5,
+      "29,54": 5,
+      "29,55": 5,
+      "29,56": 5,
+      "29,57": 5,
+      "29,58": 5,
+      "29,60": 5,
+      "29,63": 5,
+      "29,64": 5,
+      "29,65": 5,
+      "29,66": 5,
+      "29,67": 5,
+      "29,68": 5,
+      "29,69": 5,
+      "29,70": 5,
+      "29,71": 5,
+      "29,72": 15,
+      "30,1": 8,
+      "30,2": 8,
+      "30,3": 46,
+      "30,4": 30,
+      "30,5": 5,
+      "30,6": 5,
+      "30,7": 5,
+      "30,8": 5,
+      "30,9": 5,
+      "30,10": 5,
+      "30,11": 5,
+      "30,12": 5,
+      "30,13": 5,
+      "30,14": 5,
+      "30,15": 5,
+      "30,16": 5,
+      "30,17": 5,
+      "30,18": 5,
+      "30,20": 5,
+      "30,21": 5,
+      "30,22": 5,
+      "30,23": 5,
+      "30,33": 5,
+      "30,34": 5,
+      "30,35": 5,
+      "30,36": 5,
+      "30,37": 5,
+      "30,38": 5,
+      "30,39": 5,
+      "30,40": 5,
+      "30,41": 5,
+      "30,42": 5,
+      "30,43": 5,
+      "30,44": 5,
+      "30,45": 5,
+      "30,46": 5,
+      "30,47": 5,
+      "30,48": 5,
+      "30,49": 5,
+      "30,50": 5,
+      "30,51": 5,
+      "30,52": 3,
+      "30,53": 5,
+      "30,54": 5,
+      "30,55": 5,
+      "30,56": 5,
+      "30,57": 5,
+      "30,58": 5,
+      "30,60": 5,
+      "30,63": 3,
+      "30,64": 3,
+      "30,65": 3,
+      "30,66": 3,
+      "30,67": 3,
+      "30,68": 3,
+      "30,69": 3,
+      "30,70": 3,
+      "30,71": 3,
+      "30,72": 15,
+      "31,1": 8,
+      "31,2": 8,
+      "31,3": 46,
+      "31,4": 30,
+      "31,5": 5,
+      "31,6": 5,
+      "31,7": 5,
+      "31,8": 5,
+      "31,9": 5,
+      "31,10": 5,
+      "31,11": 5,
+      "31,12": 5,
+      "31,13": 5,
+      "31,14": 5,
+      "31,15": 5,
+      "31,16": 5,
+      "31,17": 5,
+      "31,18": 5,
+      "31,20": 5,
+      "31,21": 5,
+      "31,22": 5,
+      "31,23": 5,
+      "31,33": 5,
+      "31,34": 5,
+      "31,35": 5,
+      "31,36": 5,
+      "31,37": 5,
+      "31,38": 5,
+      "31,39": 5,
+      "31,40": 5,
+      "31,41": 5,
+      "31,42": 5,
+      "31,43": 5,
+      "31,44": 5,
+      "31,45": 5,
+      "31,46": 5,
+      "31,47": 5,
+      "31,48": 5,
+      "31,49": 5,
+      "31,50": 5,
+      "31,51": 5,
+      "31,52": 5,
+      "31,53": 5,
+      "31,54": 5,
+      "31,55": 5,
+      "31,56": 5,
+      "31,57": 5,
+      "31,58": 5,
+      "31,60": 5,
+      "31,63": 5,
+      "31,64": 5,
+      "31,65": 5,
+      "31,66": 5,
+      "31,67": 5,
+      "31,68": 5,
+      "31,69": 5,
+      "31,70": 5,
+      "31,71": 5,
+      "31,72": 15,
+      "32,1": 8,
+      "32,2": 8,
+      "32,3": 46,
+      "32,4": 30,
+      "32,5": 5,
+      "32,6": 5,
+      "32,7": 5,
+      "32,8": 5,
+      "32,9": 5,
+      "32,10": 5,
+      "32,11": 5,
+      "32,12": 5,
+      "32,13": 5,
+      "32,14": 5,
+      "32,15": 5,
+      "32,16": 5,
+      "32,17": 5,
+      "32,18": 5,
+      "32,20": 5,
+      "32,21": 5,
+      "32,22": 5,
+      "32,23": 5,
+      "32,33": 5,
+      "32,34": 5,
+      "32,35": 5,
+      "32,36": 5,
+      "32,37": 5,
+      "32,38": 5,
+      "32,39": 5,
+      "32,40": 5,
+      "32,41": 5,
+      "32,42": 5,
+      "32,43": 5,
+      "32,44": 5,
+      "32,45": 5,
+      "32,46": 5,
+      "32,47": 5,
+      "32,48": 5,
+      "32,49": 5,
+      "32,50": 5,
+      "32,51": 5,
+      "32,52": 5,
+      "32,53": 5,
+      "32,54": 5,
+      "32,55": 5,
+      "32,56": 5,
+      "32,57": 5,
+      "32,58": 5,
+      "32,60": 5,
+      "32,63": 5,
+      "32,64": 5,
+      "32,65": 5,
+      "32,66": 5,
+      "32,67": 5,
+      "32,68": 5,
+      "32,69": 5,
+      "32,70": 5,
+      "32,71": 5,
+      "32,72": 15,
+      "33,1": 8,
+      "33,2": 8,
+      "33,3": 46,
+      "33,4": 30,
+      "33,5": 5,
+      "33,6": 5,
+      "33,7": 5,
+      "33,8": 5,
+      "33,9": 5,
+      "33,10": 5,
+      "33,11": 5,
+      "33,12": 5,
+      "33,13": 5,
+      "33,14": 5,
+      "33,15": 5,
+      "33,16": 5,
+      "33,17": 5,
+      "33,18": 5,
+      "33,20": 5,
+      "33,21": 5,
+      "33,22": 5,
+      "33,23": 5,
+      "33,33": 5,
+      "33,34": 5,
+      "33,35": 5,
+      "33,36": 5,
+      "33,37": 5,
+      "33,38": 5,
+      "33,39": 5,
+      "33,40": 5,
+      "33,41": 5,
+      "33,42": 5,
+      "33,43": 5,
+      "33,44": 5,
+      "33,45": 5,
+      "33,46": 5,
+      "33,47": 5,
+      "33,48": 5,
+      "33,49": 5,
+      "33,50": 5,
+      "33,51": 5,
+      "33,52": 5,
+      "33,53": 5,
+      "33,54": 5,
+      "33,55": 5,
+      "33,56": 5,
+      "33,57": 5,
+      "33,58": 5,
+      "33,60": 5,
+      "33,63": 5,
+      "33,64": 5,
+      "33,65": 5,
+      "33,66": 5,
+      "33,67": 5,
+      "33,68": 5,
+      "33,69": 5,
+      "33,70": 5,
+      "33,71": 5,
+      "33,72": 15,
+      "34,1": 8,
+      "34,2": 8,
+      "34,3": 46,
+      "34,4": 30,
+      "34,5": 5,
+      "34,6": 5,
+      "34,7": 5,
+      "34,8": 5,
+      "34,9": 5,
+      "34,10": 5,
+      "34,11": 5,
+      "34,12": 5,
+      "34,13": 5,
+      "34,14": 5,
+      "34,15": 5,
+      "34,16": 5,
+      "34,17": 5,
+      "34,18": 5,
+      "34,20": 5,
+      "34,21": 5,
+      "34,22": 5,
+      "34,23": 5,
+      "34,33": 5,
+      "34,34": 5,
+      "34,35": 5,
+      "34,36": 5,
+      "34,37": 5,
+      "34,38": 5,
+      "34,39": 5,
+      "34,40": 5,
+      "34,41": 5,
+      "34,42": 5,
+      "34,43": 5,
+      "34,44": 5,
+      "34,45": 5,
+      "34,46": 5,
+      "34,47": 5,
+      "34,48": 5,
+      "34,49": 5,
+      "34,50": 5,
+      "34,51": 5,
+      "34,52": 5,
+      "34,53": 5,
+      "34,54": 5,
+      "34,55": 5,
+      "34,56": 5,
+      "34,57": 5,
+      "34,58": 5,
+      "34,60": 5,
+      "34,63": 5,
+      "34,64": 5,
+      "34,65": 5,
+      "34,66": 5,
+      "34,67": 5,
+      "34,68": 5,
+      "34,69": 5,
+      "34,70": 5,
+      "34,71": 5,
+      "34,72": 15,
+      "35,1": 8,
+      "35,2": 8,
+      "35,3": 46,
+      "35,4": 30,
+      "35,5": 5,
+      "35,6": 5,
+      "35,7": 5,
+      "35,8": 5,
+      "35,9": 5,
+      "35,10": 5,
+      "35,11": 5,
+      "35,12": 5,
+      "35,13": 5,
+      "35,14": 5,
+      "35,15": 5,
+      "35,16": 5,
+      "35,17": 5,
+      "35,18": 5,
+      "35,20": 5,
+      "35,21": 5,
+      "35,22": 5,
+      "35,23": 5,
+      "35,33": 5,
+      "35,34": 5,
+      "35,35": 5,
+      "35,36": 5,
+      "35,37": 5,
+      "35,38": 5,
+      "35,39": 5,
+      "35,40": 5,
+      "35,41": 5,
+      "35,42": 5,
+      "35,43": 5,
+      "35,44": 5,
+      "35,45": 5,
+      "35,46": 5,
+      "35,47": 5,
+      "35,48": 5,
+      "35,49": 5,
+      "35,50": 5,
+      "35,51": 5,
+      "35,52": 5,
+      "35,53": 5,
+      "35,54": 5,
+      "35,55": 5,
+      "35,56": 5,
+      "35,57": 5,
+      "35,58": 5,
+      "35,60": 5,
+      "35,63": 5,
+      "35,64": 5,
+      "35,65": 5,
+      "35,66": 5,
+      "35,67": 5,
+      "35,68": 5,
+      "35,69": 5,
+      "35,70": 5,
+      "35,71": 5,
+      "35,72": 15,
+      "36,1": 8,
+      "36,2": 8,
+      "36,3": 46,
+      "36,4": 30,
+      "36,5": 5,
+      "36,6": 5,
+      "36,7": 5,
+      "36,8": 5,
+      "36,9": 5,
+      "36,10": 5,
+      "36,11": 5,
+      "36,12": 5,
+      "36,13": 5,
+      "36,14": 5,
+      "36,15": 5,
+      "36,16": 5,
+      "36,17": 5,
+      "36,18": 5,
+      "36,20": 5,
+      "36,21": 5,
+      "36,22": 5,
+      "36,23": 5,
+      "36,33": 5,
+      "36,34": 5,
+      "36,35": 5,
+      "36,36": 5,
+      "36,37": 5,
+      "36,38": 5,
+      "36,39": 5,
+      "36,40": 5,
+      "36,41": 5,
+      "36,42": 5,
+      "36,43": 5,
+      "36,44": 5,
+      "36,45": 5,
+      "36,46": 5,
+      "36,47": 5,
+      "36,48": 5,
+      "36,49": 5,
+      "36,50": 5,
+      "36,51": 5,
+      "36,52": 5,
+      "36,53": 5,
+      "36,54": 5,
+      "36,55": 5,
+      "36,56": 5,
+      "36,57": 5,
+      "36,58": 5,
+      "36,60": 5,
+      "36,63": 5,
+      "36,64": 5,
+      "36,65": 5,
+      "36,66": 5,
+      "36,67": 5,
+      "36,68": 5,
+      "36,69": 5,
+      "36,70": 5,
+      "36,71": 5,
+      "36,72": 15,
+      "37,1": 8,
+      "37,2": 8,
+      "37,3": 46,
+      "37,4": 30,
+      "37,5": 5,
+      "37,6": 5,
+      "37,7": 5,
+      "37,8": 5,
+      "37,9": 5,
+      "37,10": 5,
+      "37,11": 5,
+      "37,12": 5,
+      "37,13": 5,
+      "37,14": 5,
+      "37,15": 5,
+      "37,16": 5,
+      "37,17": 5,
+      "37,18": 5,
+      "37,20": 5,
+      "37,21": 5,
+      "37,22": 5,
+      "37,23": 5,
+      "37,33": 5,
+      "37,34": 5,
+      "37,35": 5,
+      "37,36": 5,
+      "37,37": 5,
+      "37,38": 5,
+      "37,39": 5,
+      "37,40": 5,
+      "37,41": 5,
+      "37,42": 5,
+      "37,43": 5,
+      "37,44": 5,
+      "37,45": 5,
+      "37,46": 5,
+      "37,47": 5,
+      "37,48": 5,
+      "37,49": 5,
+      "37,50": 5,
+      "37,51": 5,
+      "37,52": 5,
+      "37,53": 5,
+      "37,54": 5,
+      "37,55": 5,
+      "37,56": 5,
+      "37,57": 5,
+      "37,58": 5,
+      "37,60": 5,
+      "37,63": 5,
+      "37,64": 5,
+      "37,65": 5,
+      "37,66": 5,
+      "37,67": 5,
+      "37,68": 5,
+      "37,69": 5,
+      "37,70": 5,
+      "37,71": 5,
+      "37,72": 15,
+      "38,3": 46,
+      "38,4": 30,
+      "38,5": 5,
+      "38,6": 5,
+      "38,7": 5,
+      "38,8": 5,
+      "38,9": 5,
+      "38,10": 5,
+      "38,11": 5,
+      "38,12": 5,
+      "38,13": 5,
+      "38,14": 5,
+      "38,15": 5,
+      "38,16": 5,
+      "38,17": 5,
+      "38,18": 5,
+      "38,20": 5,
+      "38,21": 5,
+      "38,22": 5,
+      "38,23": 5,
+      "38,33": 5,
+      "38,34": 5,
+      "38,35": 5,
+      "38,36": 5,
+      "38,37": 5,
+      "38,38": 5,
+      "38,39": 5,
+      "38,40": 5,
+      "38,41": 5,
+      "38,42": 5,
+      "38,43": 5,
+      "38,44": 5,
+      "38,45": 5,
+      "38,46": 5,
+      "38,47": 5,
+      "38,48": 5,
+      "38,49": 5,
+      "38,50": 5,
+      "38,51": 5,
+      "38,52": 5,
+      "38,53": 5,
+      "38,54": 5,
+      "38,55": 5,
+      "38,56": 5,
+      "38,57": 5,
+      "38,58": 5,
+      "38,60": 5,
+      "38,63": 5,
+      "38,64": 5,
+      "38,65": 5,
+      "38,66": 5,
+      "38,67": 5,
+      "38,68": 5,
+      "38,69": 5,
+      "38,70": 5,
+      "38,71": 5,
+      "38,72": 15,
+      "39,3": 46,
+      "39,4": 30,
+      "39,5": 5,
+      "39,6": 5,
+      "39,7": 5,
+      "39,8": 5,
+      "39,9": 5,
+      "39,10": 5,
+      "39,11": 5,
+      "39,12": 5,
+      "39,13": 5,
+      "39,14": 5,
+      "39,15": 5,
+      "39,16": 5,
+      "39,17": 5,
+      "39,18": 5,
+      "39,20": 5,
+      "39,21": 5,
+      "39,22": 5,
+      "39,23": 5,
+      "39,33": 5,
+      "39,34": 5,
+      "39,35": 5,
+      "39,36": 5,
+      "39,37": 5,
+      "39,38": 5,
+      "39,39": 5,
+      "39,40": 5,
+      "39,41": 5,
+      "39,42": 5,
+      "39,43": 5,
+      "39,44": 5,
+      "39,45": 5,
+      "39,46": 5,
+      "39,47": 5,
+      "39,48": 5,
+      "39,49": 5,
+      "39,50": 5,
+      "39,51": 5,
+      "39,52": 5,
+      "39,53": 5,
+      "39,54": 5,
+      "39,55": 5,
+      "39,56": 5,
+      "39,57": 5,
+      "39,58": 5,
+      "39,60": 5,
+      "39,63": 5,
+      "39,64": 5,
+      "39,65": 5,
+      "39,66": 5,
+      "39,67": 5,
+      "39,68": 5,
+      "39,69": 5,
+      "39,70": 5,
+      "39,71": 5,
+      "39,72": 15,
+      "40,3": 46,
+      "40,4": 30,
+      "40,5": 5,
+      "40,6": 5,
+      "40,7": 5,
+      "40,8": 5,
+      "40,9": 5,
+      "40,10": 5,
+      "40,11": 5,
+      "40,12": 5,
+      "40,13": 5,
+      "40,14": 5,
+      "40,15": 5,
+      "40,16": 5,
+      "40,17": 5,
+      "40,18": 5,
+      "40,20": 5,
+      "40,21": 5,
+      "40,22": 5,
+      "40,23": 5,
+      "40,33": 5,
+      "40,34": 5,
+      "40,35": 5,
+      "40,36": 5,
+      "40,37": 5,
+      "40,38": 5,
+      "40,39": 5,
+      "40,40": 5,
+      "40,41": 5,
+      "40,42": 5,
+      "40,43": 5,
+      "40,44": 5,
+      "40,45": 5,
+      "40,46": 5,
+      "40,47": 5,
+      "40,48": 5,
+      "40,49": 5,
+      "40,50": 5,
+      "40,51": 5,
+      "40,52": 5,
+      "40,53": 5,
+      "40,54": 5,
+      "40,55": 5,
+      "40,56": 5,
+      "40,57": 5,
+      "40,58": 5,
+      "40,60": 5,
+      "40,63": 5,
+      "40,64": 5,
+      "40,65": 5,
+      "40,66": 5,
+      "40,67": 5,
+      "40,68": 5,
+      "40,69": 5,
+      "40,70": 5,
+      "40,71": 5,
+      "40,72": 15,
+      "41,3": 46,
+      "41,4": 30,
+      "41,5": 5,
+      "41,6": 5,
+      "41,7": 5,
+      "41,8": 5,
+      "41,9": 5,
+      "41,10": 5,
+      "41,11": 5,
+      "41,12": 5,
+      "41,13": 5,
+      "41,14": 5,
+      "41,15": 5,
+      "41,16": 5,
+      "41,17": 5,
+      "41,18": 5,
+      "41,20": 5,
+      "41,21": 5,
+      "41,22": 5,
+      "41,23": 5,
+      "41,33": 5,
+      "41,34": 5,
+      "41,35": 5,
+      "41,36": 5,
+      "41,37": 5,
+      "41,38": 5,
+      "41,39": 5,
+      "41,40": 5,
+      "41,41": 5,
+      "41,42": 5,
+      "41,43": 5,
+      "41,44": 5,
+      "41,45": 5,
+      "41,46": 5,
+      "41,47": 5,
+      "41,48": 5,
+      "41,49": 5,
+      "41,50": 5,
+      "41,51": 5,
+      "41,52": 5,
+      "41,53": 5,
+      "41,54": 5,
+      "41,55": 5,
+      "41,56": 5,
+      "41,57": 5,
+      "41,58": 5,
+      "41,60": 5,
+      "41,63": 5,
+      "41,64": 5,
+      "41,65": 5,
+      "41,66": 5,
+      "41,67": 5,
+      "41,68": 5,
+      "41,69": 5,
+      "41,70": 5,
+      "41,71": 5,
+      "41,72": 15,
+      "42,3": 46,
+      "42,4": 51,
+      "42,5": 52,
+      "42,6": 52,
+      "42,7": 52,
+      "42,8": 52,
+      "42,9": 52,
+      "42,10": 52,
+      "42,11": 52,
+      "42,12": 52,
+      "42,13": 52,
+      "42,14": 52,
+      "42,15": 52,
+      "42,16": 52,
+      "42,17": 52,
+      "42,18": 52,
+      "42,19": 53,
+      "42,20": 52,
+      "42,21": 52,
+      "42,22": 52,
+      "42,23": 52,
+      "42,24": 53,
+      "42,25": 53,
+      "42,26": 53,
+      "42,27": 53,
+      "42,28": 53,
+      "42,29": 53,
+      "42,30": 53,
+      "42,31": 53,
+      "42,32": 53,
+      "42,33": 52,
+      "42,34": 52,
+      "42,35": 52,
+      "42,36": 52,
+      "42,37": 52,
+      "42,38": 52,
+      "42,39": 52,
+      "42,40": 52,
+      "42,41": 52,
+      "42,42": 52,
+      "42,43": 52,
+      "42,44": 52,
+      "42,45": 52,
+      "42,46": 52,
+      "42,47": 52,
+      "42,48": 52,
+      "42,49": 52,
+      "42,50": 52,
+      "42,51": 52,
+      "42,52": 52,
+      "42,53": 52,
+      "42,54": 52,
+      "42,55": 52,
+      "42,56": 52,
+      "42,57": 52,
+      "42,58": 52,
+      "42,59": 53,
+      "42,60": 52,
+      "42,61": 53,
+      "42,62": 53,
+      "42,63": 52,
+      "42,64": 52,
+      "42,65": 52,
+      "42,66": 52,
+      "42,67": 52,
+      "42,68": 52,
+      "42,69": 52,
+      "42,70": 52,
+      "42,71": 52,
+      "42,72": 15,
+      "43,3": 54,
+      "43,71": 55
+    },
+    "RowStyles": {
+      "7": 56
+    },
+    "ColStyles": {
+      "80": 57
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "2,4,1,3",
+    "2,7,1,5",
+    "2,12,1,3",
+    "2,40,1,4",
+    "2,48,1,5",
+    "2,55,1,4",
+    "4,3,17,1",
+    "5,4,1,8",
+    "5,12,1,2",
+    "5,14,1,2",
+    "5,16,1,2",
+    "5,18,1,3",
+    "5,21,1,3",
+    "5,33,1,4",
+    "5,37,1,4",
+    "5,41,1,3",
+    "5,61,1,2",
+    "5,63,1,2",
+    "5,65,1,7",
+    "5,81,1,8",
+    "6,81,1,8",
+    "21,3,6,1",
+    "21,4,1,8",
+    "21,12,1,2",
+    "21,14,1,2",
+    "21,16,1,2",
+    "21,18,1,3",
+    "21,21,1,3",
+    "21,33,1,4",
+    "21,37,1,4",
+    "21,41,1,3",
+    "21,44,1,11",
+    "21,55,1,3",
+    "21,58,1,3",
+    "21,61,1,2",
+    "21,63,1,2",
+    "21,65,1,7",
+    "27,3,16,1",
+    "28,4,1,8",
+    "28,12,1,2",
+    "28,14,1,2",
+    "28,16,1,2",
+    "28,18,1,3",
+    "28,21,1,3",
+    "28,33,1,4",
+    "28,37,1,4",
+    "28,41,1,3",
+    "28,44,1,17",
+    "28,61,1,2",
+    "28,63,1,2",
+    "28,65,1,7",
+    "43,3,1,69",
+    "6,4,15,68",
+    "22,4,5,68",
+    "29,4,14,68",
+    "0,4,1,15",
+    "5,24,1,3",
+    "5,27,1,3",
+    "21,24,1,3",
+    "21,27,1,3",
+    "28,24,1,3",
+    "28,27,1,3",
+    "5,55,1,4",
+    "5,44,1,11",
+    "5,59,1,2",
+    "5,30,1,3",
+    "21,30,1,3",
+    "28,30,1,3",
+    "2,15,1,4",
+    "4,4,1,8",
+    "4,12,1,2",
+    "4,14,1,2",
+    "4,16,1,2",
+    "4,18,1,3",
+    "4,21,1,3",
+    "4,24,1,3",
+    "4,27,1,3",
+    "4,30,1,3",
+    "4,33,1,4",
+    "4,37,1,4",
+    "4,41,1,3",
+    "4,44,1,11",
+    "4,55,1,4",
+    "4,59,1,2",
+    "4,61,1,2",
+    "4,63,1,2",
+    "4,65,1,7",
+    "27,4,1,8",
+    "27,12,1,2",
+    "27,14,1,2",
+    "27,16,1,2",
+    "27,18,1,3",
+    "27,21,1,3",
+    "27,24,1,3",
+    "27,27,1,3",
+    "27,30,1,3",
+    "27,33,1,4",
+    "27,37,1,4",
+    "27,41,1,3",
+    "27,44,1,17",
+    "27,61,1,2",
+    "27,63,1,2",
+    "27,65,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "类型id",
+      "Formula": "板材属性列表!$H$3"
+    },
+    {
+      "Name": "状态",
+      "Formula": "板材属性列表!$P$3"
+    },
+    {
+      "Name": "识别码",
+      "Formula": "板材属性列表!$CD$6"
+    },
+    {
+      "Name": "总行数",
+      "Formula": "板材属性列表!$CD$7"
+    }
+  ]
+}//KalUKMBOzAW6QI/mf/kqRghL8TLKhcUjOOA5/Gthb59YlqoDwtgvc0b09D5/vgYFGMOcwtRIUkhBa4cA144Z95WIO4fyuLdxsr0EL9OL3+RwBW6yNWuL0YLnqCC8GToV3yL8J6d9TJmkvkHDhDOgOQU0b81gcUyuTsGZOFTfBObFnwTMmfRfvhDvEnWWIJHoQ93R51gl5Qinvmk46Gg3MavqFwJfrXVTiv0SfrcOz72FAPpyh4G1usgS5Z9v67lY5sju60FcGWJ0xz0eb3e4zEQP5u81haTSvMsNNjz6wL1OoPRMrkHkIbhycRaq6pCqZ4bhCZ+54kzshA2IqHzLL5nXNqjWcOuaGB97ldaNv6Pg/60yEepTPZkOiHtBm4zqi2jNN8+2/heN61x4wV5j4Pod77TKlt/HjrjxiAkr0v1/chjGVo6esWmwOxLz1+CaN/k+G6eLe/kSgw2wmcdm7PI2zb/OqLDSc6x0h9/SaS1aI8mMgFrdIPRAi5gY/rd8g4vnCrJjmWcquZJisehS1YtrouA6aDSYvJQpHrQ3tMMBqMuDKTf46C7YPJGab23/7MNuzKEYJ4+ukAO4ELlvXSxPqQImqwf1OOFEkDij6jIkVxBkuDWhQ+ssL8p//hUJ53YZ0cEuwE4NQxyK4dxVUOgIFjiUPFJ0YC1Vhz8NhfAZEWbnOQ8U5cx/wdjxYh3ULIHM0ilGLBBTf2ZyurxfpD0y3wm0yttk+M7TlweWNvgbUaPHh6JKrniMlEa0mDQN7NqdoteZBI/G5xqp12EZMbwqsLtRDxKnR5BSv1ZkNMmOf3umk1+0XC9YS4m0e1Tuqwai9xwRLVsICEk/0gRe7cOJ82YH4nucc6qkuesq/ntkY1gwZm2F6a9Jx4X0yibz3iZn0mM/z6V9B09noAzbZg==|920

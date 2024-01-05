@@ -1,0 +1,1465 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 61.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0,
+          "IsHidden": true
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "Count": 48
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "Count": 48
+  },
+  "Values": {
+    "1,3": "UV打印形式排序",
+    "4,10": "日期状态",
+    "4,30": "行号",
+    "4,41": "状态：",
+    "5,41": "最大行号：",
+    "7,33": "关\r\n闭",
+    "17,3": "1、排序仅针对正在使用和待启用的名称\r\n2、同名称【待生效】的应和【即将到期】的挨在一起排列（两者不分先后），以便于启用后继承之前的排序"
+  },
+  "Formulas": {
+    "5,42": "COUNTA(AC6)",
+    "5,30": "ROW()",
+    "5,10": "IF(Q6>TODAY(),\"待生效\",IF(V6=\"\",\"生效中\",\"即将到期\"))"
+  },
+  "AttachInfos": {
+    "4,3": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "UV打印属性表",
+        "RowIndex": 4,
+        "ColumnIndex": 3,
+        "RowCount": 13,
+        "ColumnCount": 29,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "UV打印属性表",
+                "ColumnName": "状态",
+                "GUID": "131a0d1c-5e99-4bd8-bc78-dbe21a2a0d9d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=UV打印排序页面!状态"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "UV打印属性表",
+                "ColumnName": "启用日期",
+                "GUID": "a8cce6b9-c9cd-437c-bc5b-5740aaaefbb6"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "UV打印属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "332706bb-658a-468b-bbca-ad0c6a35e4e0"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "UV打印属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "1b430abc-d310-4764-bcd1-aace21faab13"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "NullFormulaValueQueryPolicy": 0,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1
+      }
+    },
+    "4,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=UV打印排序页面!AA6"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "已到顶！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  }
+                ],
+                "ID": "c975348b-63bf-466c-835b-924b1f215b23"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "UV打印属性表",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "状态",
+                            "GUID": "5a8a7727-df32-4b15-b4db-267cd39f09a4"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=UV打印排序页面!状态"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "启用日期",
+                            "GUID": "f3e38dd5-ad79-4b84-91b2-5430f93cd6ca"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=TODAY()"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 3,
+                              "ColumnBindingInfo": {
+                                "TableName": "UV打印属性表",
+                                "ColumnName": "截止日期",
+                                "GUID": "6166486f-a462-4644-a8cd-6dea929ee7ea"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=TODAY()"
+                              },
+                              "LeftBracket": 1
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "UV打印属性表",
+                                "ColumnName": "截止日期",
+                                "GUID": "3c019ec5-17d0-4d61-a297-9e4b6dc1d236"
+                              },
+                              "Value": "%Null%",
+                              "RightBracket": 1
+                            }
+                          ],
+                          "RelationType": 1
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "序号",
+                            "GUID": "79673131-08cb-4cdf-b1a0-b0fe02d837f7"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=UV打印排序页面!AA6-1"
+                          }
+                        }
+                      ]
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "UV打印属性表",
+                          "ColumnName": "序号",
+                          "GUID": "f47ead0c-b076-45cf-8d39-a395993786ce"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=UV打印排序页面!AA6"
+                        }
+                      }
+                    ],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "UV打印属性表",
+                      "ShowConfirm": false,
+                      "UpdateBindingValues": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "序号",
+                            "GUID": "59569890-1ff3-4fdb-a6db-a7f8cb2f6382"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=UV打印排序页面!AA6-1"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "ID": "47bcb8b0-48b7-4cf8-80c9-27468f8e5d75"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "上半",
+        "Icon": {
+          "Name": "Arrow/302_up_arrow_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "5,3": {
+      "NameUsedInJavaScript": "打印形式",
+      "BindingInfo": {
+        "TableName": "UV打印属性表",
+        "ColumnName": "打印形式",
+        "GUID": "99ddd37f-f161-49c1-92bd-09fbd1270e9a"
+      }
+    },
+    "5,10": {
+      "NameUsedInJavaScript": "日期状态"
+    },
+    "5,16": {
+      "NameUsedInJavaScript": "启用日期",
+      "BindingInfo": {
+        "TableName": "UV打印属性表",
+        "ColumnName": "启用日期",
+        "GUID": "f9acfa62-56ae-4023-8065-6df27a38a922"
+      }
+    },
+    "5,21": {
+      "NameUsedInJavaScript": "截止日期",
+      "BindingInfo": {
+        "TableName": "UV打印属性表",
+        "ColumnName": "截止日期",
+        "GUID": "47c29ae5-079f-434d-9e0a-59a4b86032ad"
+      }
+    },
+    "5,26": {
+      "NameUsedInJavaScript": "序号",
+      "BindingInfo": {
+        "TableName": "UV打印属性表",
+        "ColumnName": "序号",
+        "GUID": "2c3549c3-d3d7-47c8-8be6-80cf567fe278"
+      }
+    },
+    "5,28": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "UV打印属性表",
+        "ColumnName": "ID",
+        "GUID": "c0783c95-3e91-47ab-a526-503732128e9d"
+      }
+    },
+    "5,30": {
+      "NameUsedInJavaScript": "行号"
+    },
+    "5,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=UV打印排序页面!AA6"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=UV打印排序页面!最大行号"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "已到底！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  }
+                ],
+                "ID": "a7d0ea43-6b8c-421a-ac51-e5e0a478e588"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "UV打印属性表",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "状态",
+                            "GUID": "c05ebf7c-8bc4-487f-a31c-1057c30e209b"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=UV打印排序页面!状态"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "启用日期",
+                            "GUID": "13b37070-10b2-4c2d-b099-c08095c784ff"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=TODAY()"
+                          }
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 3,
+                              "ColumnBindingInfo": {
+                                "TableName": "UV打印属性表",
+                                "ColumnName": "截止日期",
+                                "GUID": "992a1797-fa9b-4402-9106-52243d595ac1"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=TODAY()"
+                              },
+                              "LeftBracket": 1
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "UV打印属性表",
+                                "ColumnName": "截止日期",
+                                "GUID": "0e02a64c-ea52-4f18-9723-84b46c2bcca6"
+                              },
+                              "Value": "%Null%",
+                              "RightBracket": 1
+                            }
+                          ],
+                          "RelationType": 1
+                        },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "序号",
+                            "GUID": "e072df3e-ddc7-4477-b16b-159065262cc8"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=UV打印排序页面!AA6+1"
+                          }
+                        }
+                      ]
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "UV打印属性表",
+                          "ColumnName": "序号",
+                          "GUID": "fd30402f-cc10-484b-a5a5-341d5e5c1f07"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=UV打印排序页面!AA6"
+                        }
+                      }
+                    ],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "UV打印属性表",
+                      "ShowConfirm": false,
+                      "UpdateBindingValues": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "UV打印属性表",
+                            "ColumnName": "序号",
+                            "GUID": "d945a6bb-69c3-433b-a258-2d9fb6afa4cb"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=UV打印排序页面!AA6+1"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "ID": "5c14346f-4b7b-443a-9b63-bc8ba444dbde"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "下半",
+        "Icon": {
+          "Name": "Arrow/301_down_arrow_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关\r\n闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "HorizontalAlignment": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 1,
+        "BorderLeft": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 8,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 9,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "Body",
+        "Right",
+        "Background 1 -25",
+        "@",
+        "#FF00B050",
+        "yyyy/MM/dd",
+        "[AUTO]General",
+        "Background 1 -50"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,32": 0,
+      "1,3": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,32": 0,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,32": 0,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 3,
+      "3,7": 3,
+      "3,8": 3,
+      "3,9": 3,
+      "3,10": 3,
+      "3,11": 3,
+      "3,12": 3,
+      "3,13": 3,
+      "3,14": 3,
+      "3,15": 3,
+      "3,16": 3,
+      "3,17": 3,
+      "3,18": 3,
+      "3,19": 3,
+      "3,20": 3,
+      "3,21": 3,
+      "3,22": 3,
+      "3,23": 3,
+      "3,24": 3,
+      "3,25": 3,
+      "4,3": 4,
+      "4,4": 5,
+      "4,5": 5,
+      "4,6": 5,
+      "4,7": 5,
+      "4,8": 5,
+      "4,9": 5,
+      "4,10": 6,
+      "4,11": 5,
+      "4,12": 5,
+      "4,13": 5,
+      "4,14": 5,
+      "4,15": 5,
+      "4,16": 6,
+      "4,17": 5,
+      "4,18": 5,
+      "4,19": 5,
+      "4,20": 5,
+      "4,21": 6,
+      "4,22": 5,
+      "4,23": 5,
+      "4,24": 5,
+      "4,25": 5,
+      "4,26": 4,
+      "4,27": 5,
+      "4,30": 6,
+      "4,31": 7,
+      "4,32": 8,
+      "5,3": 9,
+      "5,10": 10,
+      "5,16": 11,
+      "5,21": 11,
+      "5,26": 12,
+      "5,28": 13,
+      "5,30": 14,
+      "5,31": 3,
+      "5,32": 8,
+      "5,42": 13,
+      "6,3": 8,
+      "6,32": 8,
+      "7,3": 8,
+      "7,32": 8,
+      "7,33": 15,
+      "7,34": 3,
+      "8,3": 8,
+      "8,32": 8,
+      "8,33": 3,
+      "8,34": 3,
+      "9,3": 8,
+      "9,32": 8,
+      "9,33": 3,
+      "9,34": 3,
+      "10,3": 16,
+      "10,4": 17,
+      "10,5": 17,
+      "10,6": 17,
+      "10,7": 17,
+      "10,8": 17,
+      "10,9": 17,
+      "10,32": 16,
+      "10,33": 17,
+      "10,34": 17,
+      "10,35": 17,
+      "10,36": 3,
+      "10,37": 3,
+      "10,38": 3,
+      "11,3": 16,
+      "11,4": 17,
+      "11,5": 17,
+      "11,6": 17,
+      "11,7": 17,
+      "11,8": 17,
+      "11,9": 17,
+      "11,32": 16,
+      "11,33": 17,
+      "11,34": 17,
+      "11,35": 17,
+      "11,36": 3,
+      "11,37": 3,
+      "11,38": 3,
+      "12,3": 16,
+      "12,4": 17,
+      "12,5": 17,
+      "12,6": 17,
+      "12,7": 17,
+      "12,8": 17,
+      "12,9": 17,
+      "12,32": 16,
+      "12,35": 3,
+      "12,36": 3,
+      "12,37": 3,
+      "12,38": 3,
+      "13,3": 16,
+      "13,4": 17,
+      "13,5": 17,
+      "13,6": 17,
+      "13,7": 17,
+      "13,8": 17,
+      "13,9": 17,
+      "13,32": 16,
+      "13,35": 3,
+      "13,36": 3,
+      "13,37": 3,
+      "13,38": 3,
+      "14,3": 16,
+      "14,4": 17,
+      "14,5": 17,
+      "14,6": 17,
+      "14,7": 17,
+      "14,8": 17,
+      "14,9": 17,
+      "14,32": 16,
+      "14,35": 17,
+      "14,36": 3,
+      "14,37": 3,
+      "14,38": 3,
+      "15,3": 16,
+      "15,4": 17,
+      "15,5": 17,
+      "15,6": 17,
+      "15,7": 17,
+      "15,8": 17,
+      "15,9": 17,
+      "15,32": 16,
+      "15,35": 17,
+      "15,36": 3,
+      "15,37": 3,
+      "15,38": 3,
+      "16,3": 18,
+      "16,4": 19,
+      "16,5": 19,
+      "16,6": 19,
+      "16,7": 19,
+      "16,8": 19,
+      "16,9": 19,
+      "16,10": 20,
+      "16,11": 20,
+      "16,12": 20,
+      "16,13": 20,
+      "16,14": 20,
+      "16,15": 20,
+      "16,16": 20,
+      "16,17": 20,
+      "16,18": 20,
+      "16,19": 20,
+      "16,20": 20,
+      "16,21": 20,
+      "16,22": 20,
+      "16,23": 20,
+      "16,24": 20,
+      "16,25": 20,
+      "16,26": 20,
+      "16,27": 20,
+      "16,28": 20,
+      "16,29": 20,
+      "16,30": 20,
+      "16,31": 20,
+      "16,32": 16,
+      "16,33": 17,
+      "16,34": 17,
+      "16,35": 17,
+      "16,36": 3,
+      "16,37": 3,
+      "16,38": 3,
+      "17,3": 21,
+      "17,16": 21,
+      "17,17": 21,
+      "17,18": 21,
+      "17,19": 21,
+      "17,20": 21,
+      "17,21": 21,
+      "17,22": 21,
+      "17,23": 21,
+      "17,24": 21,
+      "17,25": 21,
+      "17,32": 0,
+      "18,5": 3,
+      "18,6": 3,
+      "18,7": 3,
+      "18,8": 3,
+      "18,9": 3,
+      "18,10": 3,
+      "18,11": 3,
+      "18,12": 3,
+      "18,13": 3,
+      "18,14": 3,
+      "18,15": 3,
+      "18,16": 3,
+      "18,17": 3,
+      "18,18": 3,
+      "18,19": 3,
+      "18,20": 3,
+      "18,21": 3,
+      "18,22": 3,
+      "18,23": 3,
+      "18,24": 3,
+      "18,25": 3,
+      "18,26": 3,
+      "18,27": 3,
+      "18,28": 3,
+      "18,29": 3,
+      "18,30": 3,
+      "18,31": 3,
+      "18,32": 0,
+      "19,5": 3,
+      "19,6": 3,
+      "19,7": 3,
+      "19,8": 3,
+      "19,9": 3,
+      "19,10": 3,
+      "19,11": 3,
+      "19,12": 3,
+      "19,13": 3,
+      "19,14": 3,
+      "19,15": 3,
+      "19,16": 3,
+      "19,17": 3,
+      "19,18": 3,
+      "19,19": 3,
+      "19,20": 3,
+      "19,21": 3,
+      "19,22": 3,
+      "19,23": 3,
+      "19,24": 3,
+      "19,25": 3,
+      "19,26": 3,
+      "19,27": 3,
+      "19,28": 3,
+      "19,29": 3,
+      "19,30": 3,
+      "19,31": 3,
+      "19,32": 0,
+      "20,5": 3,
+      "20,6": 3,
+      "20,7": 3,
+      "20,8": 3,
+      "20,9": 3,
+      "20,10": 3,
+      "20,11": 3,
+      "20,12": 3,
+      "20,13": 3,
+      "20,14": 3,
+      "20,15": 3,
+      "20,16": 3,
+      "20,17": 3,
+      "20,18": 3,
+      "20,19": 3,
+      "20,20": 3,
+      "20,21": 3,
+      "20,22": 3,
+      "20,23": 3,
+      "20,24": 3,
+      "20,25": 3,
+      "20,26": 3,
+      "20,27": 3,
+      "20,28": 3,
+      "20,29": 3,
+      "20,30": 3,
+      "20,31": 3,
+      "20,32": 0,
+      "21,5": 3,
+      "21,6": 3,
+      "21,7": 3,
+      "21,8": 3,
+      "21,9": 3,
+      "21,10": 3,
+      "21,11": 3,
+      "21,12": 3,
+      "21,13": 3,
+      "21,14": 3,
+      "21,15": 3,
+      "21,16": 3,
+      "21,17": 3,
+      "21,18": 3,
+      "21,19": 3,
+      "21,20": 3,
+      "21,21": 3,
+      "21,22": 3,
+      "21,23": 3,
+      "21,24": 3,
+      "21,25": 3,
+      "21,26": 3,
+      "21,27": 3,
+      "21,28": 3,
+      "21,29": 3,
+      "21,30": 3,
+      "21,31": 3,
+      "21,32": 0,
+      "22,5": 3,
+      "22,6": 3,
+      "22,7": 3,
+      "22,8": 3,
+      "22,9": 3,
+      "22,10": 3,
+      "22,11": 3,
+      "22,12": 3,
+      "22,13": 3,
+      "22,14": 3,
+      "22,15": 3,
+      "22,16": 3,
+      "22,17": 3,
+      "22,18": 3,
+      "22,19": 3,
+      "22,20": 3,
+      "22,21": 3,
+      "22,22": 3,
+      "22,23": 3,
+      "22,24": 3,
+      "22,25": 3,
+      "22,26": 3,
+      "22,27": 3,
+      "22,28": 3,
+      "22,29": 3,
+      "22,30": 3,
+      "22,31": 3,
+      "22,32": 0,
+      "23,5": 3,
+      "23,6": 3,
+      "23,7": 3,
+      "23,8": 3,
+      "23,9": 3,
+      "23,10": 3,
+      "23,11": 3,
+      "23,12": 3,
+      "23,13": 3,
+      "23,14": 3,
+      "23,15": 3,
+      "23,16": 3,
+      "23,17": 3,
+      "23,18": 3,
+      "23,19": 3,
+      "23,20": 3,
+      "23,21": 3,
+      "23,22": 3,
+      "23,23": 3,
+      "23,24": 3,
+      "23,25": 3,
+      "23,26": 3,
+      "23,27": 3,
+      "23,28": 3,
+      "23,29": 3,
+      "23,30": 3,
+      "23,31": 3,
+      "23,32": 0,
+      "24,5": 3,
+      "24,6": 3,
+      "24,7": 3,
+      "24,8": 3,
+      "24,9": 3,
+      "24,10": 3,
+      "24,11": 3,
+      "24,12": 3,
+      "24,13": 3,
+      "24,14": 3,
+      "24,15": 3,
+      "24,16": 3,
+      "24,17": 3,
+      "24,18": 3,
+      "24,19": 3,
+      "24,20": 3,
+      "24,21": 3,
+      "24,22": 3,
+      "24,23": 3,
+      "24,24": 3,
+      "24,25": 3,
+      "24,26": 3,
+      "24,27": 3,
+      "24,28": 3,
+      "24,29": 3,
+      "24,30": 3,
+      "24,31": 3,
+      "24,32": 0,
+      "25,5": 3,
+      "25,6": 3,
+      "25,7": 3,
+      "25,8": 3,
+      "25,9": 3,
+      "25,10": 3,
+      "25,11": 3,
+      "25,12": 3,
+      "25,13": 3,
+      "25,14": 3,
+      "25,15": 3,
+      "25,16": 3,
+      "25,17": 3,
+      "25,18": 3,
+      "25,19": 3,
+      "25,20": 3,
+      "25,21": 3,
+      "25,22": 3,
+      "25,23": 3,
+      "25,24": 3,
+      "25,25": 3,
+      "25,26": 3,
+      "25,27": 3,
+      "25,28": 3,
+      "25,29": 3,
+      "25,30": 3,
+      "25,31": 3,
+      "25,32": 0,
+      "26,5": 3,
+      "26,6": 3,
+      "26,7": 3,
+      "26,8": 3,
+      "26,9": 3,
+      "26,10": 3,
+      "26,11": 3,
+      "26,12": 3,
+      "26,13": 3,
+      "26,14": 3,
+      "26,15": 3,
+      "26,16": 3,
+      "26,17": 3,
+      "26,18": 3,
+      "26,19": 3,
+      "26,20": 3,
+      "26,21": 3,
+      "26,22": 3,
+      "26,23": 3,
+      "26,24": 3,
+      "26,25": 3,
+      "26,26": 3,
+      "26,27": 3,
+      "26,28": 3,
+      "26,29": 3,
+      "26,30": 3,
+      "26,31": 3,
+      "26,32": 0,
+      "27,5": 3,
+      "27,6": 3,
+      "27,7": 3,
+      "27,8": 3,
+      "27,9": 3,
+      "27,10": 3,
+      "27,11": 3,
+      "27,12": 3,
+      "27,13": 3,
+      "27,14": 3,
+      "27,15": 3,
+      "27,16": 3,
+      "27,17": 3,
+      "27,18": 3,
+      "27,19": 3,
+      "27,20": 3,
+      "27,21": 3,
+      "27,22": 3,
+      "27,23": 3,
+      "27,24": 3,
+      "27,25": 3,
+      "27,26": 3,
+      "27,27": 3,
+      "27,28": 3,
+      "27,29": 3,
+      "27,30": 3,
+      "27,31": 3,
+      "27,32": 0,
+      "28,5": 3,
+      "28,6": 3,
+      "28,7": 3,
+      "28,8": 3,
+      "28,9": 3,
+      "28,10": 3,
+      "28,11": 3,
+      "28,12": 3,
+      "28,13": 3,
+      "28,14": 3,
+      "28,15": 3,
+      "28,16": 3,
+      "28,17": 3,
+      "28,18": 3,
+      "28,19": 3,
+      "28,20": 3,
+      "28,21": 3,
+      "28,22": 3,
+      "28,23": 3,
+      "28,24": 3,
+      "28,25": 3,
+      "28,26": 3,
+      "28,27": 3,
+      "28,28": 3,
+      "28,29": 3,
+      "28,30": 3,
+      "28,31": 3,
+      "28,32": 0,
+      "29,32": 0,
+      "30,32": 0,
+      "31,32": 0,
+      "32,32": 0,
+      "33,32": 0,
+      "34,32": 0,
+      "35,32": 0,
+      "36,32": 0,
+      "37,32": 0,
+      "38,32": 0,
+      "39,32": 0,
+      "40,32": 0,
+      "41,32": 0,
+      "42,32": 0,
+      "43,32": 0,
+      "44,32": 0,
+      "45,32": 0,
+      "46,32": 0,
+      "47,32": 0
+    },
+    "ColStyles": {
+      "36": 22,
+      "37": 22,
+      "38": 22,
+      "39": 22,
+      "40": 22,
+      "41": 23,
+      "42": 23,
+      "43": 23,
+      "44": 23,
+      "45": 23,
+      "46": 23,
+      "47": 22
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "4,33,1,2",
+    "5,33,1,2",
+    "1,3,2,7",
+    "7,33,3,2",
+    "5,42,1,4",
+    "7,42,1,4",
+    "8,42,1,4",
+    "5,10,1,6",
+    "17,3,1,13",
+    "5,30,1,2",
+    "4,42,1,4",
+    "5,3,1,7",
+    "5,16,1,5",
+    "5,21,1,5",
+    "5,26,1,2",
+    "5,28,1,2",
+    "6,3,11,29",
+    "4,3,1,7",
+    "4,10,1,6",
+    "4,16,1,5",
+    "4,21,1,5",
+    "4,26,1,2",
+    "4,28,1,2",
+    "4,30,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "板材名称排序",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+        "ServerCommandName": "UV打印属性排序",
+        "Parameters": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+            "ParamName": "UV打印",
+            "ListviewName": "表格1",
+            "Columns": [
+              {
+                "ArrayItemName": "打印序号",
+                "Column": "行号"
+              },
+              {
+                "ArrayItemName": "打印id",
+                "Column": "ID"
+              }
+            ]
+          }
+        ],
+        "ResultErrorCodeTo": {
+          "SerializeProperty": "=UV打印排序页面!返回码"
+        },
+        "ResultMessageTo": {
+          "SerializeProperty": "=UV打印排序页面!返回信息"
+        },
+        "RefreshAfterFinish": true,
+        "CheckDataValidation": true
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=UV打印排序页面!返回码"
+                  }
+                ]
+              },
+              "value": "0",
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=UV打印排序页面!返回信息"
+                }
+              }
+            ],
+            "ID": "e2045ddc-f706-49c2-9a25-ddacc499963c"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "返回码",
+      "Formula": "UV打印排序页面!$AQ$8"
+    },
+    {
+      "Name": "返回信息",
+      "Formula": "UV打印排序页面!$AQ$9"
+    },
+    {
+      "Name": "状态",
+      "Formula": "UV打印排序页面!$AQ$5"
+    },
+    {
+      "Name": "最大行号",
+      "Formula": "UV打印排序页面!$AQ$6"
+    }
+  ]
+}//L17wrGncIin5NTIZ/eamZE4HPgPcm1OuMQHrR3crXa1z+bUwfCM7dyuMZ/u6xd5FlzbU1B6p3qNoQXSdUdjLG51UyAy4MQDjDpnvfg5G343ByxP5AhpyxEIjEFR5FIWqbmxTvdQr6Agt//4J3+9iLp5tuOhgHOadW6hLf9M2xI+bHEeXiLzQT5sH5Sq+mujJVA5xN90476BJpC5OF94gyBrJKQEaYH5/g4YXZqyCIYHxRiaTxl9Qdn/fpkHODWRhKkhi9bXyworHUgavKL5vCKNYkTVa3xQ4EJB72i7mJ0ZUe3ZiOVychg8m/j1DFAxlZCXnC4wsw4WOaTjZMg8XsME/FDAyP0sHk+kedw4+Gu+Z6j7GjRr9YSfhEELjq/UdlPcKlw2xfloyjZxzPNOSjCeOVfzgPk2XUunf/QWvDNRj9ZlAGNgZI3xbGr5y/0d0GweV+f3YGm6gg+XTFH7/OYrTMDNPPXVz6jvERWSACmu7PK9ssV9fe+GBv94joQzlwPYaUns69eqfQyGuTk+7S7+wYnNJwPJJNv7bfNIEC8qMpb+Afc7iYZo1/BEmuKpgvjW3yT4nL/PtFtbSUu8iEUS2SxOpzlFuZq1UNs2WXdzhCwAZ2sg3Nto2ZZwiV80CeaZQ8aNpFxtvD/FVU9DboyhGPuBGlvNpQDNTz2l/6a1+Ym9qfiLNO86Yfj5XkxJeT7Gq3dQ8q4s7mIwoPoO67Of3hhbPEGVHntKU6YQR4Im9OQyv/TpasuDUL3rFHuiI/wBmaIvHgzmQNtu3Ga1/E23EFLsUKzZdxcTs+ed9tHJ7KJ4Z/+urxpR/zi80mEEyiM+2UNlJ71j8mnp+qWCqevP2bqOz9hz+B+ME/+tCCoCNLUwGJjYp1VX+z95vskTFNF412y+1/C8v49G3tBgbMA==|920

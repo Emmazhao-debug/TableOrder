@@ -1,0 +1,2132 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 43.0,
+          "IsHidden": true
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      33
+    ],
+    "Count": 34,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "70": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86
+    ],
+    "Count": 87
+  },
+  "Values": {
+    "0,7": "贴膜材料与工费属性列表",
+    "2,7": "使用状态：",
+    "2,11": "正常",
+    "2,42": "排序",
+    "2,47": "添加贴膜类型",
+    "2,55": "关闭",
+    "4,6": "正\r\n在\r\n使\r\n用",
+    "4,34": "日期状态",
+    "15,6": "待\r\n启\r\n用",
+    "15,34": "待生效",
+    "15,52": "修改",
+    "15,56": "删除",
+    "21,6": "已\r\n失\r\n效",
+    "21,34": "日期状态",
+    "22,34": "已失效",
+    "32,6": "*此处“已失效”指的是新建报价单时不再使用此属性中的参数，而早前在这个起止日期时间段内已创建的过往报价单则仍可能会使用。例如：打开早前报价单更换打印形式时，则会读取属于其创建时间段内有效的打印形式属性参数进行产品价格计算。"
+  },
+  "Formulas": {
+    "5,34": "IF(AE6=\"\",\"生效中\",\"即将到期\")",
+    "5,56": "IF(AA6>=TODAY(),\"删除\",\"\")",
+    "5,52": "IF(AA6=TODAY(),\"修改\",IF(AE6=\"\",\"创建新属性\",\"\"))"
+  },
+  "AttachInfos": {
+    "2,11": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "Items": [
+          {},
+          {
+            "Value": "正常",
+            "DisplayValue": "正常"
+          },
+          {
+            "Value": "停用",
+            "DisplayValue": "停用"
+          }
+        ],
+        "CellDefaultValue": "正常",
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "2,42": {
+      "CellComment": {
+        "Comments": "由于本页面绑定了多个表格，导致加载数据后当前行总是跳回第一行，因此需要跳转到含有一个表格的页面进行排序后再返回",
+        "CommentHeight": 86.0,
+        "CommentWidth": 182.0
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=贴膜属性列表!状态"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请先选择状态，按状态分类后排序"
+                  }
+                ],
+                "ID": "da83ab1b-216d-43e4-b35b-60553ef03ba4"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "贴膜属性排序",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=贴膜属性列表!状态"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=贴膜属性排序!状态"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "125bb342-69aa-40d5-9727-6af4b3d0e1cb"
+              }
+            ]
+          }
+        ],
+        "Text": "排序",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Arrow/330_sort_toggle_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "贴膜属性详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=贴膜属性详情!按钮"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NOW()"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=贴膜属性详情!同类码"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加贴膜类型",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,55": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,7": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "贴膜属性表",
+        "RowIndex": 4,
+        "ColumnIndex": 7,
+        "RowCount": 11,
+        "ColumnCount": 63,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "贴膜属性表",
+                "ColumnName": "状态",
+                "GUID": "8849661b-d343-4b16-9fd7-7678d043bcb5"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=贴膜属性列表!状态"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "贴膜属性表",
+                "ColumnName": "启用日期",
+                "GUID": "94e3e5b7-dde3-46c2-bd4a-70c24569ac75"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "贴膜属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "86c31e0b-ca58-4bc3-b394-0f61fb979a88"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "贴膜属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "423dd8df-d909-4823-ae60-848bb4181ddd"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "贴膜属性表",
+                "ColumnName": "状态",
+                "GUID": "732d1e33-c6c7-4ad8-ba04-9d35d12049c1"
+              },
+              "Order": 1
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "贴膜属性表",
+                "ColumnName": "序号",
+                "GUID": "d788d513-e6b7-4c81-a4ee-efccf77a8dc3"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "CommitType": 1
+      }
+    },
+    "5,7": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "材料类型",
+        "GUID": "4edce5ca-eed3-4850-aae8-96fbee64c822"
+      }
+    },
+    "5,13": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "利用率",
+        "GUID": "1b0441a6-615a-4835-9e68-73d16dfa95dd"
+      }
+    },
+    "5,15": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "材料单价",
+        "GUID": "ce580efa-4a31-4ecd-a521-17e9e12adf70"
+      }
+    },
+    "5,19": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "工费单价",
+        "GUID": "d345cdb5-3c3e-4144-9097-c56ffc2e249f"
+      }
+    },
+    "5,23": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "状态",
+        "GUID": "02645c30-658a-401a-b00e-c3bfc94ce252"
+      }
+    },
+    "5,26": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "启用日期",
+        "GUID": "b7695b5f-30de-4b65-9e81-095398aa81b9"
+      }
+    },
+    "5,30": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "截止日期",
+        "GUID": "a4a7c86e-fdfc-4238-b4d3-08245623e423"
+      }
+    },
+    "5,38": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "备注",
+        "GUID": "09ce7357-b07c-4b9a-b6ea-c66905829fa9"
+      }
+    },
+    "5,52": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=贴膜属性列表!BA6"
+                      }
+                    ]
+                  },
+                  "value": "修改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "贴膜属性详情",
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "TargetCell": {
+                          "SerializeProperty": "=贴膜属性详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "3c55481f-3053-433a-b600-a2963bd3ee50"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "贴膜属性详情",
+                    "PassValues": [
+                      {
+                        "Source": "创建",
+                        "TargetCell": {
+                          "SerializeProperty": "=贴膜属性详情!按钮"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=贴膜属性列表!BJ6"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=贴膜属性详情!序号"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=贴膜属性列表!BL6"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=贴膜属性详情!同类码"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "c3ebe034-04df-490a-96bb-3abffc39e969"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,56": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "ClickMode": 1
+      }
+    },
+    "5,59": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "ID",
+        "GUID": "d1dc6d1f-18bc-480f-8535-42429f19742d"
+      }
+    },
+    "5,61": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "序号",
+        "GUID": "086e20e9-4e83-4188-beba-03fb3ebdfac2"
+      }
+    },
+    "5,63": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "同类码",
+        "GUID": "1d585556-85be-46f3-b738-a2b41f975d88"
+      }
+    },
+    "15,7": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "贴膜属性表",
+        "RowIndex": 15,
+        "ColumnIndex": 7,
+        "RowCount": 6,
+        "ColumnCount": 63,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsColumnHeaderVisible": false,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      },
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "材料类型",
+        "GUID": "b0d7c912-7c37-4773-a9bb-9da6d8c5dd75"
+      }
+    },
+    "15,13": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "利用率",
+        "GUID": "91143ded-04e9-4440-b197-b53f454135c0"
+      }
+    },
+    "15,15": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "材料单价",
+        "GUID": "397e7822-7940-4eb6-824a-78f6e29dd258"
+      }
+    },
+    "15,19": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "工费单价",
+        "GUID": "e330e772-6254-4f32-b6e5-f80e60e2a8d6"
+      }
+    },
+    "15,23": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "状态",
+        "GUID": "ddb63f11-5d57-4e9f-b591-b72e060f9598"
+      }
+    },
+    "15,26": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "启用日期",
+        "GUID": "53a2d994-b370-4d9a-ab22-f059ffa4d294"
+      }
+    },
+    "15,30": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "截止日期",
+        "GUID": "643ae56b-da39-47e1-a766-d4f6db914cc1"
+      }
+    },
+    "15,38": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "备注",
+        "GUID": "894b0499-f3f6-4a40-999f-a0946e73e044"
+      }
+    },
+    "15,52": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "贴膜属性详情",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=贴膜属性详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    },
+    "15,56": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？"
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "15,59": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "ID",
+        "GUID": "46062a59-36c5-41ca-8242-7cf852e59074"
+      }
+    },
+    "15,61": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "序号",
+        "GUID": "b8da73ed-9dfd-4631-9d9f-75ab5f2a367e"
+      }
+    },
+    "15,63": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "同类码",
+        "GUID": "e2760efb-a33c-42e7-81a7-c82c8ffb8ffb"
+      }
+    },
+    "21,7": {
+      "ListViewInfo": {
+        "Name": "表格3",
+        "TableName": "贴膜属性表",
+        "RowIndex": 21,
+        "ColumnIndex": 7,
+        "RowCount": 11,
+        "ColumnCount": 63,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "CommitType": 1
+      }
+    },
+    "22,7": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "材料类型",
+        "GUID": "b8ee2de1-e5ed-4ad4-b5d8-39c5163dd62f"
+      }
+    },
+    "22,13": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "利用率",
+        "GUID": "7a86c4ce-3060-453d-8e49-9e95992a73d6"
+      }
+    },
+    "22,15": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "材料单价",
+        "GUID": "cf6caa53-77af-4b32-985b-c48b1bd9449c"
+      }
+    },
+    "22,19": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "工费单价",
+        "GUID": "af709139-373c-4c5f-8484-3b83841f8ad7"
+      }
+    },
+    "22,23": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "状态",
+        "GUID": "8c33104b-21c2-46bd-9358-3ba4eddc4781"
+      }
+    },
+    "22,26": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "启用日期",
+        "GUID": "218f1d89-6380-4a57-a8f5-49b367d3d1a0"
+      }
+    },
+    "22,30": {
+      "BindingInfo": {
+        "TableName": "贴膜属性表",
+        "ColumnName": "截止日期",
+        "GUID": "bde35072-f382-48e2-9240-159b61009c67"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5
+      },
+      {
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "HorizontalAlignment": 4,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 1
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontWeight": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Formatter": 9,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 10,
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 11,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 12,
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 13,
+        "HorizontalAlignment": 4,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Formatter": 14,
+        "HorizontalAlignment": 4
+      },
+      {
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "HorizontalAlignment": 4,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 0,
+        "Formatter": 15,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 15,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Formatter": 15,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 16,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 15,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 2
+      },
+      {
+        "Formatter": 15,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 13,
+        "Formatter": 15,
+        "HorizontalAlignment": 4,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "FontWeight": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 9,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Formatter": 11,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 18,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 2,
+        "BorderTop": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderBottom": 2,
+        "BorderTop": 2
+      },
+      {
+        "Foreground": 7,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": -1.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Right",
+        "@",
+        "Center",
+        "[AUTO]General",
+        "Left",
+        "Background 1 -50",
+        "Background 1 -25",
+        "0%",
+        "0.00\"元/㎡\"",
+        "yyyy/MM/dd",
+        "#FF00B050",
+        "Accent 1",
+        "General",
+        "0.00元/㎡",
+        "#FFFFC000",
+        "#FFCED4DA",
+        "Background 1 -5"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        },
+        {
+          "Color": 8
+        },
+        {
+          "Color": 17
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,7": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 3,
+      "1,17": 3,
+      "1,18": 3,
+      "1,19": 3,
+      "1,20": 3,
+      "1,21": 3,
+      "1,22": 3,
+      "1,23": 3,
+      "1,24": 3,
+      "1,25": 3,
+      "1,28": 1,
+      "1,29": 1,
+      "1,30": 1,
+      "1,31": 3,
+      "1,32": 3,
+      "1,33": 3,
+      "1,34": 3,
+      "1,35": 3,
+      "1,36": 3,
+      "1,37": 3,
+      "1,38": 3,
+      "1,39": 3,
+      "1,40": 3,
+      "1,41": 3,
+      "1,42": 3,
+      "1,43": 3,
+      "1,44": 3,
+      "1,45": 3,
+      "1,46": 3,
+      "1,47": 3,
+      "1,48": 3,
+      "1,70": 4,
+      "2,7": 1,
+      "2,8": 2,
+      "2,9": 2,
+      "2,10": 2,
+      "2,11": 5,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,26": 2,
+      "2,27": 3,
+      "2,47": 6,
+      "2,55": 7,
+      "2,56": 2,
+      "2,57": 2,
+      "2,70": 4,
+      "3,7": 8,
+      "3,8": 8,
+      "3,9": 8,
+      "3,10": 8,
+      "3,11": 8,
+      "3,12": 8,
+      "3,70": 4,
+      "4,6": 9,
+      "4,7": 10,
+      "4,8": 10,
+      "4,9": 10,
+      "4,10": 10,
+      "4,11": 10,
+      "4,12": 10,
+      "4,15": 11,
+      "4,19": 12,
+      "4,20": 10,
+      "4,21": 10,
+      "4,22": 10,
+      "4,23": 10,
+      "4,24": 10,
+      "4,25": 10,
+      "4,26": 12,
+      "4,27": 10,
+      "4,28": 10,
+      "4,29": 10,
+      "4,30": 12,
+      "4,31": 10,
+      "4,32": 10,
+      "4,33": 10,
+      "4,34": 12,
+      "4,35": 12,
+      "4,36": 12,
+      "4,37": 12,
+      "4,38": 10,
+      "4,39": 10,
+      "4,40": 10,
+      "4,41": 10,
+      "4,42": 10,
+      "4,43": 10,
+      "4,44": 10,
+      "4,45": 10,
+      "4,46": 10,
+      "4,47": 10,
+      "4,48": 10,
+      "4,49": 10,
+      "4,50": 10,
+      "4,51": 10,
+      "4,52": 10,
+      "4,53": 10,
+      "4,54": 10,
+      "4,55": 10,
+      "4,56": 10,
+      "4,57": 10,
+      "4,58": 10,
+      "4,59": 13,
+      "4,60": 10,
+      "4,61": 12,
+      "4,62": 10,
+      "4,63": 13,
+      "4,64": 10,
+      "4,65": 10,
+      "4,66": 10,
+      "4,67": 10,
+      "4,68": 10,
+      "4,69": 10,
+      "4,70": 14,
+      "5,6": 15,
+      "5,7": 16,
+      "5,13": 17,
+      "5,15": 18,
+      "5,19": 18,
+      "5,23": 19,
+      "5,26": 20,
+      "5,30": 20,
+      "5,34": 21,
+      "5,35": 11,
+      "5,36": 11,
+      "5,37": 11,
+      "5,38": 22,
+      "5,52": 23,
+      "5,56": 23,
+      "5,59": 5,
+      "5,61": 24,
+      "5,63": 25,
+      "5,70": 14,
+      "5,82": 19,
+      "5,83": 19,
+      "5,84": 19,
+      "5,85": 19,
+      "6,6": 15,
+      "6,52": 26,
+      "6,70": 14,
+      "7,6": 15,
+      "7,52": 26,
+      "7,70": 14,
+      "8,6": 15,
+      "8,52": 26,
+      "8,70": 14,
+      "9,6": 15,
+      "9,52": 26,
+      "9,70": 14,
+      "10,6": 15,
+      "10,52": 26,
+      "10,70": 14,
+      "11,6": 15,
+      "11,52": 26,
+      "11,70": 14,
+      "12,6": 15,
+      "12,52": 26,
+      "12,70": 14,
+      "13,6": 15,
+      "13,52": 26,
+      "13,70": 14,
+      "14,6": 27,
+      "14,7": 28,
+      "14,8": 28,
+      "14,9": 28,
+      "14,10": 28,
+      "14,11": 28,
+      "14,12": 28,
+      "14,13": 28,
+      "14,14": 28,
+      "14,15": 28,
+      "14,16": 28,
+      "14,17": 28,
+      "14,18": 28,
+      "14,19": 28,
+      "14,20": 28,
+      "14,21": 28,
+      "14,22": 28,
+      "14,23": 28,
+      "14,24": 28,
+      "14,25": 28,
+      "14,26": 28,
+      "14,27": 28,
+      "14,28": 28,
+      "14,29": 28,
+      "14,30": 28,
+      "14,31": 28,
+      "14,32": 28,
+      "14,33": 28,
+      "14,34": 28,
+      "14,35": 28,
+      "14,36": 28,
+      "14,37": 28,
+      "14,38": 28,
+      "14,39": 28,
+      "14,40": 28,
+      "14,41": 28,
+      "14,42": 28,
+      "14,43": 28,
+      "14,44": 28,
+      "14,45": 28,
+      "14,46": 28,
+      "14,47": 28,
+      "14,48": 28,
+      "14,49": 28,
+      "14,50": 28,
+      "14,51": 28,
+      "14,52": 29,
+      "14,53": 28,
+      "14,54": 28,
+      "14,55": 28,
+      "14,56": 28,
+      "14,57": 28,
+      "14,58": 28,
+      "14,59": 28,
+      "14,60": 28,
+      "14,61": 28,
+      "14,62": 28,
+      "14,63": 28,
+      "14,64": 28,
+      "14,65": 28,
+      "14,66": 28,
+      "14,67": 28,
+      "14,68": 28,
+      "14,69": 28,
+      "14,70": 14,
+      "15,6": 30,
+      "15,7": 31,
+      "15,13": 17,
+      "15,15": 32,
+      "15,16": 11,
+      "15,17": 11,
+      "15,18": 11,
+      "15,19": 32,
+      "15,23": 32,
+      "15,26": 33,
+      "15,30": 32,
+      "15,34": 34,
+      "15,35": 35,
+      "15,36": 35,
+      "15,37": 35,
+      "15,38": 36,
+      "15,52": 37,
+      "15,56": 37,
+      "15,59": 32,
+      "15,61": 32,
+      "15,63": 32,
+      "15,70": 14,
+      "16,6": 38,
+      "16,70": 14,
+      "17,6": 15,
+      "17,70": 14,
+      "18,6": 15,
+      "18,70": 14,
+      "19,6": 38,
+      "19,7": 11,
+      "19,8": 11,
+      "19,9": 39,
+      "19,10": 11,
+      "19,11": 11,
+      "19,12": 11,
+      "19,13": 11,
+      "19,14": 11,
+      "19,15": 11,
+      "19,16": 11,
+      "19,18": 11,
+      "19,19": 11,
+      "19,20": 11,
+      "19,22": 11,
+      "19,27": 11,
+      "19,28": 11,
+      "19,29": 11,
+      "19,30": 11,
+      "19,31": 11,
+      "19,32": 11,
+      "19,33": 11,
+      "19,34": 11,
+      "19,35": 11,
+      "19,36": 11,
+      "19,37": 11,
+      "19,38": 11,
+      "19,39": 11,
+      "19,40": 11,
+      "19,41": 11,
+      "19,42": 11,
+      "19,43": 11,
+      "19,44": 11,
+      "19,45": 11,
+      "19,46": 11,
+      "19,47": 11,
+      "19,48": 11,
+      "19,49": 11,
+      "19,50": 11,
+      "19,51": 11,
+      "19,52": 40,
+      "19,53": 11,
+      "19,54": 11,
+      "19,55": 11,
+      "19,56": 11,
+      "19,57": 11,
+      "19,58": 11,
+      "19,59": 11,
+      "19,60": 11,
+      "19,70": 14,
+      "20,6": 41,
+      "20,7": 42,
+      "20,8": 42,
+      "20,9": 43,
+      "20,10": 42,
+      "20,11": 42,
+      "20,12": 42,
+      "20,13": 42,
+      "20,14": 42,
+      "20,15": 42,
+      "20,16": 42,
+      "20,17": 28,
+      "20,18": 42,
+      "20,19": 42,
+      "20,20": 42,
+      "20,21": 28,
+      "20,22": 42,
+      "20,23": 28,
+      "20,24": 28,
+      "20,25": 28,
+      "20,26": 28,
+      "20,27": 42,
+      "20,28": 42,
+      "20,29": 42,
+      "20,30": 42,
+      "20,31": 42,
+      "20,32": 42,
+      "20,33": 42,
+      "20,34": 42,
+      "20,35": 42,
+      "20,36": 42,
+      "20,37": 42,
+      "20,38": 42,
+      "20,39": 42,
+      "20,40": 42,
+      "20,41": 42,
+      "20,42": 42,
+      "20,43": 42,
+      "20,44": 42,
+      "20,45": 42,
+      "20,46": 42,
+      "20,47": 42,
+      "20,48": 42,
+      "20,49": 42,
+      "20,50": 42,
+      "20,51": 42,
+      "20,52": 44,
+      "20,53": 42,
+      "20,54": 42,
+      "20,55": 42,
+      "20,56": 42,
+      "20,57": 42,
+      "20,58": 42,
+      "20,59": 42,
+      "20,60": 42,
+      "20,61": 28,
+      "20,62": 28,
+      "20,63": 28,
+      "20,64": 28,
+      "20,65": 28,
+      "20,66": 28,
+      "20,67": 28,
+      "20,68": 28,
+      "20,69": 28,
+      "20,70": 14,
+      "21,6": 30,
+      "21,7": 11,
+      "21,15": 11,
+      "21,16": 11,
+      "21,17": 11,
+      "21,18": 11,
+      "21,19": 11,
+      "21,23": 11,
+      "21,30": 11,
+      "21,34": 11,
+      "21,35": 11,
+      "21,36": 11,
+      "21,37": 11,
+      "21,59": 11,
+      "21,60": 11,
+      "21,61": 11,
+      "21,62": 11,
+      "21,63": 11,
+      "21,64": 11,
+      "21,65": 11,
+      "21,66": 11,
+      "21,67": 11,
+      "21,68": 11,
+      "21,70": 14,
+      "22,6": 38,
+      "22,7": 45,
+      "22,13": 17,
+      "22,15": 32,
+      "22,16": 11,
+      "22,17": 11,
+      "22,18": 11,
+      "22,19": 32,
+      "22,23": 46,
+      "22,26": 47,
+      "22,30": 20,
+      "22,34": 48,
+      "22,35": 49,
+      "22,36": 49,
+      "22,37": 49,
+      "22,59": 24,
+      "22,60": 11,
+      "22,61": 11,
+      "22,62": 11,
+      "22,63": 11,
+      "22,64": 11,
+      "22,65": 11,
+      "22,66": 11,
+      "22,67": 11,
+      "22,68": 24,
+      "22,70": 14,
+      "23,6": 38,
+      "23,7": 11,
+      "23,8": 11,
+      "23,9": 39,
+      "23,10": 11,
+      "23,11": 11,
+      "23,12": 11,
+      "23,13": 11,
+      "23,14": 11,
+      "23,15": 11,
+      "23,16": 11,
+      "23,18": 11,
+      "23,19": 11,
+      "23,20": 11,
+      "23,22": 11,
+      "23,27": 11,
+      "23,28": 11,
+      "23,29": 11,
+      "23,30": 11,
+      "23,31": 11,
+      "23,32": 11,
+      "23,33": 11,
+      "23,34": 11,
+      "23,35": 11,
+      "23,36": 11,
+      "23,37": 11,
+      "23,38": 11,
+      "23,39": 11,
+      "23,40": 11,
+      "23,41": 11,
+      "23,42": 11,
+      "23,43": 11,
+      "23,44": 11,
+      "23,45": 11,
+      "23,46": 11,
+      "23,47": 11,
+      "23,48": 11,
+      "23,49": 11,
+      "23,50": 11,
+      "23,51": 11,
+      "23,52": 40,
+      "23,53": 11,
+      "23,54": 11,
+      "23,55": 11,
+      "23,56": 11,
+      "23,57": 11,
+      "23,58": 11,
+      "23,59": 11,
+      "23,60": 11,
+      "23,70": 14,
+      "24,6": 38,
+      "24,7": 11,
+      "24,8": 11,
+      "24,9": 39,
+      "24,10": 11,
+      "24,11": 11,
+      "24,12": 11,
+      "24,13": 11,
+      "24,14": 11,
+      "24,15": 11,
+      "24,16": 11,
+      "24,18": 11,
+      "24,19": 11,
+      "24,20": 11,
+      "24,22": 11,
+      "24,27": 11,
+      "24,28": 11,
+      "24,29": 11,
+      "24,30": 11,
+      "24,31": 11,
+      "24,32": 11,
+      "24,33": 11,
+      "24,34": 11,
+      "24,35": 11,
+      "24,36": 11,
+      "24,37": 11,
+      "24,38": 11,
+      "24,39": 11,
+      "24,40": 11,
+      "24,41": 11,
+      "24,42": 11,
+      "24,43": 11,
+      "24,44": 11,
+      "24,45": 11,
+      "24,46": 11,
+      "24,47": 11,
+      "24,48": 11,
+      "24,49": 11,
+      "24,50": 11,
+      "24,51": 11,
+      "24,52": 40,
+      "24,53": 11,
+      "24,54": 11,
+      "24,55": 11,
+      "24,56": 11,
+      "24,57": 11,
+      "24,58": 11,
+      "24,59": 11,
+      "24,60": 11,
+      "24,70": 14,
+      "25,6": 38,
+      "25,7": 11,
+      "25,8": 11,
+      "25,9": 39,
+      "25,10": 11,
+      "25,11": 11,
+      "25,12": 11,
+      "25,13": 11,
+      "25,14": 11,
+      "25,15": 11,
+      "25,16": 11,
+      "25,18": 11,
+      "25,19": 11,
+      "25,20": 11,
+      "25,22": 11,
+      "25,27": 11,
+      "25,28": 11,
+      "25,29": 11,
+      "25,30": 11,
+      "25,31": 11,
+      "25,32": 11,
+      "25,33": 11,
+      "25,34": 11,
+      "25,35": 11,
+      "25,36": 11,
+      "25,37": 11,
+      "25,38": 11,
+      "25,39": 11,
+      "25,40": 11,
+      "25,41": 11,
+      "25,42": 11,
+      "25,43": 11,
+      "25,44": 11,
+      "25,45": 11,
+      "25,46": 11,
+      "25,47": 11,
+      "25,48": 11,
+      "25,49": 11,
+      "25,50": 11,
+      "25,51": 11,
+      "25,52": 40,
+      "25,53": 11,
+      "25,54": 11,
+      "25,55": 11,
+      "25,56": 11,
+      "25,57": 11,
+      "25,58": 11,
+      "25,59": 11,
+      "25,60": 11,
+      "25,70": 14,
+      "26,6": 38,
+      "26,7": 11,
+      "26,8": 11,
+      "26,9": 39,
+      "26,10": 11,
+      "26,11": 11,
+      "26,12": 11,
+      "26,13": 11,
+      "26,14": 11,
+      "26,15": 11,
+      "26,16": 11,
+      "26,18": 11,
+      "26,19": 11,
+      "26,20": 11,
+      "26,22": 11,
+      "26,27": 11,
+      "26,28": 11,
+      "26,29": 11,
+      "26,30": 11,
+      "26,31": 11,
+      "26,32": 11,
+      "26,33": 11,
+      "26,34": 11,
+      "26,35": 11,
+      "26,36": 11,
+      "26,37": 11,
+      "26,38": 11,
+      "26,39": 11,
+      "26,40": 11,
+      "26,41": 11,
+      "26,42": 11,
+      "26,43": 11,
+      "26,44": 11,
+      "26,45": 11,
+      "26,46": 11,
+      "26,47": 11,
+      "26,48": 11,
+      "26,49": 11,
+      "26,50": 11,
+      "26,51": 11,
+      "26,52": 40,
+      "26,53": 11,
+      "26,54": 11,
+      "26,55": 11,
+      "26,56": 11,
+      "26,57": 11,
+      "26,58": 11,
+      "26,59": 11,
+      "26,60": 11,
+      "26,70": 14,
+      "27,6": 38,
+      "27,7": 11,
+      "27,8": 11,
+      "27,9": 39,
+      "27,10": 11,
+      "27,11": 11,
+      "27,12": 11,
+      "27,13": 11,
+      "27,14": 11,
+      "27,15": 11,
+      "27,16": 11,
+      "27,18": 11,
+      "27,19": 11,
+      "27,20": 11,
+      "27,22": 11,
+      "27,27": 11,
+      "27,28": 11,
+      "27,29": 11,
+      "27,30": 11,
+      "27,31": 11,
+      "27,32": 11,
+      "27,33": 11,
+      "27,34": 11,
+      "27,35": 11,
+      "27,36": 11,
+      "27,37": 11,
+      "27,38": 11,
+      "27,39": 11,
+      "27,40": 11,
+      "27,41": 11,
+      "27,42": 11,
+      "27,43": 11,
+      "27,44": 11,
+      "27,45": 11,
+      "27,46": 11,
+      "27,47": 11,
+      "27,48": 11,
+      "27,49": 11,
+      "27,50": 11,
+      "27,51": 11,
+      "27,52": 40,
+      "27,53": 11,
+      "27,54": 11,
+      "27,55": 11,
+      "27,56": 11,
+      "27,57": 11,
+      "27,58": 11,
+      "27,59": 11,
+      "27,60": 11,
+      "27,70": 14,
+      "28,6": 38,
+      "28,7": 11,
+      "28,8": 11,
+      "28,9": 39,
+      "28,10": 11,
+      "28,11": 11,
+      "28,12": 11,
+      "28,13": 11,
+      "28,14": 11,
+      "28,15": 11,
+      "28,16": 11,
+      "28,18": 11,
+      "28,19": 11,
+      "28,20": 11,
+      "28,22": 11,
+      "28,27": 11,
+      "28,28": 11,
+      "28,29": 11,
+      "28,30": 11,
+      "28,31": 11,
+      "28,32": 11,
+      "28,33": 11,
+      "28,34": 11,
+      "28,35": 11,
+      "28,36": 11,
+      "28,37": 11,
+      "28,38": 11,
+      "28,39": 11,
+      "28,40": 11,
+      "28,41": 11,
+      "28,42": 11,
+      "28,43": 11,
+      "28,44": 11,
+      "28,45": 11,
+      "28,46": 11,
+      "28,47": 11,
+      "28,48": 11,
+      "28,49": 11,
+      "28,50": 11,
+      "28,51": 11,
+      "28,52": 40,
+      "28,53": 11,
+      "28,54": 11,
+      "28,55": 11,
+      "28,56": 11,
+      "28,57": 11,
+      "28,58": 11,
+      "28,59": 11,
+      "28,60": 11,
+      "28,70": 14,
+      "29,6": 38,
+      "29,7": 11,
+      "29,8": 11,
+      "29,9": 39,
+      "29,10": 11,
+      "29,11": 11,
+      "29,12": 11,
+      "29,13": 11,
+      "29,14": 11,
+      "29,15": 11,
+      "29,16": 11,
+      "29,18": 11,
+      "29,19": 11,
+      "29,20": 11,
+      "29,22": 11,
+      "29,27": 11,
+      "29,28": 11,
+      "29,29": 11,
+      "29,30": 11,
+      "29,31": 11,
+      "29,32": 11,
+      "29,33": 11,
+      "29,34": 11,
+      "29,35": 11,
+      "29,36": 11,
+      "29,37": 11,
+      "29,38": 11,
+      "29,39": 11,
+      "29,40": 11,
+      "29,41": 11,
+      "29,42": 11,
+      "29,43": 11,
+      "29,44": 11,
+      "29,45": 11,
+      "29,46": 11,
+      "29,47": 11,
+      "29,48": 11,
+      "29,49": 11,
+      "29,50": 11,
+      "29,51": 11,
+      "29,52": 40,
+      "29,53": 11,
+      "29,54": 11,
+      "29,55": 11,
+      "29,56": 11,
+      "29,57": 11,
+      "29,58": 11,
+      "29,59": 11,
+      "29,60": 11,
+      "29,70": 14,
+      "30,6": 38,
+      "30,7": 11,
+      "30,8": 11,
+      "30,9": 39,
+      "30,10": 11,
+      "30,11": 11,
+      "30,12": 11,
+      "30,13": 11,
+      "30,14": 11,
+      "30,15": 11,
+      "30,16": 11,
+      "30,18": 11,
+      "30,19": 11,
+      "30,20": 11,
+      "30,22": 11,
+      "30,27": 11,
+      "30,28": 11,
+      "30,29": 11,
+      "30,30": 11,
+      "30,31": 11,
+      "30,32": 11,
+      "30,33": 11,
+      "30,34": 11,
+      "30,35": 11,
+      "30,36": 11,
+      "30,37": 11,
+      "30,38": 11,
+      "30,39": 11,
+      "30,40": 11,
+      "30,41": 11,
+      "30,42": 11,
+      "30,43": 11,
+      "30,44": 11,
+      "30,45": 11,
+      "30,46": 11,
+      "30,47": 11,
+      "30,48": 11,
+      "30,49": 11,
+      "30,50": 11,
+      "30,51": 11,
+      "30,52": 40,
+      "30,53": 11,
+      "30,54": 11,
+      "30,55": 11,
+      "30,56": 11,
+      "30,57": 11,
+      "30,58": 11,
+      "30,59": 11,
+      "30,60": 11,
+      "30,70": 14,
+      "31,6": 41,
+      "31,7": 42,
+      "31,8": 42,
+      "31,9": 43,
+      "31,10": 42,
+      "31,11": 42,
+      "31,12": 42,
+      "31,13": 42,
+      "31,14": 42,
+      "31,15": 42,
+      "31,16": 42,
+      "31,17": 28,
+      "31,18": 42,
+      "31,19": 42,
+      "31,20": 42,
+      "31,21": 28,
+      "31,22": 42,
+      "31,23": 28,
+      "31,24": 28,
+      "31,25": 28,
+      "31,26": 28,
+      "31,27": 42,
+      "31,28": 42,
+      "31,29": 42,
+      "31,30": 42,
+      "31,31": 42,
+      "31,32": 42,
+      "31,33": 42,
+      "31,34": 42,
+      "31,35": 42,
+      "31,36": 42,
+      "31,37": 42,
+      "31,38": 42,
+      "31,39": 42,
+      "31,40": 42,
+      "31,41": 42,
+      "31,42": 42,
+      "31,43": 42,
+      "31,44": 42,
+      "31,45": 42,
+      "31,46": 42,
+      "31,47": 42,
+      "31,48": 42,
+      "31,49": 42,
+      "31,50": 42,
+      "31,51": 42,
+      "31,52": 44,
+      "31,53": 42,
+      "31,54": 42,
+      "31,55": 42,
+      "31,56": 42,
+      "31,57": 42,
+      "31,58": 42,
+      "31,59": 42,
+      "31,60": 42,
+      "31,61": 28,
+      "31,62": 28,
+      "31,63": 28,
+      "31,64": 28,
+      "31,65": 28,
+      "31,66": 28,
+      "31,67": 28,
+      "31,68": 28,
+      "31,69": 28,
+      "31,70": 14,
+      "32,6": 50,
+      "32,59": 11,
+      "32,60": 11,
+      "32,61": 11,
+      "32,62": 11,
+      "32,63": 11,
+      "32,64": 11,
+      "32,65": 11,
+      "32,66": 11,
+      "32,67": 11,
+      "32,68": 11,
+      "32,69": 11,
+      "32,70": 4,
+      "33,70": 4
+    },
+    "ColStyles": {
+      "9": 51,
+      "71": 52,
+      "72": 52,
+      "73": 52,
+      "74": 52,
+      "75": 52,
+      "76": 52,
+      "77": 52,
+      "78": 52,
+      "79": 52,
+      "80": 52,
+      "81": 52
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "2,42,1,3",
+    "2,7,1,4",
+    "2,11,1,4",
+    "2,55,1,3",
+    "4,6,11,1",
+    "15,6,6,1",
+    "21,6,11,1",
+    "22,59,1,2",
+    "32,6,1,53",
+    "22,68,1,2",
+    "6,7,9,63",
+    "16,7,5,63",
+    "23,7,9,63",
+    "0,7,1,16",
+    "5,34,1,4",
+    "15,34,1,4",
+    "22,34,1,4",
+    "22,38,1,21",
+    "2,47,1,7",
+    "5,7,1,6",
+    "5,23,1,3",
+    "5,26,1,4",
+    "5,30,1,4",
+    "5,38,1,14",
+    "5,59,1,2",
+    "5,61,1,2",
+    "5,63,1,7",
+    "5,52,1,4",
+    "5,56,1,3",
+    "15,7,1,6",
+    "15,23,1,3",
+    "15,26,1,4",
+    "15,30,1,4",
+    "15,38,1,14",
+    "15,59,1,2",
+    "15,61,1,2",
+    "15,63,1,7",
+    "15,56,1,3",
+    "15,52,1,4",
+    "22,7,1,6",
+    "22,23,1,3",
+    "22,26,1,4",
+    "22,30,1,4",
+    "5,15,1,4",
+    "5,19,1,4",
+    "5,13,1,2",
+    "15,15,1,4",
+    "15,19,1,4",
+    "15,13,1,2",
+    "22,19,1,4",
+    "22,15,1,4",
+    "22,13,1,2",
+    "4,7,1,6",
+    "4,13,1,2",
+    "4,15,1,4",
+    "4,19,1,4",
+    "4,23,1,3",
+    "4,26,1,4",
+    "4,30,1,4",
+    "4,34,1,4",
+    "4,38,1,14",
+    "4,52,1,4",
+    "4,56,1,3",
+    "4,59,1,2",
+    "4,61,1,2",
+    "4,63,1,7",
+    "21,7,1,6",
+    "21,13,1,2",
+    "21,15,1,4",
+    "21,19,1,4",
+    "21,23,1,3",
+    "21,26,1,4",
+    "21,30,1,4",
+    "21,34,1,4",
+    "21,38,1,21",
+    "21,59,1,2",
+    "21,68,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "状态",
+      "Formula": "贴膜属性列表!$L$3"
+    }
+  ]
+}//0L9BDohdXbkM0yspo0C+qZJMgFTdmX2+RRRPIZx26u2uu2doEvu9YDT2SIGdPFj/KXTulo7aBkF7Ac5OwzZmMpZmWwrNAXRmjI9S7y+jLIV3cgtqYRxl2hdkkcnJDiIabu6gZd1N8u8OaY5d9APJ+p7Tl6k+PDj9g/QA+uhAcC0XADy42mvfYRmoqrWvGdx2i9hd7V69z4hBLHohIHUOeo5kgkZAozu9/wWtv9vzInXUksLGCIu8NByTojkhcrXlFk9a4kvtFqABqP32OS/O60ep7SDoZHOc94TzRiH63ME0MbmNvHTHHb2mwk/BKkkb+DHTzdeyBKWZKSM4EnG//mq1tetHprA4LUKHWN6oBQCM0aV8cuUXT5GPjgTeCpUtG91YgdCWBYI6d51tvbc49hkTh1+qkDYdpIh7vJAqnUo849D0PoQVkJ9gaMmGfKqTAm3DaJYH+jqPlcybbzLYumtEE2ATupjgkRRKJrrDIu9Hd0bD8elcmFsRblfZ+PT7FRbcp1EKzem3l5vudbiR2YOEh/9eAru1ABmKnl54AQUNwVTP3tqDkW8Fg9OHZ9I4r3UFe5wCV/AepBro1tBu4Fb5zOP8i/PQG7FqQioB7O7GA/Lvtj79mEs2CkC2NnyB+31NFKfGSDwsIj+quNBeh5/5WEp9socNb5mpMGx2oIGEiaWFI4DDolXJTYri4Y+TWNgCjaiUJocmIHG0BlYjOManV4/0P++obMJABwMxhMzbR4orLVENTNLJUnNL9JWXZvvDPT7X49fQw3ZJt1jRrfn8PMGenDc8GXQ6D5fZ2ihrirhcYCemZHZgDQRmlq2kGcg5Yk9Th34Yus69GeDj68Of/M++bAo8ZV/wGzMRUDY65njHBqX4bmJ7jLYJnJ1QkEJOdDhLzzTwll9WBdAh9A==|920

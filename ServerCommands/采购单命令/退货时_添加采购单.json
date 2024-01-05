@@ -1,0 +1,567 @@
+{
+  "Name": "退货时_添加采购单",
+  "Description": "1、添加采购单主表、添加采购单明细\r\n2、更新“出库退货”出库单的用途单号为采购单号",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "采购单号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "采购_退货",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "供应商",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "供商编号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "采购人",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "采购日期",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "出入库单号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "备注",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "附件",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "审核状态",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "审核人",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "审核时间",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "合计金额",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "折后金额",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "已付款",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "Type": 1,
+          "ArrayItems": [],
+          "ArrayParamItems": [
+            {
+              "Name": "采购单号",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "材料编号",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "材料名称",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "料号批次",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "单位",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "采购数量",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "上批单价",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "单价",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "库存数量",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "备注",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "权重",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            }
+          ],
+          "Name": "采购明细",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "采购单主表",
+          "UpdateType": "add",
+          "ShowConfirm": false,
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购_退货",
+                "GUID": "8bc2e0f6-e3a9-4e8a-bdfb-e410837430c2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=采购_退货"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "供应商",
+                "GUID": "48fda21b-cbc4-48e3-aa0b-52c4149cfe38"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供应商"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "供商编号",
+                "GUID": "5f00aac6-e494-40d3-ae3d-d87a3943fe42"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供商编号"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购人",
+                "GUID": "50232af3-e021-4c2f-adb8-bd90ea5f184a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=采购人"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "采购日期",
+                "GUID": "29ba7ba4-52eb-4a88-8bca-7aa7c725cc3e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=采购日期"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "出入库单号",
+                "GUID": "90d5d661-2c35-4c17-bce2-8311e344119f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=出入库单号"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "备注",
+                "GUID": "528fd1f9-b301-47c6-9685-5b84f720e233"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=备注"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "附件",
+                "GUID": "f426de72-2490-4d32-aaf3-332fac848062"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=附件"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "审核状态",
+                "GUID": "b87ab6e4-fd35-406f-8b17-4212ade4b096"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=审核状态"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "审核人",
+                "GUID": "4dfc9c02-4f7b-42cf-ae44-65d43f66d98d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=审核人"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "审核时间",
+                "GUID": "311d5cb7-4c82-4d6f-a9f9-f4044a4cef86"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=审核时间"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "合计金额",
+                "GUID": "ca597129-9c7a-462e-aaf4-096ded149810"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=合计金额"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "折扣后金额",
+                "GUID": "60b1a0c4-3d5e-452e-8edc-6c5d2c2abd1c"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=折后金额"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购单主表",
+                "ColumnName": "已付款",
+                "GUID": "03ffc583-9c0f-48f1-8237-d738cb6c0a5d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=已付款"
+              }
+            }
+          ],
+          "ParamNameToSaveNewRowValue": "采购单主表"
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "出入库主表",
+          "ShowConfirm": false,
+          "RowsToUpdate": 1,
+          "RowsToUpdateCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "SubConditions": [
+              {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "出入库主表",
+                  "ColumnName": "用料类型",
+                  "GUID": "30f5eaea-c54d-4978-9584-cbc3bc971157"
+                },
+                "Value": "出库退货"
+              },
+              {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "出入库主表",
+                  "ColumnName": "出入库单号",
+                  "GUID": "20742cda-2336-486b-a323-7837f5d94595"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=出入库单号"
+                }
+              }
+            ]
+          },
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "出入库主表",
+                "ColumnName": "关联采购单号",
+                "GUID": "e5e14b08-a14a-4366-adb5-c53a5b9df3e7"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=采购单号"
+              }
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=采购明细"
+            },
+            "LoopItemParamName": "采购单明细"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "采购单明细表",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "采购单号",
+                    "GUID": "7c721c1e-0b0b-473e-b872-54ec88bf6311"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.采购单号"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "材料编号",
+                    "GUID": "d725aec3-4f98-4b31-84ea-4bf433b7a361"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.材料编号"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "材料名称",
+                    "GUID": "bc8e8ac1-77db-408b-b261-680a24e2ef36"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.材料名称"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "料号批次",
+                    "GUID": "e9d3db4f-6c19-4cc6-a76e-55380e9a8883"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.料号批次"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "单位",
+                    "GUID": "542e695b-0f18-4d0a-b34d-fed55bb50279"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.单位"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "采购数量",
+                    "GUID": "94939d39-7712-4ac4-bf57-f32dab574dba"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.采购数量"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "上批单价",
+                    "GUID": "a2b6cd9b-3ec9-4456-821f-aa3a56d66e79"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.上批单价"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "单价",
+                    "GUID": "6e251b68-5632-4d9f-8ecd-a734774455dc"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.单价"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "库存数量",
+                    "GUID": "370c31df-96aa-4210-9e36-8930acefb213"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.库存数量"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "备注",
+                    "GUID": "c472f3de-78d9-42a6-8b19-ad6df44899ec"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.备注"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单明细表",
+                    "ColumnName": "权重",
+                    "GUID": "c5ba0c88-a1aa-4e3e-bc37-f43cd15653f7"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单明细.权重"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

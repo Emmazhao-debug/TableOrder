@@ -1,0 +1,43 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "*dtc)!ABS4rs"
+  },
+  "ShareCommandContainers": [],
+  "ListviewLoadingIndicatorSettings": {
+    "LoadingType": 0,
+    "CSSLoading": 5,
+    "CSSColor": "Accent 1",
+    "LocalImageName": null
+  },
+  "IsPageInContainerBackgroundHardCodeWhite": true,
+  "GlobalProperties": [],
+  "WebSitePort": 56105,
+  "UserServicePort": 52396,
+  "NotAllowModifyDatabaseByJsApi": false,
+  "NotAllowQueryDatabaseByJsApi": false,
+  "NotAllowSendMailByJsApi": false,
+  "StartPage": "验证登录权限",
+  "ExecConcurrentScheduledTasks": false,
+  "TableSheetPageSize": 500,
+  "StartDateFiscalYear": 1,
+  "BaseOnStartingMonth": true,
+  "CellTypeSpinInfos": [],
+  "SuppressedWarningMessages": [
+    "批量导入新材料->按钮(BG7)->命令->循环命令, 在循环过程中，一旦执行了“关闭弹出页面”命令，循环将会结束，之后的子命令也不会继续执行。"
+  ],
+  "KeepMasterPage": false,
+  "IsDisableFocusOutTrigger": 1,
+  "MaxRowCount": 10000000,
+  "NameConflictPolicy": 1,
+  "PageResponsiveMode": 4,
+  "PageLoadingMode": 2,
+  "AuditingList": {
+    "产品组件数据表": 0,
+    "区域送货定价表": 0,
+    "基础字典表": 0,
+    "地区目录表": 0,
+    "客户资料": 0,
+    "客户资料_联系人子表": 0,
+    "用户信息视图": 0
+  }
+}

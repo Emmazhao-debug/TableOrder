@@ -1,0 +1,2005 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "Count": 44
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "Count": 76
+  },
+  "Values": {
+    "2,3": "启用中（包含待启用）的材料汇总表",
+    "4,3": "板材类：",
+    "4,14": "边带：",
+    "4,25": "灯带/模组：",
+    "4,34": "点光源：",
+    "4,43": "油漆：",
+    "4,52": "UV打印：",
+    "5,9": "板材id",
+    "5,66": "材料id：",
+    "6,66": "材料名称：",
+    "7,66": "材料类型id：",
+    "25,3": "*双击材料名称选择"
+  },
+  "AttachInfos": {
+    "5,3": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "板材属性表",
+        "RowIndex": 5,
+        "ColumnIndex": 3,
+        "RowCount": 20,
+        "ColumnCount": 10,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "状态",
+                "GUID": "3ab6fc5c-4092-45f4-ad1d-2808d5e388df"
+              },
+              "Value": "正常"
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "板材属性表",
+                    "ColumnName": "停用日期",
+                    "GUID": "06e373ef-9bc1-4e21-940f-764ed3bb2fb6"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "板材属性表",
+                    "ColumnName": "停用日期",
+                    "GUID": "acb0d60a-03df-4527-af11-489603c00ee3"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "板材属性表",
+                "ColumnName": "序号",
+                "GUID": "553c6eb1-6d05-446c-89dc-6ab27041174d"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "DoubleClickCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!J7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料名称"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!D7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料类型id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!L7"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
+      }
+    },
+    "5,14": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "边带属性表",
+        "RowIndex": 5,
+        "ColumnIndex": 14,
+        "RowCount": 20,
+        "ColumnCount": 10,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "边带属性表",
+                "ColumnName": "状态",
+                "GUID": "1ff4eb53-92d3-4497-95c4-023dd6492a04"
+              },
+              "Value": "正常"
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "边带属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "538385cd-1ef0-4aec-b0ec-76ddd612e9c9"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "边带属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "9e884ff2-24d4-4ea9-8631-878f3c0331ae"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "边带属性表",
+                "ColumnName": "序号",
+                "GUID": "f9fb8bcc-e5e3-4a98-86fa-9cc12dfab89d"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "DoubleClickCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!U7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料名称"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!O7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料类型id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!W7"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
+      }
+    },
+    "5,25": {
+      "ListViewInfo": {
+        "Name": "表格3",
+        "TableName": "灯带属性表",
+        "RowIndex": 5,
+        "ColumnIndex": 25,
+        "RowCount": 20,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "灯带属性表",
+                "ColumnName": "状态",
+                "GUID": "8a92b83d-d163-4ff0-91c1-ee1dd9473c75"
+              },
+              "Value": "正常"
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "灯带属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "b2fcea82-25b1-476d-85bf-39c22b2a08da"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "灯带属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "88d09d83-cdc7-4f50-9807-11aa3e4722c2"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "灯带属性表",
+                "ColumnName": "序号",
+                "GUID": "dfec3abf-2e7d-4e6f-b480-bb0fa15f78ff"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "DoubleClickCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!AF7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料名称"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!Z7"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
+      }
+    },
+    "5,34": {
+      "ListViewInfo": {
+        "Name": "表格4",
+        "TableName": "外露灯属性表",
+        "RowIndex": 5,
+        "ColumnIndex": 34,
+        "RowCount": 20,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "外露灯属性表",
+                "ColumnName": "状态",
+                "GUID": "5085385b-534b-4994-83c2-d891abfd505d"
+              },
+              "Value": "正常"
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "外露灯属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "9efc6068-e65c-4220-8784-d1bee6519789"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "外露灯属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "43784c20-b0c9-43eb-b532-305fad059d40"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "外露灯属性表",
+                "ColumnName": "序号",
+                "GUID": "044f94de-82f4-4456-8fa4-0cc70e95696d"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "DoubleClickCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!AO7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料名称"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!AI7"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
+      }
+    },
+    "5,43": {
+      "ListViewInfo": {
+        "Name": "表格5",
+        "TableName": "油漆属性表",
+        "RowIndex": 5,
+        "ColumnIndex": 43,
+        "RowCount": 20,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "油漆属性表",
+                "ColumnName": "状态",
+                "GUID": "725bcc24-4a33-4b39-8e9d-b5c28e97ae49"
+              },
+              "Value": "正常"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "油漆属性表",
+                "ColumnName": "截止日期",
+                "GUID": "db126e00-d786-4251-a02b-ac5edbaced1d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              },
+              "LeftBracket": 1
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "油漆属性表",
+                "ColumnName": "截止日期",
+                "GUID": "c8cb7d06-bf4b-4d2b-bba3-9951d261281d"
+              },
+              "Value": "%Null%",
+              "RightBracket": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "油漆属性表",
+                "ColumnName": "序号",
+                "GUID": "c2383735-de72-419d-a75c-585a0b39f4e5"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "DoubleClickCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!AX7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料名称"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!AR7"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
+      }
+    },
+    "5,52": {
+      "ListViewInfo": {
+        "Name": "表格6",
+        "TableName": "UV打印属性表",
+        "RowIndex": 5,
+        "ColumnIndex": 52,
+        "RowCount": 20,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "UV打印属性表",
+                "ColumnName": "状态",
+                "GUID": "793a0367-fb4e-466a-a839-bb66680f7af2"
+              },
+              "Value": "正常"
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 3,
+                  "ColumnBindingInfo": {
+                    "TableName": "UV打印属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "102d41dc-ac4b-44a4-aa81-e3a8df13ebb6"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TODAY()"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "UV打印属性表",
+                    "ColumnName": "截止日期",
+                    "GUID": "d40fe5bf-55f4-45c2-b473-51578af1a7e0"
+                  },
+                  "Value": "%Null%",
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "UV打印属性表",
+                "ColumnName": "ID",
+                "GUID": "890c37bb-70fd-423f-acce-e7391b578618"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "DoubleClickCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!BG7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!材料名称"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料选择组合!BA7"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
+      }
+    },
+    "6,3": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "板材名称",
+        "GUID": "dd48b823-a0f1-417f-adfe-54f2d23e0ad4"
+      }
+    },
+    "6,9": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "ID",
+        "GUID": "0bfcbf04-a581-4706-a0a0-a00a325d0592"
+      }
+    },
+    "6,11": {
+      "BindingInfo": {
+        "TableName": "板材属性表",
+        "ColumnName": "类型id",
+        "GUID": "14f777c0-ae1c-4ee0-8486-4b5c9d06a4a4"
+      }
+    },
+    "6,14": {
+      "BindingInfo": {
+        "TableName": "边带属性表",
+        "ColumnName": "边带名称",
+        "GUID": "adce1191-f86d-4829-9895-e5c449b1d53a"
+      }
+    },
+    "6,20": {
+      "BindingInfo": {
+        "TableName": "边带属性表",
+        "ColumnName": "ID",
+        "GUID": "9b65e685-25a0-4aee-8a0c-ca70f5f99bde"
+      }
+    },
+    "6,22": {
+      "BindingInfo": {
+        "TableName": "边带属性表",
+        "ColumnName": "类型id",
+        "GUID": "0ec210af-12ac-44bd-80fb-a04c1fc67e8f"
+      }
+    },
+    "6,25": {
+      "BindingInfo": {
+        "TableName": "灯带属性表",
+        "ColumnName": "灯带名称",
+        "GUID": "83d6ad67-624c-4027-857d-9cc08bead082"
+      }
+    },
+    "6,31": {
+      "BindingInfo": {
+        "TableName": "灯带属性表",
+        "ColumnName": "ID",
+        "GUID": "f41c0a62-00b9-40d0-aa59-200f8059790d"
+      }
+    },
+    "6,34": {
+      "BindingInfo": {
+        "TableName": "外露灯属性表",
+        "ColumnName": "名称",
+        "GUID": "67d47220-f50d-4100-b393-d1dace4d4ab0"
+      }
+    },
+    "6,40": {
+      "BindingInfo": {
+        "TableName": "外露灯属性表",
+        "ColumnName": "ID",
+        "GUID": "109a65fe-28fc-414b-8617-366e992cfd3a"
+      }
+    },
+    "6,43": {
+      "BindingInfo": {
+        "TableName": "油漆属性表",
+        "ColumnName": "名称",
+        "GUID": "9a272a0a-10f2-4f75-9476-c8ec60aaa7c0"
+      }
+    },
+    "6,49": {
+      "BindingInfo": {
+        "TableName": "油漆属性表",
+        "ColumnName": "ID",
+        "GUID": "9978362e-1375-4e95-a3e2-e7e848d6194c"
+      }
+    },
+    "6,52": {
+      "BindingInfo": {
+        "TableName": "UV打印属性表",
+        "ColumnName": "打印形式",
+        "GUID": "2ebdb10f-a08b-4722-9050-560b97a529dc"
+      }
+    },
+    "6,58": {
+      "BindingInfo": {
+        "TableName": "UV打印属性表",
+        "ColumnName": "ID",
+        "GUID": "9e738c90-6e87-465f-a7fd-48442538487a"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Foreground": 4
+      },
+      {
+        "HorizontalAlignment": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "Background 1 -25",
+        "Background 1 -50",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "4,3": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "4,29": 1,
+      "4,30": 1,
+      "4,31": 1,
+      "4,32": 1,
+      "4,33": 1,
+      "4,34": 1,
+      "4,35": 1,
+      "4,36": 1,
+      "4,37": 1,
+      "4,38": 1,
+      "4,39": 1,
+      "4,40": 1,
+      "4,41": 1,
+      "4,42": 1,
+      "4,43": 1,
+      "4,44": 1,
+      "4,45": 1,
+      "4,46": 1,
+      "4,47": 1,
+      "4,48": 1,
+      "4,49": 1,
+      "4,50": 1,
+      "4,51": 1,
+      "4,52": 1,
+      "4,53": 1,
+      "4,54": 1,
+      "4,55": 1,
+      "4,56": 1,
+      "4,57": 1,
+      "4,58": 1,
+      "4,59": 1,
+      "5,3": 2,
+      "5,4": 3,
+      "5,5": 3,
+      "5,6": 3,
+      "5,7": 3,
+      "5,8": 3,
+      "5,9": 4,
+      "5,10": 5,
+      "5,14": 6,
+      "5,15": 3,
+      "5,16": 3,
+      "5,17": 3,
+      "5,18": 3,
+      "5,19": 3,
+      "5,20": 4,
+      "5,21": 5,
+      "5,25": 6,
+      "5,26": 3,
+      "5,27": 3,
+      "5,28": 3,
+      "5,29": 3,
+      "5,30": 3,
+      "5,31": 7,
+      "5,32": 8,
+      "5,34": 6,
+      "5,35": 3,
+      "5,36": 3,
+      "5,37": 3,
+      "5,38": 3,
+      "5,39": 3,
+      "5,40": 7,
+      "5,41": 8,
+      "5,43": 6,
+      "5,44": 3,
+      "5,45": 3,
+      "5,46": 3,
+      "5,47": 3,
+      "5,48": 3,
+      "5,49": 7,
+      "5,50": 8,
+      "5,52": 6,
+      "5,53": 3,
+      "5,54": 3,
+      "5,55": 3,
+      "5,56": 3,
+      "5,57": 3,
+      "5,58": 7,
+      "5,59": 8,
+      "6,3": 9,
+      "6,9": 10,
+      "6,10": 11,
+      "6,11": 12,
+      "6,14": 13,
+      "6,20": 10,
+      "6,21": 11,
+      "6,22": 12,
+      "6,25": 13,
+      "6,31": 14,
+      "6,32": 15,
+      "6,34": 13,
+      "6,40": 14,
+      "6,41": 15,
+      "6,43": 13,
+      "6,49": 14,
+      "6,50": 15,
+      "6,52": 13,
+      "6,58": 14,
+      "6,59": 15,
+      "7,3": 9,
+      "7,12": 15,
+      "7,14": 13,
+      "7,15": 16,
+      "7,16": 16,
+      "7,17": 16,
+      "7,18": 16,
+      "7,19": 16,
+      "7,22": 16,
+      "7,23": 17,
+      "7,24": 16,
+      "7,25": 13,
+      "7,26": 16,
+      "7,27": 16,
+      "7,28": 16,
+      "7,29": 16,
+      "7,30": 16,
+      "7,31": 16,
+      "7,32": 17,
+      "7,33": 16,
+      "7,34": 13,
+      "7,35": 16,
+      "7,36": 16,
+      "7,37": 16,
+      "7,38": 16,
+      "7,39": 16,
+      "7,40": 16,
+      "7,41": 17,
+      "7,42": 16,
+      "7,43": 13,
+      "7,44": 16,
+      "7,45": 16,
+      "7,46": 16,
+      "7,47": 16,
+      "7,48": 16,
+      "7,49": 16,
+      "7,50": 17,
+      "7,51": 16,
+      "7,52": 13,
+      "7,53": 16,
+      "7,54": 16,
+      "7,55": 16,
+      "7,56": 16,
+      "7,57": 16,
+      "7,58": 16,
+      "7,59": 17,
+      "8,3": 9,
+      "8,12": 15,
+      "8,14": 13,
+      "8,15": 16,
+      "8,16": 16,
+      "8,17": 16,
+      "8,18": 16,
+      "8,19": 16,
+      "8,22": 16,
+      "8,23": 17,
+      "8,24": 16,
+      "8,25": 13,
+      "8,26": 16,
+      "8,27": 16,
+      "8,28": 16,
+      "8,29": 16,
+      "8,30": 16,
+      "8,31": 16,
+      "8,32": 17,
+      "8,33": 16,
+      "8,34": 13,
+      "8,35": 16,
+      "8,36": 16,
+      "8,37": 16,
+      "8,38": 16,
+      "8,39": 16,
+      "8,40": 16,
+      "8,41": 17,
+      "8,42": 16,
+      "8,43": 13,
+      "8,44": 16,
+      "8,45": 16,
+      "8,46": 16,
+      "8,47": 16,
+      "8,48": 16,
+      "8,49": 16,
+      "8,50": 17,
+      "8,51": 16,
+      "8,52": 13,
+      "8,53": 16,
+      "8,54": 16,
+      "8,55": 16,
+      "8,56": 16,
+      "8,57": 16,
+      "8,58": 16,
+      "8,59": 17,
+      "9,3": 9,
+      "9,12": 15,
+      "9,14": 13,
+      "9,15": 16,
+      "9,16": 16,
+      "9,17": 16,
+      "9,18": 16,
+      "9,19": 16,
+      "9,22": 16,
+      "9,23": 17,
+      "9,24": 16,
+      "9,25": 13,
+      "9,26": 16,
+      "9,27": 16,
+      "9,28": 16,
+      "9,29": 16,
+      "9,30": 16,
+      "9,31": 16,
+      "9,32": 17,
+      "9,33": 16,
+      "9,34": 13,
+      "9,35": 16,
+      "9,36": 16,
+      "9,37": 16,
+      "9,38": 16,
+      "9,39": 16,
+      "9,40": 16,
+      "9,41": 17,
+      "9,42": 16,
+      "9,43": 13,
+      "9,44": 16,
+      "9,45": 16,
+      "9,46": 16,
+      "9,47": 16,
+      "9,48": 16,
+      "9,49": 16,
+      "9,50": 17,
+      "9,51": 16,
+      "9,52": 13,
+      "9,53": 16,
+      "9,54": 16,
+      "9,55": 16,
+      "9,56": 16,
+      "9,57": 16,
+      "9,58": 16,
+      "9,59": 17,
+      "10,3": 9,
+      "10,12": 15,
+      "10,14": 13,
+      "10,15": 16,
+      "10,16": 16,
+      "10,17": 16,
+      "10,18": 16,
+      "10,19": 16,
+      "10,22": 16,
+      "10,23": 17,
+      "10,24": 16,
+      "10,25": 13,
+      "10,26": 16,
+      "10,27": 16,
+      "10,28": 16,
+      "10,29": 16,
+      "10,30": 16,
+      "10,31": 16,
+      "10,32": 17,
+      "10,33": 16,
+      "10,34": 13,
+      "10,35": 16,
+      "10,36": 16,
+      "10,37": 16,
+      "10,38": 16,
+      "10,39": 16,
+      "10,40": 16,
+      "10,41": 17,
+      "10,42": 16,
+      "10,43": 13,
+      "10,44": 16,
+      "10,45": 16,
+      "10,46": 16,
+      "10,47": 16,
+      "10,48": 16,
+      "10,49": 16,
+      "10,50": 17,
+      "10,51": 16,
+      "10,52": 13,
+      "10,53": 16,
+      "10,54": 16,
+      "10,55": 16,
+      "10,56": 16,
+      "10,57": 16,
+      "10,58": 16,
+      "10,59": 17,
+      "11,3": 9,
+      "11,12": 15,
+      "11,14": 13,
+      "11,15": 16,
+      "11,16": 16,
+      "11,17": 16,
+      "11,18": 16,
+      "11,19": 16,
+      "11,22": 16,
+      "11,23": 17,
+      "11,24": 16,
+      "11,25": 13,
+      "11,26": 16,
+      "11,27": 16,
+      "11,28": 16,
+      "11,29": 16,
+      "11,30": 16,
+      "11,31": 16,
+      "11,32": 17,
+      "11,33": 16,
+      "11,34": 13,
+      "11,35": 16,
+      "11,36": 16,
+      "11,37": 16,
+      "11,38": 16,
+      "11,39": 16,
+      "11,40": 16,
+      "11,41": 17,
+      "11,42": 16,
+      "11,43": 13,
+      "11,44": 16,
+      "11,45": 16,
+      "11,46": 16,
+      "11,47": 16,
+      "11,48": 16,
+      "11,49": 16,
+      "11,50": 17,
+      "11,51": 16,
+      "11,52": 13,
+      "11,53": 16,
+      "11,54": 16,
+      "11,55": 16,
+      "11,56": 16,
+      "11,57": 16,
+      "11,58": 16,
+      "11,59": 17,
+      "12,3": 9,
+      "12,12": 15,
+      "12,14": 13,
+      "12,15": 16,
+      "12,16": 16,
+      "12,17": 16,
+      "12,18": 16,
+      "12,19": 16,
+      "12,22": 16,
+      "12,23": 17,
+      "12,24": 16,
+      "12,25": 13,
+      "12,26": 16,
+      "12,27": 16,
+      "12,28": 16,
+      "12,29": 16,
+      "12,30": 16,
+      "12,31": 16,
+      "12,32": 17,
+      "12,33": 16,
+      "12,34": 13,
+      "12,35": 16,
+      "12,36": 16,
+      "12,37": 16,
+      "12,38": 16,
+      "12,39": 16,
+      "12,40": 16,
+      "12,41": 17,
+      "12,42": 16,
+      "12,43": 13,
+      "12,44": 16,
+      "12,45": 16,
+      "12,46": 16,
+      "12,47": 16,
+      "12,48": 16,
+      "12,49": 16,
+      "12,50": 17,
+      "12,51": 16,
+      "12,52": 13,
+      "12,53": 16,
+      "12,54": 16,
+      "12,55": 16,
+      "12,56": 16,
+      "12,57": 16,
+      "12,58": 16,
+      "12,59": 17,
+      "13,3": 9,
+      "13,12": 15,
+      "13,14": 13,
+      "13,15": 16,
+      "13,16": 16,
+      "13,17": 16,
+      "13,18": 16,
+      "13,19": 16,
+      "13,22": 16,
+      "13,23": 17,
+      "13,24": 16,
+      "13,25": 13,
+      "13,26": 16,
+      "13,27": 16,
+      "13,28": 16,
+      "13,29": 16,
+      "13,30": 16,
+      "13,31": 16,
+      "13,32": 17,
+      "13,33": 16,
+      "13,34": 13,
+      "13,35": 16,
+      "13,36": 16,
+      "13,37": 16,
+      "13,38": 16,
+      "13,39": 16,
+      "13,40": 16,
+      "13,41": 17,
+      "13,42": 16,
+      "13,43": 13,
+      "13,44": 16,
+      "13,45": 16,
+      "13,46": 16,
+      "13,47": 16,
+      "13,48": 16,
+      "13,49": 16,
+      "13,50": 17,
+      "13,51": 16,
+      "13,52": 13,
+      "13,53": 16,
+      "13,54": 16,
+      "13,55": 16,
+      "13,56": 16,
+      "13,57": 16,
+      "13,58": 16,
+      "13,59": 17,
+      "14,3": 9,
+      "14,12": 15,
+      "14,14": 13,
+      "14,15": 16,
+      "14,16": 16,
+      "14,17": 16,
+      "14,18": 16,
+      "14,19": 16,
+      "14,22": 16,
+      "14,23": 17,
+      "14,24": 16,
+      "14,25": 13,
+      "14,26": 16,
+      "14,27": 16,
+      "14,28": 16,
+      "14,29": 16,
+      "14,30": 16,
+      "14,31": 16,
+      "14,32": 17,
+      "14,33": 16,
+      "14,34": 13,
+      "14,35": 16,
+      "14,36": 16,
+      "14,37": 16,
+      "14,38": 16,
+      "14,39": 16,
+      "14,40": 16,
+      "14,41": 17,
+      "14,42": 16,
+      "14,43": 13,
+      "14,44": 16,
+      "14,45": 16,
+      "14,46": 16,
+      "14,47": 16,
+      "14,48": 16,
+      "14,49": 16,
+      "14,50": 17,
+      "14,51": 16,
+      "14,52": 13,
+      "14,53": 16,
+      "14,54": 16,
+      "14,55": 16,
+      "14,56": 16,
+      "14,57": 16,
+      "14,58": 16,
+      "14,59": 17,
+      "15,3": 9,
+      "15,12": 15,
+      "15,14": 13,
+      "15,15": 16,
+      "15,16": 16,
+      "15,17": 16,
+      "15,18": 16,
+      "15,19": 16,
+      "15,22": 16,
+      "15,23": 17,
+      "15,24": 16,
+      "15,25": 13,
+      "15,26": 16,
+      "15,27": 16,
+      "15,28": 16,
+      "15,29": 16,
+      "15,30": 16,
+      "15,31": 16,
+      "15,32": 17,
+      "15,33": 16,
+      "15,34": 13,
+      "15,35": 16,
+      "15,36": 16,
+      "15,37": 16,
+      "15,38": 16,
+      "15,39": 16,
+      "15,40": 16,
+      "15,41": 17,
+      "15,42": 16,
+      "15,43": 13,
+      "15,44": 16,
+      "15,45": 16,
+      "15,46": 16,
+      "15,47": 16,
+      "15,48": 16,
+      "15,49": 16,
+      "15,50": 17,
+      "15,51": 16,
+      "15,52": 13,
+      "15,53": 16,
+      "15,54": 16,
+      "15,55": 16,
+      "15,56": 16,
+      "15,57": 16,
+      "15,58": 16,
+      "15,59": 17,
+      "16,3": 9,
+      "16,12": 15,
+      "16,14": 13,
+      "16,15": 16,
+      "16,16": 16,
+      "16,17": 16,
+      "16,18": 16,
+      "16,19": 16,
+      "16,22": 16,
+      "16,23": 17,
+      "16,24": 16,
+      "16,25": 13,
+      "16,26": 16,
+      "16,27": 16,
+      "16,28": 16,
+      "16,29": 16,
+      "16,30": 16,
+      "16,31": 16,
+      "16,32": 17,
+      "16,33": 16,
+      "16,34": 13,
+      "16,35": 16,
+      "16,36": 16,
+      "16,37": 16,
+      "16,38": 16,
+      "16,39": 16,
+      "16,40": 16,
+      "16,41": 17,
+      "16,42": 16,
+      "16,43": 13,
+      "16,44": 16,
+      "16,45": 16,
+      "16,46": 16,
+      "16,47": 16,
+      "16,48": 16,
+      "16,49": 16,
+      "16,50": 17,
+      "16,51": 16,
+      "16,52": 13,
+      "16,53": 16,
+      "16,54": 16,
+      "16,55": 16,
+      "16,56": 16,
+      "16,57": 16,
+      "16,58": 16,
+      "16,59": 17,
+      "17,3": 9,
+      "17,12": 15,
+      "17,14": 13,
+      "17,15": 16,
+      "17,16": 16,
+      "17,17": 16,
+      "17,18": 16,
+      "17,19": 16,
+      "17,22": 16,
+      "17,23": 17,
+      "17,24": 16,
+      "17,25": 13,
+      "17,26": 16,
+      "17,27": 16,
+      "17,28": 16,
+      "17,29": 16,
+      "17,30": 16,
+      "17,31": 16,
+      "17,32": 17,
+      "17,33": 16,
+      "17,34": 13,
+      "17,35": 16,
+      "17,36": 16,
+      "17,37": 16,
+      "17,38": 16,
+      "17,39": 16,
+      "17,40": 16,
+      "17,41": 17,
+      "17,42": 16,
+      "17,43": 13,
+      "17,44": 16,
+      "17,45": 16,
+      "17,46": 16,
+      "17,47": 16,
+      "17,48": 16,
+      "17,49": 16,
+      "17,50": 17,
+      "17,51": 16,
+      "17,52": 13,
+      "17,53": 16,
+      "17,54": 16,
+      "17,55": 16,
+      "17,56": 16,
+      "17,57": 16,
+      "17,58": 16,
+      "17,59": 17,
+      "18,3": 9,
+      "18,12": 15,
+      "18,14": 13,
+      "18,15": 16,
+      "18,16": 16,
+      "18,17": 16,
+      "18,18": 16,
+      "18,19": 16,
+      "18,22": 16,
+      "18,23": 17,
+      "18,24": 16,
+      "18,25": 13,
+      "18,26": 16,
+      "18,27": 16,
+      "18,28": 16,
+      "18,29": 16,
+      "18,30": 16,
+      "18,31": 16,
+      "18,32": 17,
+      "18,33": 16,
+      "18,34": 13,
+      "18,35": 16,
+      "18,36": 16,
+      "18,37": 16,
+      "18,38": 16,
+      "18,39": 16,
+      "18,40": 16,
+      "18,41": 17,
+      "18,42": 16,
+      "18,43": 13,
+      "18,44": 16,
+      "18,45": 16,
+      "18,46": 16,
+      "18,47": 16,
+      "18,48": 16,
+      "18,49": 16,
+      "18,50": 17,
+      "18,51": 16,
+      "18,52": 13,
+      "18,53": 16,
+      "18,54": 16,
+      "18,55": 16,
+      "18,56": 16,
+      "18,57": 16,
+      "18,58": 16,
+      "18,59": 17,
+      "19,3": 9,
+      "19,12": 15,
+      "19,14": 13,
+      "19,15": 16,
+      "19,16": 16,
+      "19,17": 16,
+      "19,18": 16,
+      "19,19": 16,
+      "19,22": 16,
+      "19,23": 17,
+      "19,24": 16,
+      "19,25": 13,
+      "19,26": 16,
+      "19,27": 16,
+      "19,28": 16,
+      "19,29": 16,
+      "19,30": 16,
+      "19,31": 16,
+      "19,32": 17,
+      "19,33": 16,
+      "19,34": 13,
+      "19,35": 16,
+      "19,36": 16,
+      "19,37": 16,
+      "19,38": 16,
+      "19,39": 16,
+      "19,40": 16,
+      "19,41": 17,
+      "19,42": 16,
+      "19,43": 13,
+      "19,44": 16,
+      "19,45": 16,
+      "19,46": 16,
+      "19,47": 16,
+      "19,48": 16,
+      "19,49": 16,
+      "19,50": 17,
+      "19,51": 16,
+      "19,52": 13,
+      "19,53": 16,
+      "19,54": 16,
+      "19,55": 16,
+      "19,56": 16,
+      "19,57": 16,
+      "19,58": 16,
+      "19,59": 17,
+      "20,3": 9,
+      "20,12": 15,
+      "20,14": 13,
+      "20,15": 16,
+      "20,16": 16,
+      "20,17": 16,
+      "20,18": 16,
+      "20,19": 16,
+      "20,22": 16,
+      "20,23": 17,
+      "20,24": 16,
+      "20,25": 13,
+      "20,26": 16,
+      "20,27": 16,
+      "20,28": 16,
+      "20,29": 16,
+      "20,30": 16,
+      "20,31": 16,
+      "20,32": 17,
+      "20,33": 16,
+      "20,34": 13,
+      "20,35": 16,
+      "20,36": 16,
+      "20,37": 16,
+      "20,38": 16,
+      "20,39": 16,
+      "20,40": 16,
+      "20,41": 17,
+      "20,42": 16,
+      "20,43": 13,
+      "20,44": 16,
+      "20,45": 16,
+      "20,46": 16,
+      "20,47": 16,
+      "20,48": 16,
+      "20,49": 16,
+      "20,50": 17,
+      "20,51": 16,
+      "20,52": 13,
+      "20,53": 16,
+      "20,54": 16,
+      "20,55": 16,
+      "20,56": 16,
+      "20,57": 16,
+      "20,58": 16,
+      "20,59": 17,
+      "21,3": 9,
+      "21,12": 15,
+      "21,14": 13,
+      "21,15": 16,
+      "21,16": 16,
+      "21,17": 16,
+      "21,18": 16,
+      "21,19": 16,
+      "21,22": 16,
+      "21,23": 17,
+      "21,24": 16,
+      "21,25": 13,
+      "21,26": 16,
+      "21,27": 16,
+      "21,28": 16,
+      "21,29": 16,
+      "21,30": 16,
+      "21,31": 16,
+      "21,32": 17,
+      "21,33": 16,
+      "21,34": 13,
+      "21,35": 16,
+      "21,36": 16,
+      "21,37": 16,
+      "21,38": 16,
+      "21,39": 16,
+      "21,40": 16,
+      "21,41": 17,
+      "21,42": 16,
+      "21,43": 13,
+      "21,44": 16,
+      "21,45": 16,
+      "21,46": 16,
+      "21,47": 16,
+      "21,48": 16,
+      "21,49": 16,
+      "21,50": 17,
+      "21,51": 16,
+      "21,52": 13,
+      "21,53": 16,
+      "21,54": 16,
+      "21,55": 16,
+      "21,56": 16,
+      "21,57": 16,
+      "21,58": 16,
+      "21,59": 17,
+      "22,3": 9,
+      "22,12": 15,
+      "22,14": 13,
+      "22,15": 16,
+      "22,16": 16,
+      "22,17": 16,
+      "22,18": 16,
+      "22,19": 16,
+      "22,22": 16,
+      "22,23": 17,
+      "22,24": 16,
+      "22,25": 13,
+      "22,26": 16,
+      "22,27": 16,
+      "22,28": 16,
+      "22,29": 16,
+      "22,30": 16,
+      "22,31": 16,
+      "22,32": 17,
+      "22,33": 16,
+      "22,34": 13,
+      "22,35": 16,
+      "22,36": 16,
+      "22,37": 16,
+      "22,38": 16,
+      "22,39": 16,
+      "22,40": 16,
+      "22,41": 17,
+      "22,42": 16,
+      "22,43": 13,
+      "22,44": 16,
+      "22,45": 16,
+      "22,46": 16,
+      "22,47": 16,
+      "22,48": 16,
+      "22,49": 16,
+      "22,50": 17,
+      "22,51": 16,
+      "22,52": 13,
+      "22,53": 16,
+      "22,54": 16,
+      "22,55": 16,
+      "22,56": 16,
+      "22,57": 16,
+      "22,58": 16,
+      "22,59": 17,
+      "23,3": 9,
+      "23,12": 15,
+      "23,14": 13,
+      "23,15": 16,
+      "23,16": 16,
+      "23,17": 16,
+      "23,18": 16,
+      "23,19": 16,
+      "23,22": 16,
+      "23,23": 17,
+      "23,24": 16,
+      "23,25": 13,
+      "23,26": 16,
+      "23,27": 16,
+      "23,28": 16,
+      "23,29": 16,
+      "23,30": 16,
+      "23,31": 16,
+      "23,32": 17,
+      "23,33": 16,
+      "23,34": 13,
+      "23,35": 16,
+      "23,36": 16,
+      "23,37": 16,
+      "23,38": 16,
+      "23,39": 16,
+      "23,40": 16,
+      "23,41": 17,
+      "23,42": 16,
+      "23,43": 13,
+      "23,44": 16,
+      "23,45": 16,
+      "23,46": 16,
+      "23,47": 16,
+      "23,48": 16,
+      "23,49": 16,
+      "23,50": 17,
+      "23,51": 16,
+      "23,52": 13,
+      "23,53": 16,
+      "23,54": 16,
+      "23,55": 16,
+      "23,56": 16,
+      "23,57": 16,
+      "23,58": 16,
+      "23,59": 17,
+      "24,3": 18,
+      "24,4": 19,
+      "24,5": 19,
+      "24,6": 19,
+      "24,7": 19,
+      "24,8": 19,
+      "24,9": 19,
+      "24,10": 19,
+      "24,11": 19,
+      "24,12": 20,
+      "24,14": 21,
+      "24,15": 22,
+      "24,16": 22,
+      "24,17": 22,
+      "24,18": 22,
+      "24,19": 22,
+      "24,20": 19,
+      "24,21": 19,
+      "24,22": 22,
+      "24,23": 23,
+      "24,24": 16,
+      "24,25": 21,
+      "24,26": 22,
+      "24,27": 22,
+      "24,28": 22,
+      "24,29": 22,
+      "24,30": 22,
+      "24,31": 22,
+      "24,32": 23,
+      "24,33": 16,
+      "24,34": 21,
+      "24,35": 22,
+      "24,36": 22,
+      "24,37": 22,
+      "24,38": 22,
+      "24,39": 22,
+      "24,40": 22,
+      "24,41": 23,
+      "24,42": 16,
+      "24,43": 21,
+      "24,44": 22,
+      "24,45": 22,
+      "24,46": 22,
+      "24,47": 22,
+      "24,48": 22,
+      "24,49": 22,
+      "24,50": 23,
+      "24,51": 16,
+      "24,52": 21,
+      "24,53": 22,
+      "24,54": 22,
+      "24,55": 22,
+      "24,56": 22,
+      "24,57": 22,
+      "24,58": 22,
+      "24,59": 23,
+      "25,3": 24
+    },
+    "ColStyles": {
+      "66": 25
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "6,3,1,6",
+    "6,14,1,6",
+    "6,25,1,6",
+    "6,31,1,2",
+    "6,34,1,6",
+    "6,40,1,2",
+    "6,43,1,6",
+    "6,49,1,2",
+    "6,52,1,6",
+    "6,58,1,2",
+    "5,67,1,5",
+    "6,67,1,5",
+    "2,3,1,57",
+    "7,3,18,10",
+    "7,25,18,8",
+    "7,43,18,8",
+    "7,52,18,8",
+    "7,34,18,8",
+    "7,14,18,10",
+    "6,9,1,2",
+    "6,11,1,2",
+    "6,20,1,2",
+    "6,22,1,2",
+    "7,67,1,5",
+    "5,3,1,6",
+    "5,9,1,2",
+    "5,11,1,2",
+    "5,14,1,6",
+    "5,20,1,2",
+    "5,22,1,2",
+    "5,25,1,6",
+    "5,31,1,2",
+    "5,34,1,6",
+    "5,40,1,2",
+    "5,43,1,6",
+    "5,49,1,2",
+    "5,52,1,6",
+    "5,58,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "边带属性表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "材料id",
+      "Formula": "材料选择组合!$BP$6"
+    },
+    {
+      "Name": "材料名称",
+      "Formula": "材料选择组合!$BP$7"
+    },
+    {
+      "Name": "材料类型id",
+      "Formula": "材料选择组合!$BP$8"
+    }
+  ]
+}//C1eJ9/5cXVviglyZHAmMA2Gn4E9kbJCtCCp3XG9aVbZvh9UcXn+NBL77uj7v3ufw7otS5/TkO3VJnDY8NfgzCRj5mluq9PyZ4hEann8T1lFt4nvkbYJbs9e3rVKIfXGaekBxFsILx/orsHzYGdCmBlHONl8zJoZAs6dGOOKUq7d/xcycY1s12G0LsxoHNjwhuSD0h1HaUD81l/QMcNu1CyjjlJoghrdz5EJSBjrMa+bwEC+lA6PRnzN7JDWyQXLKtyBcBNLG+MFeedPOMTVdywdl0b2AsjDYey/xVlcaJdyPqVvS71oTRJ4ktRCL8EyQJ/iyq4gbNqZ9vVLLrhzP+2SK6pCkvXfoRfm3DoxCul8ABvEXSVGpMKIbaxsZwouQQJ+NJKUOWfL2jdrvuFujglbJxLRN1btL8EDiaPJUqDWd/A+M5YqJ6FAbuPoGgLu/h2x4EtBK8CNgJ34LBEdD2Sa8LKy5MX6FO9n2KjdoIt+/EyL5XsEPaxIdx9FmwDutEtCCb2zUgY7nIphD1tF9m+IgexV/dXMvIVc1eZCuBDDMy9bFSA68efUNVkq4o8mYDHdNNWVhBZqEge6wern/OvtI3g/xJTNTUDbk3SDSpAm6AIeLXZQb6vuPFiQr+1g5HuswMBy4SKFYy+ae+uRZPrMHxdTJGXSmRwFo5WvbYNy6/EVOi5+cvAYoYMZC1t7J80bo1dYRW1xre/2S1tJuoVOgSH1i6Oq55JKZfmwLZegxJro0PUs49QB6DJtjQTYt90Rk/dzG1Qpu5fLSniZ7y4PFRvHlSv3x/2IGBszDUJvfMzvrLsvo9NyILGBw7VtjcZO9BVTaSRqd/4J7iV855QfePoZvkaD6pe+rwSj2R4UuvOupiWXwo89ngYsD25154tn4YR0o58vCPt0AAKCJAg==|920

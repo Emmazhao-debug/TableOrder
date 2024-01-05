@@ -1,0 +1,292 @@
+{
+  "Name": "删除采购付款单时",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "付款单号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "付款单主表",
+          "TableValue": {
+            "TableName": "采购付款主表",
+            "TableValueType": 1,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "采购付款主表",
+                  "ColumnName": "ID",
+                  "GUID": "0fe1230e-c2a5-4709-b994-f4a3e07340be"
+                },
+                "ColumnName": "ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "采购付款主表",
+                  "ColumnName": "付款账户ID",
+                  "GUID": "c7ea019f-298e-43c4-8314-84d3d475a323"
+                },
+                "ColumnName": "付款账户ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "采购付款主表",
+                  "ColumnName": "付款总金额",
+                  "GUID": "8afb3406-0c21-44af-827c-aaf98d8f7bb3"
+                },
+                "ColumnName": "付款总金额"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "付款单号",
+                "GUID": "0f97b086-03db-4f7c-83cb-4d3b83bcb1cf"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=付款单号"
+              }
+            }
+          },
+          "ID": "21d03db39ae249fea7838ac2a32abb68"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "帐户",
+          "TableValue": {
+            "TableName": "银行账户资料表",
+            "TableValueType": 1,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "银行账户资料表",
+                  "ColumnName": "当前余额",
+                  "GUID": "6a071361-9470-44f8-9217-382735aa7865"
+                },
+                "ColumnName": "当前余额"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "ID",
+                "GUID": "401228bf-d9df-48fd-81fe-2c3e2d4a2ae4"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=付款单主表.付款账户ID"
+              }
+            }
+          },
+          "ID": "0bd0bbf602154556b4c76b829d12ebf5"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "付款明细",
+          "TableValue": {
+            "TableName": "采购付款明细",
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "采购付款明细",
+                  "ColumnName": "采购单号",
+                  "GUID": "2c945535-ff97-4da1-8885-507af7b6c489"
+                },
+                "ColumnName": "采购单号"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "采购付款明细",
+                  "ColumnName": "采购单类型",
+                  "GUID": "32f89010-379f-4e2d-b1cc-d44af00e9716"
+                },
+                "ColumnName": "采购单类型"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "采购付款明细",
+                  "ColumnName": "本次付款金额",
+                  "GUID": "8e1f8173-3938-46d0-a19e-61c29db1f709"
+                },
+                "ColumnName": "本次付款金额"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "采购付款明细",
+                "ColumnName": "付款单ID",
+                "GUID": "70785713-27ee-4695-9015-bc189c3e87aa"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=付款单主表.ID"
+              }
+            }
+          },
+          "ID": "39d04e8b5b7042c2a570a4cb15075a71"
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "采购付款主表",
+          "UpdateType": "delete",
+          "ShowConfirm": true,
+          "ConfirmText": "您确定要删除吗？",
+          "RowsToUpdate": 1,
+          "RowsToUpdateCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "采购付款主表",
+              "ColumnName": "付款单号",
+              "GUID": "16a1021e-6c94-47dd-b7dd-caa34f3c07c6"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=付款单号"
+            }
+          }
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "银行账户资料表",
+          "ShowConfirm": false,
+          "RowsToUpdate": 1,
+          "RowsToUpdateCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "银行账户资料表",
+              "ColumnName": "ID",
+              "GUID": "cc1fcfd8-4544-4a39-8f12-41b7205d697e"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=付款单主表.付款账户ID"
+            }
+          },
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "当前余额",
+                "GUID": "b6305c1d-1626-4b70-9721-fd6cd3c1e839"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=帐户.当前余额+付款单主表.付款总金额"
+              }
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=付款明细"
+            },
+            "LoopItemParamName": "付款明细"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "采购单",
+              "TableValue": {
+                "TableName": "采购单主表",
+                "TableValueType": 1,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "采购单主表",
+                      "ColumnName": "已付款",
+                      "GUID": "50e9c879-6617-4d74-bbfe-9cf761b4bc4f"
+                    },
+                    "ColumnName": "已付款"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "采购单主表",
+                    "ColumnName": "采购单号",
+                    "GUID": "8e56c7ea-1f40-425e-9fd9-8e4ea08fff86"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=付款明细.采购单号"
+                  }
+                }
+              },
+              "ID": "2ecb58af0ba641f291a4e6a3329400e6"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "采购单主表",
+              "ShowConfirm": false,
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "采购单主表",
+                  "ColumnName": "采购单号",
+                  "GUID": "08e2507a-e5ce-4a5a-8759-0c0a482c8472"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=付款明细.采购单号"
+                }
+              },
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单主表",
+                    "ColumnName": "已付款",
+                    "GUID": "8fdbd7c8-fdcf-4d4f-ac85-9a03011427d5"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单.已付款-付款明细.本次付款金额*IF(付款明细.采购单类型=\"采购\",1,-1)"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

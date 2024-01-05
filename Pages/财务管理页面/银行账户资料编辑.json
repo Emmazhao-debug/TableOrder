@@ -1,0 +1,729 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "Count": 38
+  },
+  "Values": {
+    "1,2": "账户资料编辑",
+    "3,12": "状态：",
+    "3,15": "正常",
+    "3,27": "当前用户：",
+    "3,28": "%CurrentUser.UserName%",
+    "5,4": "账户名称：",
+    "7,4": "简称：",
+    "7,12": "公私：",
+    "9,4": "账号：",
+    "11,4": "开户行：",
+    "13,4": "当前余额：",
+    "13,5": 0,
+    "15,4": "备注：",
+    "18,15": "取消"
+  },
+  "AttachInfos": {
+    "3,15": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "状态",
+        "GUID": "4641a93d-c5d6-4c4a-9133-e1a3275b67c0"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "Items": [
+          {
+            "Value": "正常",
+            "DisplayValue": "正常"
+          },
+          {
+            "Value": "停用",
+            "DisplayValue": "停用"
+          }
+        ],
+        "CellDefaultValue": "正常"
+      }
+    },
+    "5,5": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "户名",
+        "GUID": "9b917fc4-46fa-43af-80d6-1a3dcbc8c0c7"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,5": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "简称",
+        "GUID": "1c31a782-bad8-4dda-82a5-41d82b154372"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,15": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "户型",
+        "GUID": "57ddbbcc-f925-4e1e-8bbe-2b1394ed0a93"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "Items": [
+          {
+            "Value": "公户",
+            "DisplayValue": "公户"
+          },
+          {
+            "Value": "私户",
+            "DisplayValue": "私户"
+          }
+        ]
+      }
+    },
+    "9,5": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "帐号",
+        "GUID": "0534f85f-8a43-4c95-9d6d-64b2294a752f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "11,5": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "开户行",
+        "GUID": "3bdb5937-11e5-467c-a254-15d50d5a5a4b"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,5": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "当前余额",
+        "GUID": "36801d27-7e5b-4bb1-90ba-7976e8a646ed"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2,
+        "Use1000Sepatator": true,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true,
+        "CellDefaultValue": 0
+      }
+    },
+    "15,5": {
+      "BindingInfo": {
+        "TableName": "银行账户资料表",
+        "ColumnName": "备注",
+        "GUID": "25bb8be9-ca8d-4fac-a7e3-2cbdb6826a6f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "18,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=银行账户资料编辑!I19"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "银行账户资料表",
+                    "UpdateType": "add",
+                    "ShowConfirm": false
+                  }
+                ],
+                "ID": "7d71a524-932e-40af-bdd5-e7af129c5cd8"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "银行账户资料表",
+                    "ShowConfirm": false
+                  }
+                ],
+                "ID": "e50cbb68-a458-416f-bfe7-5e1d7d430d78"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "18,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 6,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 6,
+        "HorizontalAlignment": 8,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 6,
+        "HorizontalAlignment": 2,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "General",
+        "Right",
+        "black",
+        "@",
+        "[AUTO]General",
+        "Left"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "3,4": 1,
+      "3,12": 2,
+      "3,15": 3,
+      "3,28": 4,
+      "3,29": 5,
+      "3,30": 5,
+      "3,31": 5,
+      "3,32": 5,
+      "3,33": 5,
+      "3,34": 5,
+      "3,35": 6,
+      "5,5": 7,
+      "5,27": 1,
+      "6,28": 8,
+      "6,29": 8,
+      "6,30": 8,
+      "6,31": 8,
+      "6,32": 8,
+      "6,33": 8,
+      "6,34": 8,
+      "6,35": 8,
+      "6,36": 8,
+      "7,3": 8,
+      "7,4": 9,
+      "7,5": 10,
+      "7,12": 11,
+      "7,15": 12,
+      "7,24": 8,
+      "7,25": 8,
+      "7,26": 8,
+      "7,27": 8,
+      "7,28": 8,
+      "7,29": 8,
+      "7,30": 8,
+      "7,31": 8,
+      "7,32": 8,
+      "7,33": 8,
+      "7,34": 8,
+      "7,35": 8,
+      "7,36": 8,
+      "7,37": 8,
+      "8,24": 8,
+      "8,25": 8,
+      "8,26": 8,
+      "8,27": 8,
+      "8,28": 8,
+      "8,29": 8,
+      "8,30": 8,
+      "8,31": 8,
+      "8,32": 8,
+      "8,33": 8,
+      "8,34": 8,
+      "8,35": 8,
+      "8,36": 8,
+      "8,37": 8,
+      "9,5": 7,
+      "9,24": 8,
+      "9,25": 8,
+      "9,26": 8,
+      "9,27": 8,
+      "9,28": 8,
+      "9,29": 8,
+      "9,30": 8,
+      "9,31": 8,
+      "9,32": 8,
+      "9,33": 8,
+      "9,34": 8,
+      "9,35": 8,
+      "9,36": 8,
+      "9,37": 8,
+      "10,24": 8,
+      "10,25": 8,
+      "10,26": 8,
+      "10,27": 8,
+      "10,28": 8,
+      "10,29": 8,
+      "10,30": 8,
+      "10,31": 8,
+      "10,32": 8,
+      "10,33": 8,
+      "10,34": 8,
+      "10,35": 8,
+      "10,36": 8,
+      "10,37": 8,
+      "11,5": 7,
+      "11,24": 8,
+      "11,25": 8,
+      "11,26": 8,
+      "11,27": 8,
+      "11,28": 8,
+      "11,29": 8,
+      "11,30": 8,
+      "11,31": 8,
+      "11,32": 8,
+      "11,33": 8,
+      "11,34": 8,
+      "11,35": 8,
+      "11,36": 8,
+      "11,37": 8,
+      "12,24": 8,
+      "12,25": 8,
+      "12,26": 8,
+      "12,27": 8,
+      "12,28": 8,
+      "12,29": 8,
+      "12,30": 8,
+      "12,31": 8,
+      "12,32": 8,
+      "12,33": 8,
+      "12,34": 8,
+      "12,35": 8,
+      "12,36": 8,
+      "12,37": 8,
+      "13,5": 3,
+      "13,24": 8,
+      "13,25": 8,
+      "13,26": 8,
+      "13,27": 8,
+      "13,28": 8,
+      "13,29": 8,
+      "13,30": 8,
+      "13,31": 8,
+      "13,32": 8,
+      "13,33": 8,
+      "13,34": 8,
+      "13,35": 8,
+      "13,36": 8,
+      "13,37": 8,
+      "14,24": 8,
+      "14,25": 8,
+      "14,26": 8,
+      "14,27": 8,
+      "14,28": 8,
+      "14,29": 8,
+      "14,30": 8,
+      "14,31": 8,
+      "14,32": 8,
+      "14,33": 8,
+      "14,34": 8,
+      "14,35": 8,
+      "14,36": 8,
+      "14,37": 8,
+      "15,5": 13,
+      "15,24": 8,
+      "15,25": 8,
+      "15,26": 8,
+      "15,27": 8,
+      "15,28": 8,
+      "15,29": 8,
+      "15,30": 8,
+      "15,31": 8,
+      "15,32": 8,
+      "15,33": 8,
+      "15,34": 8,
+      "15,35": 8,
+      "15,36": 8,
+      "15,37": 8,
+      "16,24": 8,
+      "16,25": 8,
+      "16,26": 8,
+      "16,27": 8,
+      "16,28": 8,
+      "16,29": 8,
+      "16,30": 8,
+      "16,31": 8,
+      "16,32": 8,
+      "16,33": 8,
+      "16,34": 8,
+      "16,35": 8,
+      "16,36": 8,
+      "16,37": 8,
+      "17,5": 13,
+      "17,6": 13,
+      "17,7": 13,
+      "17,8": 13,
+      "17,9": 13,
+      "17,10": 13,
+      "17,11": 13,
+      "17,12": 13,
+      "17,13": 13,
+      "17,14": 13,
+      "17,15": 13,
+      "17,16": 13,
+      "17,17": 13,
+      "17,18": 13,
+      "17,19": 13,
+      "17,24": 8,
+      "17,25": 8,
+      "17,26": 8,
+      "17,27": 8,
+      "17,28": 8,
+      "17,29": 8,
+      "17,30": 8,
+      "17,31": 8,
+      "17,32": 8,
+      "17,33": 8,
+      "17,34": 8,
+      "17,35": 8,
+      "17,36": 8,
+      "17,37": 8,
+      "18,5": 13,
+      "18,6": 13,
+      "18,7": 13,
+      "18,8": 14,
+      "18,12": 13,
+      "18,13": 13,
+      "18,14": 13,
+      "18,15": 14,
+      "18,19": 13,
+      "18,24": 8,
+      "18,25": 8,
+      "18,26": 8,
+      "18,27": 8,
+      "18,28": 8,
+      "18,29": 8,
+      "18,30": 8,
+      "18,31": 8,
+      "18,32": 8,
+      "18,33": 8,
+      "18,34": 8,
+      "18,35": 8,
+      "18,36": 8,
+      "18,37": 8,
+      "19,24": 8,
+      "19,25": 8,
+      "19,26": 8,
+      "19,27": 8,
+      "19,28": 8,
+      "19,29": 8,
+      "19,30": 8,
+      "19,31": 8,
+      "19,32": 8,
+      "19,33": 8,
+      "19,34": 8,
+      "19,35": 8,
+      "19,36": 8,
+      "19,37": 8,
+      "20,36": 8
+    },
+    "ColStyles": {
+      "4": 2,
+      "27": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,28,1,8",
+    "18,8,2,4",
+    "18,15,2,4",
+    "7,12,1,3",
+    "3,12,1,3",
+    "3,15,1,5",
+    "5,5,1,15",
+    "7,5,1,7",
+    "7,15,1,5",
+    "9,5,1,15",
+    "11,5,1,15",
+    "15,5,2,15",
+    "1,2,2,18",
+    "13,5,1,15"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 1
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "当前用户",
+      "Formula": "银行账户资料编辑!$AC$4"
+    }
+  ]
+}//5NJF+SjTGaNDsKky7O5vcSXmE6E93a9Cp7FKd3BKwLLAXTOQRC3HtaJSH4dwNIRFF2V+eLWI5YK7uMcdOUH5e0vhVxBfm7i7KE06ajUN7agtxtGmFUrp56p4dcsWTUf155Gg4VqsIKJUIpHbV+ur0u/OFAfkJlsUWbbDpBfXoQmZ21/m1Zipd8fLNWoB3Z3Muhnx/mqKBpEX9togmt2CqUdzup1Xm21GbYNTZWfjdwz6RS9cxAlwfgMVsf4EHlmx3Q2wGnhxV0sTvuzKabJsAxudRl0eV62Zq7PtRQuNI5MbN3e26r3OagUrVQeH8a6qlESJZDXwlu3CTUZM1TfSywYYLoF5/7Xwhda1Dgf7qWdCFYczGlH3ai6PQRUvftXRkoDdLp/tGcSYOvEykE2/NlXwRmp6q2OecbiwPHKU2FD5ahLDK1cUPu76zVQbMpBK8itETvtPMbyhljCdML2/vpzG0IByVRMdOK60Vr952nT/DHNlowdANuQunOb0UQGGGQT0vRhZHQVFGtQYuAE0nj+OWW/Z2rbVSAE7JR5ypu8e0OAQHutRLfAvEh7oGoYm+elF0blI833Pida8JgpiRiSwVl2SFLCG3MsZYEgz+oRodyhRQPelIVsFHUbcFxdk8MDxeIdoprm+8rzO0tdvAz2Ull7beZKD7v6VBDLVKCCk56qWX44HmVuSsHGBm5LUvwPeEwM8msZ5hxPyDcwfNYWfUiO8wJgLEv3tlIOL9K6ZuZETS5FfbVD3LC8NfGM9AHhHELNmBjJZsNI1QaskYHfYiOVWWPNaIGHjAb07G60ubFPSM3T7zUtddMoEDWQOJ+Lt5ElXOywBJ4x3A4NS+YzrfIatSaLutirDijHZONqcot9Ld1YIsEk3EjvZkrGf8QVjg45OlvzZ8LLq0PTYPg==|920

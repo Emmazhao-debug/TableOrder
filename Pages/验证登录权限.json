@@ -1,0 +1,703 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "Count": 18
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "Count": 35
+  },
+  "Values": {
+    "3,23": "ID:",
+    "3,25": 1,
+    "5,6": "本应用将永久注册到：",
+    "5,23": "当前用户隶属公司：",
+    "10,13": "取消"
+  },
+  "Formulas": {
+    "6,6": "IFERROR(ODATA(\"应用隶属公司?$select=公司简称&$filter=ID eq \"&IF(ISBLANK(Z4),\"null\",Z4)),\"\")"
+  },
+  "AttachInfos": {
+    "3,25": {
+      "BindingInfo": {
+        "TableName": "应用隶属公司",
+        "ColumnName": "ID",
+        "GUID": "ded215d6-c320-426d-a345-268912a909b7"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon",
+            "Enabled": true
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CellDefaultValue": 1
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "6,6": {
+      "BindingInfo": {
+        "TableName": "应用隶属公司",
+        "ColumnName": "公司简称",
+        "GUID": "ab4ea407-89ce-4647-8ccc-d90f29203029"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "用户信息视图",
+        "ValueColumnBindingInfo": {
+          "TableName": "用户信息视图",
+          "ColumnName": "公司级别-组织名称",
+          "GUID": "76b12f98-57b9-4658-8a3c-ba71976ae8cd"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "用户信息视图",
+          "ColumnName": "公司级别-组织名称",
+          "GUID": "d410d084-c5f9-4284-bae4-f8ff3b28f048"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 7,
+          "ColumnBindingInfo": {
+            "TableName": "用户信息视图",
+            "ColumnName": "公司级别-组织名称",
+            "GUID": "f9325787-365e-4461-9bb2-2790fda5e7a9"
+          },
+          "Value": ","
+        }
+      }
+    },
+    "10,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=验证登录权限!G7"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请选择要注册的公司"
+                  }
+                ],
+                "ID": "ef0e03f2-caeb-4e4e-82be-ddc942376f13"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=验证登录权限!J11"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "应用隶属公司",
+                    "UpdateType": "add",
+                    "ShowConfirm": false
+                  },
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "客户资料查询页面",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=验证登录权限!G7"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=客户资料查询页面!公司简称"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "543cc621-82ea-42f0-8e17-4b4ddf879596"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=验证登录权限!J11"
+                      }
+                    ]
+                  },
+                  "value": "修改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "应用隶属公司",
+                    "ShowConfirm": false,
+                    "CheckDataValidation": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "应用隶属公司",
+                        "ColumnName": "ID",
+                        "GUID": "627e1201-c65b-47bb-acac-1cbcdabc9ad1"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=验证登录权限!Z4"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "应用隶属公司",
+                          "ColumnName": "公司简称",
+                          "GUID": "37265841-ddc2-4fbf-9fa4-b8d6c566a0a5"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=验证登录权限!G7"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "客户资料查询页面",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=验证登录权限!G7"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=客户资料查询页面!公司简称"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9c2554cd-636c-44a6-a7ad-ecbeb7c462b0"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "10,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 7,
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 5
+      },
+      {
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "Right",
+        "Body",
+        "@",
+        "Center",
+        "[AUTO]General",
+        "Left",
+        "Bold",
+        "#FFFF0000"
+      ]
+    },
+    "CellStyles": {
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,26": 0,
+      "0,27": 0,
+      "0,28": 0,
+      "0,29": 0,
+      "0,30": 0,
+      "0,31": 0,
+      "0,32": 0,
+      "0,33": 0,
+      "0,34": 0,
+      "2,24": 1,
+      "3,23": 2,
+      "3,24": 3,
+      "3,25": 4,
+      "3,26": 3,
+      "3,27": 3,
+      "3,28": 3,
+      "3,29": 3,
+      "3,30": 3,
+      "3,31": 3,
+      "3,32": 3,
+      "3,33": 3,
+      "5,6": 5,
+      "5,17": 5,
+      "5,18": 5,
+      "5,19": 5,
+      "5,23": 5,
+      "5,24": 3,
+      "5,25": 3,
+      "5,26": 3,
+      "5,27": 3,
+      "5,28": 3,
+      "5,29": 3,
+      "5,30": 3,
+      "5,31": 3,
+      "5,32": 3,
+      "5,33": 3,
+      "6,6": 6,
+      "6,17": 7,
+      "6,18": 7,
+      "6,19": 7,
+      "6,23": 8,
+      "6,24": 3,
+      "6,25": 3,
+      "6,26": 3,
+      "6,27": 3,
+      "6,28": 3,
+      "6,29": 3,
+      "6,30": 3,
+      "6,31": 3,
+      "6,32": 3,
+      "6,33": 3,
+      "7,6": 9,
+      "7,23": 3,
+      "7,24": 3,
+      "7,25": 3,
+      "7,26": 3,
+      "7,27": 3,
+      "7,28": 3,
+      "7,29": 3,
+      "7,30": 3,
+      "7,31": 3,
+      "7,32": 3,
+      "7,33": 3,
+      "8,19": 5,
+      "8,23": 3,
+      "8,24": 3,
+      "8,25": 3,
+      "8,26": 3,
+      "8,27": 3,
+      "8,28": 3,
+      "8,29": 3,
+      "8,30": 3,
+      "8,31": 3,
+      "8,32": 3,
+      "8,33": 3,
+      "9,19": 10,
+      "9,23": 3,
+      "9,24": 3,
+      "9,25": 3,
+      "9,26": 3,
+      "9,27": 3,
+      "9,28": 3,
+      "9,29": 3,
+      "9,30": 3,
+      "9,31": 3,
+      "9,32": 3,
+      "9,33": 3,
+      "10,9": 11,
+      "10,10": 3,
+      "10,11": 3,
+      "10,12": 3,
+      "10,13": 11,
+      "10,14": 3,
+      "10,15": 3,
+      "10,17": 10,
+      "10,18": 10,
+      "10,19": 10,
+      "10,20": 10,
+      "10,21": 10,
+      "10,22": 10,
+      "10,23": 10,
+      "10,24": 10,
+      "10,25": 10,
+      "10,26": 10,
+      "10,27": 10,
+      "10,28": 10,
+      "10,29": 12,
+      "10,30": 12,
+      "10,31": 12,
+      "11,9": 3,
+      "11,10": 3,
+      "11,11": 3,
+      "11,12": 3,
+      "11,13": 3,
+      "11,14": 3,
+      "11,15": 3,
+      "11,17": 10,
+      "11,18": 10,
+      "11,19": 10,
+      "11,20": 10,
+      "11,21": 10,
+      "11,22": 10,
+      "11,23": 10,
+      "12,17": 10,
+      "12,18": 10,
+      "12,19": 10,
+      "12,20": 10,
+      "12,21": 10,
+      "12,22": 10,
+      "14,16": 3,
+      "14,17": 3,
+      "14,18": 3,
+      "14,19": 3,
+      "14,20": 3,
+      "14,21": 3,
+      "14,22": 3,
+      "15,16": 3,
+      "15,17": 3,
+      "15,18": 3,
+      "15,19": 3,
+      "15,20": 3,
+      "15,21": 3,
+      "15,22": 3
+    },
+    "ColStyles": {
+      "5": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "5,6,1,11",
+    "6,23,4,11",
+    "5,23,1,11",
+    "6,6,1,11",
+    "10,9,2,3",
+    "10,13,2,3",
+    "3,23,1,2",
+    "3,25,1,9",
+    "7,6,3,11",
+    "11,23,2,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=验证登录权限!当前用户隶属公司"
+            },
+            "Value": "%CurrentUser.公司级别-组织名称%"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=验证登录权限!更换公司"
+                  }
+                ]
+              },
+              "value": "%Null%"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=验证登录权限!G7"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                        "PropertyItemsList": [
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=验证登录权限!首次使用注册提醒"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=\"提示：\"&CHAR(10)&\"使用之初，需先选择该系统隶属公司\""
+                            }
+                          },
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=验证登录权限!J11"
+                            },
+                            "Value": "添加"
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "d348d847-dd80-4626-bbbb-369ba56d492e"
+                  },
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=验证登录权限!G7"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=验证登录权限!当前用户隶属公司"
+                      },
+                      "compareType": 12
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "客户资料查询页面",
+                        "PassValues": [
+                          {
+                            "Source": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=验证登录权限!G7"
+                            },
+                            "TargetCell": {
+                              "SerializeProperty": "=客户资料查询页面!公司简称"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "47954788-f413-4e29-875f-46578abac3c1"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "NavigateType": "back"
+                      }
+                    ],
+                    "ID": "3bf178f8-afd0-4ee4-aae3-70e93f5ea10a"
+                  }
+                ]
+              }
+            ],
+            "ID": "4caf3b65-9278-42c6-b53e-f837d060a4dd"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=验证登录权限!J11"
+                    },
+                    "Value": "修改"
+                  }
+                ]
+              }
+            ],
+            "ID": "9f6b357b-393e-4d13-95f3-2d0ad2275247"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "应用隶属公司",
+    "PageResponsiveMode": 1
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "当前用户隶属公司",
+      "Formula": "验证登录权限!$X$7"
+    },
+    {
+      "Name": "更换公司",
+      "Formula": "验证登录权限!$X$12"
+    },
+    {
+      "Name": "首次使用注册提醒",
+      "Formula": "验证登录权限!$G$8"
+    }
+  ]
+}//DKvh0ed9RZc+/D12MlNWbvMOdSd074fBE6T02V2JObEO6fdWda2L7p5koJOOvqez53S0zx7pvym9RaBMvvToLJTWg6qcm3SGFdmkG8nQEERepFkzho1rHhl1IZUSkx0a5bQVoM8s/znE6A11vFnmoPNdPLFclO+dQsCw7rl0cY0ZqmotPUmuoVPP1Vcxpf0JCG/FGkOq+rrn4dHhHiYsMC8YRXu8ZGtgekJONyqPdJino0XwbrujP+itOvn18Jrf3v48sMi9CAKN16Qye+0N5CRPfUBY2BaEitUYo8GXybGEn71NUCs5x3MN85Kz0nszQpO51uxsDRXA+0IKC8gfJOeIS/woa4+QsDKfcLIy9bxO9gHg0PQrG/JogOhwfl3M+XofrO2p3tMCQHVA0zr5+ft9Ty3+5cDM/cjSHzq2Kuip2yOXETdBBIsDAglnRBoMVLchl3J/yA8FyyDyLY6RiR9QNakNXUX62thwrr6VjrTkRkrvxHCoZZZfVpdr3BQx4W58CnFSCBKVtxWkvQs+hq23C43QFuWG/FHOfyCIbmZr4+6NUA/dAYDHOjlSKhzsC+qDxzm5oWZyn5UAup4A2x7cQeDMPxo894zeUpJvLez5vVJ0f/SejxDODTCK7W7rGi3KxIbq0hts+bqa+ZercwZhKphlNlDc6O6K2XW6Qs9s4DTxITME/KF/q4+p5Lx1ml6ndVtfYkUn2uP6QtQ0OJtPKpt1ac0/LizCUC9CHau1cc3166Eas4bi6tXqMVsRyHz33WwGVJ+bKiGKQRoVWlwbdZsIom58I34Ul2FYsZzF1lmrufBXF02e3qMeFvXL7uP3W4uJlnlo22ucnV6uyY0HWUP8Rr3S/EG/WX/8LkJxrG36+SOuyucRFjXJ31SovUQCyfUVgMMiAiLEP3Np+g==|920

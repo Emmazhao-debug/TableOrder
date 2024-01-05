@@ -1,0 +1,164 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 31
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "8,3": "パスワードを忘れた場合",
+    "11,3": "パスワードリセットのためのリンクがメールで送信されました。メール受信後、そのリンクをクリックし、開いたページて新しいパスワードを入力してください。メールが届かない場合は、管理者に問い合わせてください。",
+    "20,3": "ログイン"
+  },
+  "AttachInfos": {
+    "20,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "FGC_ログイン_モバイル"
+          }
+        ],
+        "Text": "ログイン",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 6,
+        "Formatter": 3,
+        "VerticalAlignment": 7,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Foreground": null,
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 25",
+        "[AUTO]General",
+        "Left",
+        "Bottom",
+        "Text 1 50",
+        "Top",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "8,3": 0,
+      "11,3": 1,
+      "20,3": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 13.333333015441895,
+      "Foreground": 8
+    }
+  },
+  "Spans": [
+    "8,3,2,13",
+    "11,3,6,13",
+    "20,3,2,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "パスワードを忘れた場合",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "cd1e2a47-c776-4505-bf77-dea6447289f9.png",
+      "StyleInfo": {
+        "CornerRadius": 20.0,
+        "Fill": "#FFF6F6F8",
+        "StrokeDashType": 8,
+        "Stroke": "black",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "20,120",
+      "Size": "340,360"
+    }
+  ]
+}//vM2JEkLk7gXmW1ScUFdxUIQC7XpFtVb06zg9S5MMlJ/4dzK2p6jCGrUSOWfkuZJ/EGd+PtxxexICSF6XDVqDkVjzUosVSBcafzedOyGa59+/RHubuDN7VZejZqv22QdaB1dJ/3yK149RkHWQYD1eVSGYn1Fo2xz80uqGp8fMXRFUMen8+IoeFk3bByDzWds2nCnPeoY3PmbboXrQeHwctpC0nw0YPMkvKwhDKLEx7Znf/FOTQ1mvN6Y8CJDiQ/Qu+xSjfsVWNg1fsDQZqASeJkhlyzh+3hnlofti8iX0r9Qn61oo1b6mCfQkpG2/R89id2Vf2ArHdzYP49ESke00B+fwesBgpdP+1Ejgv9ayh5y3eIDf1b+3KXFCPU0+CBbqk6J7BtPWha2BLyux+8uYLZnm6g9xM5T1TCg6JwfKlgyyp5Zs0tnYNyQAT65ZZp+q9eSsljivLeq9gEQepd2GNGvwTK5ULXfxnGnjXwJiw2FO0gKYEsrjdPxqkj/NCaPeSbFNdtLW3uawr8aldD+W00MpxsVAlWF9yxDgDjqglqDxp9tEAcuz4FJ/rosx8VK8/f4dMe5jpb5g7y44h0cVGPC+4aqqmHLt6OU6qAPZLTmpDJYdST9R4o8K8at6F56/xKZCcMY/WvMbZEZK8/RvfyKnEifoTpahrAPudbKW8bOy8xR4fGLvmWrVXQzmKo/pHBttOxmkpCaUW19NR38/42SktBJscvt3FWoBgnDeqpxkxXbtu/gBkH8Pay7rRulZfupgqSc7tbkwBeQH/TwTFLw4d9F44u8SBj1rsnh9Xfm78aHNfdqZQcfk9gOAXpI/+1ccFJXTQ0fAoQkfefNZ+ol8YYcE4UX7at9bkjNtQWGwzCtxe+PuhWGqlHkJkyIbTTgtm5lleK93AsxBhSV+qQ==|920

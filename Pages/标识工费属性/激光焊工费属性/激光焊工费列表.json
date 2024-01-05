@@ -1,0 +1,1208 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "Count": 34,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      56,
+      57,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72
+    ],
+    "Count": 73
+  },
+  "Values": {
+    "0,6": "激光焊工费列表",
+    "2,44": "首次添加",
+    "2,51": "关闭",
+    "4,26": "日期状态",
+    "4,63": "行数：",
+    "27,6": "*此处“已失效”指的是新建报价单时不会再使用此属性中的参数，并非真的失效。早前在这个已失效属性的启止时间段内创建的过往报价单，仍然使用的是这个已失效的属性参数。例如：打开这个时间段内创建过的报价单更换属性时，则会读取“已失效”的属性参数进行产品价格计算。"
+  },
+  "Formulas": {
+    "4,64": "COUNTA(S6)",
+    "5,26": "IF(S6>TODAY(),\"待生效\",IF(W6=\"\",\"生效中\",IF(W6>=TODAY(),\"即将到期\",\"已失效\")))",
+    "5,48": "IF((AA6=\"生效中\")*(S6=TODAY())+(AA6=\"待生效\"),\"修改\",IF(AA6=\"生效中\",\"创建新属性\",\"\"))",
+    "5,53": "IF(S6>=TODAY(),\"删除\",\"\")"
+  },
+  "AttachInfos": {
+    "2,44": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "激光焊工费详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=激光焊工费详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "首次添加",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "RulesGuidList": [
+        "66c4a7ca-0cab-4c7f-8ddc-b0c8458e2e22",
+        "04ae1f3b-c9b7-4820-89fa-42bebf639b08"
+      ]
+    },
+    "2,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "激光焊工费表",
+        "RowIndex": 4,
+        "ColumnIndex": 6,
+        "RowCount": 23,
+        "ColumnCount": 52,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "激光焊工费表",
+                "ColumnName": "启用日期",
+                "GUID": "1633e24c-e106-4e18-a5d2-6ce4daded72a"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "CommitType": 1
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "激光焊工费表",
+        "ColumnName": "边长单价",
+        "GUID": "7fbbaf46-fd1a-4ca6-b58a-25decb4a36e5"
+      }
+    },
+    "5,10": {
+      "BindingInfo": {
+        "TableName": "激光焊工费表",
+        "ColumnName": "面积单价",
+        "GUID": "1d6eeb83-ecc4-4728-9af7-5e4aaea7c7b8"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "激光焊工费表",
+        "ColumnName": "节点单价",
+        "GUID": "e59ecdfe-6d31-40e3-b809-304be58e62ab"
+      }
+    },
+    "5,18": {
+      "BindingInfo": {
+        "TableName": "激光焊工费表",
+        "ColumnName": "启用日期",
+        "GUID": "17498193-cb13-42e7-bb6c-86c4e08a3f0f"
+      }
+    },
+    "5,22": {
+      "BindingInfo": {
+        "TableName": "激光焊工费表",
+        "ColumnName": "截止日期",
+        "GUID": "8e953fc9-1db4-4fcc-a573-4b1bc8ad5b93"
+      }
+    },
+    "5,30": {
+      "BindingInfo": {
+        "TableName": "激光焊工费表",
+        "ColumnName": "备注",
+        "GUID": "de8a505a-cf60-4c73-aa9b-2c343cd84107"
+      }
+    },
+    "5,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=激光焊工费列表!AW6"
+                      }
+                    ]
+                  },
+                  "value": "修改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "激光焊工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "TargetCell": {
+                          "SerializeProperty": "=激光焊工费详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "006d639e-bf58-4c4a-8f9e-52dff8c5ece7"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "激光焊工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "创建",
+                        "TargetCell": {
+                          "SerializeProperty": "=激光焊工费详情!按钮"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=\"\""
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=激光焊工费详情!启用日期"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "18bb8985-4517-4c85-8e7e-7422ac89948e"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,53": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "激光焊工费表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "激光焊工费表",
+                      "ColumnName": "启用日期",
+                      "GUID": "7691cca3-34f0-4f0f-89d6-3f3b1483fab4"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=激光焊工费列表!S6"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "激光焊工费表",
+                      "ColumnName": "ID",
+                      "GUID": "33ac580d-92cb-4695-a18f-49b292915f1c"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=激光焊工费列表!BE6"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "06eba3ed5adb4977956d621fc5869120"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=激光焊工费列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "说明：",
+                    "Message": "删除本属性后，前面属性的截止日期将自动置空，变为长期有效。您确定要删除吗？",
+                    "Type": "warning",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=激光焊工费列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "激光焊工费表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "激光焊工费表",
+                                    "ColumnName": "ID",
+                                    "GUID": "3c0058b9-2ba6-4780-ae76-8014dabcd349"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "激光焊工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "1a732617-01b1-410a-8310-8dee9d89fc79"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=激光焊工费列表!S6"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "激光焊工费表",
+                                      "ColumnName": "ID",
+                                      "GUID": "1fa9e681-0812-46a0-9c5c-831c49f99f9b"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=激光焊工费列表!BE6"
+                                    }
+                                  }
+                                ]
+                              },
+                              "NullFormulaValueQueryPolicy": 0,
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "激光焊工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "bae04512-0cb1-4a5a-b899-25b9928839cd"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "5d63d7c24417425f8925f035e67605b2"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "激光焊工费表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "激光焊工费表",
+                                "ColumnName": "ID",
+                                "GUID": "49022ff7-3c15-455a-9000-9c27b010c095"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=激光焊工费列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "激光焊工费表",
+                                  "ColumnName": "截止日期",
+                                  "GUID": "bd726b72-ea35-4b40-88c2-d94732a1a91d"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "激光焊工费表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "2c5f6074-d5f9-499c-92b2-226964b3110c"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d5cc4045-d0fe-4736-8463-4e702ee7038c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "c63aa79d-a5a1-478e-aa87-0329b68b2ead"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,56": {
+      "BindingInfo": {
+        "TableName": "激光焊工费表",
+        "ColumnName": "ID",
+        "GUID": "748e9c00-a8ee-4fbc-9f46-fe0b9c3a2019"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 9,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 10,
+        "HorizontalAlignment": 8,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 11,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 12,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 13,
+        "HorizontalAlignment": 8,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 8
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 14,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Right",
+        "@",
+        "[AUTO]General",
+        "Left",
+        "Background 1 -25",
+        "0.00\"元/m\"",
+        "Center",
+        "0.00\"元/㎡\"",
+        "0.00\"元/节\"",
+        "yyyy/MM/dd",
+        "#FF00B050",
+        "Blue",
+        "Background 1 -50"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,6": 0,
+      "0,58": 1,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 3,
+      "1,11": 3,
+      "1,12": 3,
+      "1,13": 3,
+      "1,14": 3,
+      "1,15": 3,
+      "1,16": 3,
+      "1,17": 3,
+      "1,18": 2,
+      "1,19": 4,
+      "1,20": 4,
+      "1,21": 4,
+      "1,22": 4,
+      "1,23": 4,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 4,
+      "1,28": 4,
+      "1,29": 4,
+      "1,30": 4,
+      "1,31": 4,
+      "1,32": 4,
+      "1,33": 4,
+      "1,34": 4,
+      "1,35": 4,
+      "1,36": 4,
+      "1,37": 4,
+      "1,38": 4,
+      "1,39": 4,
+      "1,40": 4,
+      "1,41": 4,
+      "1,42": 4,
+      "1,43": 4,
+      "1,56": 1,
+      "1,58": 1,
+      "2,6": 5,
+      "2,7": 5,
+      "2,8": 5,
+      "2,9": 5,
+      "2,10": 5,
+      "2,11": 5,
+      "2,12": 5,
+      "2,13": 5,
+      "2,14": 5,
+      "2,15": 5,
+      "2,16": 5,
+      "2,17": 5,
+      "2,44": 6,
+      "2,51": 7,
+      "2,52": 3,
+      "2,53": 3,
+      "2,54": 7,
+      "2,56": 1,
+      "2,58": 1,
+      "3,6": 8,
+      "3,7": 8,
+      "3,8": 8,
+      "3,9": 8,
+      "3,10": 8,
+      "3,11": 8,
+      "3,12": 8,
+      "3,13": 8,
+      "3,14": 8,
+      "3,15": 8,
+      "3,16": 8,
+      "3,17": 8,
+      "3,56": 1,
+      "3,58": 1,
+      "4,6": 9,
+      "4,7": 10,
+      "4,8": 10,
+      "4,9": 10,
+      "4,10": 10,
+      "4,11": 10,
+      "4,12": 10,
+      "4,13": 10,
+      "4,14": 11,
+      "4,15": 10,
+      "4,16": 10,
+      "4,17": 10,
+      "4,18": 12,
+      "4,19": 10,
+      "4,20": 10,
+      "4,21": 10,
+      "4,22": 12,
+      "4,23": 10,
+      "4,24": 10,
+      "4,25": 10,
+      "4,26": 12,
+      "4,27": 10,
+      "4,28": 10,
+      "4,29": 10,
+      "4,30": 13,
+      "4,31": 10,
+      "4,32": 10,
+      "4,33": 10,
+      "4,34": 10,
+      "4,35": 10,
+      "4,36": 10,
+      "4,37": 10,
+      "4,38": 10,
+      "4,39": 10,
+      "4,40": 10,
+      "4,41": 10,
+      "4,42": 10,
+      "4,43": 10,
+      "4,44": 10,
+      "4,45": 10,
+      "4,46": 10,
+      "4,47": 10,
+      "4,48": 10,
+      "4,49": 10,
+      "4,50": 10,
+      "4,51": 10,
+      "4,52": 10,
+      "4,53": 10,
+      "4,54": 10,
+      "4,55": 10,
+      "4,56": 10,
+      "4,57": 10,
+      "4,58": 14,
+      "5,6": 15,
+      "5,10": 16,
+      "5,14": 17,
+      "5,18": 18,
+      "5,22": 18,
+      "5,26": 19,
+      "5,30": 20,
+      "5,48": 21,
+      "5,53": 21,
+      "5,56": 22,
+      "5,58": 14,
+      "5,68": 22,
+      "5,69": 22,
+      "5,70": 22,
+      "5,71": 22,
+      "6,6": 14,
+      "6,47": 23,
+      "6,58": 14,
+      "7,6": 14,
+      "7,47": 23,
+      "7,58": 14,
+      "8,6": 14,
+      "8,47": 23,
+      "8,58": 14,
+      "9,6": 14,
+      "9,47": 23,
+      "9,58": 14,
+      "10,6": 14,
+      "10,47": 23,
+      "10,58": 14,
+      "11,6": 14,
+      "11,47": 23,
+      "11,58": 14,
+      "12,6": 14,
+      "12,47": 23,
+      "12,58": 14,
+      "13,6": 14,
+      "13,47": 23,
+      "13,58": 14,
+      "14,6": 14,
+      "14,47": 23,
+      "14,58": 14,
+      "15,3": 5,
+      "15,4": 5,
+      "15,5": 5,
+      "15,6": 14,
+      "15,58": 14,
+      "16,3": 5,
+      "16,4": 5,
+      "16,5": 5,
+      "16,6": 14,
+      "16,58": 14,
+      "17,3": 5,
+      "17,4": 5,
+      "17,5": 5,
+      "17,6": 14,
+      "17,58": 14,
+      "18,3": 5,
+      "18,4": 5,
+      "18,5": 5,
+      "18,6": 14,
+      "18,58": 14,
+      "19,3": 5,
+      "19,4": 5,
+      "19,5": 5,
+      "19,6": 14,
+      "19,58": 14,
+      "20,3": 5,
+      "20,4": 5,
+      "20,5": 5,
+      "20,6": 14,
+      "20,58": 14,
+      "21,3": 5,
+      "21,4": 5,
+      "21,5": 5,
+      "21,6": 14,
+      "21,58": 14,
+      "22,3": 5,
+      "22,4": 5,
+      "22,5": 5,
+      "22,6": 14,
+      "22,58": 14,
+      "23,3": 5,
+      "23,4": 5,
+      "23,5": 5,
+      "23,6": 14,
+      "23,58": 14,
+      "24,3": 5,
+      "24,4": 5,
+      "24,5": 5,
+      "24,6": 14,
+      "24,58": 14,
+      "25,3": 5,
+      "25,4": 5,
+      "25,5": 5,
+      "25,6": 14,
+      "25,58": 14,
+      "26,3": 5,
+      "26,4": 5,
+      "26,5": 5,
+      "26,6": 24,
+      "26,7": 25,
+      "26,8": 25,
+      "26,9": 25,
+      "26,10": 25,
+      "26,11": 25,
+      "26,12": 25,
+      "26,13": 25,
+      "26,14": 25,
+      "26,15": 25,
+      "26,16": 25,
+      "26,17": 25,
+      "26,18": 25,
+      "26,19": 25,
+      "26,20": 25,
+      "26,21": 25,
+      "26,22": 25,
+      "26,23": 25,
+      "26,24": 25,
+      "26,25": 25,
+      "26,26": 25,
+      "26,27": 25,
+      "26,28": 25,
+      "26,29": 25,
+      "26,30": 25,
+      "26,31": 25,
+      "26,32": 25,
+      "26,33": 25,
+      "26,34": 25,
+      "26,35": 25,
+      "26,36": 25,
+      "26,37": 25,
+      "26,38": 25,
+      "26,39": 25,
+      "26,40": 25,
+      "26,41": 25,
+      "26,42": 25,
+      "26,43": 25,
+      "26,44": 25,
+      "26,45": 25,
+      "26,46": 25,
+      "26,47": 25,
+      "26,48": 25,
+      "26,49": 25,
+      "26,50": 25,
+      "26,51": 25,
+      "26,52": 25,
+      "26,53": 25,
+      "26,54": 25,
+      "26,55": 25,
+      "26,56": 25,
+      "26,57": 25,
+      "26,58": 14,
+      "27,3": 5,
+      "27,4": 5,
+      "27,5": 5,
+      "27,6": 26,
+      "27,58": 1,
+      "28,3": 5,
+      "28,4": 5,
+      "28,5": 5,
+      "28,6": 5,
+      "28,7": 5,
+      "28,8": 5,
+      "28,9": 5,
+      "28,10": 5,
+      "28,11": 5,
+      "28,12": 5,
+      "28,13": 5,
+      "28,14": 5,
+      "28,15": 5,
+      "28,16": 5,
+      "28,17": 5,
+      "28,56": 14,
+      "28,58": 1,
+      "29,3": 5,
+      "29,4": 5,
+      "29,5": 5,
+      "29,6": 5,
+      "29,7": 5,
+      "29,8": 5,
+      "29,9": 5,
+      "29,10": 5,
+      "29,11": 5,
+      "29,12": 5,
+      "29,13": 5,
+      "29,14": 5,
+      "29,15": 5,
+      "29,16": 5,
+      "29,17": 5,
+      "29,56": 14,
+      "29,58": 1,
+      "30,3": 5,
+      "30,4": 5,
+      "30,5": 5,
+      "30,6": 5,
+      "30,7": 5,
+      "30,8": 5,
+      "30,9": 5,
+      "30,10": 5,
+      "30,11": 5,
+      "30,12": 5,
+      "30,13": 5,
+      "30,14": 5,
+      "30,15": 5,
+      "30,16": 5,
+      "30,17": 5,
+      "30,56": 14,
+      "30,58": 1,
+      "31,3": 5,
+      "31,4": 5,
+      "31,5": 5,
+      "31,6": 5,
+      "31,7": 5,
+      "31,8": 5,
+      "31,9": 5,
+      "31,10": 5,
+      "31,11": 5,
+      "31,12": 5,
+      "31,13": 5,
+      "31,14": 5,
+      "31,15": 5,
+      "31,16": 5,
+      "31,17": 5,
+      "31,56": 14,
+      "31,58": 1,
+      "32,56": 1,
+      "32,58": 1,
+      "33,56": 1,
+      "33,58": 1
+    },
+    "ColStyles": {
+      "8": 27,
+      "57": 28,
+      "58": 28,
+      "59": 29,
+      "60": 29,
+      "61": 29,
+      "62": 29,
+      "63": 30,
+      "64": 29,
+      "65": 29,
+      "66": 29,
+      "67": 29,
+      "68": 29,
+      "69": 29,
+      "70": 29,
+      "71": 29,
+      "72": 29
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "2,51,1,3",
+    "5,26,1,4",
+    "4,64,1,4",
+    "6,6,21,52",
+    "2,44,1,5",
+    "27,6,1,52",
+    "0,6,1,19",
+    "5,56,1,2",
+    "5,6,1,4",
+    "5,14,1,4",
+    "5,18,1,4",
+    "5,22,1,4",
+    "5,48,1,5",
+    "5,53,1,3",
+    "5,30,1,18",
+    "5,10,1,4",
+    "4,6,1,4",
+    "4,10,1,4",
+    "4,14,1,4",
+    "4,18,1,4",
+    "4,22,1,4",
+    "4,26,1,4",
+    "4,30,1,18",
+    "4,48,1,5",
+    "4,53,1,3",
+    "4,56,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=激光焊工费列表!行数<>0"
+          },
+          "GUID": "66c4a7ca-0cab-4c7f-8ddc-b0c8458e2e22",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=激光焊工费列表!行数<>0"
+          },
+          "Priority": 1,
+          "GUID": "04ae1f3b-c9b7-4820-89fa-42bebf639b08",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "行数",
+      "Formula": "激光焊工费列表!$BM$5"
+    }
+  ]
+}//DZ+ctflFraSXagvq4/2jcZVZ7hrYsICvn1PB4yCZq5Tj54lpDiDUdL9SYtEtB2ZPbrBLa5+/wZAZ7sf02XwDw5xBuI6DJ5TaAbJ+sWwJ9kt/EOPcHENCkMLE647OjFs9fVduslKwmRAEVA40HHauWEDknbKuSuy8eLSJKArOI3IL1fim9yLSBEL6cEBYzd1cRHebeDpg3NAHZUgUciPw8h1L3gkJIykUNrS/tSBrmqqMjiwdBoFc34USECsaWzP1zjRTlcOWdrYsumqgT3+zwU4P/TpoahqoIxCMWb92ALAf4x+bzl+Hlpw8pN1s2pbxBrNj0Df2K4pTX+37gG/l40Y8RhmxDJjU/DpGRxy4p14iC/ij1Kcov80sPK7y0mRQwdJPumkTJfz45VplpOS+pH9YIKxg1IIU9xkimS+Esz4RS+nDYBBjgyEMbieq8t/OXtOiI/p7dfgte7lPL2pbbnli/aiSAqDryCnHrjrg6g+nUa5RLMT76FozmvAB01rhxurKnfwyfosSw4pyt5AYMJEs9Ix5Ym22Dce0bCLOKUjE8DpkMYPkz/EvOaNFgJYWrlb5pPRv6wyFfOyPZxt7tS1QGT+8qOGuCv8K5VSUvmFw0we+JBJSIApr1l9hy5PWGHCU2quK3UMTvcuO1EVm4Pqm0+z0gMJA1ZVlU27OBZtvnDKkJNhm+jMkQhYyfyc6db2IRf6jq3la4rksE9LHYQ8ffUDn0w0DlQubV2oyfPnn/lAa+nTpYVYl5tdx159di3gnSyExwRLCqAONoEgTESMQmOLx+ebtkFAMKDtVg/semLwSdJQ6SoPD0y+NxmQg2w/j+5fGIYpLiGZHNfk0ctbqhrNAc4WQnQHAZn9CcTJxy+EOKtf/AjKjbMr2wMKaHP9llnwRbuiMuKQYMEGagw==|920

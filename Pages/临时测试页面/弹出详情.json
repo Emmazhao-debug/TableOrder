@@ -1,0 +1,98 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "16,23": "弹出详情"
+  },
+  "AttachInfos": {
+    "16,23": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "临时排序_详情页面 (2)",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出详情!AH18"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='临时排序_详情页面 (2)'!O4"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "弹出详情",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "17,33": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "WaterMark": "ID"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0,
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "17,33": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "16,23,4,7",
+    "17,33,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//XNJF2tr7YuAPmfkQXYkZ+rmwGhpF62BSn15iVN5gRCmVuA395HUTzwdqxJ9UvIaSl8+LeMTtrNEIWln+UDkGtEW6+Ngp72FO/yIMwQDXIKqBOGo/gat4CYMzp8PCU1yqDf6H2DZTtHqBiUSwRIGhfyzEQNj39CpVE6ZsCDpVI03LR4agXxSDDa3mFRVl/+DU59i/t3VTO5J1Eww9G5VuUF2GrhGVzrIFTBQkodBP9Tg++LyuHLrX59LOBl5Il5Od53/zp722eRWsKVKetae3BLIKIzXWl/ziR9Ib7DC5NXyceu0mMtdt/A4IFki9XxmA9cZtjVzJFcvkP8IBgEzxxqjp8kUs74S9+5klcf7PuvF3vlfVPpTBOSXbBmYqLAh9ixb+Sk965mSuj7y0hBPmSd4k4rRxMsZrLES5KhLA442eP2Hf99B+mi20MG/yEO+GARl96rjV8y0w1VIjCQ10HUxP2Ps5bapZUkRvz3Qx6AIeslrmjgY5EF7+kBb/YQCZbvgZXoTjuBmmiAtPBbWUNhSJcVBlMLj+mulNu+1eG/CkmFpHmATcGEQ4lIaEA4XycoYCMbjbQl/yrC9PSi6qv5mIIrlJiw+UrBTrRq2LL3mck5iNHHtOd7Rs2nty6ecvKvxJucTy1FcoJtgvKZ7cD7btphNluhKHvsmEV2CkM1OO6uAnMFK7RKJyeqP30UVzdaIszzrsaWCf32/lqQDbgWj+StdM6A3zqRVyc72vSprJKrMCPwbX5S7jQPzLdIwgjiRP0BiE5iEFdf6RySwZqyIBc5gWy8WoGOycGde9J7a09DaCYg5RGiaWqtX20KTrVYblcAAvhtSIOpkM3PNFEh8l6Pb5odSJjC40SvK7sajDr9s17umml9WdhVDOCppqIersqh9t4Cih+lSuJEmK2A==|920

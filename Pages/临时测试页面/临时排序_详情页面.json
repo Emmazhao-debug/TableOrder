@@ -1,0 +1,696 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 47
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,6": "ID:",
+    "5,6": "名称:",
+    "5,34": "板材id：",
+    "7,6": "序号:",
+    "7,14": true,
+    "7,34": "板材厚度：",
+    "9,6": "附件：",
+    "9,21": "删除附件",
+    "11,16": "取消",
+    "13,40": 1,
+    "14,34": "计数器：",
+    "15,34": "滑块：",
+    "16,34": "进度条：",
+    "20,34": "复选框：",
+    "20,35": true
+  },
+  "Formulas": {
+    "12,40": "AO14",
+    "20,40": "AJ21",
+    "9,23": "O10"
+  },
+  "AttachInfos": {
+    "3,14": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "ID",
+        "GUID": "ab3a91a1-0734-4f06-96f7-3cef57525288"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "名称",
+        "GUID": "7eb1f3e8-1847-4394-9804-9fe24840b07f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "5,35": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "板材id",
+        "GUID": "cd460d79-4517-447d-a553-748b102a2975"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "板材属性表",
+        "ValueColumnBindingInfo": {
+          "TableName": "板材属性表",
+          "ColumnName": "ID",
+          "GUID": "74c7575c-efd2-4270-b5aa-9185b4b704cc"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "板材属性表",
+          "ColumnName": "板材名称",
+          "GUID": "fb826c5b-3098-4a22-992e-05eccd88878f"
+        }
+      }
+    },
+    "7,14": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "序号",
+        "GUID": "9ffaa2f3-a5a4-4339-9c64-a5bc6767d451"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "CellDefaultValue": true,
+        "Style": 1
+      }
+    },
+    "7,35": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "板材厚度",
+        "GUID": "76955cb7-b875-4729-83be-f9dc503ce690"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "板材常用厚度表",
+        "ValueColumnBindingInfo": {
+          "TableName": "板材常用厚度表",
+          "ColumnName": "实际厚度",
+          "GUID": "671d1c42-44ab-4d62-833a-e19fa4bde2f9"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "板材常用厚度表",
+          "ColumnName": "显示厚度",
+          "GUID": "9cd85db7-eede-4089-adee-da7825f3a1f7"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "板材常用厚度表",
+            "ColumnName": "板材id",
+            "GUID": "839566ac-b19f-4154-89e9-1abea592d859"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=临时排序_详情页面!AJ6"
+          }
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "9,14": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "附件",
+        "GUID": "802d771b-ea87-4e88-af52-37294dfd133b",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "UploadImageLimit": {
+          "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
+        }
+      }
+    },
+    "9,21": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "临时排序",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "临时排序",
+                  "ColumnName": "附件",
+                  "GUID": "317deaee-f673-47f5-93fa-677e737150e8"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "删除附件",
+        "ClickMode": 1
+      }
+    },
+    "9,36": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "11,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=临时排序_详情页面!K12"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "临时排序",
+                    "UpdateType": "add"
+                  }
+                ],
+                "ID": "0378a6ed-809c-4d5c-aad6-78f7a41f6715"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=临时排序_详情页面!K12"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "临时排序"
+                  }
+                ],
+                "ID": "f0a8aaa3-41cc-4281-a11b-3109e91f16b0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "11,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "12,40": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=临时排序_详情页面!AO13"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=临时排序_详情页面!AO14"
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=临时排序_详情页面!AO14"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=临时排序_详情页面!AO13"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8b4a836d-cb2a-4a42-b1dd-eb1d03b7811f"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "13,40": {
+      "CellType": {
+        "$type": "ElementUI.SliderCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "Marks": [
+          {
+            "Value": 1.0,
+            "Label": "-"
+          }
+        ],
+        "DefaultValue": 1,
+        "min": "0",
+        "max": "2",
+        "step": "0.01",
+        "layout": "vertical",
+        "showInputControls": true
+      }
+    },
+    "14,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "子表格数据",
+        "RowIndex": 14,
+        "ColumnIndex": 6,
+        "RowCount": 10,
+        "ColumnCount": 21,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "14,35": {
+      "CellType": {
+        "$type": "ElementUI.InputNumberCellType, ElementUI",
+        "CommandList": [],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1
+      }
+    },
+    "15,6": {
+      "BindingInfo": {
+        "TableName": "子表格数据",
+        "ColumnName": "学校",
+        "GUID": "a2604f98-e720-44c7-9732-73bd6bd90010"
+      }
+    },
+    "15,13": {
+      "BindingInfo": {
+        "TableName": "子表格数据",
+        "ColumnName": "班级",
+        "GUID": "2e0d1bdd-9b81-4823-a858-9cb3bbddb456"
+      }
+    },
+    "15,22": {
+      "BindingInfo": {
+        "TableName": "子表格数据",
+        "ColumnName": "主表id",
+        "GUID": "0bddd802-ca06-4fac-8f03-5d0df1175a5b"
+      }
+    },
+    "16,35": {
+      "CellType": {
+        "$type": "ElementUI.ProgressCellType, ElementUI",
+        "CommandList": [],
+        "color": "Accent 1"
+      }
+    },
+    "18,40": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=临时排序_详情页面!AO14"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=临时排序_详情页面!AO19"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=临时排序_详情页面!AO19"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "20,35": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "CellDefaultValue": true,
+        "Style": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontWeight": 0,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontSize": 12.0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Foreground": 7,
+        "WordWrap": true,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 8,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "WordWrap": true
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 8
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 9,
+        "Formatter": 10,
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "@",
+        "Body",
+        "[AUTO]General",
+        "Center",
+        "Right",
+        "Background 1 -25",
+        "Blue",
+        "0%",
+        "#FFFF0000",
+        "+0%;-0%"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,6": 0,
+      "5,6": 0,
+      "5,14": 1,
+      "5,33": 2,
+      "5,34": 3,
+      "7,6": 0,
+      "7,14": 4,
+      "9,6": 5,
+      "9,14": 6,
+      "9,15": 7,
+      "9,16": 7,
+      "9,17": 7,
+      "9,18": 7,
+      "9,19": 8,
+      "9,21": 9,
+      "9,36": 1,
+      "12,40": 10,
+      "13,40": 11,
+      "13,41": 12,
+      "13,42": 13,
+      "14,35": 2,
+      "14,36": 14,
+      "14,39": 15,
+      "14,40": 16,
+      "14,42": 17,
+      "15,13": 2,
+      "15,40": 16,
+      "15,42": 17,
+      "15,46": 18,
+      "16,40": 16,
+      "16,42": 17,
+      "17,40": 19,
+      "17,41": 20,
+      "17,42": 21,
+      "18,40": 22,
+      "20,35": 4
+    },
+    "ColStyles": {
+      "34": 23
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,14,1,6",
+    "5,14,1,6",
+    "11,10,1,4",
+    "11,16,1,4",
+    "9,6,1,3",
+    "9,14,1,6",
+    "9,21,1,2",
+    "16,6,8,21",
+    "15,6,1,7",
+    "15,13,1,9",
+    "15,22,1,5",
+    "5,35,1,7",
+    "7,35,1,7",
+    "14,35,1,2",
+    "16,35,1,2",
+    "15,46,1,4",
+    "18,40,1,2",
+    "12,40,1,2",
+    "20,40,1,4",
+    "20,35,1,2",
+    "7,14,1,6",
+    "14,39,3,1",
+    "13,40,5,3",
+    "9,36,1,5",
+    "14,6,1,7",
+    "14,13,1,9",
+    "14,22,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "产品规格数据表"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//AhdMkzq4T9XROYHDi3NnRrpS8o8TAS5ULTNBkAfdMW3SzlZ611172gT9itUz8ARk7YzSkGu+v04DXi/Pm3jzFhD/5KGxOeXtPAsQnYk7vxuxYSOiN/OzwGkzCA2IW/gveGrtavvfCb1CJ19+N/4yeU7RHFVcjdamIBGPIXA2lVd7cjEc4Sq6FU4zCl+Tt2tZyQE13DdA2v6QmuYNEJ0JfaJLbWbS20w98AAY7MUOTQ3n+n6sFprcF53FbfAudyVG7EGCtK3a2UIQChjxKUyqpKDXXxb8mTVDhN74/EuQTjdUoFYbD8R8bNvHYUJyBoeTgwQhpjVaK7BVcA/6R+HI/m2g4pck5Tgg2yj6v0MAIm78EFBTUS/pOfzFuRI1jubCf9UkXnGcAf8bJcQDV9vfaNm83OhOgljtQb41Bcv1iV/GG3ccapVLBbqQkvt2sh1xsocXzwpapaq0cVh00fGMMQvPC2nFmb5wz6Pqb/7Dxnhn1UM/S1l/DP5hPPlyJQP+/3Fak9zDoNqrnoKIsDHxP3ChFxYUyfDC+4ZKftPwPKrUXv6nsXE/XU9/g3/kJJcAbzzZm+3uzBczk6aWG78F/CgHVZJe7rS+pIJUoPayE0lfyE1adEnrvS3WhYMf9qRwdJDZYi9Tvjbozv0nks729JWq2tzC15nci5KCYdUwyQazzCg8cMOxgLL4DfJ1yQenXGgO+JSmPbx7YbfItL0hdencMp2p7pUyUmiPI2myRk4s0dckWXftcaL/2kaGCQLvo++sk6hJAJMNmdm3SyQonDK5Vcs1aFXMwFSK8AWjQCwExaT3cwOwAgD7kvaXEpEs+2WisG1xwNbdN+77CHEA41csoLuPPqKUu/CB6l7fUJ9v0kKPt4WOWQZzp7u+/k7TY1Fq/LuO0ZGNQe5irTRtrw==|920

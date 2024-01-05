@@ -1,0 +1,875 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "Count": 46
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "3,8": "产品类型排序",
+    "7,6": "状态：",
+    "9,25": "行号",
+    "16,41": "总行数：",
+    "18,41": "返回码：",
+    "19,41": "返回信息：",
+    "29,29": "关\r\n闭"
+  },
+  "Formulas": {
+    "10,25": "ROW()",
+    "16,42": "COUNTA(W11)"
+  },
+  "AttachInfos": {
+    "9,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "产品类型名称表",
+        "RowIndex": 9,
+        "ColumnIndex": 6,
+        "RowCount": 26,
+        "ColumnCount": 22,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "产品类型名称表",
+            "ColumnName": "状态",
+            "GUID": "896600fd-f59d-411c-8e3c-538af73631f2"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=产品类型名称排序!状态"
+          }
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品类型名称表",
+                "ColumnName": "状态",
+                "GUID": "593e4c64-7f37-48c8-b279-361530689195"
+              },
+              "Order": 1
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "产品类型名称表",
+                "ColumnName": "序号",
+                "GUID": "7596e4e3-89b5-434c-ab63-54b9c9727d38"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "10,8": {
+      "NameUsedInJavaScript": "序号",
+      "BindingInfo": {
+        "TableName": "产品类型名称表",
+        "ColumnName": "序号",
+        "GUID": "690b8cd6-0f41-4a06-80d5-5cf9f80701d5"
+      }
+    },
+    "10,11": {
+      "NameUsedInJavaScript": "类型名称",
+      "BindingInfo": {
+        "TableName": "产品类型名称表",
+        "ColumnName": "类型名称",
+        "GUID": "62ee6186-7ccf-41d1-8ab0-32b6c7607eb0"
+      }
+    },
+    "10,19": {
+      "NameUsedInJavaScript": "状态",
+      "BindingInfo": {
+        "TableName": "产品类型名称表",
+        "ColumnName": "状态",
+        "GUID": "995dd7d6-5b29-4a72-959d-289748c86a0e"
+      }
+    },
+    "10,22": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "产品类型名称表",
+        "ColumnName": "ID",
+        "GUID": "0ca9999f-0eee-443a-8ae3-17d0479adedf"
+      }
+    },
+    "10,25": {
+      "NameUsedInJavaScript": "行号"
+    },
+    "11,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品类型名称排序!I11"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "已到顶！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  }
+                ],
+                "ID": "7029b418-729c-4709-9fa1-4c78bfa1a30d"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "产品类型名称表",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "产品类型名称表",
+                        "ColumnName": "序号",
+                        "GUID": "6ba03e90-0216-4f36-a359-cf9b8bb0305b"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=产品类型名称排序!I11-1"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "产品类型名称表",
+                          "ColumnName": "序号",
+                          "GUID": "b9806d04-ed85-4580-978f-ab6eccee0f8c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品类型名称排序!I11"
+                        }
+                      }
+                    ],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "产品类型名称表",
+                      "ShowConfirm": false,
+                      "UpdateBindingValues": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "产品类型名称表",
+                            "ColumnName": "序号",
+                            "GUID": "203c7d9e-5343-43c4-9b40-df2c2b72e508"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=产品类型名称排序!I11-1"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "ID": "e7b0bf2e-d2db-4d6f-98b3-1fe1aa3d7aa8"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "上半",
+        "Icon": {
+          "Name": "Arrow/302_up_arrow_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "13,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=产品类型名称排序!I11"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=产品类型名称排序!行数"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                    "Message": "已到底！",
+                    "Type": "info",
+                    "Duration": 3000,
+                    "Offset": null
+                  }
+                ],
+                "ID": "d63806bd-dd09-405d-81bd-ecec3a4d6023"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "产品类型名称表",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "产品类型名称表",
+                        "ColumnName": "序号",
+                        "GUID": "9d795d5d-2a1e-40b1-8339-c2fe520be77d"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=产品类型名称排序!I11+1"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "产品类型名称表",
+                          "ColumnName": "序号",
+                          "GUID": "f96d74e4-4b69-406d-b864-b4eea476d250"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=产品类型名称排序!I11"
+                        }
+                      }
+                    ],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "产品类型名称表",
+                      "ShowConfirm": false,
+                      "UpdateBindingValues": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "产品类型名称表",
+                            "ColumnName": "序号",
+                            "GUID": "43b1d913-7e6b-44a7-b46a-1aeaefd56158"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=产品类型名称排序!I11+1"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "ID": "3933a7d4-1fc7-47b5-9757-6de3e2d79429"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "下半",
+        "Icon": {
+          "Name": "Arrow/301_down_arrow_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "29,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true
+          }
+        ],
+        "Text": "关\r\n闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 30.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontSize": 15.0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontWeight": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 4,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "Foreground": 4,
+        "HorizontalAlignment": 1,
+        "Underline": true
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Center",
+        "Right",
+        "Bold",
+        "Blue",
+        "Background 1 -25",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,8": 0,
+      "5,21": 1,
+      "7,6": 2,
+      "7,9": 3,
+      "7,15": 4,
+      "7,22": 5,
+      "8,24": 6,
+      "8,25": 7,
+      "8,26": 7,
+      "8,27": 7,
+      "9,6": 8,
+      "9,7": 9,
+      "9,8": 9,
+      "9,9": 9,
+      "9,10": 9,
+      "9,11": 9,
+      "9,12": 9,
+      "9,13": 9,
+      "9,14": 9,
+      "9,15": 9,
+      "9,16": 9,
+      "9,17": 9,
+      "9,18": 9,
+      "9,19": 9,
+      "9,20": 9,
+      "9,21": 9,
+      "9,22": 9,
+      "9,23": 9,
+      "9,24": 9,
+      "9,25": 9,
+      "9,26": 9,
+      "9,27": 10,
+      "9,38": 7,
+      "10,6": 11,
+      "10,8": 3,
+      "10,11": 3,
+      "10,19": 3,
+      "10,22": 12,
+      "10,25": 12,
+      "10,27": 13,
+      "10,38": 7,
+      "11,6": 11,
+      "11,27": 13,
+      "11,29": 7,
+      "12,6": 11,
+      "12,27": 13,
+      "13,6": 11,
+      "13,27": 13,
+      "13,29": 7,
+      "14,6": 11,
+      "14,27": 13,
+      "15,6": 11,
+      "15,27": 13,
+      "16,6": 11,
+      "16,27": 13,
+      "17,6": 11,
+      "17,27": 13,
+      "18,6": 11,
+      "18,27": 13,
+      "18,39": 5,
+      "18,40": 5,
+      "18,41": 14,
+      "18,42": 15,
+      "18,43": 5,
+      "18,44": 5,
+      "18,45": 5,
+      "19,6": 11,
+      "19,27": 13,
+      "19,39": 5,
+      "19,40": 5,
+      "19,41": 14,
+      "19,42": 14,
+      "19,43": 5,
+      "19,44": 5,
+      "19,45": 5,
+      "20,6": 16,
+      "20,7": 17,
+      "20,8": 17,
+      "20,9": 17,
+      "20,10": 17,
+      "20,11": 17,
+      "20,12": 17,
+      "20,13": 17,
+      "20,14": 17,
+      "20,15": 17,
+      "20,16": 17,
+      "20,17": 17,
+      "20,18": 17,
+      "20,19": 17,
+      "20,20": 17,
+      "20,21": 17,
+      "20,22": 17,
+      "20,23": 17,
+      "20,24": 17,
+      "20,25": 17,
+      "20,26": 17,
+      "20,27": 18,
+      "21,6": 11,
+      "21,27": 13,
+      "22,6": 11,
+      "22,27": 13,
+      "23,6": 11,
+      "23,27": 13,
+      "24,6": 11,
+      "24,27": 13,
+      "25,6": 11,
+      "25,27": 13,
+      "26,6": 11,
+      "26,27": 13,
+      "27,6": 11,
+      "27,27": 13,
+      "28,6": 11,
+      "28,27": 13,
+      "29,6": 11,
+      "29,27": 13,
+      "29,29": 19,
+      "29,30": 7,
+      "30,6": 11,
+      "30,27": 13,
+      "30,29": 7,
+      "30,30": 7,
+      "31,6": 11,
+      "31,27": 13,
+      "31,29": 7,
+      "31,30": 7,
+      "32,6": 11,
+      "32,27": 13,
+      "33,6": 11,
+      "33,27": 13,
+      "34,6": 16,
+      "34,7": 17,
+      "34,8": 17,
+      "34,9": 17,
+      "34,10": 17,
+      "34,11": 17,
+      "34,12": 17,
+      "34,13": 17,
+      "34,14": 17,
+      "34,15": 17,
+      "34,16": 17,
+      "34,17": 17,
+      "34,18": 17,
+      "34,19": 17,
+      "34,20": 17,
+      "34,21": 17,
+      "34,22": 17,
+      "34,23": 17,
+      "34,24": 17,
+      "34,25": 17,
+      "34,26": 17,
+      "34,27": 18
+    },
+    "ColStyles": {
+      "32": 4,
+      "33": 4,
+      "34": 4,
+      "35": 20,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 4,
+      "41": 20,
+      "42": 4,
+      "43": 4,
+      "44": 4,
+      "45": 4,
+      "46": 4,
+      "47": 4,
+      "48": 4,
+      "49": 4,
+      "50": 4,
+      "51": 4,
+      "52": 4,
+      "53": 4,
+      "54": 4,
+      "55": 4,
+      "56": 4,
+      "57": 4,
+      "58": 4,
+      "59": 4,
+      "60": 4,
+      "61": 4,
+      "62": 4,
+      "63": 4,
+      "64": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "10,6,1,2",
+    "10,8,1,3",
+    "10,11,1,8",
+    "10,19,1,3",
+    "10,25,1,3",
+    "3,8,1,18",
+    "10,22,1,3",
+    "7,6,1,3",
+    "7,9,1,3",
+    "11,6,24,22",
+    "29,29,3,2",
+    "11,29,2,2",
+    "13,29,2,2",
+    "18,42,1,4",
+    "19,42,1,4",
+    "16,42,1,3",
+    "9,6,1,2",
+    "9,8,1,3",
+    "9,11,1,8",
+    "9,19,1,3",
+    "9,22,1,3",
+    "9,25,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+        "ServerCommandName": "产品类型排序",
+        "Parameters": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+            "ParamName": "产品类型",
+            "ListviewName": "表格1",
+            "Columns": [
+              {
+                "ArrayItemName": "行号",
+                "Column": "行号"
+              },
+              {
+                "ArrayItemName": "id",
+                "Column": "ID"
+              }
+            ]
+          }
+        ],
+        "ResultErrorCodeTo": {
+          "SerializeProperty": "=产品类型名称排序!返回码"
+        },
+        "ResultMessageTo": {
+          "SerializeProperty": "=产品类型名称排序!返回信息"
+        },
+        "RefreshAfterFinish": true,
+        "CheckDataValidation": true
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=产品类型名称排序!返回码"
+                  }
+                ]
+              },
+              "value": "0"
+            },
+            "CommandList": [
+              {
+                "$type": "ElementUI.Commands.ShowMessage, ElementUI",
+                "Message": "序号已重置成功！",
+                "Type": "info",
+                "Duration": 3000,
+                "Offset": null
+              }
+            ],
+            "ID": "1c16bd33-8c6a-4531-862b-2790a512e551"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=产品类型名称排序!返回信息"
+                }
+              }
+            ],
+            "ID": "68439feb-c220-4888-b6fd-ed2c5c0d2871"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "返回码",
+      "Formula": "产品类型名称排序!$AQ$19"
+    },
+    {
+      "Name": "返回信息",
+      "Formula": "产品类型名称排序!$AQ$20"
+    },
+    {
+      "Name": "状态",
+      "Formula": "产品类型名称排序!$J$8"
+    },
+    {
+      "Name": "行数",
+      "Formula": "产品类型名称排序!$AQ$17"
+    }
+  ]
+}//SWdt5JkVmc4KYX0Y11IPLnvizeaVpH4MH9qV1LMAYfD1peonhLm8XqOFF508F9UaIoYdHKgQQgmZ8cCWIV3/cxP04yHa+R5szbG/XlOHEpI9QNNSoavcZcbvV/j97bGeaR7RhQlklxch3O86vGvBcb1eFt2XcqAnuf0IEmm9Hfl3x9ocwh94NnsovDAZCf1DUk1wsVRZpG+OYYhlITK+Wbud6V1yjT/FoOEeBlvKZvauVrND5l+7ium4uyica5QH/FGsVIZYDCMXtBkfX09bYVUBUznd0p7b22+rEUrq7bzqAiwg8WkWGvhOe1e4ed0BJG+gFvxtHEx25dN4AVTNCO1a9n0TI21NCtQYsjgaPsr/ZyAg42sANQ5Smmj8eB2rOch3uoCQNPxEmdwtTju8umy5pkmYAA9wBY/jDe3E6LZD364FQV6+gRRM/os4APtgwjtBd+H46cSuQnUUK61tG5ZO3jNMnB1klIb/J0+eJ83pW20AFuRIclBf2lybWSKBB9nHgY0I+PkEU+vMWVyoJXv3qxIAOzBwB+bnkc0OyFlmkD4VhFKmh3ewFNg6lFlFjD4D6blCIzhpbmpBq53FlCDIvFQGx0M7Mwbq47vLF5nPng4jvFF8CBDijcsnl734QASrB0ttwIQCgjhKyayRsdsahp37O6hjtnHONzeRMqmsRd82JpdAneWM+g15uiP6pboNGd1DkVgeAjcCxoLHsT4+1m6S2IuaTjoAOayzysCXdqAcjsyMC495naWbJFVWSTeNfw1u4jEsYxyekx0nEWbnvvgjZY87cTWdjNRWNzOjWG37jUtgFGI9a2FVnxHXtOb8+Z1Dl4qFd2OH2UqjQy17jjBcC4ygvF0N6kT97wTmmPiwt3mDxDxUctkNQme/lejL01ABplcfxwU3j8ynwA==|920

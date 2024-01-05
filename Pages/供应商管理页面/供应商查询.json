@@ -1,0 +1,1050 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 38
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "Count": 82
+  },
+  "Values": {
+    "1,0": "供应商：",
+    "1,8": "地址：",
+    "1,17": "类型：",
+    "1,24": "状态：",
+    "1,31": "联系人：",
+    "1,38": "电话：",
+    "1,47": "材料：",
+    "1,55": "添加供应商",
+    "1,69": "所属公司：",
+    "3,38": "地图",
+    "3,52": "主要供应材料类型",
+    "4,46": "修改",
+    "4,49": "删除"
+  },
+  "Formulas": {
+    "4,38": "IF(COUNTIF(BH5,\"*map.baidu*\"),\"地图\",IF(BH5<>\"\",\"??\",\"\"))",
+    "1,73": "母版页1当前公司ID"
+  },
+  "AttachInfos": {
+    "1,4": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      }
+    },
+    "1,12": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      }
+    },
+    "1,21": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 1,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "供应商主表",
+        "ValueColumnBindingInfo": {
+          "TableName": "供应商主表",
+          "ColumnName": "类型",
+          "GUID": "afc58c90-01d2-4a44-8db7-304a68cd9d57"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,28": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "ShowDropdownButtonWhenGetFocus": 1,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "供应商主表",
+        "ValueColumnBindingInfo": {
+          "TableName": "供应商主表",
+          "ColumnName": "状态",
+          "GUID": "d25bef04-9800-4ad8-9fc5-e2c0d73956a7"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "1,35": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      }
+    },
+    "1,42": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      }
+    },
+    "1,50": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsSelectAllOnFocus": true
+      }
+    },
+    "1,55": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "供应商详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=供应商详情!U25"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=供应商查询!公司简称"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=供应商详情!F5"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "添加供应商",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "1,73": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "供应商主表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 34,
+        "ColumnCount": 64,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "供应商主表",
+                "ColumnName": "名称",
+                "GUID": "0c16ff58-5db8-4ef8-aeee-df8d4b2e6217"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供应商查询!E2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "供应商主表",
+                "ColumnName": "类型",
+                "GUID": "8a30244a-ebcf-4b1c-b9e9-36964d1a39f5"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供应商查询!V2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "供应商主表",
+                "ColumnName": "状态",
+                "GUID": "ba72cfff-7cae-4193-a658-a3da14e35661"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供应商查询!AC2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "供应商主表",
+                "ColumnName": "联系地址",
+                "GUID": "4ea1f5a5-647e-4bec-a7ee-c663529925f8"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供应商查询!M2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "供应商主表",
+                "ColumnName": "关键字",
+                "GUID": "0cbbf2af-13c2-41e4-b18d-a62e7346cccc"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供应商查询!AY2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "供应商主表",
+                "ColumnName": "ID",
+                "GUID": "1da477e3-a62a-4cff-963f-18e717854745",
+                "RelationBinding": {
+                  "RelatedTable": "供应商联系人子表",
+                  "RelatedColumn": "供应商ID",
+                  "DisplayColumn": "联系人"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供应商查询!AJ2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "供应商主表",
+                    "ColumnName": "ID",
+                    "GUID": "5e594c13-b994-4d9d-932f-80daac374bb9",
+                    "RelationBinding": {
+                      "RelatedTable": "供应商联系人子表",
+                      "RelatedColumn": "供应商ID",
+                      "DisplayColumn": "手机"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=供应商查询!AQ2"
+                  },
+                  "LeftBracket": 1
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "供应商主表",
+                    "ColumnName": "ID",
+                    "GUID": "81108d3d-baa3-4363-80c2-88758b9dcb05",
+                    "RelationBinding": {
+                      "RelatedTable": "供应商联系人子表",
+                      "RelatedColumn": "供应商ID",
+                      "DisplayColumn": "固话"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=供应商查询!AQ2"
+                  },
+                  "RightBracket": 1
+                }
+              ],
+              "RelationType": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsTotalRowVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 1
+      }
+    },
+    "4,3": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "供应商主表",
+        "ColumnName": "编号",
+        "GUID": "e553af5f-9468-464c-b10e-aba55da1d7b3"
+      }
+    },
+    "4,6": {
+      "TotalRowSetting": {
+        "FormulaType": 2,
+        "StyleInfo": {
+          "Formatter": "共0供应商"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "供应商主表",
+        "ColumnName": "名称",
+        "GUID": "4977707c-3bf9-49c0-82f5-b0c09a4deee2"
+      }
+    },
+    "4,19": {
+      "BindingInfo": {
+        "TableName": "供应商主表",
+        "ColumnName": "联系地址",
+        "GUID": "62b9883f-b6bb-429b-a7e8-330f77c7367a"
+      }
+    },
+    "4,38": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=供应商查询!BH5"
+                      }
+                    ]
+                  },
+                  "value": "map.baidu",
+                  "compareType": 10
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "ValueFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=供应商查询!BH5"
+                    },
+                    "IsOpenInNewTab": true
+                  }
+                ],
+                "ID": "d3b89467-50b9-4cd5-b040-3cfffd4837a3"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "缺少地图链接，或者不是正确的百度地图链接！"
+                  }
+                ],
+                "ID": "1714d647-61b5-4096-8c85-266fb8160453"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "4,40": {
+      "BindingInfo": {
+        "TableName": "供应商主表",
+        "ColumnName": "类型",
+        "GUID": "d6b8228c-5b5e-4c09-8dfa-6eeadd17183d"
+      }
+    },
+    "4,43": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "供应商主表",
+        "ColumnName": "状态",
+        "GUID": "42c3b798-6685-4392-a659-81ae4b52bdfe"
+      },
+      "RulesGuidList": [
+        "9215fcc0-37d3-4f83-beb6-0041bd6b53ae"
+      ]
+    },
+    "4,46": {
+      "TotalRowSetting": {},
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "供应商详情",
+            "PassValues": [
+              {
+                "Source": "修改",
+                "TargetCell": {
+                  "SerializeProperty": "=供应商详情!U25"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "修改",
+        "ClickMode": 1
+      }
+    },
+    "4,49": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ShowConfirm": true,
+            "ConfirmText": "删除后不能再恢复，您确定要删除吗？"
+          }
+        ],
+        "Text": "删除",
+        "ClickMode": 1
+      }
+    },
+    "4,52": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "供应商主表",
+        "ColumnName": "关键字",
+        "GUID": "ea1d7410-969f-40e3-b061-6e9782468c36"
+      }
+    },
+    "4,59": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "供应商主表",
+        "ColumnName": "地图链接",
+        "GUID": "9320f022-a9ec-42db-9757-d8bf74a3f55a"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderRight": null
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Formatter": 4,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 1,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontWeight": 6,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontWeight": 6,
+        "Foreground": 7,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 5,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Foreground": 7,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 7,
+        "Formatter": 4,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 7,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Right",
+        "@",
+        "Center",
+        "[AUTO]General",
+        "black",
+        "Bold",
+        "Blue"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,58": 0,
+      "0,59": 1,
+      "1,0": 2,
+      "1,1": 3,
+      "1,2": 3,
+      "1,3": 3,
+      "1,4": 4,
+      "1,8": 5,
+      "1,9": 3,
+      "1,10": 3,
+      "1,11": 3,
+      "1,12": 4,
+      "1,13": 3,
+      "1,14": 3,
+      "1,15": 3,
+      "1,16": 3,
+      "1,17": 5,
+      "1,18": 3,
+      "1,19": 3,
+      "1,20": 3,
+      "1,21": 6,
+      "1,24": 5,
+      "1,25": 3,
+      "1,26": 3,
+      "1,27": 3,
+      "1,28": 6,
+      "1,31": 5,
+      "1,32": 3,
+      "1,33": 3,
+      "1,34": 3,
+      "1,35": 4,
+      "1,36": 3,
+      "1,37": 3,
+      "1,38": 5,
+      "1,39": 3,
+      "1,40": 3,
+      "1,41": 3,
+      "1,42": 4,
+      "1,47": 7,
+      "1,50": 8,
+      "1,55": 9,
+      "1,56": 3,
+      "1,57": 3,
+      "1,58": 10,
+      "1,64": 11,
+      "1,65": 11,
+      "1,66": 11,
+      "1,67": 11,
+      "1,68": 11,
+      "1,69": 12,
+      "1,70": 3,
+      "1,71": 3,
+      "1,72": 3,
+      "1,73": 13,
+      "1,80": 11,
+      "2,58": 0,
+      "2,59": 1,
+      "3,1": 14,
+      "3,2": 15,
+      "3,3": 16,
+      "3,4": 15,
+      "3,5": 15,
+      "3,6": 16,
+      "3,7": 15,
+      "3,8": 15,
+      "3,9": 15,
+      "3,10": 15,
+      "3,11": 15,
+      "3,12": 15,
+      "3,13": 15,
+      "3,14": 15,
+      "3,15": 15,
+      "3,16": 15,
+      "3,17": 15,
+      "3,18": 15,
+      "3,19": 16,
+      "3,20": 15,
+      "3,21": 15,
+      "3,22": 15,
+      "3,23": 15,
+      "3,24": 15,
+      "3,25": 15,
+      "3,26": 15,
+      "3,27": 15,
+      "3,28": 15,
+      "3,29": 15,
+      "3,30": 15,
+      "3,31": 15,
+      "3,32": 15,
+      "3,33": 15,
+      "3,34": 15,
+      "3,35": 15,
+      "3,36": 15,
+      "3,37": 15,
+      "3,38": 16,
+      "3,39": 15,
+      "3,40": 16,
+      "3,41": 15,
+      "3,42": 15,
+      "3,43": 16,
+      "3,44": 15,
+      "3,45": 15,
+      "3,46": 16,
+      "3,47": 15,
+      "3,48": 15,
+      "3,49": 16,
+      "3,50": 15,
+      "3,51": 15,
+      "3,52": 16,
+      "3,53": 15,
+      "3,54": 15,
+      "3,55": 15,
+      "3,56": 15,
+      "3,57": 15,
+      "3,58": 17,
+      "3,59": 16,
+      "3,60": 15,
+      "3,61": 15,
+      "3,62": 15,
+      "3,63": 15,
+      "3,64": 15,
+      "4,1": 18,
+      "4,3": 19,
+      "4,6": 20,
+      "4,19": 19,
+      "4,38": 21,
+      "4,40": 22,
+      "4,41": 3,
+      "4,42": 3,
+      "4,43": 22,
+      "4,44": 3,
+      "4,45": 3,
+      "4,46": 23,
+      "4,47": 23,
+      "4,49": 24,
+      "4,50": 25,
+      "4,51": 3,
+      "4,58": 0,
+      "4,59": 3,
+      "5,1": 26,
+      "5,58": 0,
+      "5,59": 1,
+      "6,1": 26,
+      "6,58": 0,
+      "6,59": 1,
+      "7,1": 26,
+      "7,58": 0,
+      "7,59": 1,
+      "8,1": 26,
+      "8,58": 0,
+      "8,59": 1,
+      "9,1": 26,
+      "9,58": 0,
+      "9,59": 1,
+      "10,1": 26,
+      "10,58": 0,
+      "10,59": 1,
+      "11,1": 26,
+      "11,58": 0,
+      "11,59": 1,
+      "12,1": 26,
+      "12,58": 0,
+      "12,59": 1,
+      "13,1": 26,
+      "13,58": 0,
+      "13,59": 1,
+      "14,1": 26,
+      "14,58": 0,
+      "14,59": 1,
+      "15,1": 26,
+      "15,58": 0,
+      "15,59": 1,
+      "16,1": 26,
+      "16,58": 0,
+      "16,59": 1,
+      "17,1": 26,
+      "17,58": 0,
+      "17,59": 1,
+      "18,1": 26,
+      "18,58": 0,
+      "18,59": 1,
+      "19,1": 26,
+      "19,58": 0,
+      "19,59": 1,
+      "20,1": 26,
+      "20,58": 0,
+      "20,59": 1,
+      "21,1": 26,
+      "21,58": 0,
+      "21,59": 1,
+      "22,1": 26,
+      "22,58": 0,
+      "22,59": 1,
+      "23,1": 26,
+      "23,58": 0,
+      "23,59": 1,
+      "24,1": 26,
+      "24,58": 0,
+      "24,59": 1,
+      "25,1": 26,
+      "25,58": 0,
+      "25,59": 1,
+      "26,1": 26,
+      "26,58": 0,
+      "26,59": 1,
+      "27,1": 26,
+      "27,58": 0,
+      "27,59": 1,
+      "28,1": 26,
+      "28,58": 0,
+      "28,59": 1,
+      "29,1": 26,
+      "29,58": 0,
+      "29,59": 1,
+      "30,1": 26,
+      "30,58": 0,
+      "30,59": 1,
+      "31,1": 26,
+      "31,58": 0,
+      "31,59": 1,
+      "32,1": 26,
+      "32,58": 0,
+      "32,59": 1,
+      "33,1": 26,
+      "33,58": 0,
+      "33,59": 1,
+      "34,1": 26,
+      "34,58": 0,
+      "34,59": 1,
+      "35,1": 26,
+      "35,58": 0,
+      "35,59": 1,
+      "36,1": 27,
+      "36,2": 28,
+      "36,3": 28,
+      "36,4": 28,
+      "36,5": 28,
+      "36,6": 28,
+      "36,7": 28,
+      "36,8": 28,
+      "36,9": 28,
+      "36,10": 28,
+      "36,11": 28,
+      "36,12": 28,
+      "36,13": 28,
+      "36,14": 28,
+      "36,15": 28,
+      "36,16": 28,
+      "36,17": 28,
+      "36,18": 28,
+      "36,19": 28,
+      "36,20": 28,
+      "36,21": 28,
+      "36,22": 28,
+      "36,23": 28,
+      "36,24": 28,
+      "36,25": 28,
+      "36,26": 28,
+      "36,27": 28,
+      "36,28": 28,
+      "36,29": 28,
+      "36,30": 28,
+      "36,31": 28,
+      "36,32": 28,
+      "36,33": 28,
+      "36,34": 28,
+      "36,35": 28,
+      "36,36": 28,
+      "36,37": 28,
+      "36,38": 28,
+      "36,39": 28,
+      "36,40": 28,
+      "36,41": 28,
+      "36,42": 28,
+      "36,43": 28,
+      "36,44": 28,
+      "36,45": 28,
+      "36,46": 28,
+      "36,47": 28,
+      "36,48": 28,
+      "36,49": 28,
+      "36,50": 28,
+      "36,51": 28,
+      "36,52": 28,
+      "36,53": 28,
+      "36,54": 28,
+      "36,55": 28,
+      "36,56": 28,
+      "36,57": 28,
+      "36,58": 29,
+      "36,59": 30,
+      "36,60": 28,
+      "36,61": 28,
+      "36,62": 28,
+      "36,63": 28,
+      "36,64": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "4,1,1,2",
+    "4,3,1,3",
+    "4,6,1,13",
+    "4,19,1,19",
+    "4,40,1,3",
+    "4,43,1,3",
+    "4,46,1,3",
+    "4,49,1,3",
+    "4,38,1,2",
+    "1,0,1,4",
+    "1,4,1,4",
+    "1,8,1,4",
+    "1,12,1,5",
+    "1,17,1,4",
+    "1,24,1,4",
+    "1,31,1,4",
+    "1,38,1,4",
+    "1,35,1,3",
+    "1,42,1,5",
+    "4,52,1,7",
+    "1,55,1,4",
+    "1,47,1,3",
+    "1,50,1,4",
+    "1,21,1,3",
+    "1,28,1,3",
+    "4,59,1,6",
+    "5,1,32,64",
+    "1,69,1,4",
+    "1,73,1,7",
+    "3,1,1,2",
+    "3,3,1,3",
+    "3,6,1,13",
+    "3,19,1,19",
+    "3,38,1,2",
+    "3,40,1,3",
+    "3,43,1,3",
+    "3,46,1,3",
+    "3,49,1,3",
+    "3,52,1,7",
+    "3,59,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=供应商查询!AR5=\"停用\""
+          },
+          "GUID": "9215fcc0-37d3-4f83-beb6-0041bd6b53ae",
+          "StyleInfo": {
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "公司简称",
+      "Formula": "供应商查询!$BV$2"
+    }
+  ]
+}//pycfgsNS36dtTjvJycLmh7EqGrKriwaZwQ8YpbLmPy9w54Pyl/eBXGIB9oeUcGA9krvnC/bAFleGpvOgYwQ4eDj0pfkH0HuEc/xgsbnb4v4vRWg72uvAS3ZtsKITzMfKhD7M0C8OD3cV+B9Fwi6cE6KTElB5+49nhmslCD5/HuQw+bQkGJboVAJ/UMbMB4RUByHurtOWnbl6HUTV7BsizJkNPDUAoGWaYXmFsj1YTy4FLJZPOH/NYx2F+Sz6Lf0BKMvXRBBxsHVt87Q4ExsfiVl062Uxod2X0wAxhS2BMoI5fMGBrvaFglrpcmkU/BromHwbHcgtLOHpj1UDYwuny/srm8u2YQqxso5TybZtUBNUKdZv93ZQmn0em4fCkrexlkhgXvpGXHFeBqTRKYs0iYb2y0Lpp8dQsaDWka9LHSvR2XlmowkztaNMpl31je1Osp2Vk7WjReM908QZPJ0odXtVftbZ4ToWAs2zblAYvN4NalOP8MplarRw/WAN1ZIC3oXGZjs6mGonUKr5uXBtDd7PfIRdqOI1d2+cUw1cIZ/MAofGqst+BRbvjUv+p8z1I9gI+IpzLim9ZPWw3go+BanjI3dRIpb47PtPUsi0Tutxa/ep7rPUvgHnmqYsx3nmT7wDX+Lxei8SC5tXGa8zLVU5pYNCKLsRWnCy2RCP4vHNPQvZpnCUMrse+KTfxz2ceNrIIWP0MQjD7iLL5IEHLUdxuLUkzLvOdDoV+peTxQQ2XjdA9PSf5/wuw16R1QRjM+XOn+FHtvcVGAs8Qb/GmGIPdImTvvh7RTNea+00WCvHmh65e1F4+4Sd7mCb+u7RPo9qMaLuMgOTIdNmwKxWBd+bh+zP0s1GyUcTkDrQcohfwolRYlABgjcKrAnMfjDw3qvWxshVRfFkun0l8ZOqBg==|920

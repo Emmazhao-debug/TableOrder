@@ -1,0 +1,721 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0,
+          "IsHidden": true
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "Count": 45
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "Count": 143
+  },
+  "Values": {
+    "3,52": 1,
+    "3,53": 2,
+    "3,54": 3,
+    "3,55": 4,
+    "3,56": 5,
+    "3,57": 6,
+    "7,44": "添加记录",
+    "8,8": "总称",
+    "9,8": "名称和序号",
+    "11,42": "更改",
+    "11,48": "删除",
+    "31,6": "id：",
+    "31,15": "从变量获取附件并创建数据"
+  },
+  "AttachInfos": {
+    "7,44": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "临时排序_详情页面",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=临时排序_详情页面!K12"
+                }
+              },
+              {
+                "Source": "4",
+                "TargetCell": {
+                  "SerializeProperty": "=临时排序_详情页面!AJ6"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "添加记录"
+      }
+    },
+    "8,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "临时排序",
+        "RowIndex": 8,
+        "ColumnIndex": 6,
+        "RowCount": 12,
+        "ColumnCount": 45,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "临时排序",
+                "ColumnName": "序号",
+                "GUID": "7e7a9edc-1321-4e96-9bb9-ac89ef32c0f8"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ColumnHeaderRowCount": 3,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1,
+        "ColumnOperation": 2
+      }
+    },
+    "9,60": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "附件",
+        "GUID": "beef4586-f671-4fa8-a96d-8d06e9a7699c",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "11,6": {
+      "IsCellIgnoreHideInListview": true
+    },
+    "11,8": {
+      "NameUsedInJavaScript": "名称",
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "名称",
+        "GUID": "07438df8-faf9-4dd1-a897-9a7c3043d446"
+      }
+    },
+    "11,13": {
+      "NameUsedInJavaScript": "序号",
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "序号",
+        "GUID": "3b7773a8-069d-4b3f-bc31-323b9ca59e2b"
+      }
+    },
+    "11,17": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "附件",
+        "GUID": "afd4a73d-dd10-41d5-b77b-c9fca15df473",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImageViewerCommand.ImageViewerCommand, ImageViewerCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=临时排序_列表页面!BI10"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "BuiltIn": true,
+        "UseCellForeColor": true
+      }
+    },
+    "11,21": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "备注",
+        "GUID": "2c71c03e-aa3b-483c-960c-210c05c1059a"
+      }
+    },
+    "11,27": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "ID",
+        "GUID": "ce92ec01-9d4e-44fa-9e1d-a4246a90c7a2"
+      }
+    },
+    "11,29": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "板材id",
+        "GUID": "d38fc93a-5185-4637-bd00-fc9e78674bc5"
+      }
+    },
+    "11,34": {
+      "BindingInfo": {
+        "TableName": "临时排序",
+        "ColumnName": "板材厚度",
+        "GUID": "104b2411-8790-4ed2-8852-eb489ba55d77",
+        "RelationBinding": {
+          "RelatedTable": "板材常用厚度表",
+          "RelatedColumn": "实际厚度",
+          "DisplayColumn": "显示厚度"
+        }
+      }
+    },
+    "11,42": {
+      "NameUsedInJavaScript": "更改",
+      "IsCellIgnoreHideInListview": true,
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "临时排序_详情页面",
+            "PassValues": [
+              {
+                "Source": "更改",
+                "TargetCell": {
+                  "SerializeProperty": "=临时排序_详情页面!K12"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "更改"
+      }
+    },
+    "11,45": {
+      "IsCellIgnoreHideInListview": true
+    },
+    "11,48": {
+      "NameUsedInJavaScript": "删除",
+      "IsCellIgnoreHideInListview": true,
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "您确定要删除吗？"
+          }
+        ],
+        "Text": "删除"
+      }
+    },
+    "21,6": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "子表格数据",
+        "RowIndex": 21,
+        "ColumnIndex": 6,
+        "RowCount": 8,
+        "ColumnCount": 45,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "主表id",
+          "MasterTable": "临时排序",
+          "ColumnOfMasterTable": "ID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "22,6": {
+      "BindingInfo": {
+        "TableName": "子表格数据",
+        "ColumnName": "ID",
+        "GUID": "3f6cf9ce-390b-44cf-a4cf-a5af5509f6b7"
+      }
+    },
+    "22,9": {
+      "BindingInfo": {
+        "TableName": "子表格数据",
+        "ColumnName": "学校",
+        "GUID": "70acc4b1-13f5-4015-84b1-06618dc271ac"
+      }
+    },
+    "22,18": {
+      "BindingInfo": {
+        "TableName": "子表格数据",
+        "ColumnName": "班级",
+        "GUID": "51ebabf4-1a9f-4cda-8cd6-83ccc28fa363"
+      }
+    },
+    "22,28": {
+      "BindingInfo": {
+        "TableName": "子表格数据",
+        "ColumnName": "主表id",
+        "GUID": "2ef2c81f-2e8d-416c-930e-35c260714e01"
+      }
+    },
+    "31,9": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "31,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "获取数据行",
+            "TableValue": {
+              "TableName": "临时排序",
+              "TableValueType": 1,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "临时排序",
+                    "ColumnName": "名称",
+                    "GUID": "a70b79fa-ac36-4aaa-bdcc-1a3772932d40"
+                  },
+                  "ColumnName": "名称"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "临时排序",
+                    "ColumnName": "序号",
+                    "GUID": "b50bcdcc-37c9-4d1c-9dd9-57fd4e1d9cb3"
+                  },
+                  "ColumnName": "序号"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "临时排序",
+                    "ColumnName": "附件",
+                    "GUID": "4b96cbc1-9367-4eab-a020-2495ce8a14fe"
+                  },
+                  "ColumnName": "附件"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "临时排序",
+                    "ColumnName": "备注",
+                    "GUID": "e027ce84-4ac3-479f-afa2-9218bbfc7b16"
+                  },
+                  "ColumnName": "备注"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "临时排序",
+                    "ColumnName": "板材id",
+                    "GUID": "c027a1e9-8469-473d-bda7-2f06b95ea658"
+                  },
+                  "ColumnName": "板材id"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "临时排序",
+                    "ColumnName": "板材厚度",
+                    "GUID": "79c09b9b-8122-4911-aa06-91a076d0b818"
+                  },
+                  "ColumnName": "板材厚度"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "临时排序",
+                  "ColumnName": "ID",
+                  "GUID": "28d582f9-8418-45a8-b738-f7124990ef7f"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=临时排序_列表页面!J32"
+                }
+              }
+            },
+            "ID": "481614aa3a6d4609a205f6b43fc2a191"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "临时排序",
+            "UpdateType": "add",
+            "ShowConfirm": false
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": "添加成功"
+          }
+        ],
+        "Text": "从变量获取附件并创建数据",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "Foreground": 3,
+        "HorizontalAlignment": 4,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 15.0,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 4
+      },
+      {
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 4,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Foreground": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 6,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Formatter": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "black",
+        "Body",
+        "Blue",
+        "Center",
+        "Right",
+        "[AUTO]General",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,140": 0,
+      "3,141": 1,
+      "3,142": 2,
+      "7,44": 3,
+      "7,45": 4,
+      "7,46": 4,
+      "7,47": 4,
+      "9,60": 5,
+      "9,61": 4,
+      "9,62": 4,
+      "9,63": 4,
+      "9,64": 4,
+      "9,65": 4,
+      "9,66": 4,
+      "9,67": 4,
+      "9,68": 4,
+      "9,69": 4,
+      "10,17": 6,
+      "10,27": 4,
+      "10,28": 4,
+      "11,8": 7,
+      "11,13": 7,
+      "11,14": 7,
+      "11,17": 8,
+      "11,21": 7,
+      "11,27": 9,
+      "11,28": 4,
+      "11,29": 7,
+      "11,34": 7,
+      "11,42": 10,
+      "11,48": 10,
+      "22,6": 7,
+      "22,9": 7,
+      "22,18": 7,
+      "22,28": 7,
+      "31,6": 11,
+      "31,9": 12
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "8,6,1,2",
+    "8,8,1,37",
+    "8,45,1,3",
+    "8,48,1,3",
+    "9,6,1,2",
+    "9,8,1,34",
+    "9,42,1,3",
+    "9,45,1,3",
+    "9,48,1,3",
+    "10,6,1,2",
+    "10,8,1,5",
+    "10,13,1,4",
+    "10,42,1,3",
+    "10,45,1,3",
+    "10,48,1,3",
+    "11,6,1,2",
+    "11,8,1,5",
+    "11,13,1,4",
+    "11,17,1,4",
+    "11,42,1,3",
+    "11,45,1,3",
+    "11,48,1,3",
+    "12,6,8,45",
+    "9,60,1,10",
+    "10,17,1,4",
+    "7,44,1,4",
+    "23,6,6,45",
+    "22,6,1,3",
+    "22,9,1,9",
+    "22,18,1,10",
+    "22,28,1,7",
+    "11,21,1,6",
+    "10,21,1,6",
+    "11,27,1,2",
+    "10,27,1,2",
+    "11,29,1,5",
+    "10,29,1,5",
+    "10,34,1,4",
+    "11,34,1,4",
+    "31,15,2,12",
+    "31,9,2,2",
+    "31,6,2,3",
+    "21,6,1,3",
+    "21,9,1,9",
+    "21,18,1,10",
+    "21,28,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+        "TargetPageElement": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=临时排序_列表页面!BA18"
+        },
+        "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+        "MethodName": "ExecuteCommand",
+        "Disabled": true
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//WXQo5B+0P3VueaKsvX8A8lQthucAh9SPe9iB5pu/71VnsZTZIFBEnC/8uzZGJFnOdfKlODpYu2cdTOO6akJ3+C+1/Sms9VJY8fyQdqreFdsnlLdC6c7RF4pHWEs7T0pFC+vVj9s5z+12YIRkmud1FH0sfGPmkoM8Sz7BCQVrilgC9HXL/419GQLsFXqACzMNtDsQDgt2VH6rtj+eMgeR4WaU+qVrsiGnvrbalM26pGcEWq3aATl7hotAALvf1ltahkAKQ3KYzg4rja068sIyxVDGfmPZMIkuMacAhylikfrdpRkQl3Cl2pNGOPyMy8QYriJ4g8lbth/dMlAeHldO8IyBbs+8MlgDW8HSjJI4lg9Lfnzf40RKmjydrCwzYb7d//NkcNQI6YYChvx4N+VZCVkIjg+QrxnAqw3fqBTni4mDxGM3lq1CeXgUjguib+cDmCG7kJHD8D0e1qZWVPCXWFilZPwiJCj7xMIYAk9ABEH2heqwTWd/+ZmjrF+FctDr4nvA//giFfKEC17tDKxi3MC+FuZ9QcfRMDlxvfH3VqyYmg/Kn2HAnHnxYDRYgl7khBMI0/qcIEngM0ldYBvwlpo16ghvw32Jvy7L48Pig7Ox6jwE1Hg9qAHJBnkuU2LlVMHvfnpt8GzhModMK9+fn4MZNMXbsvdUEjJVss8XfSnEy+w540dvD+f1kfrTaMEk/P7pD4PuNATl/Zhfs7hQg5uGks17spX/6EojoQhsSRTGOnwIF3vtM9EVEJNeGZx32abhkvwNMuqHQ7jx9FNm06DIXgfPLcBeaNm+AaSx0Q51YeN3UP2lGJh6e21TZuMAAN8zfbPmD2+xoWWByi+5ojclNdbkTDsaEFjs3qgBo3JFoVHT/y7vafK198+YUagdMUKRqGdxoJ/gzKnZ60YZIQ==|920

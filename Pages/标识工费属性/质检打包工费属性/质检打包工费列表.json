@@ -1,0 +1,1135 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0,
+          "IsHidden": true
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "Count": 34,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      52,
+      53,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "Count": 69
+  },
+  "Values": {
+    "0,6": "检验打包工费列表",
+    "2,40": "首次添加",
+    "2,47": "关闭",
+    "4,22": "日期状态",
+    "4,59": "行数：",
+    "27,6": "*此处“已失效”指的是新建报价单时不会再使用此属性中的参数，并非真的失效。早前在这个已失效属性的启止时间段内创建的过往报价单，仍然使用的是这个已失效的属性参数。例如：打开这个时间段内创建过的报价单更换属性时，则会读取“已失效”的属性参数进行产品价格计算。"
+  },
+  "Formulas": {
+    "5,49": "IF(O6>=TODAY(),\"删除\",\"\")",
+    "5,44": "IF((W6=\"生效中\")*(O6=TODAY())+(W6=\"待生效\"),\"修改\",IF(W6=\"生效中\",\"创建新属性\",\"\"))",
+    "5,22": "IF(O6>TODAY(),\"待生效\",IF(S6=\"\",\"生效中\",IF(S6>=TODAY(),\"即将到期\",\"已失效\")))",
+    "4,60": "COUNTA(O6)"
+  },
+  "AttachInfos": {
+    "2,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "质检打包工费详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=质检打包工费详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "首次添加",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "RulesGuidList": [
+        "90d13df5-29b5-4d6c-9660-28ef82162fd5",
+        "022a0506-e701-4b04-9f9d-bfa3ee942f2b"
+      ]
+    },
+    "2,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "质检打包工费表",
+        "RowIndex": 4,
+        "ColumnIndex": 6,
+        "RowCount": 23,
+        "ColumnCount": 48,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "CommitType": 1
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "质检打包工费表",
+        "ColumnName": "工费单价",
+        "GUID": "41db8cf2-1c96-43a9-a1ec-575336f233ec"
+      }
+    },
+    "5,10": {
+      "BindingInfo": {
+        "TableName": "质检打包工费表",
+        "ColumnName": "辅料单价",
+        "GUID": "3218d838-0053-4ac5-a068-a04cc3d3bc2f"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "质检打包工费表",
+        "ColumnName": "启用日期",
+        "GUID": "440dd333-7701-46e5-b87e-942c7d7b5e46"
+      }
+    },
+    "5,18": {
+      "BindingInfo": {
+        "TableName": "质检打包工费表",
+        "ColumnName": "截止日期",
+        "GUID": "3fce9e02-4059-4faf-afb7-448765a19782"
+      }
+    },
+    "5,26": {
+      "BindingInfo": {
+        "TableName": "质检打包工费表",
+        "ColumnName": "备注",
+        "GUID": "c769bc56-5da9-42af-9575-2d27ba006bb9"
+      }
+    },
+    "5,44": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=质检打包工费列表!AS6"
+                      }
+                    ]
+                  },
+                  "value": "修改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "质检打包工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "TargetCell": {
+                          "SerializeProperty": "=质检打包工费详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "d526bfde-a452-48f7-b459-85667ac0aaa5"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "质检打包工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "创建",
+                        "TargetCell": {
+                          "SerializeProperty": "=质检打包工费详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "c9274a2a-9c7f-4ad5-a02e-de34f13342df"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,49": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "质检打包工费表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "质检打包工费表",
+                      "ColumnName": "启用日期",
+                      "GUID": "0c2b898c-0eaf-4430-b032-6e0bee760ccb"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=质检打包工费列表!O6"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "质检打包工费表",
+                      "ColumnName": "ID",
+                      "GUID": "09713c82-08ca-4cd0-b2ea-dfb4c7216bd6"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=质检打包工费列表!BA6"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "d21a8ddc61aa465991cfcd2bc5cf91f0"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=质检打包工费列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "说明：",
+                    "Message": "删除本属性后，前面属性的截止日期将自动置空，变为长期有效。您确定要删除吗？",
+                    "Type": "warning",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=质检打包工费列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "质检打包工费表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "质检打包工费表",
+                                    "ColumnName": "ID",
+                                    "GUID": "07f8c92c-0ef6-4113-bb85-4c75cdd90600"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "质检打包工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "b530ede7-fa8f-432e-9628-c70b1a2fb1f4"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=质检打包工费列表!O6"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "质检打包工费表",
+                                      "ColumnName": "ID",
+                                      "GUID": "88b27060-e512-4495-9812-62eebb14ef1e"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=质检打包工费列表!BA6"
+                                    }
+                                  }
+                                ]
+                              },
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "质检打包工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "972ac7cd-3fe2-4988-b7e4-7804173ac835"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "02bcbeee613847bf9dc1e469ee3a7700"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "质检打包工费表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "质检打包工费表",
+                                "ColumnName": "ID",
+                                "GUID": "8dbb8a64-cf4c-4d31-9ce4-af757826873f"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=质检打包工费列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "质检打包工费表",
+                                  "ColumnName": "截止日期",
+                                  "GUID": "7504327d-aeb1-4fb6-871c-dc669a299876"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "质检打包工费表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "d6163676-95b2-4e9a-a3a9-cfd91247119f"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "06449c27-b34b-439f-9e25-a95631160792"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "质检打包工费表",
+                    "UpdateType": "delete",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "f6cc1e8c-ed57-4875-8841-0f31cc7be604"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,52": {
+      "BindingInfo": {
+        "TableName": "质检打包工费表",
+        "ColumnName": "ID",
+        "GUID": "bf23f4e3-aeaa-405a-952c-dcc4976104f5"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 7,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 10,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 11,
+        "HorizontalAlignment": 8,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 8
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 12,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Right",
+        "@",
+        "[AUTO]General",
+        "Left",
+        "Background 1 -25",
+        "0.000\"元/㎡\"",
+        "Center",
+        "yyyy/MM/dd",
+        "#FF00B050",
+        "Blue",
+        "Background 1 -50"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,6": 0,
+      "0,54": 1,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 3,
+      "1,11": 3,
+      "1,12": 3,
+      "1,13": 3,
+      "1,14": 2,
+      "1,15": 4,
+      "1,16": 4,
+      "1,17": 4,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 4,
+      "1,21": 4,
+      "1,22": 4,
+      "1,23": 4,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 4,
+      "1,28": 4,
+      "1,29": 4,
+      "1,30": 4,
+      "1,31": 4,
+      "1,32": 4,
+      "1,33": 4,
+      "1,34": 4,
+      "1,35": 4,
+      "1,36": 4,
+      "1,37": 4,
+      "1,38": 4,
+      "1,39": 4,
+      "1,52": 1,
+      "1,54": 1,
+      "2,6": 5,
+      "2,7": 5,
+      "2,8": 5,
+      "2,9": 5,
+      "2,10": 5,
+      "2,11": 5,
+      "2,12": 5,
+      "2,13": 5,
+      "2,40": 6,
+      "2,47": 7,
+      "2,48": 3,
+      "2,49": 3,
+      "2,50": 7,
+      "2,52": 1,
+      "2,54": 1,
+      "3,6": 8,
+      "3,7": 8,
+      "3,8": 8,
+      "3,9": 8,
+      "3,10": 8,
+      "3,11": 8,
+      "3,12": 8,
+      "3,13": 8,
+      "3,52": 1,
+      "3,54": 1,
+      "4,6": 9,
+      "4,7": 10,
+      "4,8": 10,
+      "4,9": 10,
+      "4,10": 10,
+      "4,11": 10,
+      "4,12": 10,
+      "4,13": 10,
+      "4,14": 11,
+      "4,15": 10,
+      "4,16": 10,
+      "4,17": 10,
+      "4,18": 11,
+      "4,19": 10,
+      "4,20": 10,
+      "4,21": 10,
+      "4,22": 11,
+      "4,23": 10,
+      "4,24": 10,
+      "4,25": 10,
+      "4,26": 12,
+      "4,27": 10,
+      "4,28": 10,
+      "4,29": 10,
+      "4,30": 10,
+      "4,31": 10,
+      "4,32": 10,
+      "4,33": 10,
+      "4,34": 10,
+      "4,35": 10,
+      "4,36": 10,
+      "4,37": 10,
+      "4,38": 10,
+      "4,39": 10,
+      "4,40": 10,
+      "4,41": 10,
+      "4,42": 10,
+      "4,43": 10,
+      "4,44": 10,
+      "4,45": 10,
+      "4,46": 10,
+      "4,47": 10,
+      "4,48": 10,
+      "4,49": 10,
+      "4,50": 10,
+      "4,51": 10,
+      "4,52": 10,
+      "4,53": 10,
+      "4,54": 13,
+      "5,6": 14,
+      "5,10": 15,
+      "5,14": 16,
+      "5,18": 16,
+      "5,22": 17,
+      "5,26": 18,
+      "5,44": 19,
+      "5,49": 19,
+      "5,52": 20,
+      "5,54": 13,
+      "5,64": 20,
+      "5,65": 20,
+      "5,66": 20,
+      "5,67": 20,
+      "6,6": 13,
+      "6,43": 21,
+      "6,54": 13,
+      "7,6": 13,
+      "7,43": 21,
+      "7,54": 13,
+      "8,6": 13,
+      "8,43": 21,
+      "8,54": 13,
+      "9,6": 13,
+      "9,43": 21,
+      "9,54": 13,
+      "10,6": 13,
+      "10,43": 21,
+      "10,54": 13,
+      "11,6": 13,
+      "11,43": 21,
+      "11,54": 13,
+      "12,6": 13,
+      "12,43": 21,
+      "12,54": 13,
+      "13,6": 13,
+      "13,43": 21,
+      "13,54": 13,
+      "14,6": 13,
+      "14,43": 21,
+      "14,54": 13,
+      "15,3": 5,
+      "15,4": 5,
+      "15,5": 5,
+      "15,6": 13,
+      "15,54": 13,
+      "16,3": 5,
+      "16,4": 5,
+      "16,5": 5,
+      "16,6": 13,
+      "16,54": 13,
+      "17,3": 5,
+      "17,4": 5,
+      "17,5": 5,
+      "17,6": 13,
+      "17,54": 13,
+      "18,3": 5,
+      "18,4": 5,
+      "18,5": 5,
+      "18,6": 13,
+      "18,54": 13,
+      "19,3": 5,
+      "19,4": 5,
+      "19,5": 5,
+      "19,6": 13,
+      "19,54": 13,
+      "20,3": 5,
+      "20,4": 5,
+      "20,5": 5,
+      "20,6": 13,
+      "20,54": 13,
+      "21,3": 5,
+      "21,4": 5,
+      "21,5": 5,
+      "21,6": 13,
+      "21,54": 13,
+      "22,3": 5,
+      "22,4": 5,
+      "22,5": 5,
+      "22,6": 13,
+      "22,54": 13,
+      "23,3": 5,
+      "23,4": 5,
+      "23,5": 5,
+      "23,6": 13,
+      "23,54": 13,
+      "24,3": 5,
+      "24,4": 5,
+      "24,5": 5,
+      "24,6": 13,
+      "24,54": 13,
+      "25,3": 5,
+      "25,4": 5,
+      "25,5": 5,
+      "25,6": 13,
+      "25,54": 13,
+      "26,3": 5,
+      "26,4": 5,
+      "26,5": 5,
+      "26,6": 22,
+      "26,7": 23,
+      "26,8": 23,
+      "26,9": 23,
+      "26,10": 23,
+      "26,11": 23,
+      "26,12": 23,
+      "26,13": 23,
+      "26,14": 23,
+      "26,15": 23,
+      "26,16": 23,
+      "26,17": 23,
+      "26,18": 23,
+      "26,19": 23,
+      "26,20": 23,
+      "26,21": 23,
+      "26,22": 23,
+      "26,23": 23,
+      "26,24": 23,
+      "26,25": 23,
+      "26,26": 23,
+      "26,27": 23,
+      "26,28": 23,
+      "26,29": 23,
+      "26,30": 23,
+      "26,31": 23,
+      "26,32": 23,
+      "26,33": 23,
+      "26,34": 23,
+      "26,35": 23,
+      "26,36": 23,
+      "26,37": 23,
+      "26,38": 23,
+      "26,39": 23,
+      "26,40": 23,
+      "26,41": 23,
+      "26,42": 23,
+      "26,43": 23,
+      "26,44": 23,
+      "26,45": 23,
+      "26,46": 23,
+      "26,47": 23,
+      "26,48": 23,
+      "26,49": 23,
+      "26,50": 23,
+      "26,51": 23,
+      "26,52": 23,
+      "26,53": 23,
+      "26,54": 13,
+      "27,3": 5,
+      "27,4": 5,
+      "27,5": 5,
+      "27,6": 24,
+      "27,54": 1,
+      "28,3": 5,
+      "28,4": 5,
+      "28,5": 5,
+      "28,6": 5,
+      "28,7": 5,
+      "28,8": 5,
+      "28,9": 5,
+      "28,10": 5,
+      "28,11": 5,
+      "28,12": 5,
+      "28,13": 5,
+      "28,52": 13,
+      "28,54": 1,
+      "29,3": 5,
+      "29,4": 5,
+      "29,5": 5,
+      "29,6": 5,
+      "29,7": 5,
+      "29,8": 5,
+      "29,9": 5,
+      "29,10": 5,
+      "29,11": 5,
+      "29,12": 5,
+      "29,13": 5,
+      "29,52": 13,
+      "29,54": 1,
+      "30,3": 5,
+      "30,4": 5,
+      "30,5": 5,
+      "30,6": 5,
+      "30,7": 5,
+      "30,8": 5,
+      "30,9": 5,
+      "30,10": 5,
+      "30,11": 5,
+      "30,12": 5,
+      "30,13": 5,
+      "30,52": 13,
+      "30,54": 1,
+      "31,3": 5,
+      "31,4": 5,
+      "31,5": 5,
+      "31,6": 5,
+      "31,7": 5,
+      "31,8": 5,
+      "31,9": 5,
+      "31,10": 5,
+      "31,11": 5,
+      "31,12": 5,
+      "31,13": 5,
+      "31,52": 13,
+      "31,54": 1,
+      "32,52": 1,
+      "32,54": 1,
+      "33,52": 1,
+      "33,54": 1
+    },
+    "ColStyles": {
+      "8": 25,
+      "53": 26,
+      "54": 26,
+      "55": 27,
+      "56": 27,
+      "57": 27,
+      "58": 27,
+      "59": 28,
+      "60": 27,
+      "61": 27,
+      "62": 27,
+      "63": 27,
+      "64": 27,
+      "65": 27,
+      "66": 27,
+      "67": 27,
+      "68": 27
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "2,47,1,3",
+    "5,22,1,4",
+    "4,60,1,4",
+    "6,6,21,48",
+    "2,40,1,5",
+    "27,6,1,48",
+    "0,6,1,15",
+    "5,52,1,2",
+    "5,6,1,4",
+    "5,10,1,4",
+    "5,26,1,18",
+    "5,14,1,4",
+    "5,18,1,4",
+    "5,44,1,5",
+    "5,49,1,3",
+    "4,6,1,4",
+    "4,10,1,4",
+    "4,14,1,4",
+    "4,18,1,4",
+    "4,22,1,4",
+    "4,26,1,18",
+    "4,44,1,5",
+    "4,49,1,3",
+    "4,52,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=质检打包工费列表!行数<>0"
+          },
+          "GUID": "90d13df5-29b5-4d6c-9660-28ef82162fd5",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=质检打包工费列表!行数<>0"
+          },
+          "Priority": 1,
+          "GUID": "022a0506-e701-4b04-9f9d-bfa3ee942f2b",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "行数",
+      "Formula": "质检打包工费列表!$BI$5"
+    }
+  ]
+}//qSu/l0caJ5X3eO9WETFfKr6DE106IvlIJoHsvL9C4TzkyGnzUX4raw5ttP2QCP5430f+g0kSzNmD4RAp4jCwm39XnolHMeXcgxCt4v/XuF2GTDQ9KNPMXCs+mTufj+sPpZogDcbWb0E/Xxgw37Hvl+Bt2dZBmCzgV8rOga5MLc9h8rUhx9HOyajKrzWzsOsFDWmgLdTPWfQkqsCb+Gnr79U1zTUkT0isrzSXXs8LRZkCkeAPb56NgItHem7FpZp+ux+Che2lo+q0YiReGmmhvafQso3yfomBIGBHqCwQerXkW+xWw0YjvwpRV9p7YN9kzCm6aKsjMhRi9px5BZaZVx2UAY0uET0HojAZ1gOxO42zVtRD3bKVHmYu02asZhOjNuDa/q38nMrq5KzLzqNeVM7fdQa/GotJHIx6sfaTeLt0vHQd5orh8SUcoeesAaAISxzUu/2uoIM0a8IiSAb5aKrHCS6bHW0hAKSWRpJ4+GyjH7rzhGO3Gpo95RkmmO4jc57EYj+b3OaujQ2c0pA6dABFt/bFBs8kKK7ABtRpDNuHVcJSuU3+LBcIrq0EFB3k1b51dp2CgCOpIbNv1gq4uf3q/E/4BytMTgT43Vzd844f0d8vUY3irWj5TkOHJ6OVqgi02foO6hbBJN12c3HJJz0O2tLMGmfKSjQUYFeoPLVLfG04BpdQRGYzF+ugXe2pn+7mSP0kZverMnX1Heei+KNegFhFbnqBa+SLiZ7Z+pr4qpSIaipGI9sdiFp5tLY6jv81pw9XEuzuyoOqYpZbOXUqg0JIeFBQfncwA6flIrq0HIzfaj19u0egPFiJe+zdWvR+DSE8YDqFGDpP8yTzQVDWSS6qhB9rkJfFpNOItFDOVH+HB/AypLwuFqGf7siKc5DnUwyKej+QtvMpqsyFMg==|920

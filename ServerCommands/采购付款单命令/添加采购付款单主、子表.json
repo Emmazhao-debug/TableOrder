@@ -1,0 +1,477 @@
+{
+  "Name": "添加采购付款单主、子表",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "供商名称",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "供商编号",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "帐户id",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "付款日期",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "附件",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "付款备注",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "合计金额",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "审核状态",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "审核人",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "ArrayItems": [],
+          "Name": "审核时间",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        },
+        {
+          "Type": 1,
+          "ArrayItems": [],
+          "ArrayParamItems": [
+            {
+              "Name": "采购单号",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "采购金额",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "已付款",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "本次付款",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            },
+            {
+              "Name": "采购单类型",
+              "DataValidationInfo": {
+                "ValidateCommand": []
+              }
+            }
+          ],
+          "Name": "付款明细数组",
+          "DataValidationInfo": {
+            "ValidateCommand": []
+          }
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "采购付款主表",
+          "UpdateType": "add",
+          "ShowConfirm": false,
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "供商名称",
+                "GUID": "547456ae-035f-4caa-8e10-3dfaac1f27c8"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供商名称"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "供商编号",
+                "GUID": "292f9885-5dda-483b-bb83-cd89f5621fe5"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=供商编号"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "付款账户ID",
+                "GUID": "75dba997-c2dd-4ab0-a1a0-3803374a677a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=帐户id"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "付款日期",
+                "GUID": "589fac3a-5aa8-47fc-b7fa-4826ab3a9ca8"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=付款日期"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "付款总金额",
+                "GUID": "cbe3ac06-9f81-447e-89f9-440147040009"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=合计金额"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "附件",
+                "GUID": "ad515b6e-5681-4818-a694-05073f0abde2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=附件"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "付款备注",
+                "GUID": "afb523c2-49ae-4f94-8dbc-689da15ce9c2"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=付款备注"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "审核状态",
+                "GUID": "f0712819-d4a3-41a5-a639-e4769a535741"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=审核状态"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "审核人",
+                "GUID": "8db89c74-229c-46c0-992b-d594e2b7a0d9"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=审核人"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "采购付款主表",
+                "ColumnName": "审核时间",
+                "GUID": "74bcc507-0aa4-43a5-bdc8-8b19cd51398d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=审核时间"
+              }
+            }
+          ],
+          "ParamNameToSaveNewRowValue": "采购付款单主表"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "帐户原有金额",
+          "TableValue": {
+            "TableName": "银行账户资料表",
+            "OnlyGetValue": true,
+            "TableValueType": 0,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "银行账户资料表",
+                  "ColumnName": "当前余额",
+                  "GUID": "cbad8177-70cf-4506-8bfb-ecffc6989682"
+                },
+                "ColumnName": "当前余额"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "ID",
+                "GUID": "3f8df04b-96f7-489d-b47e-93613ebbae43"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=帐户id"
+              }
+            }
+          },
+          "ID": "861455cdd989424c877a9d20af744bd2"
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "银行账户资料表",
+          "ShowConfirm": false,
+          "RowsToUpdate": 1,
+          "RowsToUpdateCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "银行账户资料表",
+              "ColumnName": "ID",
+              "GUID": "0ade7f9c-17eb-462d-aa1d-0ef19a306926"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=帐户id"
+            }
+          },
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "银行账户资料表",
+                "ColumnName": "当前余额",
+                "GUID": "17a107fd-86b5-4cad-8049-56e4706cb838"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=帐户原有金额-合计金额"
+              }
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=付款明细数组"
+            },
+            "LoopItemParamName": "Item"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "采购付款明细",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "采购付款明细",
+                    "ColumnName": "付款单ID",
+                    "GUID": "df24a63d-0e53-48a4-bcea-0a31ac218910"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购付款单主表.ID"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购付款明细",
+                    "ColumnName": "采购单号",
+                    "GUID": "043a1142-7536-43ce-bc85-1c396e203e46"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.采购单号"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购付款明细",
+                    "ColumnName": "采购金额",
+                    "GUID": "ac556530-2f7c-492b-9832-1f4073ec49be"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.采购金额"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购付款明细",
+                    "ColumnName": "已付款",
+                    "GUID": "153199b1-fa74-452d-a2d8-758c19340e97"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.已付款"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购付款明细",
+                    "ColumnName": "本次付款金额",
+                    "GUID": "4a4d18ce-e73a-420b-9563-5ba51525fbfc"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.本次付款"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "采购付款明细",
+                    "ColumnName": "采购单类型",
+                    "GUID": "92718e88-5754-4f9a-a3c2-ffce5ec51af3"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.采购单类型"
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "采购单已付款金额",
+              "TableValue": {
+                "TableName": "采购单主表",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "采购单主表",
+                      "ColumnName": "已付款",
+                      "GUID": "8d43797b-147f-4f43-b594-61c871778f89"
+                    },
+                    "ColumnName": "已付款"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "采购单主表",
+                    "ColumnName": "采购单号",
+                    "GUID": "180af40a-c91d-43f8-bda3-499db7e6415e"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.采购单号"
+                  }
+                }
+              },
+              "ID": "bf63a4b2557f4bd3b7cead266a781a5e"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "采购单主表",
+              "ShowConfirm": false,
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "采购单主表",
+                  "ColumnName": "采购单号",
+                  "GUID": "ea15a04f-459f-4b9d-a77a-0507593c0e9a"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Item.采购单号"
+                }
+              },
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "采购单主表",
+                    "ColumnName": "已付款",
+                    "GUID": "44d04384-76da-4881-915c-15b500b0c121"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=采购单已付款金额+Item.本次付款*IF(Item.采购单类型=\"采购\",1,-1)"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

@@ -1,0 +1,1143 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0,
+          "IsHidden": true
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "Count": 34,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      52,
+      53,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "Count": 69
+  },
+  "Values": {
+    "0,6": "开槽工费列表",
+    "2,40": "首次添加",
+    "2,47": "关闭",
+    "4,22": "日期状态",
+    "4,59": "行数：",
+    "27,6": "*此处“已失效”指的是新建报价单时不会再使用此属性中的参数，并非真的失效。早前在这个已失效属性的启止时间段内创建的过往报价单，仍然使用的是这个已失效的属性参数。例如：打开这个时间段内创建过的报价单更换属性时，则会读取“已失效”的属性参数进行产品价格计算。"
+  },
+  "Formulas": {
+    "5,44": "IF((W6=\"生效中\")*(O6=TODAY())+(W6=\"待生效\"),\"修改\",IF(W6=\"生效中\",\"创建新属性\",\"\"))",
+    "5,49": "IF(O6>=TODAY(),\"删除\",\"\")",
+    "4,60": "COUNTA(O6)",
+    "5,22": "IF(O6>TODAY(),\"待生效\",IF(S6=\"\",\"生效中\",IF(S6>=TODAY(),\"即将到期\",\"已失效\")))"
+  },
+  "AttachInfos": {
+    "2,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "开槽工费详情",
+            "PassValues": [
+              {
+                "Source": "添加",
+                "TargetCell": {
+                  "SerializeProperty": "=开槽工费详情!按钮"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "首次添加",
+        "TemplateKey": "_RS_Main1",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "RulesGuidList": [
+        "cd1a3212-5594-46ae-8ebe-4f0dc47a8140",
+        "870bbd53-b601-458f-abff-04f329839c6f"
+      ]
+    },
+    "2,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "4,6": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "开槽工费表",
+        "RowIndex": 4,
+        "ColumnIndex": 6,
+        "RowCount": 23,
+        "ColumnCount": 48,
+        "TopCondition": null,
+        "ListViewStyleName": "默认样式",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "CommitType": 1
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "长度单价",
+        "GUID": "7307a002-10aa-48fb-a80f-6f675801f1dd"
+      }
+    },
+    "5,10": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "节点单价",
+        "GUID": "a8a91b79-d4c7-4f66-84f9-384e0d7f7c63"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "启用日期",
+        "GUID": "9ad7c885-485c-4407-a141-406b38980423"
+      }
+    },
+    "5,18": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "截止日期",
+        "GUID": "1011138c-8070-40c8-b2ef-8f86f43ffc99"
+      }
+    },
+    "5,26": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "备注",
+        "GUID": "6474c56d-0712-4301-b884-6832aa10069e"
+      }
+    },
+    "5,44": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=开槽工费列表!AS6"
+                      }
+                    ]
+                  },
+                  "value": "修改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "开槽工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "修改",
+                        "TargetCell": {
+                          "SerializeProperty": "=开槽工费详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "1b69f658-8270-4fa8-bcb3-347dfff2db0b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "开槽工费详情",
+                    "PassValues": [
+                      {
+                        "Source": "创建",
+                        "TargetCell": {
+                          "SerializeProperty": "=开槽工费详情!按钮"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "29fec66d-0163-410a-8fee-278bebfc89e3"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,49": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "之前属性行数",
+            "TableValue": {
+              "TableName": "开槽工费表",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 4,
+                    "ColumnBindingInfo": {
+                      "TableName": "开槽工费表",
+                      "ColumnName": "启用日期",
+                      "GUID": "ff46229f-b878-4e76-9d86-b8f7f69f587d"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=开槽工费列表!O6"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "开槽工费表",
+                      "ColumnName": "ID",
+                      "GUID": "c5125d51-a7c6-450b-b1fa-8e9eae9e7d5e"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=开槽工费列表!BA6"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "5db64bbbd0b2496d9d4b9537de088196"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=开槽工费列表!之前属性行数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowMessageBox, ElementUI",
+                    "Title": "说明：",
+                    "Message": "删除本属性后，前面属性的截止日期将自动置空，变为长期有效。您确定要删除吗？",
+                    "Type": "warning",
+                    "ConfirmButtonText": "确定",
+                    "ShowCancelButton": true,
+                    "CancelButtonText": "取消",
+                    "DialogResult": "结果",
+                    "AdvancedSettings": {}
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=开槽工费列表!结果"
+                              }
+                            ]
+                          },
+                          "value": "confirm"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "之前属性id",
+                            "TableValue": {
+                              "TableName": "开槽工费表",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "开槽工费表",
+                                    "ColumnName": "ID",
+                                    "GUID": "00290cb2-80ff-4f5a-9724-8b8de6537648"
+                                  },
+                                  "ColumnName": "ID"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 4,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "开槽工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "40b59e75-d230-4d8c-8972-6d8d38dad94f"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=开槽工费列表!O6"
+                                    }
+                                  },
+                                  {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "开槽工费表",
+                                      "ColumnName": "ID",
+                                      "GUID": "e6422f8f-cc76-411d-bfc2-5da743fbf815"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=开槽工费列表!BA6"
+                                    }
+                                  }
+                                ]
+                              },
+                              "NullFormulaValueQueryPolicy": 0,
+                              "TopCount": "1",
+                              "OrderBySqlCondition": {
+                                "OrderByColumns": [
+                                  {
+                                    "ColumnBindingInfo": {
+                                      "TableName": "开槽工费表",
+                                      "ColumnName": "启用日期",
+                                      "GUID": "1b1a4808-583f-4f39-9b4d-4d7e82e08628"
+                                    },
+                                    "Order": 1
+                                  }
+                                ]
+                              }
+                            },
+                            "ID": "4b791d1fc725467a8f06ef56cd961140"
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "开槽工费表",
+                            "ShowConfirm": false,
+                            "RowsToUpdate": 1,
+                            "RowsToUpdateCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "开槽工费表",
+                                "ColumnName": "ID",
+                                "GUID": "e5fd9040-e35a-4b28-86ca-3b884c01f923"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=开槽工费列表!之前属性id"
+                              }
+                            },
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "开槽工费表",
+                                  "ColumnName": "截止日期",
+                                  "GUID": "0604745a-2fe5-4d55-99f6-bbc4b4e24044"
+                                }
+                              }
+                            ],
+                            "NextUpdateDataTableCommand": {
+                              "TableName": "开槽工费表",
+                              "UpdateType": "delete",
+                              "ShowConfirm": false
+                            }
+                          }
+                        ],
+                        "ID": "92309bf2-c6d2-44e6-a078-3e2b1457f243"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d1d4ccf3-c0b8-4a44-bbe7-864d2cb9ad69"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+                    "ShowConfirm": true,
+                    "ConfirmText": "您确定要删除吗？"
+                  }
+                ],
+                "ID": "41c93b67-70f3-4543-84e7-b43d69423a39"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      }
+    },
+    "5,52": {
+      "BindingInfo": {
+        "TableName": "开槽工费表",
+        "ColumnName": "ID",
+        "GUID": "c08b4172-06c4-45f5-b254-a600645d2e22"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "BorderTop": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 10,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 11,
+        "HorizontalAlignment": 8,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 8
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 12,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": -1.0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Right",
+        "@",
+        "[AUTO]General",
+        "Left",
+        "Background 1 -25",
+        "0.00\"元/㎡\"",
+        "Center",
+        "yyyy/MM/dd",
+        "#FF00B050",
+        "Blue",
+        "Background 1 -50"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,6": 0,
+      "0,54": 1,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 3,
+      "1,11": 3,
+      "1,12": 3,
+      "1,13": 3,
+      "1,14": 2,
+      "1,15": 4,
+      "1,16": 4,
+      "1,17": 4,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 4,
+      "1,21": 4,
+      "1,22": 4,
+      "1,23": 4,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 4,
+      "1,28": 4,
+      "1,29": 4,
+      "1,30": 4,
+      "1,31": 4,
+      "1,32": 4,
+      "1,33": 4,
+      "1,34": 4,
+      "1,35": 4,
+      "1,36": 4,
+      "1,37": 4,
+      "1,38": 4,
+      "1,39": 4,
+      "1,52": 1,
+      "1,54": 1,
+      "2,6": 5,
+      "2,7": 5,
+      "2,8": 5,
+      "2,9": 5,
+      "2,10": 5,
+      "2,11": 5,
+      "2,12": 5,
+      "2,13": 5,
+      "2,40": 6,
+      "2,47": 7,
+      "2,48": 3,
+      "2,49": 3,
+      "2,50": 7,
+      "2,52": 1,
+      "2,54": 1,
+      "3,6": 8,
+      "3,7": 8,
+      "3,8": 8,
+      "3,9": 8,
+      "3,10": 8,
+      "3,11": 8,
+      "3,12": 8,
+      "3,13": 8,
+      "3,52": 1,
+      "3,54": 1,
+      "4,6": 9,
+      "4,7": 10,
+      "4,8": 10,
+      "4,9": 10,
+      "4,10": 11,
+      "4,11": 10,
+      "4,12": 10,
+      "4,13": 10,
+      "4,14": 12,
+      "4,15": 10,
+      "4,16": 10,
+      "4,17": 10,
+      "4,18": 12,
+      "4,19": 10,
+      "4,20": 10,
+      "4,21": 10,
+      "4,22": 12,
+      "4,23": 10,
+      "4,24": 10,
+      "4,25": 10,
+      "4,26": 13,
+      "4,27": 10,
+      "4,28": 10,
+      "4,29": 10,
+      "4,30": 10,
+      "4,31": 10,
+      "4,32": 10,
+      "4,33": 10,
+      "4,34": 10,
+      "4,35": 10,
+      "4,36": 10,
+      "4,37": 10,
+      "4,38": 10,
+      "4,39": 10,
+      "4,40": 10,
+      "4,41": 10,
+      "4,42": 10,
+      "4,43": 10,
+      "4,44": 10,
+      "4,45": 10,
+      "4,46": 10,
+      "4,47": 10,
+      "4,48": 10,
+      "4,49": 10,
+      "4,50": 10,
+      "4,51": 10,
+      "4,52": 10,
+      "4,53": 10,
+      "4,54": 14,
+      "5,6": 15,
+      "5,10": 16,
+      "5,14": 17,
+      "5,18": 17,
+      "5,22": 18,
+      "5,26": 19,
+      "5,44": 20,
+      "5,49": 20,
+      "5,52": 21,
+      "5,54": 14,
+      "5,64": 21,
+      "5,65": 21,
+      "5,66": 21,
+      "5,67": 21,
+      "6,6": 14,
+      "6,43": 22,
+      "6,54": 14,
+      "7,6": 14,
+      "7,43": 22,
+      "7,54": 14,
+      "8,6": 14,
+      "8,43": 22,
+      "8,54": 14,
+      "9,6": 14,
+      "9,43": 22,
+      "9,54": 14,
+      "10,6": 14,
+      "10,43": 22,
+      "10,54": 14,
+      "11,6": 14,
+      "11,43": 22,
+      "11,54": 14,
+      "12,6": 14,
+      "12,43": 22,
+      "12,54": 14,
+      "13,6": 14,
+      "13,43": 22,
+      "13,54": 14,
+      "14,6": 14,
+      "14,43": 22,
+      "14,54": 14,
+      "15,3": 5,
+      "15,4": 5,
+      "15,5": 5,
+      "15,6": 14,
+      "15,54": 14,
+      "16,3": 5,
+      "16,4": 5,
+      "16,5": 5,
+      "16,6": 14,
+      "16,54": 14,
+      "17,3": 5,
+      "17,4": 5,
+      "17,5": 5,
+      "17,6": 14,
+      "17,54": 14,
+      "18,3": 5,
+      "18,4": 5,
+      "18,5": 5,
+      "18,6": 14,
+      "18,54": 14,
+      "19,3": 5,
+      "19,4": 5,
+      "19,5": 5,
+      "19,6": 14,
+      "19,54": 14,
+      "20,3": 5,
+      "20,4": 5,
+      "20,5": 5,
+      "20,6": 14,
+      "20,54": 14,
+      "21,3": 5,
+      "21,4": 5,
+      "21,5": 5,
+      "21,6": 14,
+      "21,54": 14,
+      "22,3": 5,
+      "22,4": 5,
+      "22,5": 5,
+      "22,6": 14,
+      "22,54": 14,
+      "23,3": 5,
+      "23,4": 5,
+      "23,5": 5,
+      "23,6": 14,
+      "23,54": 14,
+      "24,3": 5,
+      "24,4": 5,
+      "24,5": 5,
+      "24,6": 14,
+      "24,54": 14,
+      "25,3": 5,
+      "25,4": 5,
+      "25,5": 5,
+      "25,6": 14,
+      "25,54": 14,
+      "26,3": 5,
+      "26,4": 5,
+      "26,5": 5,
+      "26,6": 23,
+      "26,7": 24,
+      "26,8": 24,
+      "26,9": 24,
+      "26,10": 24,
+      "26,11": 24,
+      "26,12": 24,
+      "26,13": 24,
+      "26,14": 24,
+      "26,15": 24,
+      "26,16": 24,
+      "26,17": 24,
+      "26,18": 24,
+      "26,19": 24,
+      "26,20": 24,
+      "26,21": 24,
+      "26,22": 24,
+      "26,23": 24,
+      "26,24": 24,
+      "26,25": 24,
+      "26,26": 24,
+      "26,27": 24,
+      "26,28": 24,
+      "26,29": 24,
+      "26,30": 24,
+      "26,31": 24,
+      "26,32": 24,
+      "26,33": 24,
+      "26,34": 24,
+      "26,35": 24,
+      "26,36": 24,
+      "26,37": 24,
+      "26,38": 24,
+      "26,39": 24,
+      "26,40": 24,
+      "26,41": 24,
+      "26,42": 24,
+      "26,43": 24,
+      "26,44": 24,
+      "26,45": 24,
+      "26,46": 24,
+      "26,47": 24,
+      "26,48": 24,
+      "26,49": 24,
+      "26,50": 24,
+      "26,51": 24,
+      "26,52": 24,
+      "26,53": 24,
+      "26,54": 14,
+      "27,3": 5,
+      "27,4": 5,
+      "27,5": 5,
+      "27,6": 25,
+      "27,54": 1,
+      "28,3": 5,
+      "28,4": 5,
+      "28,5": 5,
+      "28,6": 5,
+      "28,7": 5,
+      "28,8": 5,
+      "28,9": 5,
+      "28,10": 5,
+      "28,11": 5,
+      "28,12": 5,
+      "28,13": 5,
+      "28,52": 14,
+      "28,54": 1,
+      "29,3": 5,
+      "29,4": 5,
+      "29,5": 5,
+      "29,6": 5,
+      "29,7": 5,
+      "29,8": 5,
+      "29,9": 5,
+      "29,10": 5,
+      "29,11": 5,
+      "29,12": 5,
+      "29,13": 5,
+      "29,52": 14,
+      "29,54": 1,
+      "30,3": 5,
+      "30,4": 5,
+      "30,5": 5,
+      "30,6": 5,
+      "30,7": 5,
+      "30,8": 5,
+      "30,9": 5,
+      "30,10": 5,
+      "30,11": 5,
+      "30,12": 5,
+      "30,13": 5,
+      "30,52": 14,
+      "30,54": 1,
+      "31,3": 5,
+      "31,4": 5,
+      "31,5": 5,
+      "31,6": 5,
+      "31,7": 5,
+      "31,8": 5,
+      "31,9": 5,
+      "31,10": 5,
+      "31,11": 5,
+      "31,12": 5,
+      "31,13": 5,
+      "31,52": 14,
+      "31,54": 1,
+      "32,52": 1,
+      "32,54": 1,
+      "33,52": 1,
+      "33,54": 1
+    },
+    "ColStyles": {
+      "8": 26,
+      "53": 27,
+      "54": 27,
+      "55": 28,
+      "56": 28,
+      "57": 28,
+      "58": 28,
+      "59": 29,
+      "60": 28,
+      "61": 28,
+      "62": 28,
+      "63": 28,
+      "64": 28,
+      "65": 28,
+      "66": 28,
+      "67": 28,
+      "68": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 12.0
+    }
+  },
+  "Spans": [
+    "2,47,1,3",
+    "5,22,1,4",
+    "4,60,1,4",
+    "6,6,21,48",
+    "2,40,1,5",
+    "27,6,1,48",
+    "0,6,1,15",
+    "5,6,1,4",
+    "5,10,1,4",
+    "5,14,1,4",
+    "5,18,1,4",
+    "5,26,1,18",
+    "5,52,1,2",
+    "5,44,1,5",
+    "5,49,1,3",
+    "4,6,1,4",
+    "4,10,1,4",
+    "4,14,1,4",
+    "4,18,1,4",
+    "4,22,1,4",
+    "4,26,1,18",
+    "4,44,1,5",
+    "4,49,1,3",
+    "4,52,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=开槽工费列表!行数<>0"
+          },
+          "GUID": "cd1a3212-5594-46ae-8ebe-4f0dc47a8140",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=开槽工费列表!行数<>0"
+          },
+          "Priority": 1,
+          "GUID": "870bbd53-b601-458f-abff-04f329839c6f",
+          "StyleInfo": {
+            "Underline": null,
+            "Strikethrough": null
+          },
+          "IsDisabled": true
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "行数",
+      "Formula": "开槽工费列表!$BI$5"
+    }
+  ]
+}//Frs6s79Lds1cF3ss+BF0LhZUCs4v1//m7r4h828ymvzTMQjMlEXOXSTrIsLY4ownrXPlTSxFx7oRic4hU3bYQeKQVLVeilVIINEQkSwUxGsEov0lVByiCb8qX3II0+wT35yeaI55AjfKncrZlj43vWeOtrcLvca7LX4KrRidKcZeNyDZmr4sVh/xMnkYvo4mbJMN0TfImX92WQiOfgMRGYpAJO0sbL4rzl+L3ph0XDOzqjKvQTzLA3z7zcXy+Xy3YrfNYX72C/erj/F0jVqYHIsfu6e2pVrLiOBlCyzhPrZoMB8Aoqd7AHvih7aWPXsMjBYWYiFOws5ufYAYEL6j0TjypcMw8lcHHkRn2dW2S6H6dcY9DMeUITk3y5ke40C1OOF9n9FsBL1DLp7Uk+NI0epweat9qmqeUthaNl+hlfDR7zAswFMNk4KYjNpcgOdLgX65mLOi+BHtwRFjGgtmR78CB//ya7sryhd/ls7eAK4U0X8jJflBjDXZBQSjzfg7uYX6ITLYKXHNzneOo1HrIUkEsEHfoynsp98UTQPu+hBlPzdzfYdywIPx6wbK8vnn4/3v7Y1fjWGIqUBJl1ssb3TBcA2NrzSdDcSCQP/G5R5ncoX/6UZsdBeomzlXL5LY/PSfyN8LNy5Teu4PlIyO3wu6KWtg479YSJ6wdvXQhDm5LP0mU3t+FPu88ZnvonwNcJ/Uf3RdZnQWRMdaaS7XOMGMUCgQOygaw/yLlQR2twhthkA9f2w1jbnFm/nQbbcULnGdCanl3hGazd/x0HCozQQAL7aCyxWiTAxCK4GctbJ7/7O0V/2BlVLxzKGNdVGMoiZ2lKAlf4ivazQTJ7BHDHDbfficSUrRl3GFRZmMldnGoOXAEZGlsb4eFhBit1D7wNt7NJFr9ECIVsQ2y2y2vg==|920
